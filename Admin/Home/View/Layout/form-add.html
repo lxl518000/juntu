@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><block name='title'>添加</block></title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="favicon.ico">
+	<link href="/Public/static/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="/Public/static/css/font-awesome.css?v=4.4.0" rel="stylesheet">
+    <link href="/Public/static/css/animate.css" rel="stylesheet">
+    <link href="/Public/static/css/style.css?v=4.1.0" rel="stylesheet">
+	<link href="/Public/static/css/plugins/iCheck/custom.css" rel="stylesheet">
+	<block name="css">
+		
+	</block>
+	
+	  <!-- 全局js -->
+    <script src="/Public/static/js/jquery.min.js?v=2.1.4"></script>
+    <script src="/Public/static/js/bootstrap.min.js?v=3.3.6"></script>
+
+    <!-- 自定义js -->
+    <script src="/Public/static/js/content.js?v=1.0.0"></script>
+	
+	<block name="js">
+    <!-- jQuery Validation plugin javascript-->
+    <script src="/Public/static/js/plugins/validate/jquery.validate.min.js"></script>
+    <script src="/Public/static/js/plugins/validate/messages_zh.min.js"></script>
+ <script src="/Public/static/js/plugins/layer/layer.min.js"></script>
+    <script src="/Public/static/js/demo/form-validate-demo.js"></script>
+	
+   
+    <!-- iCheck -->
+    <script src="/Public/static/js/plugins/iCheck/icheck.min.js"></script>
+    
+    
+ <style>
+		.wrapper-content{padding-top:0;}
+		.form-group{margin-bottom:0px;}
+		.hr-line-dashed{margin:10px 0;}
+
+<block name='style'>
+
+</block>
+
+</style>
+
+</head>
+
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeIn">
+       
+        <div class="row">
+          
+            <div class="col-sm">
+                <div class="ibox float-e-margins">
+                   
+                    <div class="ibox-content">
+                        <form class="form-horizontal m-t" id="signupForm" <block name='form-par'>data-par='close'</block> action="{:U()}">
+                        
+							<block name="form-field">
+							
+                        	{:formbuilder('input',array('title'=>'菜单名','name'=>'name','value'=>'','placeholder'=>'请输入菜单名','validate'=>'required','tip'=>''))}
+                            {:formbuilder('input',array('title'=>'菜单名','name'=>'name','value'=>'','placeholder'=>'请输入菜单名','validate'=>'required','tip'=>''))}
+                           {:formbuilder('input',array('title'=>'菜单名','name'=>'name','value'=>'','placeholder'=>'请输入菜单名','validate'=>'required','tip'=>''))}
+                           {:formbuilder('input',array('title'=>'菜单名','name'=>'name','value'=>'','placeholder'=>'请输入菜单名','validate'=>'required','tip'=>''))}
+                              
+							{:formbuilder('choose',array(type=>'radio','title'=>'菜单类型','name'=>'type','options'=>array('1'=>'菜单',2=>'节点',3=>'式'),'checked'=>$list['type']))}
+							
+							 {:formbuilder('select',array('title'=>'上级分类','name'=>'pid','options'=>$parent,'select'=>2))}
+	
+							{:formbuilder('textarea',array('title'=>'关键词','name'=>'keyword','validate'=>'required','title'=>'请输入关键词'))}
+                          
+						  
+						  
+						  
+                        {:widget('Editor/ueditor', array('name'=>'content','title'=>'内容','content'=>$name))}
+                        
+						 {:widget('Plupload/uploadone', array('url'=>url('Index/server'),'fieldname'=>'thumbimg','title'=>'缩略图','callback'=>'','ext'=>'*'))}
+						
+							</block>
+							
+							<eq name='isupdate' value='1'>
+								<input type='hidden' name='{$pk}' value="{$pkvalue}"/>
+							</eq>
+							
+                            <div class="form-group">
+                                <div class="col-sm-8 col-sm-offset-3">
+                                    <button class="btn btn-primary" type="submit">提交</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+  
+ </block>	
+	
+
+	<block name='extend'>
+	
+	</block>
+
+</body>
+
+</html>

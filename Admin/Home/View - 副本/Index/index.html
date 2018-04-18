@@ -1,0 +1,380 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<include file="Common/inc"/>
+<style>
+body .demo-class .layui-layer-title{background:#4673b7; color:#fff; border: none;}
+</style>
+</head>
+
+
+<script>
+var t = null,start = {:time()} * 1000;
+t = setTimeout(time,1000);//开始执行
+function time(){
+   clearTimeout(t);//清除定时器
+    dt = new Date(start);
+   var y= dt.getFullYear();
+   var month= (dt.getMonth()+1) > 9 ? (dt.getMonth()+1) : '0'+(dt.getMonth()+1);
+   var d= dt.getDate()>9 ? dt.getDate() : '0'+dt.getDate();
+   var h= dt.getHours()>9 ? dt.getHours() : '0'+dt.getHours();
+   var m= dt.getMinutes()>9 ? dt.getMinutes() : '0'+dt.getMinutes();
+   var s= dt.getSeconds()>9 ? dt.getSeconds() : '0'+dt.getSeconds();
+   document.getElementById("timeShow").innerHTML =y+'-'+month+'-'+d+' '+h+":"+m+":"+s; 
+   start = start + 1000;
+   t = setTimeout(time,1000); //设定定时器，循环执行             
+}
+
+ 
+function requestFullScreen(element) {
+    // 判断各种浏览器，找到正确的方法
+    var requestMethod = element.requestFullScreen || //W3C
+    element.webkitRequestFullScreen ||    //Chrome等
+    element.mozRequestFullScreen || //FireFox
+    element.msRequestFullScreen; //IE11
+    if (requestMethod) {
+        requestMethod.call(element);
+    }
+    else if (typeof window.ActiveXObject !== "undefined") {
+        var wscript = new ActiveXObject("WScript.Shell");
+        if (wscript !== null) {
+            wscript.SendKeys("{F11}");
+        }
+    }
+}
+
+//退出全屏 判断浏览器种类
+function exitFull() {
+    // 判断各种浏览器，找到正确的方法
+    var exitMethod = document.exitFullscreen || //W3C
+    document.mozCancelFullScreen ||    //Chrome等
+    document.webkitExitFullscreen || //FireFox
+    document.webkitExitFullscreen; //IE11
+    if (exitMethod) {
+        exitMethod.call(document);
+    }
+    else if (typeof window.ActiveXObject !== "undefined") {
+        var wscript = new ActiveXObject("WScript.Shell");
+        if (wscript !== null) {
+            wscript.SendKeys("{F11}");
+        }
+    }
+}
+
+$(function(){
+	
+	$('#full-screen').toggle(function(){
+		 requestFullScreen(document.documentElement);
+	},function(){
+		exitFull();
+	})
+})
+
+</script>
+<body>
+<div id="layout-top">
+  <div id="layout-nav" class="cl">
+	<span  id="full-screen" ><i class="iconfont icon-zaixianjiedanxian"></i>全屏展示</span>
+    <em title="来源:国家授时中心"id="timeShow">{:date('Y-m-d H:i:s')}</em>
+    <div class="logo fl"> 
+    <a href="{:U('Index/index')}" class="a_logo"><!-- <img src="__PUBLIC__/Admin/logo.png" width="192" height="36" /> --></a>
+     <a class="ZoomMenu zoom fr" href="javascript:;"><i class="iconfont icon-iconfont95"></i></a>
+      </div>
+    <div class="nav fl">
+      <ul class="TopMenu float">
+      	<volist name='admin_menu' id="vo" >
+      	    <li  data-id="{$i}"> <a <eq name='i' value='1'>class='current'</eq>href="javascript:;"><i class="iconfont icon-{$vo.icon}"></i>{$vo.name}</a> </li>
+      	</volist>
+      </ul>
+    </div>
+    <div class="user fr">
+      <ul class="float">
+        <li>
+            <a  id='infocount' href="javascript:void(0)" class='J_open' data-area="80%,80%" data-url="{:U('Index/infomation')}"></a></span>
+        </li>
+     	<li>
+     	 <a href="javascript:void(0)" class='J_open' data-url="{:U('Index/my')}"><i class="iconfont icon-me2"></i>[{$Think.session.adminuser.role_name}-{$Think.session.adminuser.realname|default="管理员"}] </a>
+     	  </li>
+        <li> <a href="{:U('Public/logout')}"> <i class="iconfont icon-tuichu"></i>退出登录 </a> </li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+<div id="layout-mid">
+  <div id="layout-menu" class="LeftMenu">
+  	<volist name='admin_menu' id="vo">
+	 
+	   	<notempty name="vo.item">
+	   	 	<ul class="menu hide"  <eq name='i' value='1'> style="display:block;"</eq> >
+		      <volist name='vo.item' id="vo1">
+		      	  <li>
+			        <p> <i class="iconfont icon-caidan"></i> {$vo1.name} <span class="fr"><i class="iconfont icon-icon123"></i></span> </p>
+				        <ul class="item">
+				        	<notempty name='vo1.item'>
+				        			<volist name='vo1.item' id="vo2">
+				        			 <li> <a class="OpenApp" data-url="{:U($vo2['url'])}" href="javascript:;" >{$vo2.name}</a> </li>
+				        			</volist>
+				        	
+				        	<else/>
+				        	 
+				        	</notempty>
+				        </ul>
+		   		   </li>
+		      	</volist>
+	         </ul>
+	      <else/>
+	      
+	      <ul class="menu hide" <eq name='i' value='1'> style="display:block;"</eq> >
+		      	  <li>
+			        <p> <i class="iconfont icon-caidan "></i> 暂无菜单<span class="fr"><i class="iconfont">&#xe60a;</i></span> </p>
+		   		   </li>
+	         </ul>
+	    
+	  	</notempty>
+	    
+	 
+  	</volist>
+    
+   
+  </div>
+  <!-- main_begin-->
+  <div id="layout-main">
+    <iframe id="iframe" name='frame' src="{:U('Sysrole/index')}" style="width:100%;height:100%" frameborder="no" border="0"></iframe>
+  </div>
+  <!-- main_end-->
+  <div class="clear"></div>
+</div>
+<div id="loading" class="hide"> <img src="__PUBLIC__/Img/loading2.gif" /> </div>
+<script type="text/javascript">
+//全局高度监听窗口变化
+$(window).resize(function() {
+    $("#layout-mid").css("height", $(window).height() - 75);
+    /* if($(window).width() < 1200){
+        if($('#layout-menu').is(':visible') == true){
+            $('#layout-menu').hide();
+             $('#layout-main').css('width','100%');
+        }
+    } */
+   if($('#layout-menu').is(':visible') == true){
+           var wid =  $(window).width()-225+"px"; 
+           $('#layout-main').css('width',wid);
+    }
+
+}).resize();
+
+//信息数量
+$('#info')
+
+//隐藏/显示左侧菜单
+$('.ZoomMenu').click(function(e) {
+    if($('#layout-menu').is(':visible') == true){
+        $('#layout-menu').hide();
+        $(this).find('i').removeClass('icon-iconfont95').addClass('icon-guanbi');
+        var wids = $(window).width()+"px";
+         $('#layout-main').css({'width':wids,'margin':'0','padding':'0'});
+          $('#layout-main').addClass('tex_int');
+          $('#layout-mid').css('position','relative');
+         
+    }else{
+    	 $(this).find('i').removeClass('icon-guanbi').addClass('icon-iconfont95');
+         $('#layout-menu').show();
+         var wid = $(window).width()-225+"px";
+         $('#layout-main').css('width',wid);
+         $('#layout-main').removeClass('tex_int');
+    }
+});
+
+//点击顶部菜单显示左侧菜单
+$('.TopMenu>li').click(function(e) {
+    $('.TopMenu>li>a').removeClass('current');
+    $(this).find('a').addClass('current');
+    var index = $(this).index();
+    $('.LeftMenu>ul').hide().eq(index).show().find('li>ul>li>a').eq(0).click();return;
+
+ 
+});
+
+var clickTime=null;
+//.OpenApp 双击左侧菜单打开新窗口
+$('.OpenApp').dblclick(function(e) {
+    clearTimeout(clickTime);
+    var url=$(this).data('url');
+    windowOpen(url);
+    function windowOpen(url,target){
+        var a = document.createElement("a");
+        a.setAttribute("href", url);
+        if(target == null){ target = '_blank'; }
+        a.setAttribute("target", target);
+        document.body.appendChild(a);
+        if(a.click){
+            a.click();
+        }else{
+            try{
+                var evt = document.createEvent('Event');
+                a.initEvent('click', true, true);
+                a.dispatchEvent(evt);
+            }catch(e){
+                window.open(url);
+            }
+        }
+        document.body.removeChild(a);
+    }
+});
+
+window.iframe = $('#iframe').get(0);
+//全局iframe元素
+
+
+//.OpenApp 点击左侧菜单
+$('.OpenApp').click(function(e) {
+    var $this=$(this);
+    clearTimeout(clickTime);
+    clickTime = setTimeout(function(){
+    	  var url = $this.data('url'); 
+        //高亮点击菜单
+            $('#layout-main').css('background','#fff'); 
+        $('.OpenApp').removeClass('current');
+        $this.addClass('current');
+       // $('#iframe').fadeOut('fast');
+   	//	 $('#loading').fadeIn('fast');
+      
+  		 iframe.src = url;
+       // $('#loading').fadeOut('fast');
+        $('#iframe').fadeIn('fast');
+        
+       
+        return; 
+        
+    	/*  loading(1,url);
+        if(iframe.attachEvent){    
+            iframe.attachEvent("onload", function(){        
+                loading();
+            });
+        }else{    
+            iframe.onload = function(){        
+               loading();
+            };
+        }
+
+        function loading(type,url){
+        	$('#layout-main').css('background','#fff');
+            type = (typeof(type)=="undefined") ? 0 : type ;
+            if(type){
+                $('#loading').fadeIn('fast');
+                 $('#iframe').fadeOut('fast',function(){
+                    iframe.src = url;
+                }); 
+            }else{
+            
+                $('#loading').fadeOut('fast');
+                $('#iframe').fadeIn('fast');
+            }
+        }; */
+    },10);
+});
+
+//左侧菜单折叠监听
+$('.LeftMenu>ul>li>p').bind('click', function() {
+    if ($(this).next().is(":visible")) {
+        $(this).find("span>i:last").addClass('rotate');
+        $(this).next().slideUp('fast').end().addClass("current");;
+    } else {
+        $(this).find("span>i:last").removeClass('rotate');
+        $(this).next().slideDown('fast').end().removeClass("current");;
+    }
+});
+
+//搜索点击绑定
+$('#Search').click(function(e) {
+    var val = $.trim($('#SearchKey').val());
+    if(val == '') return false;
+    var url = $(this).data('url');
+    
+    iframe.src= url +'?keywords=' +val;
+});
+//搜索回车绑定
+$('#SearchKey').on('keydown', function (e) {
+    if (e.keyCode == 13) {
+        $('#Search').click();
+    }
+});
+
+
+
+
+/* seajs.use(['dialog'],function(dialog){
+    //定义全局dialog
+    window.dialog = dialog;
+    //缓存清除提示
+    $('#ClearCache').click(function(event) {
+        var url=$(this).data('url');
+        $.get(url, function(result){
+            dialog({
+                id: 'AjaxGetBox',
+                content: '<p class="tc">'+result.info+'</p>',
+                width: 300,
+                padding: 10,
+                quickClose: true,
+            }).show();
+            if(result.status){
+                setTimeout(function(){
+                    reloadPage();
+                }, 2000); 
+            }
+        });
+    });
+}); */
+//刷新iframe
+$('#ReloadIframe').click(function(event) {
+    reloadPage(iframe.contentWindow);
+});
+function reloadPage(win) {
+    if(typeof(win) == 'undefined'){win=window;}
+    var location = win.location;
+    location.href = location.pathname + location.search;
+}
+
+//键盘按键绑定修改
+$(document).bind('keydown',function(e){
+    e = window.event||e;
+    //F5刷新iframe
+    if(e.keyCode==116){
+        reloadPage(iframe.contentWindow);
+        return false;
+    }
+    //禁用退格键Backspace
+    // if(e.keyCode==8){
+    //     return false;
+    // }
+}); 
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+	#think_page_trace_open{
+	    left: 0 !important;
+	    right: auto !important;
+	}
+</style>
+</body>
+</html>

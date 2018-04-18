@@ -1,0 +1,45 @@
+<extend name="Common/list-base" />
+<block name="search">
+    <div class="input-group">
+        <span class="text-icon">配置名称</span><input type="text" name="title" value='{$_REQUEST["title"]}'>
+    </div>
+</block>
+<block name="extra">
+    <div class="tab">
+    <a href="{:U('index')}" <eq name="_REQUEST['groups']" value="">class="current"</eq> >全部配置</a>
+    <foreach name="Think.config.CONFIG_GROUPS" key="k" item="v">
+    <a href="{:U('index',array('groups'=>$k))}" <eq name="_REQUEST['groups']" value="$k">class="current"</eq> >{$v}</a>
+    </foreach>
+    </div>
+</block>
+<block name="list">
+<tr>
+	<th width="150">名称</th>
+    <th>标识</th>
+    <th  class="tc">值</th>
+    <th>备注</th>
+    <th width="80" class="tc">分组</th>
+	
+	<th width="50" class="tc">状态</th>
+    <th width="200">操作</th>
+</tr>
+<foreach name="list" item="v">
+<tr>
+    <td>{$v.title}</td>
+    <td>{$v.name}</td>
+        <td class="tc">{$v.value}</td>
+    <td>{:msubstr($v['remark'],0,50)}</td>
+    <td class="tc">{:int_str($v['groups'],'CONFIG_GROUPS')}</td>
+
+    <td class="tc">{:int_str($v['status'],'0:false,1:true')}</td>
+    <td>
+       <if condition="allow('Sys/add')">
+       		 <a class="J_open btn btn-blue mrt10" data-url="{:U('edit?id='.$v['id'])}" href="javascript:;">编辑配置</a>
+        </if>
+         <if condition="allow('Sys/add')">
+       		 <a class="J_confirm btn btn-red mrt10" data-url="{:U('delete?id='.$v['id'])}" href="javascript:;">删除配置</a>
+        </if>
+    </td>
+</tr>
+</foreach>
+</block>

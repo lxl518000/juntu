@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>欢迎登录文网卫士未成年人保护系统</title>
+<link href="/Public/images/favicon.ico" rel="shortcut icon" />
+<link href="/Public/agent/css/login.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="/Public/js/jquery.js" ></script>
+	<script type="text/javascript" src="/Public/js/common.js"></script>
+	<script type="text/javascript" src="/Public/js/CheckForm.js"></script>
+	<script type="text/javascript" src="/Public/Vendor/layer/layer.js"></script>
+</head>
+
+<body style="background-color:#323a4d; height:100%; width:100%; background:url(/Public/agent/img/bg.png) no-repeat; background-size:100% 100%; overflow:hidden">
+<!-- <div class="logintop"> <span>网吧信息登记系统</span>
+  <ul>
+
+  </ul>
+</div> -->
+<div class="loginbody"> <span class="systemlogo"></span>
+  <div class="loginbox loginbox1">
+   <form method="post" id="form1" name="form1"  action="{:U('dologin')}">
+      <ul>
+   		  <li>
+      		  <input name="cellphone" type="text" class="loginphone text" placeholder="手机号" value=""/>
+	      </li>
+	      <li>
+	        <input name="password" type="password" class="loginpwd text" placeholder="密码" />
+	      </li>
+	      <li class="yzm"> <span>
+	        <input name="yzm" type="text" placeholder="验证码" />
+	        </span><img src="{:U('verify')}" id="loginyzm"  onclick="flush(this)";> </li>
+	      <li>
+	      <input name="" type="button" class="loginbtn" value="登录"  onclick="formcheckLogin('form1','{:U('dologin')}','subFun')"  />
+
+  	     <label><a href="{:U('Public/register')}" class="sj_zc">注册</a></label>
+  	     <label><a href="{:U('Public/forget')}" class="sj_zc">忘记密码？</a></label>
+        
+
+    
+     
+         <!--  <label>
+          <input name="" type="checkbox" value="" checked="checked" />
+          记住密码</label>
+       -->
+      </li>
+    </ul>
+    </form>
+    
+  </div>
+</div>
+
+<img src="/Public/agent/img/bg.png" style="position:absolute; top:0; left:0; bottom:0;" height="100%" width="100%">
+</body>
+</html>
+
+
+<script type="text/javascript">
+
+
+document.onkeydown = function(e){ 
+    var ev = document.all ? window.event : e;
+    if(ev.keyCode==13) {
+    	formcheckLogin('form1','{:U('dologin')}','subFun')
+	/* 	if($('input[name="username"]').val()!='' && $('input[name="password"]').val()!=''){
+			// formchecklogin('form1','{:U('userlogin')}','subFun');
+			//formcheck('form1','{:U('login')}','subFun');
+		} */
+     }
+}
+function subFun(status,info,data){
+	if(status == 1){
+		 document.location="{:U('Index/index')}";
+		 return;
+		// UsubFun(true,info,function(){ document.location="{:U('Index/index')}"; },"登录成功")
+	  }
+}
+
+function flush(obj){
+	var url = "{:U('verify')}&t="+Math.random();
+	$(obj).attr('src',url);
+}
+	
+
+
+	function getCookie(name) 
+	{ 
+	    var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+	 
+	    if(arr=document.cookie.match(reg))
+	 
+	        return unescape(arr[2]); 
+	    else 
+	        return null; 
+	} 
+
+	function setCookie(name,value) 
+	{ 
+	    var Days = 30; 
+	    var exp = new Date(); 
+	    exp.setTime(exp.getTime() + Days*24*60*60*1000); 
+	    document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString(); 
+	} 
+	
+	
+	
+	
+	
+	
+</script>

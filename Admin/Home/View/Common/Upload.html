@@ -1,0 +1,38 @@
+           <div class="form-group ">
+                           		<label class="col-sm-3 control-label">缩略图：</label>
+                           	  <div class="col-sm-8" style='padding-left:5px;'>
+                            	 <button class="btn btn-success " type="button" onclick="webupload()"><i class="fa fa-upload"></i>&nbsp;&nbsp;<span class="bold">上传缩略图</span>
+                      			</button>
+                      			<div class="showstr" style='width:100%'>
+                      			
+                      			</div>
+                             </div>
+                             
+                             <input type="hidden" name="pic" value="{$list.pic}">
+                          </div>
+                          
+                            <script>
+	                          function webupload(){
+	                        	    var url = '{:U('Public/webupload')}';
+	                        	  	var pic = $('input[name="pic"]').val(); 
+	                        		var url = url+"?pic="+pic;
+	                        	
+	                        	  	layer.open({
+	                      			  type: 2,
+	                      			  area: ['80%','80%'],
+	                      			  title : '选择缩略图',
+	                      			  fix: false, //不固定
+	                      			  maxmin: true,
+	                      			  content: url
+	                      			});
+	                          }
+	                          
+	                          function setThumb(showstr,thumb){
+	                        	  $('input[name="pic"]').val(thumb);
+	                        	  $('.showstr').html(showstr);
+	                          }
+	                          
+	                          </script>
+	                          
+	                          
+	                          

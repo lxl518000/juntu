@@ -1,0 +1,303 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>年会抽奖</title>
+<link rel="stylesheet" href="/Public/active/css/base.css">
+<!--[if lte IE 6]>
+<script type="text/javascript" src="js/png.js"></script>
+<![endif]-->
+<style>
+
+.sp_vi{ position: absolute; top: 399px; width: 460px; left: 50%;margin-left: -230px;  z-index: 10; height: 262px;padding:0;}
+#ul1{position:relative; overflow: hidden;}
+ul.tx_img{width:1122px;}
+ul.sul li{ width: 550px;}
+ul.sul li:nth-child(odd){margin-right:20px;}
+#ul1 li{z-index:10;width:65px;height:65px;position:relative;}
+/*ul.tx_img li{ background: url("/Public/active/img/bg.jpg"); width: 550px; height: 122px;}*/
+
+
+ul.tx_img li:nth-child(39){ margin-right: 462px;}
+ul.tx_img li:nth-child(49){ margin-right: 462px;}
+ul.tx_img li:nth-child(59){ margin-right: 462px;}
+ul.tx_img li:nth-child(69){ margin-right: 462px;}
+.qd_title{ width: 1122px; background: none; margin-top: 120px;}
+.scroll{top:15px;left:50px;;width:1052px;height:125px;}
+.scroll ul{height:125px;overflow:hidden;width:1000px;}
+.scroll li{width:1000px;height:125px;}
+.scroll li .sdiv{width:450px;float:left;}
+.scroll li .sdiv img{margin:25px 10px;float:left; box-shadow: 0 0 5px rgba(0, 0, 0, .3); float: left; border-radius: 100%;}
+.sspan{ font-size: 16px;ont-weight: bold;color: #ffc7cb; display:block;text-align:left;width:330px;word-break:break-all;margin-top:20px;}
+.sb{ font-size: 16px; font-weight: bold; color: #ffc7cb;display: block;}
+.si{font-size: 14px;display: block;color: #ef7b88;overflow: hidden;height: 48px;line-height:22px;}
+.rt_li{top:120px;}
+
+
+
+
+.u-flyer{display: block;width: 50px;height: 50px;border-radius: 50px;position: fixed;z-index: 9999;}
+.swiper-slide ul li{ float: left; }
+.swiper-slide ul li{width: 525px; height: 100px;padding:22px  0 0 25px;}
+.swiper-slide ul{ background:none; border:none;box-shadow:none; padding-top: 13px; height:122px;  width: 1122px;}
+.swiper-slide ul li span{ width:420px;font-size:14px;}
+.swiper-slide ul li span i{ font-size:14px;color:#ffc7cb}
+</style>
+</head>
+<script src="/Public/active/js/jquery.min.js"></script>
+
+
+<body>
+
+<div class="rt_li" id="contrast">
+         <ul>
+			<li><a href="{:U('sign')}" id="btn3"  class="a_hover">签到墙</a></li>
+			<li><a href="{:U('introduce')}" id="btn2">抽奖规则</a></li>
+			<li><a href="{:U('luckdraw')}" id="btn1" >下一轮抽奖</a></li>
+         </ul>
+ </div>
+
+<div style='position:absolute;top:0;left:0;z-index:9999; background:#fff'>
+
+</div>
+
+
+<div class="mian">
+ <include file="Public/flash"/>
+  <div class="qd_title" >
+  		<div class="scroll swiper-slide">
+  			<ul class='sul'>
+			<volist name='ulist' id="vo1">	
+               <li>
+			    	 <img src="{$vo1['pic']}" width="50" height="50"><span><b>{$vo1['realname']}</b><i>{$vo1['blessing']|default='祝文网亿联蒸蒸日上'}</i></span>
+			  </li>	
+			</volist>
+		  </ul>
+
+  		</div>
+  </div>
+  <ul id='ul1' class="tx_img">
+	<for start='0' end="125">	  	
+      <li class='txli'><i><img class='simg'  style='width:60px;height:60px;'  data-ok='0' data-uid='0' src="/Public/active/img/tx_img.png"></i></li>
+	</for>
+  </ul>
+
+  <div class="sp_vi">
+	  <video src="http://127.0.0.1/nianhui.mp4"  autoplay="autoplay" loop="loop" width='458px' height='262px'></video>
+  </div>
+  <div class="barrage">
+    <div class="screen">
+      <div class="mask"> 
+      <!--内容在这里显示--> 
+      </div>
+    </div>
+  <!--Send Begin-->
+  <!--Send End--> 
+  </div>
+  
+  
+  	<div class="m-sidebar" >
+			<i id="end"></i>
+	</div>
+  
+
+<script src="/Public/active/js/jquery.fly.min.js"></script>
+<script>
+
+var alluser = {$allUser};
+
+function sfly(obj){
+	var obj = $(obj);
+	var offset = $("#end").offset();  //结束的地方的元素
+	
+	var img = obj.find('.simg').attr('src');
+	
+	var flyer = $('<img class="u-flyer" src="'+img+'">');
+	flyer.fly({
+		start: {
+			left: obj.offset().left,
+			top: obj.offset().top,
+		},
+		end: {
+			left: offset.left+10,
+			top: offset.top+10,
+			width: 0,
+			height: 0
+		},
+		onEnd: function(){
+			$("#msg").show().animate({width: '250px'}, 200).fadeOut(1000);
+			this.destory();
+		}
+	});
+}
+
+
+$(function(){
+
+	init();
+	$(".barrage,.s_close").show();
+	setInterval(startDm,1000);
+	
+	setInterval(blessing,2000);
+	$('#ul1 li').on('click',function(){
+		sfly(this);
+	})
+	
+	setInterval(init,1000);
+
+})
+
+
+function blessing(){
+	var sli = $('.sul li').eq(0).clone();
+	//var sli2 = $('.sul li').eq(1).clone();
+	$('.sul li').eq(0).fadeOut('slow',function(){
+		$(this).remove();
+	});
+
+	
+/* 	$('.sul li').eq(1).fadeOut('slow',function(){
+		$(this).remove();
+	}); */
+	$('.sul').append(sli);
+	//$('.sul').append(sli2);
+	$('.sul li').eq(0).fadeIn();
+	//$('.sul li').eq(1).fadeIn();
+	
+}
+
+
+
+//签到用户点亮图标
+function init(){
+	var signUser = $.getJSON("{:U('Public/getSign')}",
+			function(res){
+			if(res){
+				$(res).each(function(i){
+					//console.log(res[i]);
+					var u = res[i];
+					uinfo = alluser[u];
+					if(uinfo){
+						$('.simg').eq(i).prop('src',uinfo['pic']).prop('title',uinfo['realname']+":"+uinfo['blessing']).data('uid',uinfo['username']).data('ok',1);
+						
+					}
+					//console.log(uinfo);
+						}) 
+				}
+			}
+	); 
+}
+
+
+
+
+//轮播弹幕
+function startDm(){
+	var dm = $.getJSON("{:U('Public/getDm')}"
+			,function(res){
+				if(res){
+					$(res).each(function(i){
+						var text = res[i]['c'];
+						var user = res[i]['n'];
+						if(alluser[user]){
+							var img = alluser[user]['pic'];
+							var _lable = $("<div class='dm_title' style='right:40px;top:30px;opacity:1;color:;z-index:999;position:absolute;height:55px;overflow:hidden;"+getRandomColor()+";'><img src='"+img+"' width='50' height='50' /><b>"+text+"</b></div>");
+							$("body").append(_lable.show());
+							init_barrage(_lable);
+						}
+					})	
+				}
+			}
+	);
+	
+	
+/* 	var text = "我是弹幕我是弹幕我是弹幕我是弹幕11111";
+	var _lable = $("<div class='dm_title' style='right:40px;top:30px;opacity:1;color:;z-index:999;position:absolute;height:55px;overflow:hidden;"+getRandomColor()+";'><img src='/Public/active/img/tx_img.jpg' width='50' height='50' /><b>"+text+"</b></div>");
+	$("body").append(_lable.show());
+	init_barrage(_lable); */
+}
+
+//初始化弹幕技术
+function init_barrage(obj){
+		var _top = 0;
+		var _this = $(obj);
+		var _left = $(window).width()//浏览器最大宽度，作为定位left的值
+		var _height = $(window).height();//浏览器最大高度
+		_top = Math.random()*_height;
+		if(_top >= (_height -130)){
+			_top = 0;
+		}
+		var twidth = $(obj).width();
+		_this.css({left:_left,top:_top,color:getRandomColor()});
+		//定时弹出文字
+		var time = 20000;
+		 if(_this.index() % 2 == 0){
+			time = 25000;
+		} 
+		_this.animate({left:'-'+twidth+'px'},time,function(){
+			_this.remove();
+		});
+}
+//获取随机颜色
+function getRandomColor(){
+	
+	var color=['#72fdff','#ffee31','#f87015','#8487ff','#39f54a','#e450ed','#ff4f5b'];
+	//var color=['#339966'];
+	return color[Math.floor(color.length*Math.random())];
+} 
+
+
+
+
+
+function getStyle(obj,attr){
+		if(obj.currentStyle){
+			return obj.currentStyle[attr]
+		}else{
+			return getComputedStyle(obj,false)[attr];
+		}
+	}
+
+
+
+function startMove2(obj,json,fn){
+	clearInterval(obj.timer);
+	obj.timer=setInterval(function(){
+		var iCur=0;
+		var bStop=true;
+		for( attr in json){
+				if(attr=='opacity'){
+					iCur=parseInt(parseFloat(getStyle(obj,attr))*100);
+				}else{
+					iCur=parseInt(getStyle(obj,attr));
+				}
+				var iSpeed=(json[attr]-iCur)/8;
+				iSpeed=iSpeed>0?Math.ceil(iSpeed):Math.floor(iSpeed);
+				//检测停止
+				if(iCur!=json[attr]){
+					bStop=false;
+				}
+				if(attr=='opacity'){
+					obj.style.filter='alpha(opacity:'+(iCur+iSpeed)+')';
+					obj.style.opacity=(iCur+iSpeed)/100
+				}else{
+					obj.style[attr]=iCur+iSpeed+'px';
+				}
+				
+			}
+			if(bStop){
+				clearInterval(obj.timer);
+					if(fn){
+					fn();
+					}
+			}
+		},30)
+}
+
+
+</script> 
+  
+</div>
+<img src="/Public/active/img/bg.jpg" style="position:absolute; top:0; left:0; bottom:0;" height="100%" width="100%">
+</body>
+</html>

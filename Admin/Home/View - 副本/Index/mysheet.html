@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="__PUBLIC__/Css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="__PUBLIC__/Css/valide.css" type="text/css" />
+    <link rel="stylesheet" href="__PUBLIC__/Admin/admin.css" type="text/css" />
+    <link rel="stylesheet" href="__PUBLIC__/Css/iconfont.css" type="text/css" />
+    <script type="text/javascript" src="__PUBLIC__/jquery.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Vendor/layer/layer.js"></script>
+<title>提示信息</title>
+<style>
+.summary{margin-bottom:10px;padding:5px;border-bottom:1px dashed #ddd;line-height:20px;}
+.summary a{color:red;}
+ul{width:340px; padding:5px;font-size:12px;}
+ul li{line-height:22px;}
+ul li span{padding: 0 5px;}
+ul li a{color:red;margin:0 10px; font-size:12px;}
+</style>
+</head>
+<body>
+<div class="summary">您尚有
+<a href="{:U('Sheet/my')}" target="frame">{$list['unsure']|default='0'}</a>例待确认
+<a href="{:U('Sheet/my',array('status'=>1))}" target="frame">{$list.undos|default='0'}</a>例未完结
+<a href="{:U('Sheet/my',array('status'=>3))}" target="frame">{$list.undate|default='0'}</a>例定期回访工单
+</div>
+<span>最新待处理工单</span>
+<ul>
+
+<volist name='new' id='vo'>
+
+<li><a href="javascript:void(0)" class='J_open' data-area="80%,80%" data-url="{:U('Sheet/detail',array('id'=>$vo['wid']))}" target="frame">{$vo.op}</a></li>
+</volist>
+
+
+</ul>
+<script>
+	//绑定弹层按钮
+	$('.J_open').on('click',function(e){
+		
+		var url=$(this).data('url');
+		
+		var	title=$(this).text();
+		var sindex = layer.load(2);
+	
+		
+		_area =  ['700px','550px'];
+		if($(this).data('area')){
+			_arr = $(this).data('area').split(',');
+		
+			$(_arr).each(function(i){
+				_area[i] = _arr[i];
+			})
+		}
+
+		parent.layer.open({
+			  type: 2,
+			  area: _area,
+			  title : title,
+			  fix: false, //不固定
+			  maxmin: true,
+			  content: url
+			});
+		layer.close(sindex);
+		
+	})
+	
+</script>
+</body>
+</html>

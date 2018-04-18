@@ -1,0 +1,35 @@
+ <div class="ma_lf">
+    <div class="warp_lf">
+      <div class="logo"><img src="/Public/young/img/logo.png"></div>
+      <div class="nav">
+        <ul>
+          <li><a href="{:U('Index/index')}" <eq name='controname' value='Index'>  class="cusse"</eq> ><i class="iconfont">&#xe608;</i>未成年人关注列表</a></li>
+          <li><a href="{:U('Notice/index')}"<eq name='controname' value='Notice'>  class="cusse"</eq>> <i class="iconfont">&#xe604;</i>未成年人上网提醒</a></li>
+          <li><a href="{:U('Block/index')}" <eq name='controname' value='Block'>  class="cusse"</eq>><i class="iconfont">&#xe603;</i>未成年人上网阻断</a></li>
+          <li><a href="{:U('Place/index')}" <eq name='controname' value='Place'>  class="cusse"</eq>><i class="iconfont">&#xe601;</i>未成年人网场所导航</a></li>
+          <li><a href="{:U('Census/index')}" <eq name='controname' value='Census'>  class="cusse"</eq>><i class="iconfont">&#xe602;</i>未成年人上网统计</a></li>
+          <li><a href="{:U('User/index')}" <eq name='controname' value='User'>  class="cusse"</eq>><i class="iconfont">&#xe60b;</i>个人中心</a></li>
+          <li><a href="{:U('Finance/index')}"  <eq name="controname" value='Finance'>class="cusse" </eq>><i class="iconfont">&#xe60c;</i>账务明细</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="v_cent"><i class="clock" id="icon-clock"></i></div>
+  </div>
+  
+  
+    <script>
+  $("#icon-clock").toggle(
+	  function () {
+		  $('.warp_lf').css('width',0);
+		  $('.warp_fr').css('margin-left',0);
+		  $('.clock').css('background-position','-9px 0');
+	  },
+	  function () {
+		  $('.warp_lf').css('width','260px');
+		  $('.warp_fr').css('margin-left','280px');
+		  $('.clock').css('background-position','0');
+		
+	  }
+	);
+	
+	</script>

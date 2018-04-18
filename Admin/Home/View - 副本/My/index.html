@@ -1,0 +1,41 @@
+<extend name="Common/form-ajax" />
+<block name='form'>
+        <tr>
+            <td width="100px;" style="text-align:right">用户名：</td>
+            <td>{$list.realname}</td>
+        </tr>
+        <tr>
+            <td style="text-align:right">电话：</td>
+            <td>{$list.mobile}</td>
+        </tr>
+        <tr>
+            <td style="text-align:right">账户等级：</td>
+            <td>{$list['rolename']}</td>
+        </tr>
+        <tr>
+            <td style="text-align:right">所属部门：</td>
+            <td>{$list.branch|default='-'}</td>
+        </tr>
+        <tr>
+            <td style="text-align:right">职级：</td>
+            <td>{$role[$list['level']]|default='-'}</td>
+        </tr>
+        <tr>
+            <td style="text-align:right">上次登录时间：</td>
+            <td>{$list.logintime}</td>
+        </tr>
+        <tr>
+            <td style="text-align:right">上次登录IP：</td>
+            <td>{$list.loginip}</td>
+        </tr>
+        <tr>
+            <td style="text-align:right">登录次数：</td>
+            <td>{$list.logins}</td>
+        </tr>
+        <tr>
+            <td style="text-align:right">操作：</td>
+            <td><a class="J_open btn btn-blue mrt10" data-url="{:U('edit')}">修改密码</a></td>
+        </tr>
+</block>
+
+

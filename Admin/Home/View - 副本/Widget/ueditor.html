@@ -1,0 +1,22 @@
+<script src="/Public/Vendor/ueditor/ueditor.config.js"></script>
+<script src="/Public/Vendor/ueditor/ueditor.all.min.js"></script>
+<script type="text/plain" id="editor_container" name="{$name|default='content'}">
+{$content|htmlspecialchars_decode}
+ </script>
+						
+<script type="text/javascript">
+
+var editor_a = UE.getEditor('editor_container',{
+				serverUrl: '{:U("Index/server")}',
+				initialFrameWidth :{$width|default=1000}, //初始化编辑器宽度，默认1000
+				initialFrameHeight :{$height|default=300}, //初始化编辑器高度，默认320
+				wordCount : false,
+				elementPathEnabled :false,
+				plugins: "charmap",
+				 allow_resize: "both",
+				 allow_toggle: false,
+				 charmap_default: "arrows" 
+				}
+		);
+
+</script>

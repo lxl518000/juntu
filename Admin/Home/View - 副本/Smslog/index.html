@@ -1,0 +1,37 @@
+<extend name="Common/list-base" />
+
+ <block name="action">
+ 
+ </block>
+
+<block name="search">
+    <div class="input-group">
+        <span class="text-icon">搜索</span><input type="text" placeholder="用户名查询" value="{$_REQUEST['username']}" name="username" >
+    </div>
+     <div class="input-group">
+        <span class="text-icon">搜索</span><input type="text" placeholder="手机号查询" value="{$_REQUEST['phone']}" name="phone" >
+    </div>
+</block>
+
+<block name="list">
+<tr>
+	<th>id</th>
+    <th >手机号码</th>
+    <th>短信内容</th>
+    <th>发送时间</th>
+    <th>发送人</th>
+</tr>
+<foreach name="list" item="v">
+<tr>
+	<td>{$v.id}</td>
+    <td>{$v.phone}</td>
+    <td>{$v.content}</td>
+    <td>{$v.addtime}</td>
+    <td>{$v.username}</td>
+   
+   
+</tr>
+</foreach>
+
+</block>
+

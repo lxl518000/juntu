@@ -1,0 +1,47 @@
+<extend name="Common/list-tree" />
+<block name="batch">
+    <div class="input-group">
+        <span class="text-icon"> 批 量 </span>
+        <select name="batch">
+            <option value="sort">排序</option>
+        </select>
+    </div>
+</block>
+<block name="action">
+<if condition="allow(CONTROLLER_NAME.'/add')">
+   <a class="J_open btn btn-green btn-big mrt10"  data-area="80%,70%"   data-url="{:U('add',array('type'=>$_REQUEST['type']))}" href="javascript:;">添加</a>
+</if>
+
+
+</block>
+
+<block name="list">
+    <tr>
+        <th width="50" class="tc">排序</th>
+        <th>标题</th>
+        <th>关键字</th>
+        <th>内容</th>
+        <th>图片</th>
+        <th>添加时间</th>
+         <th>操作</th>
+    </tr>
+    <foreach name="list" item="vo">
+    <tr id="{$vo.id}" pId="{$vo.pid}" >
+       <td>{$vo.id}</td>
+        <td>{$vo.b_title}</td>
+        <td>{$vo.b_keyword}</td>
+        <td>{$vo.content|strip_tags}</td>
+       <td class="tc"><notempty name='vo.b_path'><img style='max-height:60px;' src="{$vo.b_path}"></notempty></td>
+        <td>{$vo.b_time|date='Y-m-d H:i',###}</td>
+        <td>
+           <if condition="allow('Sysmenu/edit')">  
+           		 <a class="J_open btn btn-blue mrt10"  data-area="80%,70%"  data-url="{:U('read',array('id'=>$vo['id']))}" href="javascript:;">编辑</a>
+           </if>
+            <if condition="allow('Sysmenu/delete')"> 
+           		 <a class="J_confirm btn btn-red mrt10" data-url="{:U('delete')}&id={$vo.id}" href="javascript:;">删除</a>
+            </if>
+        </td>
+    </tr>
+    </foreach>
+       
+</block>

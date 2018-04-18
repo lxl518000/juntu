@@ -1,0 +1,62 @@
+<script>
+	 var AREA_URL = "{:U('Index/getAreaChildren')}";
+</script>
+
+ <tr>
+        <td  class="tr" >选择区域</td>
+        <td  class="tl" >
+	        <li style="float:left;padding-left:12px;">
+        <select class="select2" name="province" id="province" onChange="getChildrenS(this.value,'city')">
+        <empty name="CityList">
+        	<option value="">全部</option> 
+        </empty>	
+        	<volist name="ProvinceList" id="vo">
+              <option value="{$vo.RegionCode}" <php> if(strpos($RegionCode,$vo['RegionCode']) === 0) echo "selected";</php> >{$vo.RegionName}</option>
+            </volist> 
+        </select>
+         </li>   
+           <li style="float:left;">
+        <select class="select2" name="city" id="city" onChange="getChildrenS(this.value,'country')"> 
+          <php>
+       	if(count($CityList)!=1)
+       	echo '<option value="">全部</option>';
+     	 </php>
+        	  <volist name="CityList" id="vo">
+              <option value="{$vo.RegionCode}" <php> if(strpos($RegionCode,$vo['RegionCode']) === 0) echo "selected";</php> >{$vo.RegionName}</option>
+             </volist>    	
+        </select>
+        </li> 
+      <li style="float:left;">
+        <select class="select2" name="country" id="country"> 
+       <php>
+       	if(count($CountryList)!=1)
+       	echo '<option value="">全部</option>';
+      </php>
+        	<volist name="CountryList" id="vo">
+              <option value="{$vo.RegionCode}" <php> if(strpos($RegionCode,$vo['RegionCode']) === 0) echo "selected";</php> >{$vo.RegionName}</option>
+             </volist> 
+        </select>
+       </li>
+       <li style="float:left;display:{$barShow}" class="barHidden">
+       		网吧编号：<input type='text' class="dfinput" name="BarCode" id="barCode"/>
+       </li>
+        </td>
+      </tr>
+
+      <script>
+		$('.tablelist tbody tr:odd').addClass('odd');
+		$('#country').change(function(){
+
+			val = $('#country').val();
+			if(val){
+				$('.barHidden').show();
+			}else{
+				$('.barHidden').hide();
+			}
+		});
+		$('#province,#city').change(function(){
+			$('.barHidden').hide();
+			$('.routerHidden').hide();
+			$('#barCode').val('');
+		});	
+      </script>

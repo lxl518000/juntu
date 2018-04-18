@@ -1,0 +1,89 @@
+<extend name="Common/form-ajax" />
+<block name="form">
+	
+   
+
+    <tr>
+        <th>公司名称:</th>
+        <td>
+        	<eq name='vo.isroot' >
+	            <select id="InputType" name="cid" tip="请选择公司">
+	            	<volist name='company' id='vo'>
+						<option value="{$vo.id}" <eq name='list.cid' value="$vo.id">selected</eq>>{$vo.name}</option>
+					</volist>
+				</select>
+             </eq>
+            
+  	 </td>
+    </tr>
+     <tr>
+        <th>游戏名称:</th>
+        <td>
+            <input type="text" class=" input-xlarge" name="name" value="{$list.name}"   datatype="*" errormsg="请输入游戏名称">
+  	 </td>
+    </tr>
+        <tr>
+        <th>游戏进程 :</th>
+        <td>
+            <input type="text" class=" input-xlarge" name="process" value="{$list.process}"  datatype="*" errormsg="请输入进程名称" >
+  	 </td>
+    </tr>
+       <tr>
+        <th>游戏路径 :</th>
+        <td>
+            <input type="text" class=" input-xlarge" name="path" value="{$list.path}"  datatype="*" errormsg="请输入游戏路径" >
+  	 </td>
+    </tr>
+     <tr>
+        <th>进程 md5:</th>
+        <td>
+            <input type="text" class=" input-xlarge" name="pmd5" value="{$list.pmd5}"  datatype="*" errormsg="请输入进程md5" >
+             <span class="Validform_checktip"></span>
+  	 </td>
+    </tr>
+    <tr>
+        <th>备注:</th>
+        <td>
+           <textarea style='width:300px;height:50px;' name='mark'>{$list.mark}</textarea>
+  	 </td>
+    </tr>
+      
+   <notempty name='list'>
+  	 <tr>
+        <th>授权码:</th>
+        <td>
+           <textarea style='width:300px;height:100px;' readonly id="fe_text"> {$list.scode}</textarea>
+           	<input type='button' class='search_button1' id='copy' value='复制授权码' data-clipboard-target="fe_text"> 
+  	 </td>
+    </tr>
+    </notempty>
+  
+    <tr>
+       	<th></th>
+       	<notempty name='list'>
+       			<input type='hidden' name='id' value="{$list.id}">
+       	 	<td><input type="submit" id="btn_sub" class="btn-big btn-blue" value="修改"></td>
+       	 <else/>
+       	  <td><input type="submit" class="btn-big btn-blue" value="添加"></td>
+       	</notempty>
+        </tr>
+        
+           <script type="text/javascript" src="/Public/Vendor/zeroclipboard/ZeroClipboard.js"></script>
+        
+        <script>
+        
+    	var clip = new ZeroClipboard( document.getElementById("copy"), {
+		  		  moviePath: "/Public/Vendor/zeroclipboard/ZeroClipboard.swf"
+		  		} );
+		  	
+		  	// 复制内容到剪贴板成功后的操作
+		  	clip.on( 'complete', function(client, args) {
+		  		layer.tips('复制成功:'+args.text, $('#copy'), {
+		  		    tips: [1, '#3595CC'],
+		  		    time: 4000
+		  		})
+		  	} );
+		  	
+        </script>
+     
+</block>

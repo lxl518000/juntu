@@ -1,0 +1,284 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>首页</title>
+
+<!--[if lte IE 6]>
+<script type="text/javascript" src="js/png.js"></script>
+<![endif]-->
+<script type="text/javascript" src="__PUBLIC__/jquery.js"></script>
+<link rel="stylesheet" href="/Public/random/css/index.css">
+<link rel="stylesheet" href="/Public/random/css/base.css">
+<!--<script type="text/javascript" src="/Public/js/jquery1.11.1.js" ></script>-->
+<script type="text/javascript" src="/Public/Vendor/layer/layer.js"></script>
+
+<style>
+body,html{min-width:950px;}
+.btn{
+	 float: right;
+    display: block;
+    background: #ff5c5c;
+    height: 36px;
+    width: 80px;
+    border-radius: 3px;
+    margin:6px 11px;
+	cursor:pointer;
+    text-align: center;
+    line-height: 36px;
+    color: #fff;
+}
+.chaffle{transition:all .5s ease;}
+.showdetail{margin-left:5px;color:#009f95;font-size:12px;}
+</style>
+</head>
+<body>
+
+
+   <div class="n_mian">
+       <div class="r_cont">
+       
+       <input type='hidden' name='can' value="{$can}"/>
+          <div class="r_title"><b></b><span>场所抽取--当前设定场所{$num}个</span><a href="javascript:void(0)"  id="btnbar" onclick="dostart()">开始</a></div>
+          <ul class="r_list plist">
+          <for start="0" end="$num">
+			<li ><i class="iconfont">&#xe60f;</i><a href="#" class="chaffle"  data-id="">等待抽取</a></li>
+			</for>
+          </ul>
+       </div>
+       <div class="r_cont">
+          <div class="r_title ry_color"><b></b><span>人员抽取--当前设定{$num}组</span><a href="javascript:void(0)"  id="btnuser" onclick="ustart()" >开始</a></div>
+          <ul class="r_list ulist">
+            <for start="0" end="$num">
+			<li ><i class="iconfont">&#xe606;</i><a href="#" class="uchaffle"  data-id="">等待抽取</a></li>
+			</for>
+          </ul>
+       </div>
+       	<div class='confirm' style='position:fixed;top:40%;right:10px'>
+	
+		<butto type='button' class='btn' id='btnuser' onclick="finish()" >抽取完成</button>
+	</div>
+   
+   </div>
+   
+
+   
+
+<!--<php>dump($_REQUEST['ptypeids']);</php>-->
+</body>
+
+
+<script>
+
+shuffle_timer = '';
+randbar = '';
+
+shuffle_utimer = '';
+randuser = '';
+
+
+redayB = 0;
+redayU = 0;
+
+  function dostart(){
+		var geturl = "{:U('getBarRand')}&unum={$_REQUEST['gnum']}&pnum={$_REQUEST['num']}&oid={$_REQUEST['oid']}&ptypeid={$ptypeid}&bid={$_REQUEST['bid']}&{$query}";
+		$.ajax({
+			   type: "get",
+			   url: geturl,
+			   async: false,
+			  // data: "name=John&location=Boston",
+			   success: function(data){
+					randbar = data.list;
+					oknum = data.ok;
+			   }
+			});
+		 
+		if(oknum<=0){
+			layer.msg('暂无符合抽取条件的场所！');
+			return;
+		}
+		
+		 $('#btnbar').html('结束').attr('onclick','doend()');
+		
+		var len = oknum-1;
+		console.log(len);
+		$('.ulist li:gt('+len+')').remove();
+		$('.plist li:gt('+len+')').remove();
+		shuffle_timer =  setInterval(function() {
+				$('.chaffle').each(function(i){
+	 			var _this = this ;
+	 			var $this = $(this);
+	 			$this.next('.showdetail').remove();
+	 			var $text = $this.text();
+	 			var shuffleStr = '';
+	 			len = randbar.length-1;
+        		 var id = Math.ceil(Math.random()*len);
+	 			str = randbar[id].name
+				 	
+	 			$this.html(str);
+	 		})
+ 	     }, 30);
+  }
+ 
+  function doend(){
+	  $('#btnbar').html('开始').attr('onclick','dostart()');
+	 var rsbar = new Array();
+	// console.log(randbar);return;
+	  $(randbar).each(function(i){
+		  if(randbar[i].checked==1){
+			  rsbar.push(randbar[i])
+		  }
+	  })
+	  //console.log(rsbar)
+	 // console.log($('.chaffle').length);return;
+	var noticeFlag = 0;
+	 $('.chaffle').each(function(i){
+		 		 var id = rsbar[i].id;
+				var snotice = rsbar[i].noticed;
+			 	if(snotice==1){
+			 		$(this).css('color','red');
+			 		noticeFlag = 1;
+			 	}else{
+			 		$(this).css('color','green');
+			 	}
+			 	
+		      $(this).text(rsbar[i].name);
+			  $(this).data('id',rsbar[i].id);
+			  $(this).data('name',rsbar[i].name);
+			  $(this).data('snotice',snotice)
+			  $(this).after('<a class="showdetail" href="javascript:void(0)" onclick="showdetail('+rsbar[i].id+')">任务记录</a>');
+		
+	  }	)
+	  
+	  if(noticeFlag == 1){
+		  layer.msg('红色标记的场所在一年之内已经有过2次以上检查，请注意');
+	  }
+
+	
+	  	redayB = 1;
+	  clearInterval(shuffle_timer);
+  }
+  
+  
+  function ustart(){
+	  $('#btnuser').html('结束').attr('onclick','uend()');
+		var geturl = "{:U('getUserRand')}&unum={$_REQUEST['gnum']}&pnum={$_REQUEST['num']}&oid={$_REQUEST['oid']}&gov={$gov}&userid={$_REQUEST['userid']}&utype={$_REQUEST['utype']}";
+		$.ajax({
+			   type: "get",
+			   url: geturl,
+			   async: false,
+			  // data: "name=John&location=Boston",
+			   success: function(data){
+				   randuser = data;
+				  
+			   }
+			});
+		
+	
+		shuffle_utimer =  setInterval(function() {
+				$('.uchaffle').each(function(i){
+	 			var _this = this ;
+	 			var $this = $(this);
+	 			var $text = $this.text();
+	 			len = randuser.length-1;
+      		 var id = Math.ceil(Math.random()*len);
+	 		
+				 str = randuser[id].names
+				 
+	 			$this.html(str);
+	 		})
+	     }, 30);
+  }
+  
+  function uend(){
+	  $('#btnuser').html('开始').attr('onclick','ustart()');
+	  $('.uchaffle').each(function(i){
+		  $(this).text(randuser[i].names);
+		  $(this).data('id',randuser[i].ids);
+		  $(this).data('name',randuser[i].names);
+		
+	  }	)
+	  clearInterval(shuffle_utimer);
+	  redayU = 1;
+  }
+  
+  
+  function showdetail(id){
+	  openurl = "{:U('Place/task')}&placeid="+id;
+	  layer.open({
+		  type: 2,
+		  shade: [0.5, '#393D49'],
+		  shift:3,
+		  //shadeClose: true,
+		  title : '场所任务明细',
+		  area : ['90%','90%'],
+		  fix: false, //不固定
+		  maxmin: true,
+		  content: openurl,
+	}); 
+	
+	  
+  }
+  
+  
+  
+//完成抽取回调主页
+  function finish(){
+  	
+	var barArr = new Array();//网吧返加数组
+	var userArr = new Array();
+  	if( redayB==0 || redayU==0 ){
+  		layer.msg('请先完成网吧和所人员的抽取', {icon: 5});
+  		return;
+  	}
+  	
+  	var snotice = new Array();//网吧颜色数组
+  	
+    $('.chaffle').each(function(i){
+    	var name = $(this).data('name');
+  		var id = $(this).data('id');
+  		var snotice = $(this).data('snotice');
+  		var barinfo = {id:id,name:name,snotice:snotice};
+  		barArr.push(barinfo);
+  		
+    })
+    
+    $('.uchaffle').each(function(i){
+    	var name = $(this).data('name');
+  		var id = $(this).data('id');
+  		var uinfo = {id:id,name:name};
+  		userArr.push(uinfo);
+    })
+  
+
+  	var index = parent.layer.getFrameIndex(window.name);
+  	
+  
+  	var userstr = '';
+  	var barstr = '';
+  	var showstr = '';
+  	$(userArr).each(function(i){
+  		userstr += "<input type='hidden' name='userId[]' value='"+userArr[i].id+"'/>";
+  		userstr += "<input type='text' name='userName[]' value='"+userArr[i].name+"'/>";
+  		showstr += '<tr><td><label><i class="iconfont">&#xe60f;</i>场所名称：</label>'+barArr[i].name+'</td><td><label><i class="iconfont">&#xe606;</i>抽查人员：</label>'+userArr[i].name+'</td></tr>'
+  	});
+  	console.log(userstr);
+  	$(barArr).each(function(i){
+  		barstr += "<input type='text' name='placeId[]' value='"+barArr[i].id+"'/><input type='hidden' name='snotice[]' value='"+barArr[i].snotice+"'>";
+		
+  	})
+   
+  	
+  	parent.$('#penduser').html(userstr);
+  	parent.$('#pendbar').html(barstr);
+  	parent.$('#showtable').html(showstr);
+  	// parent.$('.cm_nex').show();
+  	parent.$('#preview').show();
+  	parent.$('#start').html('重新抽取');
+
+  	
+  	parent.layer.close(index);
+  }
+
+
+</script>

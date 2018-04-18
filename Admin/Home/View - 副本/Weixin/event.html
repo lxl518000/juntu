@@ -1,0 +1,62 @@
+<extend name="Common/list-tree" />
+<block name="batch">
+    <div class="input-group">
+        <span class="text-icon"> 批 量 </span>
+        <select name="batch">
+            <option value="sort">排序</option>
+        </select>
+    </div>
+</block>
+<block name="action">
+<if condition="allow(CONTROLLER_NAME.'/add')">
+                <a class="J_open btn btn-green btn-big mrt10" data-url="{:U('add',array('type'=>$_REQUEST['type']))}" href="javascript:;">添加</a>
+</if>
+
+</block>
+
+<block name="list">
+<form method="post" id="form1" name="form1"  action="{:U('addevent')}">
+     <tbody class="cj_wj">
+    
+          <tr>
+        <td  class="tr" >首次关注说明:</td>
+        <td  class="tl" > 
+          <textarea name="content" style="width:700px;height:100px;border:1px solid #ccc;">{$list.content}</textarea>
+        </td>
+      </tr>
+       <tr>
+        <td  class="tr" >&nbsp;
+        </td>
+        <td  class="tl" > 
+        	 <input type="hidden" name="b_typeid" value="{$typeid}"/>
+        		<empty name="list">
+        			<input name="" type="button" onclick="formcheck('form1','{:U('addevent')}','subFun')" class="btn" value="添加"/>
+        		<else/>
+        			<input name="id" value="{$list.id}" type='hidden'/>
+        			<input name="" type="button" onclick="formcheck('form1','{:U('addevent')}','subFun')" class="btn" value="修改"/>
+        		</empty>
+        	
+                <input name="" type="reset" class="btn" value="重置"/>
+        </td>
+      </tr>
+    </tbody>
+       </form>
+       <script>
+	    // 表单ID,提交处理页面路径,返回成功提交
+	       function formcheck(formid,_url,_subFun){
+	       	$.ajax({
+	       		type:'POST',
+	       		dataType:'json',
+	       		url:_url,
+	       		data:$("#"+formid).serialize(),
+	       		success:function(data){
+	       			layer.msg(data.info);
+	       		}
+	       	});	
+	           return false;
+	       }
+
+	     
+       </script>
+       
+</block>

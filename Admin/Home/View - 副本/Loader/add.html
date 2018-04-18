@@ -1,0 +1,57 @@
+<extend name="Common/form-ajax" />
+<block name="form">
+	
+   
+
+    <tr>
+        <th>版本号:</th>
+        <td>
+            <input type="text" class="input-xlarge" name="ver" value="{$list.ver}" datatype="*" errormsg="请输入版本号">
+             <span class="Validform_checktip"></span>
+            
+  	 </td>
+    </tr>
+    
+    <tr>
+          <th >版本文件:</th>
+          <td  ><input type="text" name="file" readonly  value="{$list.file}" id="fileIdShow2" class='dfinput'  autocomplete="off"  style="float:left;margin-left:12px;width:500px;">
+              <button type="button" id="fileBtn2" class="btn btn-success" style="float:left;margin-right:10px;">选择文件</button>
+             	   <div id="container" style='height:35px;float:left;margin-left:10px;width:100px;'></div>
+          </td>
+       </tr>
+       <taglib name="Home\TagLib\Admin"/>
+         <Admin:plone button="fileBtn2" url="{:U('Loader/uploadPlugin')}&type=2" field="fileId2" callback="callFun" exts='bz2,exe,zip,doc,dat' progress='1' needftp='0'></Admin:plone>
+        <tr>
+        <th >版本MD5:</th>
+        <td  ><input type="text" readonly id="md52" name="md5" class="dfinput fl" value="{$list.md5}"/></td>
+      </tr>
+       
+      
+   
+    <tr>
+        <th>备注:</th>
+        <td>
+           <textarea style='width:300px;height:50px;' name='mark'>{$list.mark}</textarea>
+  	 </td>
+    </tr>
+    
+    
+  
+    <tr>
+       	<th></th>
+       	<notempty name='list'>
+       			<input type='hidden' name='id' value="{$list.id}">
+       	 	<td><input type="submit" id="btn_sub" class="btn-big btn-blue" value="修改"></td>
+       	 <else/>
+       	  <td><input type="submit" class="btn-big btn-blue" value="添加"></td>
+       	</notempty>
+        </tr>
+        
+        <script>
+        function callFun(res){
+        	$('#fileIdShow'+res.type).val(res.result);
+        	$('#md5'+res.type).val(res.normd5);
+        	return;
+        }
+        </script>
+</block>

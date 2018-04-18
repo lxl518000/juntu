@@ -1,0 +1,74 @@
+<extend name="Common/list-base" />
+<block name="action">
+             	<if condition="allow(CONTROLLER_NAME.'/add')">
+              
+                </if>
+               
+</block>
+ 
+<block name="search">
+    <div class="input-group">
+        <span class="text-icon">搜索</span><input type="text" placeholder="兑换码" value="{$_REQUEST['fcode']}" name="fcode" >
+        <span class="text-icon">搜索</span><input type="text" placeholder="呢称查询" value="{$_REQUEST['realname']}" name="realname" >
+         <span class="text-icon">奖品</span>
+		    <select name='pid'>
+		          	<option value='-1'>--选择奖品--</option>
+		          	<option value='0' {$_REQUEST['pid']==0?'selected':''}>未中奖</option>
+		  	   <foreach name="prize" item="v">
+		            <option value="{$key}" <eq name="key" value="$_REQUEST['pid']">selected</eq> >{$v}</option>
+		      </foreach>
+		     
+		    </select>   
+		     <span class="text-icon">课程</span>
+		    <select name='cid'>
+		          	<option value='0'>--选择课程--</option>
+		  	   <foreach name="course" item="v">
+		            <option value="{$key}" <eq name="key" value="$_REQUEST['cid']">selected</eq> >{$v}</option>
+		      </foreach>
+		     
+		    </select>   
+       
+    </div>
+</block>
+
+<block name="list">
+<tr>
+	<th>id</th>
+    <th width="100">呢称</th>
+    <th width="100">头像</th>
+    <th width="100">课程</th>
+    <th>抽奖时间</th>
+    <th>中奖结果</th>
+    <th>兑换/兑换码</th>
+    <th>备注</th>
+    <th>联系人</th>
+    <th>联系方式</th>
+    <th>年级</th>
+    <th>区域</th>
+    <th width="300">操作</th>
+</tr>
+<foreach name="list" item="v">
+<tr>
+	<td>{$v.id}</td>
+    <td>{$v.nickname}</td>
+    <td><img width='30' height='30' src="{$v.headimgurl|getAvatar}"></td>
+    <td>{$v.course}</td>
+    <td>{$v.addtime}</td>
+    <td>{$v.luckres}</td>
+    <td>{$v.convert}</td>
+    <td>{$v.cmark}</td>
+    <td>{$v.name}</td>
+    <td>{$v.contact}</td>
+    <td>{$v.sgrade}</td>
+    <td>{$v.region}</td>
+    <td>
+     	<eq name='v.conflag' value='1'>
+       		 <a class="J_open btn btn-blue mrt10" data-area="900px,600px"  data-url="{:U('give?id='.$v['id'])}" href="javascript:;">兑换</a>
+        </eq>
+       	
+        
+    </td>
+</tr>
+</foreach>
+</block>
+

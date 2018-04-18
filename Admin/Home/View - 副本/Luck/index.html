@@ -1,0 +1,42 @@
+<extend name="Common/list-base" />
+ <block name="action">
+<link rel="stylesheet" href="/Public/random/css/index.css">
+<link rel="stylesheet" href="/Public/random/css/base.css">
+ <style>
+
+ li{float:left;margin-left:10px;line-height:22px;}
+ 
+</style>
+             	<if condition="allow(CONTROLLER_NAME.'/add')">
+               	 <a class="J_open btn btn-green btn-big mrt10" data-area="80%,70%"  data-url="{:U('add')}" href="javascript:;">添加日期设置</a>
+              </if>
+        </block>
+<block name="search">
+   
+    
+</block>
+
+<block name="list">
+<tr>
+       <th class="tc" width="100px">日期</th>
+        <th class="tc" width="">抽奖设置</th>
+        <th class="tc" width="">备注</th>
+</tr>
+ <notempty name='list'>
+          	<volist name='list' id="vo">
+            <tr>
+              <td class="tc">{$vo.sdate}</td>
+             <td class="tc">{$vo.str}</td>
+             <td class="tc">{$vo.remark}</td>
+              <td class="tc">
+             <a class='J_open btn btn-green mrt10'  data-area="80%,70%"   data-url="{:U('edit',array('date'=>$vo['sdate']))}" href="javascript:;">修改</a>
+             <a data-url="{:U('delete',array('id'=>$vo['id']))}" class='J_confirm btn btn-red mrt10' data-title='确定删除吗?'>删除</a>
+             </td>
+            </tr>
+            </volist>
+          
+            </notempty>
+             
+</foreach>
+
+</block>

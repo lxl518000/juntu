@@ -1,0 +1,66 @@
+<layout name="Index/layout" />
+
+<div class="panel-box mtp10 mlf20 mrt20">
+	<div class="tit">系统信息</div>
+	<div class="con">
+		     <div class="wx_cont">
+      <div class="xz_title">
+           <a href="">设置logo</a>
+        </div>
+        <form id="form1">
+
+        <table class="filetable3">
+        <tbody>
+          <tr>
+            <td width="100px;" style="text-align:right" id="choosefile">选择文件：</td>
+            <td>
+            	{:W('Swf/swf',array('url'=>U('Public/upfile')))}
+            </td>
+          </tr>
+       	
+           <tr>
+            <td style="text-align:right">操作：</td>
+            <td><a href="javascript:void(0)" onclick="doimport()" id='doimport' class=' btn btn-green btn-big mrt10'>保存</a> 
+          </tr>
+        </tbody>
+      </table>  
+      </form>
+          
+      </div>
+    </div>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+
+function doimport(){
+	var data = $('#form1').serialize();
+	if(!data){
+		layer.tips('请上传文件',$('#choosefile'));
+	}
+	var sindex = layer.msg('正在上传,请耐心等待', {icon: 16,time:100000});
+	$('#doimport').hide();
+	
+	$.ajax({
+		   type: "POST",
+		   url: "{:U('logo')}",
+		   data: data,
+		   success: function(msg){
+		    if(msg.status==1){
+	    		layer.alert('设置成功',{icon:6});
+	    	}else{
+	    		layer.alert('设置失败：'+msg.info,{icon:5});
+	    	
+	    	}
+			layer.close(sindex);
+		    $('#doimport').show();
+		    	
+		   }
+		});
+	
+}
+	
+
+	
+</script>

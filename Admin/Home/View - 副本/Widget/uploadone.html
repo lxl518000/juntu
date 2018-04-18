@@ -1,0 +1,67 @@
+
+     <input type="text" name="filename" readonly value="" id="filename"   autocomplete="off"  style="float:left;margin-left:12px;margin-right:10px;width:400px;">
+     <input type="hidden" name="{$hidename|default='upfile'}" id="fileId">
+     <button type="button" id="fileBtn" class="btn btn-success" style="float:left">选择文件</button>
+       <div id="container" style='height:35px;float:left;margin-left:10px;width:100px;'>等待上传...</div>
+
+           
+<script type="text/javascript" src="/Public/Vendor/plupload/js/plupload.full.js"></script>
+<link rel="stylesheet" href="/Public/Vendor/plupload/css/progress.css">
+ <script type="text/javascript" src="/Public/Vendor/plupload/js/i18n/zh_cn.js"></script>
+                <script type="text/javascript">
+                    var uploader_fileId = new plupload.Uploader({
+                        runtimes: "html5,html4,flash",
+                        browse_button: "fileBtn",
+                        //container: "container",
+                        max_file_size : "2.5gb",
+                        chunk_size : "2mb",
+                        unique_names : true,  // 上传的文件名是否唯一
+                        multi_selection: "" == "1" ? true : false,
+                        multipart : true,
+                        multipart_params:{},
+                        url : "{$url}",
+                        /*resize : {width : 320, height : 240, quality : 90},*/// 是否生成缩略图（仅对图片文件有效）
+                        flash_swf_url : "/Public/Vendor/plupload/js/plupload.flash.swf",
+                        silverlight_xap_url : "/Public/Vendor/plupload/js/plupload.silverlight.xap",
+
+                        filters:[
+                                {title: "上传文件类型", extensions: "<php>echo $ext;</php>"}
+                        ],
+                        preinit : {
+                            UploadFile: function(up, file) {
+                                up.settings.multipart_params = {sourceName: file.name};
+                            }
+                        },
+
+                        init: {
+                            FilesAdded: function (up, files) {
+                                plupload.each(files, function (file) {                              	
+                                    $("#container").html("<div class=\"progress\"><div class=\"bar\" style=\"width: 1%;height:35px;\"></div></div>");
+                                    uploader_fileId.start();
+                                });
+                            },
+
+                            UploadProgress: function (up, file) { 
+                                
+                            	$(".progress > .bar").css("width", file.percent+"%").html(file.percent);
+                            },
+
+                            Error: function (up, err) {
+                                alert("上传失败:"+err.message);
+                            },
+                            FileUploaded: function (up, file, info) {
+                              res = $.parseJSON(info.response);
+                                $("#filename").val(file.name);
+                               	$(".progress > .bar").html("文件上传成功");
+	                               	<notempty name='callback'>
+	                               		{$callback}(res);
+	                               		<else/>
+	                               		var file = file.info;
+	                            		$('#fileId').val(file);
+	                               	</notempty>
+                            	}
+                            }
+                        });
+                        uploader_fileId.init();
+</script>
+						    

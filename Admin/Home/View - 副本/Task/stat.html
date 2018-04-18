@@ -1,0 +1,103 @@
+
+<extend name="Common/list-base" />
+<block name="action">
+
+</block>
+<block name='search'>
+ <script type="text/javascript" src="__PUBLIC__/Vendor/My97DatePicker/WdatePicker.js"></script>
+    {~W('Region/RegionAddSelect',array('li',0))} 
+	<span class="text-icon">部门</span>
+		{:W('Ztree/getselect',array('radio','depid',$_REQUEST['depid']))}
+	<span>
+		<input name="username" type="text" class="text" placeholder='输入用户名'  value="{$_REQUEST['username']}"/>
+	</span>
+</block>
+<block name="list">
+<tr>
+	
+          <th>用户名</th>
+	        <th>任务总数</th>
+	        <th>已完成</th>
+	        <th>未完成</th>
+			<th>异常数</th>
+			<th>异常比例</th>
+	        <th>联系电话</th>
+	        <th>部门</th>
+	        <th>行政级别</th>
+			<th>区域</th>
+		
+</tr>
+      <notempty name="list">
+    
+     <volist name="list" id="vo">
+      <tr id="tablelist_{$vo.id}">
+        <td>{$vo.username}</td>
+        <td>{$vo.all}</td>
+        <td>{$vo.ok}</td>
+        <td>{$vo.notok}</td>
+		<td>{$vo.abnormal}</td>
+		<td>{$vo.norpro}</td>
+        <td>{$vo.cellphone}</td>
+        <td>{$vo.branch}</td>
+        <td>{$vo.roles}</td>
+	    <td>{:queryFullRegionInfo($vo['region'])}</td>
+	
+
+      </tr>     
+   
+     </volist>
+			<tr id="tablelist_{$vo.id}">
+			<td>汇总</td>
+			<td><php>echo array_sum(array_column($list,'all'));</php></td>
+			<td><php>echo array_sum(array_column($list,'ok'));</php></td>
+			<td><php>echo array_sum(array_column($list,'notok'));</php></td>
+			<td><php>echo array_sum(array_column($list,'abnormal'));</php></td>
+			<td><php>echo array_sum(array_column($list,'norpro')).'%';</php></td>
+			<td>-</td>
+			<td>-</td>
+			<td>-</td>
+		</tr>     
+
+
+     <else/>
+      <tr>
+     	<td colspan='13'>暂无内容</td>
+     	</tr>
+     </notempty>
+    
+     <script type="text/javascript">
+	
+	function feed(id){
+		var url = "{:U('feed')}&id="+id;
+		layer.open({
+		    type: 2,
+		   // shadeClose: true,
+		    //shade: false,
+		    title : '提交调查反馈',
+		    maxmin: true, //开启最大化最小化按钮
+		    shade: [0.5, '#393D49'],
+		   area : ['1000px','550px'],
+		 //  skin: 'layui-layer-rim', //加上边框
+		    content:url
+		});
+	}
+	
+	function show(id){
+		var url = "{:U('show')}&id="+id;
+		layer.open({
+		    type: 2,
+		    //shadeClose: true,
+		    shade: [0.5, '#393D49'],
+		    title : '查看调查反馈',
+		    maxmin: true, //开启最大化最小化按钮
+		   area : ['1000px','550px'],
+		    content:url
+		});
+	}
+	
+	
+</script>
+</block>
+
+
+

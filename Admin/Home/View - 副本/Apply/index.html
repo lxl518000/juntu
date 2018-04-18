@@ -1,0 +1,50 @@
+<extend name="Common/list-base" />
+ <style>
+
+</style>
+      <block name="search">
+    <div class="input-group">
+      <span class="text-icon">搜索</span><input type="text" placeholder="真实姓名查询" value="{$_REQUEST['realname']}" name="realname" >
+    </div>
+  
+</block>
+
+<block name="list">
+<tr>
+       <th class="tc" width="100px">用户id</th>
+        <th class="tc" width="">真实姓名</th>
+        <th class="tc" width="">联系电话</th>
+        <th class="tc" width="">身份证</th>
+         <th class="tc" width="">区域</th>
+        <th class="tc" width="">注册时位置</th>
+        <th class="tc" width="">注册时间</th>
+        <th class="tc" width="">最后登录时间</th>
+
+        <th class="tc" width="">操作</th>
+</tr>
+ <notempty name='list'>
+          	<volist name='list' id="vo">
+            <tr>
+              <td class="tc">{$vo.id}</td>
+             <td class="tc">{$vo.realname}</td>
+             <td class="tc">{$vo.phone}</td>
+             <td class="tc">{$vo.idcard}</td>
+              <td class="tc">{$vo.cityname}</td>
+             <td class="tc">{$vo.address}</td>
+             <td class="tl">{$vo.regtime}</td>
+             <td class="tc">{$vo.lastime}</td>
+      
+              <td class="tc">
+             <a class='J_open btn btn-green mrt10'  data-area="80%,70%"   data-url="{:U('detail',array('id'=>$vo['id']))}" href="javascript:;">详细资料</a>
+             </td>
+            </tr>
+            </volist>
+            <else/>
+            <tr>
+            	<td colspan='7'>暂无记录</td>
+            </tr>
+            </notempty>
+             
+</foreach>
+
+</block>

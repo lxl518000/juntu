@@ -1,0 +1,64 @@
+<extend name="Common/form-ajax" />
+<block name="form">
+	
+	 <tr>
+        <td  class="tr" >标题:</td>
+        <td  class="tl" > 
+        <eq name="type" value="1">
+       		 <input type="text" name="b_title" class="dfinput" value="文本消息" readonly/>
+       		 <else/>
+       		  <input type="text" name="b_title" class="dfinput" value="{$list.b_title}"/>
+       		</eq> 
+        </td>
+      </tr>
+      <tr>
+        <td  class="tr" >关键字:</td>
+        <td  class="tl" > <input type="text" name="b_keyword" class="dfinput" value="{$list.b_keyword}"/></td>
+      </tr>
+      <eq name="type" value="2">
+            <tr>
+          <td  class="tr">缩略图:</td>
+          <td class="tl" ><input type="text" name="b_path"  value="{$list.b_path}" id="fileIdShow2" class='dfinput'  autocomplete="off"  style="float:left;margin-left:12px;width:500px;">
+              <button type="button" id="fileBtn2" class="btn btn-success" style="float:left;margin-right:10px;">选择文件</button>
+             	   <div id="container" style='height:35px;float:left;margin-left:10px;width:100px;'></div>
+            <notempty name='list.b_path'><img width='100' src="{$list.b_path}"></notempty>
+          </td>
+       </tr>
+       <taglib name="Home\TagLib\Admin"/>
+         <Admin:plone button="fileBtn2" url="{:U('Index/upweixin')}&type=2" field="fileId2" callback="callFun" exts='*' progress='1'></Admin:plone>
+     
+        <tr>
+        
+        <td  class="tr" >图片跳转链接:</td>
+        <td  class="tl" > <input type="text" name="b_tourl"  value="{$list.b_tourl}" class="dfinput" /></td>
+      </tr>
+      </eq>
+       <tr>
+        <td  class="tr" >简介:</td>
+        <td  class="tl" > 
+          <textarea name="content" style="width:300px;height:100px;border:1px solid #ccc;">{$list.content}</textarea>
+        </td>
+      </tr>
+    <tr>
+       	<th></th>
+       	  		<input type='hidden' name='b_typeid' value="{$type}"/>
+       	<notempty name='list'>
+       			<input type='hidden' name='id' value="{$list.id}">
+       	 	<td><input type="submit" id="btn_sub" class="btn-big btn-blue" value="修改"></td>
+       	 <else/>
+       	  <td><input type="submit" class="btn-big btn-blue" value="添加"></td>
+       	</notempty>
+        </tr>
+        
+        
+        <script type="text/javascript">
+    	
+    	function callFun(res){
+    		$('#fileIdShow2').val(res.result);
+    		return;
+    	}
+        </script>
+        
+       
+        
+</block>

@@ -1,0 +1,36 @@
+<extend name="Common/div-base" />
+<block name="action">
+
+</block>
+<block name='search'>
+ <script type="text/javascript" src="__PUBLIC__/Vendor/My97DatePicker/WdatePicker.js"></script>
+    {~W('Region/RegionAddSelect',array('li',0))} 
+	<span>
+	<input name="username" type="text" class="text" placeholder='输入用户名'  value="{$_REQUEST['username']}"/>
+	</span>
+	<input type='submit' class='search_button' value='查询'>
+</block>
+<block name="div">
+	<volist name='list' id='vo'>
+		<div class="task_list_t">
+			<ul>
+               <li class="tc">{$vo.name}</li>
+               <li>任务总数:{$vo.all}</li>
+               <li>完成数:{$vo.ok}</li>
+               <li>未完成:{$vo.no}</li>                          
+            </ul>
+            <div class="a_btn"> <a href="{:U('stats')}&rid={$vo['id']}" class="btn1"  >点击查看详情</a></div>
+        
+            
+        </div >
+	</volist>
+ 
+<script>
+    function det(id){
+      
+        var url = "{:U('stats')}&rid="+id;
+        window.location.href=url;
+    }
+        
+</script>
+</block>

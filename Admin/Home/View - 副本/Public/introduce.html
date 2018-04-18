@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>年会抽奖</title>
+<link rel="stylesheet" href="/Public/active/css/base.css">
+<style>
+.rt_li{top:120px;}
+</style>
+</head>
+
+<body>
+<div class="mian">
+  <Div class="cj_txt">
+ <h3>抽奖规则</h3>
+  <span>（1）每名员工在签到时扫描海报上面的二维码，关注文网卫士微信公众号，在1月5日前上传自己自拍照并发送新年祝福语。</span>
+  <span>（2）微信抽奖共有三轮，每轮分别抽取一等奖1人，奖金1000元；二等奖2人，奖金各500元；三等奖3人，奖金各200元。</span>
+  <span>（3）大屏幕滚动时即开始抽奖，主持人喊停时会弹出获奖人信息，屏幕上显示员工头像和祝福语。</span>
+  <span>（4）奖金为现金红包，由主持人邀请嘉宾为幸运儿颁奖。</span>
+  <a href="{:U('luckdraw')}" class="c_jbtn">开始抽奖</a>
+  </Div>
+  <div class="rt_li" id="contrast">
+         <ul>
+          <li><a href="{:U('sign')}" id="btn3">签到墙</a></li>
+          <li><a href="{:U('introduce')}" id="btn2" class="a_hover">抽奖规则</a></li>
+          <li><a href="{:U('luckdraw')}" id="btn1" >下一轮抽奖</a></li>
+        </ul>
+ </div>
+</div>
+<img src="/Public/active/img/bg.jpg" style="position:absolute; top:0; left:0; bottom:0;" height="100%" width="100%">
+</body>
+</html>

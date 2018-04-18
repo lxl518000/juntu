@@ -1,0 +1,50 @@
+<extend name="Common/list-base" />
+<block name="action">
+             	<if condition="allow(CONTROLLER_NAME.'/add')">
+                </if>
+               
+</block>
+ 
+<block name="search">
+    <div class="input-group">
+        <span class="text-icon">搜索</span><input type="text" placeholder="呢称查询" value="{$_REQUEST['realname']}" name="realname" >
+           
+       
+    </div>
+</block>
+
+<block name="list">
+<tr>
+	<th>id</th>
+    <th width="100">呢称</th>
+    <th width="100">性别</th>
+    <th width="100">头像</th>
+    <th>省份</th>
+    <th>城市</th>
+    <th>今日赠送抽奖</th>
+    <th>今日剩余赠送次数</th>
+    <th>最后登录时间</th>
+    <th width="300">操作</th>
+</tr>
+<foreach name="list" item="v">
+<tr>
+	<td>{$v.id}</td>
+    <td>{$v.nickname}</td>
+    <td>{$v['sex']==1?'男':'女'}</td>
+    <td><img width='64' height='64' src="{$v.headimgurl|getAvatar}"></td>
+    <td>{$v.province}</td>
+    <td>{$v.city}</td>
+    <td>{$give[$v['id']]['givenum']|default='0'}</td>
+    <td>{$give[$v['id']]['num']|default='0'}</td>
+    <td class="tc">{$v.lasttime}</td>
+    <td>
+     	<if condition="allow('Wuser/give')">
+       		 <a class="J_open btn btn-blue mrt10" data-area="900px,600px"  data-url="{:U('give?id='.$v['id'])}" href="javascript:;">赠送抽奖次数</a>
+        </if>
+       	
+        
+    </td>
+</tr>
+</foreach>
+</block>
+

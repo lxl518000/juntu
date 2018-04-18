@@ -1,0 +1,50 @@
+<extend name="Common/list-base" />
+ <style>
+
+</style>
+      <block name="search">
+    <div class="input-group">
+        <script type="text/javascript" src="__PUBLIC__/Vendor/My97DatePicker/WdatePicker.js"></script>
+         <span class="text-icon">开始日期</span> <input name="start" type="text" class="dfinput" readonly onclick="WdatePicker({dateFmt:'yyyy-MM-dd',isShowClear:false})" style="width:150px;" value="{$start}"/>
+        <span class="text-icon">结束日期</span> <input name="end" type="text" class="dfinput" readonly onclick="WdatePicker({dateFmt:'yyyy-MM-dd',isShowClear:false,maxDate:'%y-%M-{%d}'})" style="width:150px;" value="{$end}"/>
+    </div>
+  
+</block>
+
+<block name="list">
+<tr>
+       <th class="tc" width="100px">公司</th>
+        <th class="tc" width="">公司名称</th>
+        <th class="tc" width="">评价次数</th>
+        <th class="tc" width="">总体得分</th>
+         <th class="tc" width="">额度匹配</th>
+        <th class="tc" width="">放款速</th>
+        <th class="tc" width="">贷款利率</th>
+        <th class="tc" width="">服务态度</th>
+</tr>
+ <notempty name='list'>
+          	<volist name='list' id="vo">
+            <tr>
+              <td class="tc">
+              <img src="{$cinfo[$vo['cid']]['photo']}" style='max-width:50px;'/>
+              </td>
+             <td class="tc">{$cinfo[$vo['cid']]['name']}</td>
+             <td class="tc">{$vo.usercount}</td>
+             <td class="tc">{$vo.fit1|round=###,2}分</td>
+             <td class="tc">{$vo.fit2|round=###,2}分</td>
+              <td class="tc">{$vo.fit3|round=###,2}分</td>
+             <td class="tc">{$vo.fit4|round=###,2}分</td>
+             <td class="tc">{$vo.fit5|round=###,2}分</td>
+      
+             
+            </tr>
+            </volist>
+            <else/>
+            <tr>
+            	<td colspan='8'>暂无记录</td>
+            </tr>
+            </notempty>
+             
+</foreach>
+
+</block>

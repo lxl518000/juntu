@@ -1,0 +1,52 @@
+<extend name="Common/list-tree" />
+<block name="action">
+<if condition="allow(CONTROLLER_NAME.'/add')">
+                <a class="J_open btn btn-green btn-big mrt10" data-url="{:U('add')}" href="javascript:;">添加</a>
+</if>
+
+</block>
+<block name="batch">
+    <div class="input-group">
+        <span class="text-icon"> 批 量 </span>
+        <select name="batch">
+            <option value="sort">排序</option>
+        </select>
+    </div>
+</block>
+
+<block name="list">
+    <tr>
+        <th width="50" class="tc">ID</th>
+        <th width="200">名称</th>
+        <th width="50" class="tc">描述</th>
+        <th width="50" class="tc">状态</th>
+        <th width="300">操作</th>
+    </tr>
+    <foreach name="list" item="v">
+    <tr id="{$v.id}" pId="{$v.pid}" >
+        <td class="tc"><input class="tc" type="text" name="sort[{$v.id}]" value="{$v.id}" size="1"></td>
+        <td>{$v.title}</td>
+        <td>{$v.remark}</td>
+        <td class="tc">{:int_str($v['status'],'0:false,1:true')}</td>
+        <td>
+	       <if condition="allow('Sysrole/authrule')">
+	        	<neq name="v.isadmin" value='1'>
+	            	<a class="J_open btn btn-deep mrt10" data-area="70%,70%" data-url="{:U('authrule?id='.$v['id'])}" href="javascript:;">授予权限</a>
+	        	<else/>
+	        			 <a class=" btn btn-deep mrt10" href="javascript:;">所有权限</a>
+	          	 </neq>
+	       </if>
+           <if condition="allow('Sysrole/add')">
+         	  <a class="J_open btn btn-green mrt10" data-url="{:U('add?pid='.$v['id'])}" href="javascript:;">添加子角色</a>
+           </if>
+           <if condition="allow('Sysrole/edit')">
+               <a class="J_open btn btn-blue mrt10" data-url="{:U('edit?id='.$v['id'])}" href="javascript:;">编辑角色</a>
+            </if>
+            <if condition="allow('Sysrole/delete')">
+                 <a class="J_confirm btn btn-red mrt10" data-url="{:U('delete?id='.$v['id'])}" href="javascript:;">删除角色</a>
+            </if>
+        </td>
+    </tr>
+    </foreach>
+       
+</block>

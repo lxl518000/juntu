@@ -1,0 +1,54 @@
+<extend name="Common/list-base" />
+ <block name="action">
+ <style>
+
+ 
+</style>
+             	<if condition="allow(CONTROLLER_NAME.'/add')">
+               	 <a class="J_open btn btn-green btn-big mrt10" data-area="80%,70%"  data-url="{:U('add')}" href="javascript:;">添加公司</a>
+              </if>
+        </block>
+<block name="search">
+     <div class="input-group">
+        <span class="text-icon">公司名称</span><input type="text" placeholder="公司名称" value="{$_REQUEST['name']}" name="name" >
+        <span class="text-icon">联系人</span><input type="text" placeholder="联系人" value="{$_REQUEST['user']}" name="user" >
+        <span class="text-icon">联系电话</span><input type="text" placeholder="联系电话" value="{$_REQUEST['phone']}" name="phone" >
+    </div>
+    
+</block>
+
+<block name="list">
+<tr>
+       <th class="tc" width="100px">公司id</th>
+        <th class="tc" width="">公司名称</th>
+        <th class="tc" width="">联系人</th>
+        <th class="tc" width="">联系电话</th>
+        <th class="tc" width="">公司地址</th>
+        <th class="tc" width="">备注</th>
+         <th  class="tc">操作</th>
+</tr>
+ <notempty name='list'>
+          	<volist name='list' id="vo">
+            <tr>
+              <td class="tc">{$vo.id}</td>
+             <td class="tc">{$vo.name}</td>
+             <td class="tc">{$vo.user}</td>
+             <td class="tc">{$vo.phone}</td>
+             <td class="tc">{$vo.address}</td>
+             <td class="tc">{$vo.mark}</td>
+              <td class="tc">
+             <a class='J_open btn btn-green mrt10'  data-area="80%,70%"   data-url="{:U('edit',array('id'=>$vo['id']))}" href="javascript:;">修改</a>
+             <a class='J_open btn btn-blue mrt10'  data-area="80%,70%"   data-url="{:U('user',array('id'=>$vo['id']))}" href="javascript:;">设置管理员</a>
+       		 <a data-url="{:U('delete',array('id'=>$vo['id']))}" class='J_confirm btn btn-red mrt10' data-title='确定删除吗?'>删除</a> 
+             </td>
+            </tr>
+            </volist>
+            <else/>
+            <tr>
+            	<td colspan='4'>暂无记录</td>
+            </tr>
+            </notempty>
+             
+</foreach>
+
+</block>

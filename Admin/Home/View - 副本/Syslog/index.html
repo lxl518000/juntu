@@ -1,0 +1,52 @@
+<extend name="Common/list-base" />
+
+ <block name="action">
+ 
+ </block>
+
+<block name="search">
+    <div class="input-group">
+        <span class="text-icon">搜索</span><input type="text" placeholder="用户名查询" value="{$_REQUEST['username']}" name="username" >
+    </div>
+</block>
+
+<block name="list">
+<tr>
+	<th>id</th>
+    <th >用户</th>
+    <th>操作内容</th>
+    <th>操作时间</th>
+    <th class="tc">操作IP</th>
+    <th width="100" class="tc">操作</th>
+</tr>
+<foreach name="list" item="v">
+<tr>
+	<td>{$v.id}</td>
+    <td>{$v.username}</td>
+    <td>{$v.content}</td>
+    <td>{$v['addtime']|date='Y-m-d H:i:s',###}</td>
+    <td>{$v.ip}</td>
+    <td>        
+    	   <if condition="allow('Sysmenu/edit')">  
+           		 <a class=" btn btn-blue mrt10" onclick="show(this);" data-content="<br/><p style='font-size:14px;padding:5px;width:400px;word-wrap:break-word; line-height:18px;'>内容:{$v.content|htmlspecialchars}<br/><br/>sql:{$v.sqlstr|htmlspecialchars}</p>"  href="javascript:;">查看详情</a>
+           </if>
+	 </td>
+   
+</tr>
+</foreach>
+
+<script type="text/javascript">
+
+	function show(obj){
+		var content = $(obj).data('content');
+		
+		layer.open({
+		    type: 1,
+		    area: ['420px', '240px'], //宽高
+		    content: content
+		}); 
+	}
+	
+</script>
+</block>
+

@@ -1,0 +1,83 @@
+<extend name="Common/form-ajax" />
+<block name='form'>
+        <tr>
+            <td width="100px;" style="text-align:right">用户名：</td>
+            <td>{$list.realname}</td>
+        </tr>
+        <tr>
+            <td style="text-align:right">电话：</td>
+            <td>{$list.phone}</td>
+        </tr>
+        <tr>
+            <td style="text-align:right">身份证：</td>
+            <td>{$list['idcard']}</td>
+        </tr>
+        <tr>
+            <td style="text-align:right">贷款金额：</td>
+            <td>{:int_str($list['money'],'LOAN_MONEY')}</td>
+        </tr>
+          <tr>
+            <td style="text-align:right">贷款周期：</td>
+            <td>{:int_str($list['term'],'LOAN_TERM')}</td>
+        </tr>
+        <tr>
+            <td style="text-align:right">贷款用途：</td>
+            <td>{:int_str($list['useto'],'LOAN_TERM')}</td>
+        </tr>
+        <tr>
+            <td style="text-align:right">所在城市：</td>
+            <td>{:int_str($list['stype'],'WORK_SHEET_TYPE')}</td>
+        </tr>
+        <tr>
+            <td style="text-align:right">职业：</td>
+            <td>{:int_str($list['job'],'LOAN_JOB')}</td>
+        </tr>
+           <tr>
+            <td style="text-align:right">学历：</td>
+            <td>{:int_str($list['education'],'LOAN_EDUCATION')}</td>
+        </tr>
+           <tr>
+            <td style="text-align:right">收入：</td>
+            <td>{:int_str($list['income'],'LOAN_INCOME')}</td>
+        </tr>
+        
+        <tr>
+            <td style="text-align:right">发薪方式：</td>
+            <td>{:int_str($list['incometype'],'LOAN_INCOME_TYPE')}</td>
+        </tr>
+          <tr>
+            <td style="text-align:right">家庭情况：</td>
+            <td>{:int_str($list['marriage'],'LOAN_MERRAGE')}</td>
+        </tr>
+          <tr>
+            <td style="text-align:right">信用卡：</td>
+            <td>{:int_str($list['credit'],'LOAN_CREDIT')}</td>
+        </tr>
+          <tr>
+            <td style="text-align:right">公积金：</td>
+            <td>{:int_str($list['gongjijin'],'LOAN_GONGJIJIN')}</td>
+        </tr>
+          <tr>
+            <td style="text-align:right">社保：</td>
+            <td>{:int_str($list['shebao'],'LOAN_SHEBAO')}</td>
+        </tr>
+           <tr>
+            <td style="text-align:right">是否有车：</td>
+            <td>{:int_str($list['car'],'LOAN_CAR')}</td>
+        </tr>
+           <tr>
+            <td style="text-align:right">是否有房：</td>
+            <td>{:int_str($list['hourse'],'LOAN_HOURSE')}</td>
+        </tr>
+          <tr>
+            <td style="text-align:right">注册时间：</td>
+            <td>{$list.regtime}</td>
+        </tr>
+          <tr>
+            <td style="text-align:right">最后登录时间：</td>
+            <td>{$list.lastime}</td>
+        </tr>
+        
+</block>
+
+

@@ -1,0 +1,193 @@
+[ 2018-04-08T18:34:10+08:00 ] 127.0.0.1 /Home/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-04-08T18:34:14+08:00 ] 127.0.0.1 /Home/Public/login.html?redirect_uri=Lw==
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tb_sys_config` [ RunTime:0.0030s ]
+SQL: SELECT `name`,`value`,`type`,`extra` FROM `tb_sys_config` WHERE ( status=1  )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-04-08T18:34:14+08:00 ] 127.0.0.1 /Home/Public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: key D:\wamp\www\thinker\superdun\Admin\Home\Controller\PublicController.class.php 第 197 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-04-08T18:34:23+08:00 ] 127.0.0.1 /Home/Public/dologin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_admin_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tb_admin_user` WHERE `mobile` = '15527374110' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `tb_admin_user` SET `loginip`='127.0.0.1',`logintime`='2018-04-08 18:34:22',`logins`='165' WHERE `id` = 336 [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `tb_sys_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tb_sys_role` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_sys_menu` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`pid`,`name`,`title`,`icon`,`type` FROM `tb_sys_menu` WHERE `status` = 1 ORDER BY sort desc,id desc  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: len D:\wamp\www\thinker\superdun\Admin\Home\Model\AdminuserModel.class.php 第 105 行.
+SQL: SHOW COLUMNS FROM `tb_sys_log` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\thinker\superdun\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\thinker\superdun\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `tb_sys_log` (`username`,`content`,`sqlstr`,`ip`,`addtime`) VALUES ('liufei(用户ID:336)','登录成功','','127.0.0.1','2018-04-08 18:34:23') [ RunTime:0.0030s ]
+
+[ 2018-04-08T18:34:23+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-04-08T18:34:23+08:00 ] 127.0.0.1 /Home/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-04-08T18:34:25+08:00 ] 127.0.0.1 /Home/Product/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-08T18:34:25+08:00 ] 127.0.0.1 /Home/Cate/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: title D:\wamp\www\thinker\superdun\Admin\Home\Controller\CateController.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `tb_cate` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tb_cate`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\thinker\superdun\Admin\Common\Common\function.php 第 44 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\thinker\superdun\Admin\Common\Common\function.php 第 44 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\thinker\superdun\Admin\Common\Common\function.php 第 44 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\thinker\superdun\Admin\Common\Common\function.php 第 44 行.
+NOTIC: [8] Undefined index: title D:\wamp\www\thinker\superdun\Admin\Runtime\Cache\Home\83fa12f67805e144f528081d08017c11.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-08T18:34:27+08:00 ] 127.0.0.1 /Home/Cate/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_cate` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`pid`,`name` FROM `tb_cate` WHERE `status` = 1  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\thinker\superdun\Admin\Common\Common\function.php 第 598 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: title D:\wamp\www\thinker\superdun\Admin\Runtime\Cache\Home\a5bb931d82c41ab75ac2bb48412dea9b.php 第 46 行.
+NOTIC: [8] Undefined index: class D:\wamp\www\thinker\superdun\Admin\Extend\Tool\Form.php 第 95 行.
+NOTIC: [8] Undefined index: hr D:\wamp\www\thinker\superdun\Admin\Extend\Tool\Form.php 第 74 行.
+NOTIC: [8] Undefined index: hr D:\wamp\www\thinker\superdun\Admin\Extend\Tool\Form.php 第 74 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thinker\superdun\Admin\Runtime\Cache\Home\a5bb931d82c41ab75ac2bb48412dea9b.php 第 48 行.
+NOTIC: [8] Undefined index: class D:\wamp\www\thinker\superdun\Admin\Extend\Tool\Form.php 第 95 行.
+NOTIC: [8] Undefined index: hr D:\wamp\www\thinker\superdun\Admin\Extend\Tool\Form.php 第 74 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\thinker\superdun\Admin\Runtime\Cache\Home\a5bb931d82c41ab75ac2bb48412dea9b.php 第 49 行.
+NOTIC: [8] Undefined index: hr D:\wamp\www\thinker\superdun\Admin\Extend\Tool\Form.php 第 74 行.
+NOTIC: [8] Undefined index: class D:\wamp\www\thinker\superdun\Admin\Extend\Tool\Form.php 第 95 行.
+NOTIC: [8] Undefined index: hr D:\wamp\www\thinker\superdun\Admin\Extend\Tool\Form.php 第 74 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\thinker\superdun\Admin\Runtime\Cache\Home\a5bb931d82c41ab75ac2bb48412dea9b.php 第 51 行.
+NOTIC: [8] Undefined index: disabled D:\wamp\www\thinker\superdun\Admin\Extend\Tool\Form.php 第 60 行.
+NOTIC: [8] Undefined index: disabled D:\wamp\www\thinker\superdun\Admin\Extend\Tool\Form.php 第 60 行.
+NOTIC: [8] Undefined index: hr D:\wamp\www\thinker\superdun\Admin\Extend\Tool\Form.php 第 74 行.
+NOTIC: [8] Undefined variable: isupdate D:\wamp\www\thinker\superdun\Admin\Runtime\Cache\Home\a5bb931d82c41ab75ac2bb48412dea9b.php 第 84 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-04-08T18:35:06+08:00 ] 127.0.0.1 /Home/Public/ajax_upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: format D:\wamp\www\thinker\superdun\Admin\Home\Controller\PublicController.class.php 第 38 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\thinker\superdun\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+

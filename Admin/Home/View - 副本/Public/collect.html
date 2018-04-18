@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>年会抽奖</title>
+<link rel="stylesheet" href="/Public/active/css/base.css">
+<!--[if lte IE 6]>
+<script type="text/javascript" src="/Public/active/js/png.js"></script>
+<![endif]-->
+<script type="text/javascript" src="/Public/js/jquery.js" ></script>
+<script type="text/javascript" src="/Public/js/common.js"></script>
+<script type="text/javascript" src="/Public/js/CheckForm.js"></script>
+<script type="text/javascript" src="/Public/Vendor/layer/layer.js"></script>
+</head>
+
+<body>
+<div class="mian">
+ <include file="Public/flash"/>
+    <form method="post" id="form1" name="form1"  action="{:U('collect')}">
+        <div class="zi_liao">
+            <ul>
+                <li class="lin_hig"><label>头像：</label>
+                <span>{:W('Plupload/collect',array(U('Public/uploadFace'),'callback'=>'mycallback','filepath',"jpg,jpeg,gif,png"))}</span>
+              </li>
+                <li><label>姓名：</label><span><input name="name" type="text" class="name text"></span></li>
+                <li><label>电话：</label><span><input name="phone" type="text" class="phone text "></span></li>
+                <li><label>微信号：</label><span><input name="wxid" type="text" class="wxid text "></span></li>
+                <!--<li><label>QQ号：</label><span><input name="wxid" type="text" class="wxid text "></span></li>-->
+                <li class="text_area"><label>新年祝福：</label><span><textarea name="blessing" cols="" rows="" class="textarea"></textarea></span></li>
+                <li><a href="javascript:void(0)" class="a_btn" onclick="formcheck('form1','{:U('collect')}','subFun')">提交</a></li>
+            </ul>
+        </div>
+    </form>    
+</div>
+<img src="/Public/active/img/bg.jpg" style="position:absolute; top:0; left:0; bottom:0;" height="100%" width="100%">
+</body>
+</html>
+<script type="text/javascript">
+
+
+function subFun(status,info,data){
+	if(status == 1){
+		layer.alert('<span style="color:red;height:36px;line-height:36px;">录入成功，</span><span style="color:red">请扫码关注文网亿联企业号,关注成功以后才有抽奖资格哦！</span><br/><img src="/Public/active/img/qrjpg1.jpg"',{title:'提示',closeBtn:false},function(){
+			window.location.reload();
+		}
+       
+		);
+		
+		return;		
+	  }
+    // else{
+    //        alert();
+    //    }	
+}
+function mycallback(res)
+{
+   if(null!== res){
+        document.getElementById("touxiang").src = res.result;
+        $("#fileId").attr("value",res.result);
+        // document.getElementById("imgid").style = "background-color:#2F0000";
+   }
+  
+}
+
+
+</script>

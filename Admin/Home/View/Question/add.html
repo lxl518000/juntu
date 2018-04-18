@@ -1,0 +1,20 @@
+<extend name="Layout/form-add" />
+<block name='style'>
+*{padding:0;margin:0;}
+a{text-decoration:none;}
+
+</block>
+
+<block name="form-field">
+	{:formbuilder('input',array('title'=>'问题名称','name'=>'title','value'=>$list['title'],'placeholder'=>'请输入问题名称','validate'=>'required','tip'=>''))}
+	{:formbuilder('textarea',array('title'=>'问题内容','name'=>'content','value'=>$list['content'],'placeholder'=>'','validate'=>'required','tip'=>''))}
+	{:formbuilder('input',array('title'=>'排序','name'=>'sort','value'=>$list['sort'],'placeholder'=>'','validate'=>'required','tip'=>''))}
+	{:formbuilder('choose',array(type=>'radio','title'=>'状态','name'=>'status','options'=>array('1'=>'启用',2=>'停用'),'checked'=>[$list['status']]))}
+
+ 
+
+</block>
+
+<block name='extend'>
+
+</block>

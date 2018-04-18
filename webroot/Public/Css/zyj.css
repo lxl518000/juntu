@@ -1,0 +1,45 @@
+﻿@charset "utf-8";
+/* CSS Document */
+*{font-size:9pt;border:0;margin:0;padding:0;}
+body{font-family:'微软雅黑'; margin:0 auto; color:#5a5959; background-color:#f1f1f1; font-size:14px;}
+ul{display:block;margin:0;padding:0;list-style:none;}
+li{display:block;margin:0;padding:0;list-style: none;transition:all .3s ease;}
+img{border:0;transition:all .3s ease;}
+dl,dt,dd,span{margin:0;padding:0;display:block;transition:all .3s ease;}
+a{text-decoration:none;color:#5a5959;outline:none;blr:expression(this.onFocus=this.blur());transition:all .3s ease;}
+a:hover{color:#24b69d;text-decoration:none;}
+table{border-collapse:collapse;border-spacing: 0;}
+em, th, i ,b,h3,.h4{font-style:normal; font-weight:normal;}
+cite{font-style:normal;}
+h2{font-weight:normal;}
+.fl{float:left;}
+.fr{float:right;}
+
+
+.message{ margin:20px;}
+.mess_top{ background:#fff; border-radius:3px; padding:15px; overflow:hidden;}
+.mess_top span{ font-size:14px; height:30px; line-height:30px;}
+.mess_top span a.btn{ height:30px; width:80px; background-color:#63c04b; display:block; line-height:30px; text-align:center; color:#fff; border-radius:3px; margin-left:50px;}
+.mess_top span label{ color:#999;font-size:14px;}
+.mess_top span i{ font-size:24px;vertical-align:middle; padding:0 5px 0 20px;}
+.mess_cont{ background:#fff; padding:15px; margin-top:10px; border-radius:3px;}
+.gd_list{ background:#fff; margin-top:10px; border-radius:3px;}
+.gd_title{ padding:0 15px; height:42px; line-height:42px; font-size:16px; border-bottom:1px solid #f1f1f1;}
+.gd_title i{ font-size:28px; color:#999;vertical-align:middle; padding-right:5px;}
+.gd_cont{ padding:15px 15px 0 15px;}
+.gd_contn{ padding:15px; overflow:hidden;}
+.gd_cont ul{ overflow:hidden;}
+.gd_cont li{ background:#f1f1f1; padding:15px; margin-bottom:15px; border-radius:3px;}
+.gd_cont li span.g_txt{ overflow:hidden;}
+.gd_cont li span.g_txt b{ float:left; color:#333; font-size:14px;}
+.gd_cont li span.g_txt em{ float:right; color:#999; font-size:14px;}
+.d_txt{ background-color:#fff; padding:10px; margin-top:15px; border-radius:3px; color:#333;}
+.d_txt em{ color:#999; padding-right:5px;}
+/*公共样式*/
+.tablelist{ width:100%}
+.tablelist tr td{ border:1px solid #f1f1f1; height:36px; padding:0 10px; font-size:14px;}
+.tablelist tr td.title{background:#f8f8f8; width:100px; text-align:right; color:#999;}
+
+input.text{ height:36px; border:1px solid #f1f1f1; height:36px;  width:100%}
+
+

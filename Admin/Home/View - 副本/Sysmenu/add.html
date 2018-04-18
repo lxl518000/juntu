@@ -1,0 +1,73 @@
+<extend name="Common/form-ajax" />
+<block name="form">
+	
+    <tr>
+        <th>父菜单:</th>
+        <td>
+		            <select name="pid" tip="请选择父菜单">
+		                <foreach name="parent" item="v">
+		                <option value="{$v.id}" <eq name="v.id" value="$Think.get.pid">selected</eq> >{$v.mark}{$v.title}</option>
+		                </foreach>
+		            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <th>名称:</th>
+        <td>
+            <input type="text" class=" input-xlarge" name="title" value="{$list.title}" datatype="*" errormsg="请输入菜单名称！" >
+             <span class="Validform_checktip"></span>
+            
+  	 </td>
+    </tr>
+    <tr>
+        <th>规则:</th>
+        <td>
+            <input type="text" name="name" value="{$list.name}" >
+             <span class="Validform_checktip"></span>
+        </td>
+    </tr>
+  
+    <tr>
+        <th>类型:</th>
+        <td>
+            <select name="type" >
+                <option value="2" {$list['type']==2?'selected':''}>菜单</option>
+                <option value="1" {$list['type']==1?'selected':''}>节点</option>
+                <option value="3" {$list['type']==3?'selected':''}>分组</option>
+            </select>
+        </td>
+    </tr>
+     
+    <tr>
+        <th>图标:</th>
+        <td>
+            <input type="text" name="icon" value="{$list.icon}" errormsg="请填写菜单图标(menu:icon-menu)" >
+        </td>
+    </tr>
+    <tr>
+        <th>状态:</th>
+        <td>
+       		 <label for="status_0"><input id="status_0" <if condition="!empty($list) && $list['status']==0 ">checked </if> type="radio" name="status" value="0">禁用</label>
+            <label for="status_1"><input id="status_1"  <if condition="$list['status']==1 || empty($list)">checked </if> type="radio" name="status" value="1" >启用</label>
+        </td>
+    </tr>
+    <tr>
+        <th>排序:</th>
+        <td>
+            <input type="text" name="sort" errormsg="请填写菜单排序数值" value="{$list.sort}">
+        </td>
+    </tr>
+    <tr>
+       	<th></th>
+       	<notempty name='list'>
+       			<input type='hidden' name='id' value="{$list.id}">
+       	 	<td><input type="submit" id="btn_sub" class="btn-big btn-blue" value="修改"></td>
+       	 <else/>
+       	  <td><input type="submit" class="btn-big btn-blue" value="添加"></td>
+       	</notempty>
+        </tr>
+        
+        
+        
+</block>

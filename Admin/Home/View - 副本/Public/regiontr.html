@@ -1,0 +1,72 @@
+<script>
+	 var AREA_URL = "{:U('Public/getAreaChildren')}";
+</script>
+<style>
+.select2{
+	width: 150px;float: left;margin-right: 12px;padding:8px 10px;;height: 40px;border: 1px solid #e4e4e4;font-size: 14px;color: #999;margin-top:10px;
+	
+}
+
+
+</style>
+	<tr class="region">
+   <td style="text-align:right; width:130px;"><label>所在区域：</label></td><span>  
+   <td>
+      	  <select class="select2" style='width:150px;' name="province" id="province" onChange="getChildrenS(this.value,'city')">
+	      
+        	<volist name="ProvinceList" id="vo">
+              <option value="{$vo.RegionCode}" <php> if(strpos($RegionCode,$vo['RegionCode']) === 0) echo "selected";</php> >{$vo.RegionName}</option>
+            </volist> 
+		
+	        </select>
+	        <select class="select2" style='width:150px;' name="city" id="city" onChange="getChildrenS(this.value,'country')"> 
+	          <php>
+	       	if(count($CityList)!=1)
+	       	echo '<option value="">市</option>';
+	     	 </php>
+	        	  <volist name="CityList" id="vo">
+	              <option value="{$vo.RegionCode}" <php> if(strpos($RegionCode,$vo['RegionCode']) === 0) echo "selected";</php> >{$vo.RegionName}</option>
+	             </volist>    	
+	        </select>
+		        <select class="select2" style='width:150px;' name="country" id="country" onChange="getChildrenS(this.value,'town')"> 
+		       <php>
+		       	if(count($CountryList)!=1)
+		       	echo '<option value="">区</option>';
+		      </php>
+        	<volist name="CountryList" id="vo">
+              <option value="{$vo.RegionCode}" <php> if(strpos($RegionCode,$vo['RegionCode']) === 0) echo "selected";</php> >{$vo.RegionName}</option>
+             </volist> 
+        </select> 
+		<eq name='tshow' value ='1'>
+		    <select class="select2" style='width:150px;' name="town" id="town"> 
+		       <php>
+		       	if(count($TownList)!=1)
+		       	echo '<option value="">乡镇</option>';
+		      </php>
+        	<volist name="TownList" id="vo">
+              <option value="{$vo.RegionCode}" <php> if(strpos($RegionCode,$vo['RegionCode']) === 0) echo "selected";</php> >{$vo.RegionName}</option>
+            </volist> 
+        </select>
+		</eq>
+      </span>
+      </td>
+      </tr>
+      
+ 
+      <script>
+		
+		$('#country').change(function(){
+
+			val = $('#country').val();
+			if(val){
+				$('.barHidden').show();
+			}else{
+				$('.barHidden').hide();
+			}
+		});
+		$('#province,#city').change(function(){
+			$('.barHidden').hide();
+			$('.routerHidden').hide();
+			$('#barCode').val('');
+		});	
+      </script>

@@ -1,0 +1,588 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>年会抽奖</title>
+<link rel="stylesheet" href="/Public/active/css/base.css">
+<!--[if lte IE 6]>
+<script type="text/javascript" src="js/png.js"></script>
+<![endif]-->
+<style>
+#ul1{position:relative;}
+#ul1 li{z-index:1;width:65px;height:65px;}
+
+
+.sspan{ font-size: 16px;ont-weight: bold;color: #ffc7cb; display:block;text-align:left;width:330px;word-break:break-all;margin-top:20px;}
+.sb{ font-size: 16px; font-weight: bold; color: #ffc7cb;display: block;}
+.si{font-size: 14px;display: block;color: #ef7b88;overflow: hidden;height: 48px;line-height:22px;}
+ul.tx_img li i.active {width:85px; height: 85px; display: block; background-size: 100% 100%; margin-top: -10px; margin-left: -10px;}
+ul.tx_img li b{ background: url("/Public/active/img/1.png"); background-size: 100% 100%; display: block; height: 45px; width: 45px; z-index: 999; position: absolute;top: -25px; right: -18px;}
+ul.tx_img li b.c_2{ background: url("/Public/active/img/2.png"); background-size: 100% 100%; display: block; height: 45px; width: 45px; z-index: 999; position: absolute;top: -25px; right: -18px;}
+ul.tx_img li b.c_3{ background: url("/Public/active/img/3.png"); background-size: 100% 100%; display: block; height: 45px; width: 45px; z-index: 999; position: absolute;top: -25px; right: -18px;}
+ul.tx_img li.actvie{transition:all .9s ease;}
+ul.tx_img li i img{transition:all .9s ease;}
+ul.tx_img li i img.img1{transform:rotateY(360deg)}
+.rt_li{top:120px;}
+.u-flyer{display: block;width: 50px;height: 50px;border-radius: 50px;position: fixed;z-index: 9999;}
+.jt_txt{background: url("/Public/active/img/jt_img.png") no-repeat bottom; width: 607px; height:123px; margin: 0 auto; padding-bottom: 2px;}
+.qd_title{ background: none; margin-top: 95px;}
+ul.jt_ul li{position: relative;float: left;}
+ul.jt_ul li.c_1{ width: 50px;margin: 7px 0 0 98px;}
+ul.jt_ul li.c_2{ width: 50px; margin: 20px 0 0 57px;}
+ul.jt_ul li.c_3{ width: 50px;margin: 20px 0 0 25px;}
+ul.jt_ul li.c_4{ width: 50px; margin: 20px 0 0 70px;}
+ul.jt_ul li.c_5{ width: 50px;margin: 20px 0 0 16px;}
+ul.jt_ul li.c_6{ width: 50px; margin: 20px 0 0 16px;}
+ul.jt_ul li img{ width: 50px; height: 50px;}
+ul.jt_ul li i{ display: block; color:#ffe538;text-align:center;}
+ul.jt_ul li b{ background: url("/Public/active/img/1.png"); background-size: 100% 100%; display: block; height: 35px; width: 35px; z-index: 999; position: absolute;top: -25px; right: -18px;}
+.barrage{width:660px; position: absolute; top:790px; left: 50%; margin-left: -330px; height: 60px;}
+.barrage a{ float: left; background:url("/Public/active/img/d_btn.jpg") no-repeat; width: 200px; height: 60px; margin: 0 10px;text-align:center;font-size:24px;line-height:60px;display:block;color:#f6bb0b }
+
+#chp{background:url("/Public/active/img/t_bger.png");width:479px;height:491px;overflow:hidden;display:none;position:absolute;top:50%;margin-top:-245px;left:50%;margin-left:-245px;z-index:9999999999}
+#chpic{width:250px;height:250px;margin-top:190px;margin-left:125px;}
+#chpname{text-align:center;font-size:16px;margin-top:5px;color:#bd1517;}
+
+.btn_ts{position:relative;z-index:9999999}
+#smark{width:100%;height:100%;position:absolute;z-index:99999999;background:rgba(0,0,0,0.6);display:none;};
+</style>
+</head>
+<script src="/Public/active/js/jquery.min.js"></script>
+
+
+<body>
+
+
+  <div class="barrage">
+  	<a href="javascript:void(0)" id='b2' class="btn_ts" ><i>二等奖</i>(<span>2</span>)</a>
+  	<a href="javascript:void(0)" id='b1' class="btn_ts"><i>一等奖</i>(<span>1</span>)</a>
+  	<a href="javascript:void(0)" id='b3' class="btn_ts"><i>三等奖</i>(<span>3</span>)</a>
+  </div>
+  
+    <div class="rt_li" id="contrast">
+         <ul>
+          <li><a href="{:U('sign')}" id="btn3">签到墙</a></li>
+          <li><a href="{:U('introduce')}" id="btn2" >抽奖规则</a></li>
+          <li><a href="{:U('luckdraw')}" id="btn1" class="a_hover" >下一轮抽奖</a></li>
+         </ul>
+ </div>
+    
+
+
+ <div id="chp" >
+  	<img id="chpic" src="/Public/active/img/222.gif" />
+  	<p id="chpname">成丹</p>
+  </div>
+<div id='smark'></div> 
+
+
+
+
+<div class="mian">
+
+<audio  src="" loop ></audio>
+<audio  src="" ></audio>
+
+<script>
+function saplay(){
+	var sAuto = $('audio').get(0);
+		sAuto.src="/Public/active/666.mp3";
+		sAuto.play();
+}
+
+function sastop(){
+	var sAuto = $('audio').get(0);
+		sAuto.pause();
+}
+
+function aplay(){
+	var myAuto = $('audio').get(1);
+		myAuto.src="/Public/active/777.mp3";
+		myAuto.play();
+}
+
+function astop(){
+	var myAuto = $('audio').get(1);
+	myAuto.pause();
+}
+
+
+
+
+</script>
+
+
+ <include file="Public/flash"/>
+ 
+ 
+    <div class="qd_title" >
+  		<div class="scroll">
+			<div class="jt_txt">
+				<ul class="jt_ul">
+				
+			
+					<li class="c_2 win1">
+						  <img src="/Public/active/img/z-1.png" width="50px;" height="50px">
+						  <i>?</i>
+				    </li>
+					<li class="c_3 win2">
+						  <img src="/Public/active/img/z-1.png" width="50px;" height="50px">
+						  <i>?</i>
+				    </li>
+					<li class="c_1 win3">
+						  <img src="/Public/active/img/z-1.png" width="50px;" height="50px">
+						  <i>?</i>
+				    </li>
+				   <li class="c_4 win4">
+						  <img src="/Public/active/img/z-1.png" width="50px;" height="50px">
+						  <i>?</i>
+				    </li>
+				    <li class="c_5 win5">
+						  <img src="/Public/active/img/z-1.png" width="50px;" height="50px">
+						  <i>?</i>
+				    </li>
+				   <li class="c_6 win6">
+						  <img src="/Public/active/img/z-1.png" width="50px;" height="50px">
+						  <i>?</i>
+				    </li> 
+				</ul>
+			</div>
+  		</div>
+  </div>
+  <ul id='ul1' class="tx_img">
+    	<volist name='ulist' id="vo">
+		<li class='txli active {$vo["haswin"]}' title="{$vo.realname}:{$vo.blessing}"><i><img class='simg simg{$vo["haswin"]} ' data-pic="{$vo.pic}"  style='width:60px;height:60px;'  data-ok='0' data-uname="{$vo.username}"  src="{$vo.pic}"></i><b style="display: none"></b></li>
+		</volist>
+  </ul>
+  <!--<div class="btns"></div>
+  <div class="btn"></div>
+  <div class="t_ybtel"></div>-->
+
+
+  
+  
+  	<div class="m-sidebar" >
+			<i id="end"></i>
+	</div>
+  
+  
+ 
+
+<script src="/Public/active/js/jquery.fly.min.js"></script>
+<script type="text/javascript" src="/Public/Vendor/layer/layer.js"></script>
+<script>
+var alluser = {$allUser};
+
+/* var li = $('ul li i');
+var button = $('button');
+var timer = null;
+var hasget = [];
+var n = null;
+ var getActive = function(){
+	n = null;
+	li.removeClass('active');
+	while(!n || hasget.indexOf(n) != -1){
+		// n = Math.floor(Math.random()*li.length);
+		n = Math.floor(Math.random() * (li.size()));
+	}
+	li.eq(n).addClass('active');
+
+}; 
+ */
+ 
+ var luckdraw = 0;
+ 
+ var orgFace = "/Public/active/img/z-1.png";
+ var zjFace = "/Public/active/img/zj.png";
+ var unface = "/Public/active/img/222.gif";
+ 
+ var oflag = 0;
+ var startTimer ;
+ 
+ $('#b1').click(function(){
+	 if(oflag==0){
+		 dostart(this,1);
+	 }else{
+		 dostop(this,1);
+	 }
+		
+ })
+ 
+ $('#b2').click(function(){
+	 if(oflag==0){
+		 dostart(this,2);
+	 }else{
+		 dostop(this,2);
+	 }
+ })
+ 
+$('#b3').click(function(){
+	 if(oflag==0){
+		 dostart(this,3);
+	 }else{
+		 dostop(this,3);
+	 }
+})
+ 
+ 
+
+var setStartTo = false; 
+ 
+function dostart(obj,type){
+	 $('#chpname').html('');
+ var lastn = $(obj).find('span').html();
+	 if(lastn<=0){
+		 layer.msg('本轮该奖项已经抽完拉');
+		 return false;
+	 }
+	 astop();
+	 saplay();
+	 
+	 lastn--;
+	 $(obj).find('span').html(lastn);
+
+	 $(obj).find('i').eq(0).html('停止');
+	
+	
+	var li = $('.nowin');
+	var ul = $('#ul1');
+	var length = li.length;
+	
+	var si=0;
+	console.log('-.start-11111-');
+	
+	//2s以后才能点击关闭
+	setTimeout(function(){
+		console.log('-.start--');
+		setStartTo = true;
+	//	clearInterval(timer);
+	},1500) 
+	
+	
+	 if(luckdraw==0){
+		li.each(function(i){
+			$(this).find('.simgnowin').css("transform","rotateY(0deg)").css("transform","rotateY(360deg)").eq(0).attr('src',orgFace);
+		})
+		
+	}else{
+		li.each(function(i){
+			$(this).find('.simgnowin').css("transform","rotateY(360deg)").css("transform","rotateY(0deg)").eq(0).attr('src',orgFace);
+		})
+	} 
+	
+	
+	
+	setStartTo = false;
+	//if(oflag==0){
+		startTimer = setInterval(function(){
+			var num = Math.floor(Math.random()*length);
+			num = RandomNumBoth(0,length-1);
+			$('.simgnowin').attr('src',orgFace).css({'width':'60px','height':'60px','margin':'3px'}).removeClass('luck');;
+			$('.simgnowin').eq(num).attr('src',zjFace).css({'width':'80px','height':'80px','margin':'0'}).addClass('luck');
+		},100)
+	
+	//}
+	
+		oflag = 1;
+}
+ 
+ function RandomNumBoth(Min,Max){
+     var Range = Max - Min;
+     var Rand = Math.random();
+     var num = Min + Math.round(Rand * Range); //四舍五入
+     return num;
+}
+
+
+function dostop(obj,type){
+	if(setStartTo == false)
+		return;
+	
+	sastop();
+	aplay();
+	console.log('---');
+	
+	if(luckdraw==0){
+		$('.simgnowin').each(function(i){
+			var pic = $(this).data('pic')
+			$(this).css("transform","rotateY(0deg)").attr('src',pic).css({'width':'60px','height':'60px','margin':'3px'});
+			
+		})
+	}else{
+		$('.simgnowin').each(function(i){
+			var pic = $(this).data('pic')
+			$(this).css("transform","rotateY(360deg)").attr('src',pic).css({'width':'60px','height':'60px','margin':'3px'});
+			
+		})
+	}
+	
+	luckdraw = 1;
+	
+	
+	
+	var snum = $(obj).find('span').eq(0).html();
+	var userid = $('.luck').data('uname');
+	
+	uname = alluser[userid]['realname'];
+	uface = alluser[userid]['pic'];
+	
+	 $(obj).find('i').eq(0).html('开始');
+	clearInterval(startTimer);
+	$('#smark').show();
+	
+	 setTimeout(function(){
+			$('#chpic').attr('src',$('.luck').data('pic'));
+			 $('#chpname').html(uname);
+	},2500)
+	$('#chp').show();
+	oflag = 0;
+	
+
+	if(type==1){
+		var fa = $('.win3');
+	}else if(type==2){
+		if(snum==1){
+			var fa = $('.win1');
+		}else if(snum==0){
+			var fa = $('.win2');
+		}
+		
+	}else{
+		if(snum==2){
+			var fa = $('.win4');
+		}else if(snum==1){
+			var fa = $('.win5');
+		}else{
+			var fa = $('.win6');
+		}
+	}
+
+	
+	$.ajax({
+		   type: "POST",
+		   url: "{:U('Public/setRecord')}",
+		   data: "lv="+type+"&uid="+userid,
+		   async:false,
+		   success: function(msg){
+		    if(msg.status==1){
+		    	setTimeout(function(){
+		    	 $('.luck').parent().parent().removeClass('nowin');	
+		    	 $('.luck').removeClass('simgnowin');
+		   		 fa.find('img').eq(0).attr('src',uface);
+		   		 fa.find('i').eq(0).html(uname); 
+		   		 
+		   		 sfly('#chp',fa);
+		   		 $('#chp').fadeOut('slow');
+		   		 $('#smark').hide();
+		   		 $('#chpic').attr('src',unface);
+		   		 $('.luck').removeClass('luck');
+		   		
+		   		 
+		  	 	},5000)
+		  	 	
+		  	 	
+		  	 	
+		    }else{
+		    	layer.msg(msg.info);
+		    	
+		    	 $('#chp').fadeOut();
+		   		 $('#chpic').attr('src',orgFace);
+		    	 $('#smark').hide();
+		    }
+		    	
+		   }
+		});
+
+	
+	
+	
+
+}
+
+
+function sfly(obj,obj2){
+	var obj = $(obj);
+	var offset = obj2.offset();  //结束的地方的元素
+	
+	var img = $('#chpic').attr('src');
+	
+	var flyer = $('<img class="u-flyer" src="'+img+'">');
+	flyer.fly({
+		start: {
+			left: obj.offset().left,
+			top: obj.offset().top,
+		},
+		end: {
+			left: offset.left+10,
+			top: offset.top+10,
+			width: 0,
+			height: 0
+		},
+		onEnd: function(){
+			$("#msg").show().animate({width: '250px'}, 200).fadeOut(1000);
+			this.destory();
+		}
+	});
+}
+
+
+$(function(){
+
+	$(".barrage,.s_close").show();
+	
+	
+	setInterval(startDm,1000);
+	
+	$('#ul1 li').on('click',function(){
+		sfly(this,$('#end'));
+	})
+
+})
+
+
+
+
+window.onload=function(){
+	var oUl=$('#ul1')
+	var aLi=$('.txli')
+	var i=0;
+	var iMinZindex=2
+	//布局转换
+	for(i=0;i<aLi.length;i++){
+		//aLi[i].innerHTML='left:'+aLi[i].offsetLeft+'<br>top:'+aLi[i].offsetTop
+		aLi[i].style.left=aLi[i].offsetLeft+'px';
+		aLi[i].style.top=aLi[i].offsetTop+'px';
+		
+	}
+	for(i=0;i<aLi.length;i++){
+		aLi[i].style.position='absolute';
+		aLi[i].style.margin=100;
+	}
+	// for(i=0;i<aLi.length;i++){
+	// 	aLi[i].onmouseover=function(){
+	// 		this.style.zIndex=iMinZindex++;
+	// 		$(this).find('.simg').css({width:'100px',height:'100px'});
+	// 		$(this).find('i').css({width:'106px',height:'106px',backgroundSize:'100% 100%'});
+	// 		startMove2(this,{width:100,height:100,marginLeft:-25,marginTop:-25})
+	// 	}
+	// 	aLi[i].onmouseout=function(){
+	// 		$(this).find('.simg').css({width:'59px',height:'59px'});
+	// 		$(this).find('i').css({width:'65px',height:'65px'});
+	// 		startMove2(this,{width:60,height:60,marginLeft:0,marginTop:0})
+	// 	}
+	// }
+}
+
+
+
+//轮播弹幕
+function startDm(){
+	var dm = $.getJSON("{:U('Public/getDm')}"
+			,function(res){
+				if(res){
+					$(res).each(function(i){
+						var text = res[i]['c'];
+						var user = res[i]['n'];
+						if(alluser[user]){
+							var img = alluser[user]['pic'];
+							var _lable = $("<div class='dm_title' style='right:40px;top:30px;opacity:1;color:;z-index:999;position:absolute;height:55px;overflow:hidden;"+getRandomColor()+";'><img src='"+img+"' width='50' height='50' /><b>"+text+"</b></div>");
+							$("body").append(_lable.show());
+							init_barrage(_lable);
+						}
+					})	
+				}
+			}
+	);
+	
+	
+	
+/* 	var text = "我是弹幕我是弹幕我是弹幕我是弹幕11111";
+	var _lable = $("<div class='dm_title' style='right:40px;top:30px;opacity:1;color:;z-index:999;position:absolute;height:55px;overflow:hidden;"+getRandomColor()+";'><img src='/Public/active/img/tx_img.jpg' width='50' height='50' /><b>"+text+"</b></div>");
+	$("body").append(_lable.show());
+	init_barrage(_lable); */
+}
+
+//初始化弹幕技术
+function init_barrage(obj){
+		var _top = 0;
+		var _this = $(obj);
+		var _left = $(window).width()//浏览器最大宽度，作为定位left的值
+		var _height = $(window).height();//浏览器最大高度
+		_top = Math.random()*_height;
+		if(_top >= (_height -130)){
+			_top = 0;
+		}
+		var twidth = $(obj).width();
+		_this.css({left:_left,top:_top,color:getRandomColor()});
+		//定时弹出文字
+		var time = 20000;
+		 if(_this.index() % 2 == 0){
+			time = 25000;
+		} 
+		_this.animate({left:'-'+twidth+'px'},time,function(){
+			_this.remove();
+		});
+}
+//获取随机颜色
+function getRandomColor(){
+	
+	var color=['#72fdff','#ffee31','#f87015','#8487ff','#39f54a','#e450ed','#ff4f5b'];
+	//var color=['#339966'];
+	return color[Math.floor(color.length*Math.random())];
+} 
+
+
+
+
+
+function getStyle(obj,attr){
+		if(obj.currentStyle){
+			return obj.currentStyle[attr]
+		}else{
+			return getComputedStyle(obj,false)[attr];
+		}
+	}
+
+
+
+function startMove2(obj,json,fn){
+	clearInterval(obj.timer);
+	obj.timer=setInterval(function(){
+		var iCur=0;
+		var bStop=true;
+		for( attr in json){
+				if(attr=='opacity'){
+					iCur=parseInt(parseFloat(getStyle(obj,attr))*100);
+				}else{
+					iCur=parseInt(getStyle(obj,attr));
+				}
+				var iSpeed=(json[attr]-iCur)/8;
+				iSpeed=iSpeed>0?Math.ceil(iSpeed):Math.floor(iSpeed);
+				//检测停止
+				if(iCur!=json[attr]){
+					bStop=false;
+				}
+				if(attr=='opacity'){
+					obj.style.filter='alpha(opacity:'+(iCur+iSpeed)+')';
+					obj.style.opacity=(iCur+iSpeed)/100
+				}else{
+					obj.style[attr]=iCur+iSpeed+'px';
+				}
+				
+			}
+			if(bStop){
+				clearInterval(obj.timer);
+					if(fn){
+					fn();
+					}
+			}
+		},30)
+}
+
+
+</script> 
+  
+</div>
+<img src="/Public/active/img/bg.jpg" style="position:absolute; top:0; left:0; bottom:0;" height="100%" width="100%">
+</body>
+</html>

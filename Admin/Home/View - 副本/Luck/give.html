@@ -1,0 +1,32 @@
+<extend name="Common/form-ajax" />
+<block name="form">
+	
+   
+
+    <tr>
+        <th>兑换码:</th>
+        <td>
+            <input type="text" class=" input-xlarge" readonly name="fcode" value="{$list.fcode}" datatype="*" errormsg="请输入分类名称！" >
+             <span class="Validform_checktip"></span>
+            
+  	 </td>
+    </tr>
+    
+    <tr>
+        <th>兑换备注:</th>
+        <td>
+              <textarea name="cmark" style="width:300px;height:100px;border:1px solid #ccc;">{$list.cmark}</textarea>
+        </td>
+    </tr>
+   
+     
+  
+    <tr>
+       	<th></th>
+       			<input type='hidden' name='id' value="{$list.id}">
+       	 	<td><input type="submit" id="btn_sub" class="btn-big btn-blue" value="确认已兑换"></td>
+        </tr>
+        
+        
+        
+</block>

@@ -1,0 +1,194 @@
+<extend name="Common/form-ajax" />
+<block name="form">
+	{~W('Region/RegionReadSelect',array($list['region'],0))}
+	<tr>
+		<th>账号:</th>
+		<td>
+			<input type="text" name="username" datatype="*2-20" value="{$list.username}" errormsg="请保持账号长度在2-20个字符之内">
+			  <span class="Validform_checktip"></span>
+		</td>
+	</tr>
+	<tr>
+     <th>选择角色:</th>
+        <td>
+		            <select name="role_id" tip="请选择父角色">
+		                <foreach name="parent" item="v">
+		              	  <option value="{$v.id}" data-id="{$v.enforcement}" <eq name="v.id" value="$list['role_id']">selected</eq> >{$v.mark}{$v.title}</option>
+		                </foreach>
+		            </select>
+      </td>
+    </tr>
+	<tr>
+		<th>密码:</th>
+		<td>
+			<input type="password" name="password" datatype="*6-20"  errormsg="请保持密码长度在5-20个字符之内" <notempty name='list'>ignore="ignore"</notempty> >
+			  <span class="Validform_checktip"></span>
+		</td>
+	</tr>
+	<tr>
+		<th>姓名:</th>
+		<td>
+			<input type="text" name="realname" datatype="*2-20" value="{$list.realname}" errormsg="至少2位的真实姓名">
+			  <span class="Validform_checktip"></span>
+		</td>
+	</tr>
+	<!--<tr>
+		<th>分机号:</th>
+		<td>
+			<input type="text" name="fnum" datatype="*" ignore="ignore" value="{$list.fnum}" errormsg="请填写分机号">
+			  <span class="Validform_checktip"></span>
+		</td>
+	</tr>-->
+	<tr>
+		<th>手机:</th>
+		<td>
+			<input type="text" name="mobile" datatype="m" value="{$list.mobile}"  errormsg="请填写11位手机号码">
+			  <span class="Validform_checktip"></span>
+		</td>
+	</tr>
+	<tr>
+		<th>邮箱:</th>
+		<td>
+			<input type="text" name="email" datatype="e" value="{$list.email}"  ignore="ignore" errormsg="请填写正确邮箱地址">
+			  <span class="Validform_checktip"></span>
+		</td>
+	</tr>
+	<tr>
+		<th>行政级别：</th>
+			<td><select name=level>
+				<option value='999'<if condition='!isset($_REQUEST["level"])'>selected</if> >--职级--</option>
+					<volist name='level' id="v">
+	              			 <option value="{$key}" <eq name="$key" value="$list['level']">selected</eq> >{$v}</option>
+	              	</volist>
+			</select>
+		</td>
+	</tr>
+	<tr class ='depid'>
+		<th >选择部门:</th>
+		<td  >
+			 <select name="depid" tip="请选择部门">
+		                <foreach name="dep" item="v">
+		              	  <option value="{$v.id}" <eq name="v.id" value="$list['depid']">selected</eq> >{$v.mark}{$v.name}</option>
+		                </foreach>
+		    </select>
+		</td>
+	</tr>
+	<tr class = 'unit'>
+		<th>选择支队:</th>
+		<td id='unitid'>
+			 <select id="unit" tip="请选择支队">
+				  	 <option value="0"> 请选择支队</option>
+		               <!-- <foreach name="unit" item="v">
+		              	  <option value="{$v.id}"  <eq name="v.id" value="$list['unit']">selected</eq> >{$v.name}</option>
+		                </foreach>-->
+		    </select>
+		</td>
+	</tr>
+	
+<!-- 	<tr>
+		<th>邮箱:</th>
+		<td>
+			<input type="text" name="email" datatype="e" value="{$list.email}"  ignore="ignore" errormsg="请填写正确邮箱地址">
+			  <span class="Validform_checktip"></span>
+		</td>
+	</tr> -->
+
+    <tr>
+        <th>状态:</th>
+        <td>
+            <label for="status_0"><input id="status_0" <if condition="!empty($list) && $list['status']==0 ">checked </if> type="radio" name="status" value="0">禁用</label>
+            <label for="status_1"><input id="status_1"  <if condition="$list['status']==1 || empty($list)">checked </if> type="radio" name="status" value="1" >启用</label>
+       
+        </td>
+    </tr>
+   
+    <tr>
+       	<th></th>
+       	<notempty name='list'>
+       			<input type='hidden' name='id' value="{$list.id}">
+       	 	<td><input type="submit" id="btn_sub" class="btn-big btn-blue" value="修改"></td>
+       	 <else/>
+       	  <td><input type="submit" class="btn-big btn-blue" value="添加"></td>
+       	</notempty>
+        </tr>
+        
+        
+
+ <script>
+function initage(){
+	var enforcement = $('select[name="role_id"]').find('option:selected').data("id");
+	var mid = $('select[name="role_id"]').find('option:selected').data("mid");
+	var offid = $('select[name="role_id"]').find('option:selected').data("off");
+	// console.log(enforcement);
+	if(enforcement==1){
+		$('.region').hide();
+		$('.depid').show();
+		$('.unit').show()
+	}else if(mid==1){
+		$('.region').hide();
+		$('.depid').show();
+		$('.unit').hide()
+		
+	}else if(offid==1){
+		$('.region').hide();
+		$('.depid').show();
+		$('.unit').hide()
+
+	}else{
+		$('.depid').hide();
+		$('.region').show();
+		$('.unit').hide()
+		
+	}
+	
+}
+
+function init(depid){
+
+			var url = "{:U('unit')}&depid="+depid;
+			$.get(url, function(data){
+					var unit = {$list['unit']};
+					
+				for(var i=0;i<data.count;i++){     
+					// $(".unit option").val(data[i].id);
+					console.log(unit);
+					console.log(data[i].id);
+					$("#unit").append("<option value="+data[i].id+ "<eq name="data[i].id" value="unit">selected</eq>>"+data[i].name+"</option>");
+				}
+			});
+		}
+
+
+
+$(function(){
+	$('select[name="role_id"]').on('change',function(){
+		initage();
+	
+	})
+	$('select[name="depid"]').on('change',function(){
+		var depid = $(this).val();
+		var enforcement = $('select[name="role_id"]').find('option:selected').data("id");
+		if(enforcement==1){
+			init(depid);
+		}
+		
+		
+	})
+	var enforcement = $('select[name="role_id"]').find('option:selected').data("id");
+	var depid = $('select[name="depid"]').find('option:selected').val();
+	if(enforcement==1){
+		init(depid);
+	}
+	// init();
+	// $('input[name="hourtype"]').on('click',function(){
+	// 	inittime();
+	// })
+	
+	// $('.slider-container').css({'float':'left','margin':'10px'});
+	// console.log({$list['unit']});
+	initage();
+
+	
+})
+</script>       
+</block>

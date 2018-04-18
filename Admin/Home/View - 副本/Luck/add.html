@@ -1,0 +1,80 @@
+<extend name="Common/form-ajax" />
+<block name="form">
+	
+   
+       <script type="text/javascript" src="__PUBLIC__/Vendor/My97DatePicker/WdatePicker.js"></script>
+ 
+    <tr>
+        <th>日期:</th>
+        <td>
+        <input name="sdate" type="text" class="dfinput" readonly onclick="WdatePicker({dateFmt:'yyyy-MM-dd',isShowClear:false})" style="width:150px;" value="{$start}"/>
+        </td>
+    </tr>
+     <tr>
+        <th>活动类型:</th>
+        <td>
+       		 <input type='radio' <neq name="list.setlike" value='1'>checked</neq> name='setlike' id="status1" value='0'> <label for="status1">幸运抽奖</label>&nbsp;&nbsp;
+	        <input type='radio' <eq name="list.setlike" value='1'>checked</eq> name='setlike' id="status2" value='1'> <label for="status2">集赞兑换</label>&nbsp;&nbsp;
+	             
+        </td>
+    </tr>
+    <volist name='prize' id='vo'> 
+       <tr class='sett'>
+        <th>{$vo.name}:</th>
+        <td>
+           	 百分之一概率<input type="text" class=" input-xlarge" name='p_{$vo['id']}' value="{$vo['per']}" datatype="n" errormsg="请输入概率！" >
+             <span class="Validform_checktip"></span>
+         	每日中奖限额<input type="text" class=" input-xlarge" name='q_{$vo['id']}' value="{$vo['quota']}" datatype="n" errormsg="请输入每日限额！" >
+             <span class="Validform_checktip"></span>
+            
+  	 </td>
+    </tr>
+    </volist>
+     <tr>
+        <th>备注:</th>
+        <td>
+            <input type="text" class=" input-xlarge" name="remark" value="{$list.remark}"   >
+             <span class="Validform_checktip"></span>
+            
+  	 </td>
+    </tr>
+  
+    <tr>
+       	<th></th>
+       	<notempty name='list'>
+       			<input type='hidden' name='id' value="{$list.id}">
+       	 	<td><input type="submit" id="btn_sub" class="btn-big btn-blue" value="修改"></td>
+       	 <else/>
+       	  <td><input type="submit" class="btn-big btn-blue" value="添加"></td>
+       	</notempty>
+        </tr>
+        
+        
+ <script type="text/javascript">
+ 
+ $(function(){
+	 setlike();
+	 $('input[name="setlike"]').on('click',function(){
+		 setlike();
+	 })
+ })
+ 
+ 	function setlike(){
+ 		var t = $('input[name="setlike"]:checked').val();
+ 		if(t==1){
+ 			$('.sett').hide();
+ 		}else{
+ 			$('.sett').show();
+ 		}
+ 	}         
+ 
+                
+                
+   	function callFun(res){
+   		$('#fileIdShow2').val(res.result);
+   		return;
+   	}
+</script>
+  
+        
+</block>

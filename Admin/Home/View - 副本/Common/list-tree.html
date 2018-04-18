@@ -1,0 +1,49 @@
+<layout name="Index/layout" />
+
+<div class="box-base">
+
+    <div class="tit cl">
+        <div class="fl">
+            <block name="action">
+             <if condition="allow(CONTROLLER_NAME.'/add')">
+                <a class="J_open btn btn-green btn-big mrt10" data-url="{:U('add')}" href="javascript:;">添加</a>
+                </if>
+            </block>
+        </div>
+        <present name="_batch_block">
+        <div class="fr">
+            <form class="AjaxBatch" data-action="__URL__" method="post">
+                <block name="batch"></block>
+                <input type="submit" value="执行">
+            </form>
+        </div>
+        </present>
+    </div>
+
+    <div class="con list-base" id="AjaxListBox">
+        <table class="TreeTable line border color bordered">
+            <block name="list"></block>
+        </table>
+    </div>
+</div>
+
+<script src="/Public/Vendor/TableTree/jquery.treeTable.js"></script>
+<link rel="stylesheet" href="/Public/Vendor/TableTree/vsStyle/jquery.treeTable.css" type="text/css" />
+
+<script type="text/javascript">
+
+
+$(function(){
+	
+	  var option = {
+              theme:'vsStyle',
+              expandLevel :5,
+              column : 1,
+
+          };
+    $('.TreeTable').treeTable(option);
+	
+})
+</script>
+
+    

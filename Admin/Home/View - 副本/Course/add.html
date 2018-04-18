@@ -1,0 +1,45 @@
+<extend name="Common/form-ajax" />
+<block name="form">
+	
+   
+
+    <tr>
+        <th>课程分类名称:</th>
+        <td>
+            <input type="text" class=" input-xlarge" name="name" value="{$list.name}" datatype="*" errormsg="请输入分类名称！" >
+             <span class="Validform_checktip"></span>
+            
+  	 </td>
+    </tr>
+     <tr>
+        <th>父菜单:</th>
+        <td>
+		            <select name="pid" tip="请选择分类">
+		                <foreach name="ptype" item="v" >
+		                <option value="{$key}"  <eq name="key" value="list.id">selected</eq> >{$v}</option>
+		                </foreach>
+		            </select>
+        </td>
+    </tr>
+    <tr>
+        <th>课程分类描述:</th>
+        <td>
+              <textarea name="remark" style="width:300px;height:100px;border:1px solid #ccc;">{$list.remark}</textarea>
+        </td>
+    </tr>
+   
+     
+  
+    <tr>
+       	<th></th>
+       	<notempty name='list'>
+       			<input type='hidden' name='id' value="{$list.id}">
+       	 	<td><input type="submit" id="btn_sub" class="btn-big btn-blue" value="修改"></td>
+       	 <else/>
+       	  <td><input type="submit" class="btn-big btn-blue" value="添加"></td>
+       	</notempty>
+        </tr>
+        
+        
+        
+</block>

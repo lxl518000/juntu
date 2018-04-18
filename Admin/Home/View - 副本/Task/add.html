@@ -1,0 +1,446 @@
+<extend name="Common/form-ajax" />
+
+<block name="form">
+<script type="text/javascript" src="/Public/Vendor/My97DatePicker/WdatePicker.js"></script>
+<!--<link rel="stylesheet" href="/Public/random/css/index.css">
+<link rel="stylesheet" href="/Public/random/css/base.css">-->
+    <tr>
+	              <td >项目名称：</td>
+	              <td>
+		              <select name='oid'>
+		              	<option value='0'>--选择项目--</option>
+		              <volist name='objs' id="vo">
+		              	<option value="{$vo.id}" <eq name="_GET['oid']" value="$vo.id">selected</eq> >{$vo.name}</option>
+		              </volist>
+		               </select>
+	              	</td>
+	            </tr>
+	             <tr>
+	              <td >项目说明：</td>
+	        	      <td>
+	        	      	<TEXTAREA rows="4" class="textarea" cols="" name='omark' style="width:50%" readonly></TEXTAREA>
+	                </td>
+	            </tr>
+	             <!--<tr>
+	              <td >场所类型：</td>
+	        	      <td>
+	        	      	<input type='text' class="text" style="width: 600px" readonly name='placetype' value=''/>
+	        	      	<input type='hidden' name='ptypeid' value="{$list.ptypeid}"/>
+	                </td>
+	            </tr>-->
+	              <tr>
+	              <td >参与部门：</td>
+	        	      <td>
+	        	      <p id='bname'></p>
+	                </td>
+	            </tr>
+	               <tr>
+	              <td >参与职级：</td>
+	        	      <td>
+	        	      <p id='rolename'></p>
+	                </td>
+	            </tr>
+	              <tr>
+	              <td >参于人员：</td>
+	        	      <td>
+	        	      	<input type='text' style="width: 600px" class="text" readonly name='usernumes' value=''/>
+	        	      	<input type='hidden' name='userid' value=""/>
+	                </td>
+	            </tr>
+	            
+
+	             <tr>
+	              <td >参与人员数量：</td>
+	              <td><input name="unum" type="text"  class="text" value="" placeholder='请输入参与人员数量,默认为2人'></td>
+	            </tr>
+	             <!--<tr>
+	              <td >抽取场所数量：</td>
+	              <td><input name="pnum" type="text" class="text" value="" placeholder='请输入抽取场所数量,默认为5家'></td>
+	            </tr>-->
+				<tr>
+	              <td class="fr_marg">抽取场所个数：</td>
+	              <td><input name="pnum" type="text" class="text" value="{$list.num|default='200'}"></td>
+	            </tr>
+	              <tr>
+	              <td class="fr_marg">类型/个数：</td>
+	              <td>
+	             	 <input type='checkbox' id="allptype"><label for='allptype'>全选</label>&nbsp;&nbsp;
+	              		<volist name='ptype' id='vo'>
+	              			<input type='checkbox' name='ptypeid[]' <in name="key" value="$cTypeid">checked</in> id="ptypeid{$key}" value='{$key}'> 
+	              			<label for="ptypeid{$key}">{$vo}</label>&nbsp;&nbsp;
+	              			<input type='text' class='text per_{$key} ptypenum' style='width:30px;float:none;height:30px;' name='per_{$key}' placeholder='家'>
+	              		</volist>
+	              </td>
+	            </tr>
+	               <tr>
+	              <td >检查起始时间：</td>
+	              <td><input name="start" type="text" class="text" readonly onClick="WdatePicker({dateFmt:'yyyy-MM-dd'})" value="{$startTime}"/></td>
+	            </tr>
+	              <tr>
+	              <td >检查结束时间：</td>
+	              <td><input name="end" type="text" class="text" readonly onClick="WdatePicker({dateFmt:'yyyy-MM-dd'})"  value="{$endTime}"/></td>
+	            </tr>
+	            <tr>
+	              <td >检查说明：</td>
+	        	      <td>
+	        	      	<TEXTAREA rows="4" class="textarea" cols="" name='mark'style="width:50%">{$list.mark}</TEXTAREA>
+	                </td>
+					<div id="penduser" style='display:none'/></div>
+					<div id="pendbar" style='display:none'/></div>
+	            </tr>
+							<tr id='1'>
+								<th></th>
+								
+	        	      <td>
+	        	      	<a href="javascript:void(0)" id="start" onclick="dstart()" style='float:left;margin-right:20px;'>开始抽取</a>
+									    
+									<input type='hidden' name='bid' value="{$vo.bid}"/>
+									<a class="btn btn-blue mrt10" id="preview" data-area="80%,80%" href="javascript:void(0)"  style='float:left;display:none' onclick="preview()">预览任务</a>
+	                </td>
+								
+        			</tr>
+							
+							<script type="text/javascript" src="/Public/Vendor/zeroclipboard/ZeroClipboard.js"></script>
+							<script type="text/javascript">
+	
+	
+											$(function(){
+												init({$_GET['oid']}); //初始化项目
+
+												//切换事件
+												$('select[name="oid"]').on('change',function(){
+												var oid = $(this).val();
+												init(oid);
+												})
+											})
+
+
+											//根据项目ID获取项目信息
+											function init(oid){
+											if(!oid){
+												return false;
+											}
+												
+												var url = "{:U('getObject')}&oid="+oid;
+												$.get(url, function(data){
+												$('input[name="start"]').val(data.start);
+												$('input[name="end"]').val(data.end);
+												$('textarea[name="omark"]').val(data.mark);
+												$('input[name="placetype"]').val(data.ptypes);
+												$('input[name="usernumes"]').val(data.usernames);
+											
+												
+											
+												$('input[name="ptypeid"]').val(data.ptypeid);
+												$('input[name="userid"]').val(data.userid);
+												$('#bname').html(data.bname);
+												$('input[name="bid"]').val(data.bid);
+												$('#rolename').html(data.rolename);
+													
+												});
+											}
+
+
+											//开始抽取
+											function dstart(){
+												var oid = $('select[name="oid"]').val();
+												if(!oid || oid==0){
+												layer.tips('请选择一个项目',$('select[name="oid"]'));
+												return false;
+											}
+												var num = $('input[name="pnum"]').val();
+												if(!num){
+													layer.msg('请填写抽取个数');
+													return;
+												}
+												
+												var len = $('input[name="ptypeid[]"]:checked').length;
+												if(len<=0){
+													layer.msg('请至少选择一个场所类型');
+													return;
+												}
+												
+												var sumnum = 0
+												$('input[name="ptypeid[]"]:checked').each(function(i){
+													var n = $(this).val();
+													var v = $('.per_'+n).val();
+												
+													if(v < 0 || !v){
+														layer.tips('请填写抽取个数',$('.per_'+n));
+														return false;
+													}
+													sumnum += parseInt(v);
+												})
+												
+
+												
+												if(sumnum != num){
+												
+													layer.tips('抽取个数和类型个数不相等',$('input[name="pnum"]'));return;
+												}
+												
+												
+												var bid = $('select[name="bid"]').val();
+												if(bid<=0){
+													layer.msg('请选择区域范围');
+													return;
+												}
+												var openurl = "{:U('start')}&"+$('#form1').serialize();
+												console.log($('#form1').serialize());
+												var start = $('input[name="start"]').val();
+												var end = $('input[name="end"]').val();
+												layer.open({
+													type: 2,
+													shade: [0.5, '#393D49'],
+													shift:3,
+													//shadeClose: true,
+													title : '随机抽取&nbsp;&nbsp;'+'任务开始时间：'+start+'--结束时间：'+end,
+													area : ['100%','100%'],
+													fix: false, //不固定
+													maxmin: true,
+													content: openurl,
+												});
+											}
+											
+
+											function preview(){
+												var oid = $('select[name="oid"]').val();
+												if(!oid || oid==0){
+												layer.tips('请选择一个项目',$('select[name="oid"]'));
+												return false;
+											}
+
+												var openurl = "{:U('preview')}&"+$('#form1').serialize();
+												// console.log(openurl);
+													// console.log(111111);
+												// window.location.reload(openurl);
+												document.location=openurl;
+											
+											}
+
+
+
+											function subFun(status,data,info){
+													if(status == 1){
+													UsubFun(true,info,function(){ document.location="{:U('index')}"; },"返回列表")
+													}
+											}
+											$(function(){
+	
+												$("#allrole").click(function(){
+													$("input[name='gov[]']").attr("checked", this.checked);
+													$("input[name='userid[]']").attr("checked", this.checked);
+													$("#alluser").attr("checked", this.checked);
+												});
+												
+												$('#allptype').click(function(){
+
+													$("input[name='ptypeid[]']").attr("checked", this.checked);
+												})
+												
+												
+												$('select[name="bid"]').on('change',function(){
+												/* 	var val = $(this).val();
+													if(val==0){
+														$('#people').val("<span>请选择部门</span>");
+														return;
+													}
+													var url = "{:U('loadperson')}&bid="+val;
+													$('#people').load(url); */
+												})
+
+												
+												$('input[name="gov[]"]').on('click',function(){
+													var val = $(this).val();
+													$('.role_'+val).attr("checked", this.checked);
+												})
+												
+												
+												/* <notempty name='list'>
+												var url = "{:U('loadperson')}&bid="+{$list.bid}+'&check={$list.userid|trim=###,','}';
+												$('#people').load(url);
+
+												</notempty>
+											*/
+										})
+
+</script>
+								
+</block>
+
+<!--<include file='Public/top'/>
+<script type="text/javascript" src="/Public/Vendor/My97DatePicker/WdatePicker.js"></script>
+<body>
+<div class="mian">
+<include file="Public/header"/>
+  <div class="warp_fr">
+
+    <div class="xz_wb"  style='position:relative;'>
+        <a class='show_info' href="javascript:window.history.back();">返回</a>
+   <form id="form1" action="{:U('Task/preview')}" method='post'>
+      <div class="wx_cont wx_top">
+      
+	        <table class="filetable1">
+	          <tbody>
+	            <tr>
+	              <td class="fr_marg">项目名称：</td>
+	              <td>
+		              <select name='oid'>
+		              	<option value='0'>--选择项目--</option>
+		              <volist name='objs' id="vo">
+		              	<option value="{$vo.id}" <eq name="_GET['oid']" value="$vo.id">selected</eq> >{$vo.name}</option>
+		              </volist>
+		               </select>
+	              	</td>
+	            </tr>
+	             <tr>
+	              <td class="fr_marg">项目说明：</td>
+	        	      <td>
+	        	      	<TEXTAREA rows="4" class="textarea" cols="" name='omark' readonly></TEXTAREA>
+	                </td>
+	            </tr>
+	             <tr>
+	              <td class="fr_marg">场所类型：</td>
+	        	      <td>
+	        	      	<input type='text' class="text" readonly name='placetype' value=''/>
+	        	      	<input type='hidden' name='ptypeid' value="{$list.ptypeid}"/>
+	                </td>
+	            </tr>
+	              <tr>
+	              <td class="fr_marg">参与部门：</td>
+	        	      <td>
+	        	      <p id='bname'></p>
+	                </td>
+	            </tr>
+	               <tr>
+	              <td class="fr_marg">参与职级：</td>
+	        	      <td>
+	        	      <p id='rolename'></p>
+	                </td>
+	            </tr>
+	              <tr>
+	              <td class="fr_marg">参于人员：</td>
+	        	      <td>
+	        	      	<input type='text' class="text" readonly name='usernumes' value=''/>
+	        	      	<input type='hidden' name='userid' value=""/>
+	                </td>
+	            </tr>
+	            
+
+	             <tr>
+	              <td class="fr_marg">参与人员数量：</td>
+	              <td><input name="unum" type="text"  class="text" value="" placeholder='请输入参与人员数量,默认为2人'></td>
+	            </tr>
+	             <tr>
+	              <td class="fr_marg">抽取场所数量：</td>
+	              <td><input name="pnum" type="text" class="text" value="" placeholder='请输入抽取场所数量,默认为5家'></td>
+	            </tr>
+	               <tr>
+	              <td class="fr_marg">检查起始时间：</td>
+	              <td><input name="start" type="text" class="text" readonly onClick="WdatePicker({dateFmt:'yyyy-MM-dd'})" value="{$startTime}"/></td>
+	            </tr>
+	              <tr>
+	              <td class="fr_marg">检查结束时间：</td>
+	              <td><input name="end" type="text" class="text" readonly onClick="WdatePicker({dateFmt:'yyyy-MM-dd'})"  value="{$endTime}"/></td>
+	            </tr>
+	            <tr>
+	              <td class="fr_marg">检查说明：</td>
+	        	      <td>
+	        	      	<TEXTAREA rows="4" class="textarea" cols="" name='mark'>{$list.mark}</TEXTAREA>
+	                </td>
+	            </tr>
+	          </tbody>
+	        </table>
+	        
+	          <div id="penduser" style='display:none'/></div>
+	   	   <div id="pendbar" style='display:none'/></div>
+
+        <div class="xz_title" style="margin-left:110px;">
+       		  <a href="javascript:void(0)" id="start" onclick="dstart()" style='float:left;margin-right:20px;'>开始抽取</a>
+       		  <input type='hidden' name='bid' value="{$vo.bid}"/>
+       		 <input type='submit' value="预览任务" id="preview" class='btna' style='float:left;display:none'>
+        </div>
+        
+      </div>
+      	 </form>
+      	 
+    
+      	 
+      
+     
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="/Public/Vendor/zeroclipboard/ZeroClipboard.js"></script>
+<script type="text/javascript">
+	
+	
+	$(function(){
+		init({$_GET['oid']}); //初始化项目
+		
+		//切换事件
+		$('select[name="oid"]').on('change',function(){
+			var oid = $(this).val();
+			init(oid);
+		})
+	})
+	
+	
+	//根据项目ID获取项目信息
+	function init(oid){
+		if(!oid){
+			return false;
+		}
+		var url = "{:U('getObject')}&oid="+oid;
+		$.get(url, function(data){
+			$('input[name="start"]').val(data.start);
+			$('input[name="end"]').val(data.end);
+			$('textarea[name="omark"]').val(data.mark);
+			$('input[name="placetype"]').val(data.ptypes);
+			$('input[name="usernumes"]').val(data.usernames);
+			$('input[name="ptypeid"]').val(data.ptypeid);
+			$('input[name="userid"]').val(data.userid);
+			$('#bname').html(data.bname);
+			$('input[name="bid"]').val(data.bid);
+			$('#rolename').html(data.rolename);
+		});
+	}
+	
+	
+	//开始抽取
+	function dstart(){
+		var oid = $('select[name="oid"]').val();
+		if(!oid || oid==0){
+			layer.tips('请选择一个项目',$('select[name="oid"]'));
+			return false;
+		}
+		
+		var openurl = "{:U('start')}&"+$('#form1').serialize();
+		var start = $('input[name="start"]').val();
+		var end = $('input[name="end"]').val();
+		layer.open({
+			  type: 2,
+			  shade: [0.5, '#393D49'],
+			  shift:3,
+			  //shadeClose: true,
+			  title : '随机抽取&nbsp;&nbsp;'+'任务开始时间：'+start+'--结束时间：'+end,
+			  area : ['1000px','550px'],
+			  fix: false, //不固定
+			  maxmin: true,
+			  content: openurl,
+		});
+	}
+	
+	
+	
+	
+	
+function subFun(status,data,info){
+	  if(status == 1){
+		 UsubFun(true,info,function(){ document.location="{:U('index')}"; },"返回列表")
+	  }
+	}
+
+</script>
+</body>
+</html>-->

@@ -1,0 +1,88 @@
+<extend name="Common/form-ajax" />
+<block name="form">
+	
+   
+
+    <tr>
+        <th>SERVER名称:</th>
+        <td>
+            <input type="text" class=" input-xlarge" name="name" value="{$list.name} " datatype="*" errormsg="请输入vpn名称" >
+             <span class="Validform_checktip"></span>
+            
+  	 </td>
+    </tr>
+    <tr>
+        <td  class="tr" >来源机房:</td>
+        <td  class="tl" >
+        	<select style='width:200px' name='roomset'>
+        		<volist name='Think.config.SOCK5_ROOM_SET' id='vo'>
+						<option value="{$key}" <eq name='list.roomset' value="$key">selected</eq>>{$vo}</option>
+				</volist>        	
+        	</select>
+        </td>
+      </tr>
+        <tr>
+        <td  class="tr" >状态:</td>
+        <td  class="tl"> <select name="status" class="select2">
+                <option value="1" <eq name="list.status" value="1">selected</eq>> 开启</option>
+                <option value="2" <eq name="list.status" value="2">selected</eq>> 关闭</option>
+            </select>
+            </td>
+      </tr>
+          <tr>
+        <td  class="tr" >SERVER_IP:</td>
+        <td  class="tl" > <input type="text" name="serverip" class="dfinput" value="{$list.serverip}"  datatype="*" errormsg="请输入名称"/> <span class="Validform_checktip"></span></td>
+      </tr>
+      
+      <tr>
+        <td  class="tr" >用户名:</td>
+        <td  class="tl" > <input type="text" name="username" class="dfinput" value="{$list.username}"  datatype="*" errormsg="请输入用户名"/></td>
+      </tr>
+         <tr>
+        <td  class="tr" >密码:</td>
+        <td  class="tl" > <input type="text" name="password" class="dfinput" value="{$list.password}"  datatype="*" errormsg="请输入密码"/></td>
+      </tr>
+       <tr>
+        <td  class="tr" >端口:</td>
+        <td  class="tl" > <input type="text" name="port" class="dfinput" value="{$list.port}"  datatype="*" errormsg="请输入端口"/></td>
+      </tr>
+     <tr id="J_pro" style="">
+       <td class="tr">选择省:</td>
+       <td class="tl">
+       
+       <input type='checkbox' id='pall' name='checkall' value='1' {$list['region']==0?'checked':''}><label for='pall'>全选</label>
+       	<volist name="mypro" id="vos">
+       			<label for="J_{$vos.RegionCode}" style="margin-right:5px;">
+       			<input type="checkbox" <if condition="in_array($vos['RegionCode'],explode(',',$list['region'])) || $list['region']==0">checked</if> name="region[]" id="J_{$vos.RegionCode}" value="{$vos.RegionCode}" />
+       			{$vos.RegionName}
+       			</label>
+       	</volist>
+       	
+       	<script>
+       		$('#pall').on('click',function(){
+       				$('input[name="region[]"]').attr('checked',this.checked);
+       			}
+       		)
+       		
+       	</script>
+       </td>
+       </tr>
+     <tr>
+        <th>备注:</th>
+        <td>
+           <textarea style='width:300px;height:50px;' name='mark'>{$list.mark}</textarea>
+  	 </td>
+    </tr>
+    
+  
+    <tr>
+       	<th></th>
+       	<notempty name='list'>
+       			<input type='hidden' name='id' value="{$list.id}">
+       	 	<td><input type="submit" id="btn_sub" class="btn-big btn-blue" value="修改"></td>
+       	 <else/>
+       	  <td><input type="submit" class="btn-big btn-blue" value="添加"></td>
+       	</notempty>
+        </tr>
+       
+</block>

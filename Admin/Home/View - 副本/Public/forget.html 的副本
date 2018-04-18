@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>欢迎登录文网卫士未成年人保护系统</title>
+<link href="/Public/images/favicon.ico" rel="shortcut icon" />
+<link href="/Public/agent/css/login.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="/Public/js/jquery.js" ></script>
+	<script type="text/javascript" src="/Public/js/common.js"></script>
+	<script type="text/javascript" src="/Public/js/CheckForm.js"></script>
+	<script type="text/javascript" src="/Public/Vendor/layer/layer.js"></script>
+</head>
+
+<body style="background-color:#323a4d; height:100%; width:100%; background:url(/Public/agent/img/bg.png) no-repeat; background-size:100% 100%; overflow:hidden">
+
+<div class="loginbody"> <span class="systemlogo"></span>
+  <div class="loginbox loginbox2 loginbox4">
+   <form method="post" id="form1" name="form1"  action="{:U('dologin')}">
+      <ul>
+	   	<input type='hidden' name='type' value='phone'/>
+	   	 	<li>
+	        <input name="cellphone" type="text" class="loginphone text" placeholder="手机号" value=""/>
+	      </li>
+	      
+	       <li class="yzm"> <span>
+	        <input name="yzm" type="text" placeholder="验证码" />
+	        </span>
+	        
+	        <cite><button type='button'  id="sends" onclick="sendMsg(this)" style='font-size:'>发送验证码</button></cite> 
+	       </li>
+	     
+	       <li>
+	        <input name="pass" type="password" class="loginpwd text" placeholder="输入新的密码" value=""/>
+	      </li>
+	      
+	   	  <li>
+	        <input name="repass" type="password" class="loginpwd text" placeholder="确认登录密码" value=""/>
+	      </li>
+	     
+	      <li>
+	     	 <input name="" type="button" class="loginbtn" value="找回密码"  onclick="formcheckLogin('form1','{:U('forget')}','subFun')"  />
+   		    <label><a href="{:U('Public/login')}" class="sj_dl">登录</a></label>
+      </li>
+    </ul>
+    </form>
+    
+  </div>
+</div>
+<img src="/Public/agent/img/bg.png" style="position:absolute; top:0; left:0; bottom:0;" height="100%" width="100%">
+</body>
+</html>
+
+<script type="text/javascript">
+
+document.onkeydown = function(e){ 
+    var ev = document.all ? window.event : e;
+    if(ev.keyCode==13) {
+    	formcheckLogin('form1','{:U('dologin')}','subFun')
+	/* 	if($('input[name="username"]').val()!='' && $('input[name="password"]').val()!=''){
+			// formchecklogin('form1','{:U('userlogin')}','subFun');
+			//formcheck('form1','{:U('login')}','subFun');
+		} */
+     }
+}
+function subFun(status,info,data){
+	if(status == 1){
+		 //document.location="{:U('Index/index')}";
+		 //return;
+		UsubFun(true,info,function(){ document.location="{:U('Index/index')}"; },"找回密码成功")
+	  }
+}
+
+function flush(obj){
+	var url = "{:U('verify')}&t="+Math.random();
+	$(obj).attr('src',url);
+}
+	
+
+
+	function getCookie(name) 
+	{ 
+	    var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+	 
+	    if(arr=document.cookie.match(reg))
+	 
+	        return unescape(arr[2]); 
+	    else 
+	        return null; 
+	} 
+
+	function setCookie(name,value) 
+	{ 
+	    var Days = 30; 
+	    var exp = new Date(); 
+	    exp.setTime(exp.getTime() + Days*24*60*60*1000); 
+	    document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString(); 
+	} 
+	
+	
+	 i = 60;
+	 timer = '' ;
+	function sendMsg(obj){
+		var phone= $('input[name="cellphone"]').val();
+		if(phone == ''){
+			layer.msg('请输入手机号',{icon:5});
+			return;
+		}
+		var myreg = /1[123456789]{1}\d{9}$/; 
+		if(!myreg.test(phone)){
+			layer.msg('无效的手机号',{icon:5});
+			return;
+		}
+	
+		lastTime = getCookie('lastParentForgetMessage');
+		
+		if(lastTime>0){
+			var now = new Date();
+		    var nowtime = now.getTime();
+			var nowtime = parseInt(now/1000);
+			var limit = 60- (nowtime-lastTime);
+			layer.msg('请不要频繁操作！下次发送在'+limit+'秒后！',{icon:5});
+			return;
+		}
+		
+		$.ajax({
+			   type: "POST",
+			   url: "{:U('Public/forgetVerify')}",
+			   data: "cellphone="+phone,
+			   success: function(msg){
+			     if(msg.status == 0){
+			    	layer.msg(msg.info,{icon:5});
+			    	$('#sends').attr('disabled',false).html('点击发送');
+			    	clearTimeout(timer);
+			    	return false;
+			     }
+			     $('#mobile').val(msg.url);//手机号码
+			     layer.msg(msg.info,{icon:1});
+			   }
+		});
+			
+			
+		
+		var obj = $(obj);
+		$('#sends').attr('disabled',true);
+	
+		$('#sends').html('<b id="timer">'+i+'</b>s');
+		
+		 timer = setTimeout('last()', 1000); 
+	}
+
+	
+
+	function last(){
+		var begin = $('#timer').html();
+		$('#sends').css('background','');
+		if(begin<=1){
+			setCookie('t',60);
+			$('#sends').attr('disabled',false).html('重新发送');
+			return;
+		}
+		cur = begin -1;
+		$('#timer').html(cur);
+		$('#sends').attr('disabled',true);
+		setCookie('t',cur);
+
+		timer = setTimeout('last()',1000);
+	}
+	
+	
+	
+	
+</script>

@@ -1,0 +1,43 @@
+<extend name="Common/form-ajax" />
+<block name="form">
+	
+    <tr>
+        <th>上级渠道渠道:</th>
+        <td>
+		            <select name="pid" tip="请选择上级">
+		                <foreach name="parent" item="v">
+		                <option value="{$v.id}" <eq name="v.id" value="$Think.get.pid">selected</eq> >{$v.mark}{$v.title}</option>
+		                </foreach>
+		            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <th>名称:</th>
+        <td>
+            <input type="text" class=" input-xlarge" name="name" value="{$list.name}" datatype="*" errormsg="请输入渠道名称！" >
+             <span class="Validform_checktip"></span>
+            
+  	 </td>
+    </tr>
+     <tr>
+        <th>备注:</th>
+        <td>
+            <input type="text" class=" input-xlarge" name="remark" value="{$list.remark}"  >
+  	 </td>
+    </tr>
+  
+    
+    <tr>
+       	<th></th>
+       	<notempty name='list'>
+       			<input type='hidden' name='id' value="{$list.id}">
+       	 	<td><input type="submit" id="btn_sub" class="btn-big btn-blue" value="修改"></td>
+       	 <else/>
+       	  <td><input type="submit" class="btn-big btn-blue" value="添加"></td>
+       	</notempty>
+        </tr>
+        
+        
+        
+</block>

@@ -1,0 +1,53 @@
+<extend name="Common/list-tree" />
+<block name="action">
+<if condition="allow(CONTROLLER_NAME.'/add')">
+                <a class="J_open btn btn-green btn-big mrt10" data-url="{:U('add',array('type'=>$_REQUEST['type']))}" href="javascript:;">添加</a>
+</if>
+
+</block>
+
+<block name="batch">
+    <div class="input-group">
+        <span class="text-icon"> 批 量 </span>
+        <select name="batch">
+            <option value="sort">排序</option>
+        </select>
+    </div>
+</block>
+
+<block name="list">
+    <tr>
+        <th width="50" class="tc">ID</th>
+        <th width="200">渠道名称</th>
+        <th >渠道链接</th>
+        <th>备注</th>
+        <th>添加时间</th>
+        <th >操作</th>
+    </tr>
+    <foreach name="list" item="v">
+    <tr id="{$v.id}" pId="{$v.pid}" >
+        <td class="tc">{$v.id}</td>
+        <td>{$v.name}</td>
+        <td>{$Think.config.CHANNEL_URL}{$v.link}</td>
+        <td>{$v.remark}</td>
+        <td>{$v.addtime}</td>
+        <td>
+          <if condition="allow('Link/add')">
+                <a class="J_open btn btn-green mrt10" data-url="{:U('add?pid='.$v['id'])}" href="javascript:;">添加子渠道</a>
+          </if>
+           <if condition="allow('Link/edit')">  
+           		 <a class="J_open btn btn-blue mrt10" data-url="{:U('edit?id='.$v['id'])}" href="javascript:;">编辑渠道</a>
+           </if>
+            <if condition="allow('Link/delete')"> 
+           		 <a class="J_confirm btn btn-red mrt10" data-url="{:U('delete?id='.$v['id'])}" href="javascript:;">删除渠道</a>
+            </if>
+       
+        </td>
+    </tr>
+    </foreach>
+       
+       <script>
+
+	
+       </script>
+</block>

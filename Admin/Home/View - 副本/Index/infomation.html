@@ -1,0 +1,31 @@
+<extend name="Common/list-base" />
+<block name='action'>
+
+</block>
+
+<block name="list">
+<tr>
+	<th class="tc">id</th>
+    <th class="tc">发件人</th> 
+    <th class="tl">内容</th>
+    <th class="tc">状态</th>
+    <th class="tc">操作</th>
+</tr>
+<foreach name="list" item="v">
+<tr>
+	<td class="tc">{$v.id}</td>
+    <td class="tc" style='width:200px;'>{$v.fromuser}</td>
+    <td class="tl">{$v.content}</td>
+    <td class="tc" style='width:70px'>{$v['status']==1?'未读':'已处理'}</td>
+    <td class="tc" style='width:150px;'>
+    <eq name='v.status' value="1">
+    <a class="J_confirm btn btn-blue mrt10" data-url="{:U('infoconfirm?id='.$v['id'])}" href="javascript:;">同意</a>
+
+
+    <a class="J_confirm btn btn-red mrt10" data-url="{:U('refuse?id='.$v['id'])}" href="javascript:;">拒绝</a>
+    </eq>
+    </td>
+</tr>
+</foreach>
+</block>
+

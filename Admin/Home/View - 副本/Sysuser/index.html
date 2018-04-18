@@ -1,0 +1,79 @@
+<extend name="Common/list-base" />
+<block name="action">
+             	<if condition="allow(CONTROLLER_NAME.'/add')">
+               	 <a class="J_open btn btn-green btn-big mrt10" data-area="900px,600px" data-url="{:U('add')}" href="javascript:;">添加</a>
+                </if>
+                <if condition="allow('Sysuser/uimport')">
+       		         <a class="J_open btn btn-green btn-big mrt10" data-url="{:U('uimport')}" href="javascript:;">导入用户</a>
+                </if>
+               
+</block>
+ 
+<block name="search">
+    <div class="input-group">
+        {~W('Region/RegionAddSelect',array('li',0))} 
+        <span class="text-icon">搜索</span><input type="text" placeholder="真实姓名查询" value="{$_REQUEST['realname']}" name="realname" >
+   		<span class="text-icon">部门</span>
+           
+        <span class="text-icon">角色</span>
+		    <select name='role_id'>
+		          	<option value='0'>--选择角色--</option>
+		  	   <foreach name="parent" item="v">
+		            <option value="{$v.id}" <eq name="v.id" value="$_REQUEST['role_id']">selected</eq> >{$v.mark}{$v.title}</option>
+		      </foreach>
+		     
+		    </select>
+    </div>
+</block>
+
+<block name="list">
+<tr>
+	<th>id</th>
+    <th width="100">姓名</th>
+    <th width="100">性别</th>
+    <th width="100">头像</th>
+    <th>角色</th>
+    <th>行政级别</th>
+    <th>手机</th>
+    <th>部门</th>
+    <th>上级部门</th>
+    <th>区域</th>
+    <!--<th>分机号</th>
+    <th>微信号</th>
+    <th>大头贴</th>
+    <th>祝福语</th>-->
+    <!--<th>邮箱</th>-->
+    <th width="50" class="tc">状态</th>
+    <th width="300">操作</th>
+</tr>
+<foreach name="list" item="v">
+<tr>
+	<td>{$v.id}</td>
+    <td>{$v.realname}</td>
+    <td>{$v['sex']==1?'男':'女'}</td>
+    <td><img width='64' height='64' src="{$v.wx_avatar|getAvatar}"></td>
+    <td>{$roles[$v['role_id']]}</td>
+    <td>{$level[$v['level']]}</td>
+    <td>{$v.mobile}</td>
+    <td>{$dep[$v[depid]]|default=$roles[$v['role_id']]}</td>
+    <td>{$dep[$v[fname]]|default='无'}</td>
+    <td>{:queryFullRegionInfo($v['region'])}</td>
+    <!--<td>{$v.fnum}</td>-->
+    <!--<td>{$v.wx_weixinid}</td>
+    <td><notempty name='v.filepath'><img width='64' height='64' src="{$v.filepath}"></notempty></td>
+    <td style='width:300px;'>{$v.blessing}</td>-->
+    <!--<td>{$v.email}</td>-->
+    <td class="tc">{:int_str($v['status'],'0:false,1:true')}</td>
+    <td>
+     	<if condition="allow('Sysuser/add')">
+       		 <a class="J_open btn btn-blue mrt10" data-area="900px,600px"  data-url="{:U('edit?id='.$v['id'])}" href="javascript:;">编辑</a>
+        </if>
+         <if condition="allow('Sysuser/delete')">
+       		 <a class="J_confirm btn btn-red mrt10" data-url="{:U('delete?id='.$v['id'])}" href="javascript:;">删除</a>
+        </if>
+        
+    </td>
+</tr>
+</foreach>
+</block>
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<include file="Common/inc"/>
+    <script type="text/javascript">
+        var app={
+            "root":"__ROOT__",
+            "public":"__PUBLIC__",
+        };
+        
+        K_CALL_URL = "{:U('Call/call')}";
+    </script>
+
+</head>
+<body>
+	<div class="main">
+		{__CONTENT__}
+	</div>
+    <script type="text/javascript">
+        //var iframe = parent.iframe;
+        //iframe.contentWindow
+        $(document).bind('keydown',function(e){
+            e = window.event||e;
+            //F5刷新iframe
+            if(e.keyCode==116){
+                reloadPage();
+                return false;
+            }
+        });
+        function reloadPage(win) {
+            if(typeof(win) == 'undefined'){win=window;}
+            var location = win.location;
+            location.href = location.pathname + location.search;
+        }
+        
+        
+    </script>
+</body>
+</html>

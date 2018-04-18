@@ -1,0 +1,52 @@
+<extend name="Common/form-ajax" />
+<block name="form">
+	
+   
+
+    <tr>
+        <th>公司名称:</th>
+        <td>
+            <input type="text" class=" input-xlarge" name="name" value="{$list.name} " datatype="*" errormsg="请输入公司名称" >
+             <span class="Validform_checktip"></span>
+            
+  	 </td>
+    </tr>
+     <tr>
+        <th>联系人:</th>
+        <td>
+            <input type="text" class=" input-xlarge" name="user" value="{$list.user} "  >
+  	 </td>
+    </tr>
+        <tr>
+        <th>联系电话:</th>
+        <td>
+            <input type="text" class=" input-xlarge" name="phone" value="{$list.phone} "  >
+  	 </td>
+    </tr>
+     <tr>
+        <th>联系地址:</th>
+        <td>
+            <input type="text" class=" input-xlarge" name="address" value="{$list.address} "  >
+             <span class="Validform_checktip"></span>
+  	 </td>
+    </tr>
+    <tr>
+        <th>备注:</th>
+        <td>
+           <textarea style='width:300px;height:50px;' name='mark'>{$list.mark}</textarea>
+  	 </td>
+    </tr>
+
+    
+  
+    <tr>
+       	<th></th>
+       	<notempty name='list'>
+       			<input type='hidden' name='id' value="{$list.id}">
+       	 	<td><input type="submit" id="btn_sub" class="btn-big btn-blue" value="修改"></td>
+       	 <else/>
+       	  <td><input type="submit" class="btn-big btn-blue" value="添加"></td>
+       	</notempty>
+        </tr>
+     
+</block>

@@ -1,0 +1,68 @@
+<extend name="Common/list-tree" />
+<block name="action">
+             	<if condition="allow(CONTROLLER_NAME.'/add')">
+               	 <a class="J_open btn btn-green btn-big mrt10" data-area="900px,600px" data-url="{:U('addtopmenu',array('cid'=>$con['id']))}" href="javascript:;">添加顶级菜单</a>
+                </if>
+                <if condition="allow('Sysuser/uimport')">
+       		         <a class=" J_confirm btn btn-green btn-big mrt10" data-url="{:U('updateMenu',array('cid'=>$con['id']))}" href="javascript:;">更新菜单</a>
+                </if>
+               
+</block>
+<block name="batch">
+    <div class="input-group">
+        <span class="text-icon"> 批 量 </span>
+        <select name="batch">
+            <option value="sort">排序</option>
+        </select>
+    </div>
+</block>
+
+<block name="list">
+    <tr>
+        <th width="50" class="tc">ID</th>
+       <th >名称</th>
+        <th>菜单类型</th>
+        <th>菜单状态</th>
+        <th>关键字</th>
+        <th>链接</th>
+        <th>上级</th>
+         <th>操作</th>
+    </tr>
+       <tbody class="cj_wj">
+         <volist name="list" id="vo">
+	      <tr id="tablelist_{$vo.id}">
+	   	    <td>{$vo.id}</td>
+	        <td style='text-align:left;color:#056ccb;font-size:14px;font-weight:bold'>{$vo.name}</td>
+	        <td>{$vo['type']==1?'点击click':'链接view'}</td>
+	        <td>{$vo['status']==1?"<span style='color:green'>正常</span>":"<span style='color:red'>禁用</span>"}</td>
+	        <td><eq name='vo["type"]' value='2'><a href="{$vo.con}" target='_blank'>{$vo.con|msubstr=###,0,30}</a><else/>{$vo.con}</eq></td>
+	        <td>顶级栏目</td>
+	        <td>
+	     		<a data-url="{:U('readtopmenu',array('id'=>$vo['id'],'cid'=>$vo['cid']))}" class="J_open btn btn-blue mrt10" data-area="900px,600px">编辑</a>
+	     		<a data-url="{:U('addsonmenu',array('pid'=>$vo['id'],'cid'=>$vo['cid']))}" class="J_open btn btn-green mrt10" data-area="900px,600px">添加子菜单</a>
+	       	     <a data-url="{:U('delmenu')}&id={$vo.id}" data-title="确定删除么？"  class="J_confirm btn btn-red mrt10">删除</a>
+	        </td>
+	      </tr>
+	      <notempty name="vo['_child']">
+	      	<volist name="vo['_child']" id="vo1">
+	      	  <tr id="tablelist_{$vo.id}">
+			       <td>{$vo1.id}</td>
+			        <td style='text-align:left;font-size:12px;color:#056ccb;font-weight:bold;'>|--{$vo1.name}</td>
+			        <td>{$vo1['type']==1?'点击click':'浏览view'}</td>
+			        <td>{$vo1['status']==1?"<span style='color:green'>正常</span>":"<span style='color:red'>禁用</span>"}</td>
+			        <td><eq name='vo1["type"]' value='2'><a href="{$vo1.con}" target='_blank'>{$vo1.con|msubstr=###,0,30}</a><else/>{$vo1.con}</eq></a></td>
+			        <td>{$vo.name}</td>
+			        <td>
+			     		<a data-url="{:U('readsonmenu',array('id'=>$vo1['id'],'pid'=>$vo1['pid'],'cid'=>$vo['cid']))}" class="J_open btn btn-blue mrt10" data-area="900px,600px">编辑</a>
+			     	
+			       	     <a data-url="{:U('delmenu')}&id={$vo1.id}" data-title="确定删除么？" class="J_confirm btn btn-red mrt10">删除</a>
+			        </td>
+			      </tr>
+	      	</volist>
+	      </notempty>     
+	     </volist>
+     
+    </tbody>
+    
+       
+</block>

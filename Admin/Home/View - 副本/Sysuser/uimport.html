@@ -1,0 +1,90 @@
+
+<body>
+<div class="mian">
+
+  <div class="warp_fr">
+    <div class="xz_wb">
+   <form id="form1">
+      <div class="wx_cont wx_top">
+	        <table class="filetable1">
+	          <tbody>
+	          
+	          	  <tr>
+            <td width="100px;" style="text-align:right" >模板下载：</td>
+            <td>
+            		<a href="/Public/template/uimgport.xlsx"><i class="iconfont">&#xe60a;</i>点击下载</a>
+            </td>
+							<td>
+            		<a href="/Public/template/region.xlsx"><i class="iconfont icon-xiazai"></i>区域编码下载</a>
+            </td>
+          </tr>
+	            <tr>
+            <td width="100px;" style="text-align:right" id="choosefile">选择文件：</td>
+            <td>
+            	{:W('Swf/swfile',array('url'=>U('Public/upimg'),'ext'=>'*.xls;*.xlsx'))}
+            	
+            </td>
+          </tr>
+	           
+	            
+	          
+	          </tbody>
+	        </table>
+
+        <div class="xz_title" style="margin-left:110px;">
+       	
+       		  <a  class="btn btn-blue mrt10"  href="javascript:void(0)" onclick="doimport()">导入用户</a>
+        </div>
+        
+      </div>
+      	 </form>
+      	 <div id="res"></div>
+    </div>
+  </div>
+</div>
+ <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="shortcut Icon" href="__PUBLIC__/images/favicon.ico" />
+<link rel="stylesheet" href="__PUBLIC__/Css/reset.css" type="text/css" />
+<link rel="stylesheet" href="__PUBLIC__/Admin/admin.css" type="text/css" />
+<link rel="stylesheet" href="__PUBLIC__/Css/iconfont.css" type="text/css" />
+<script type="text/javascript" src="__PUBLIC__/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/common.js"></script>
+<script  type="text/javascript" src="__PUBLIC__/Vendor/layer-v3.0.1/layer/layer.js"></script>
+<script type="text/javascript">
+	
+function subFun(status,data,info){
+	  if(status == 1){
+		 UsubFun(true,info,function(){ document.location="{:U('index')}"; },"返回列表")
+	  }
+	}
+	
+function doimport(){
+	var data = $('#form1').serialize();
+	if(!data){
+		layer.tips('请上传文件',$('#choosefile'));
+		return;
+	}
+	var sindex = layer.msg('正在导入,请耐心等待', {icon: 16,time:1000000});
+	$('#doimport').hide();
+	$.ajax({
+		   type: "POST",
+		   url: "{:U('doimport')}",
+		   data: data,
+		   success: function(msg){
+		    if(msg.status==1){
+		    	layer.msg('导入成功。。', {icon: 6});
+	    	}else{
+	    		layer.msg('导入失败。。', {icon: 5});
+	    	
+	    	}
+			layer.close(sindex);
+		    $('#doimport').show();
+		    $('#res').html(msg.info);
+		   }
+		});
+	
+}
+
+</script>
+</body>
+</html>

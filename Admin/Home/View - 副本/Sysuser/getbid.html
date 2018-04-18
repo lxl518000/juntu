@@ -1,0 +1,46 @@
+<extend name="Common/list-tree" />
+
+<block name="batch">
+    <div class="input-group">
+        <span class="text-icon"> 批 量 </span>
+        <select name="batch">
+            <option value="sort">排序</option>
+        </select>
+    </div>
+</block>
+
+<block name='action'>
+
+</block>
+
+<block name="list">
+    <tr>
+        <th width="50" class="tc">ID</th>
+        <th width="200">名称</th>
+        <!--<th width="50" class="tc">类型</th>-->
+        <th width="300">操作</th>
+    </tr>
+    <foreach name="list" item="v">
+    <tr id="{$v.id}" pId="{$v.pid}" >
+        <td class="tc"><input class="tc" type="text" name="sort[{$v.id}]" value="{$v.id}" size="1"></td>
+        <td>{$v.name}</td>
+       
+        <!--<td class="tc">{:int_str($v['type'],'1:节点,2:菜单,3:分组')}</td>-->
+        <!--<td class="tc"><notempty name="v['icon']"><i class="iconfont icon-{$v.icon}"></i></notempty></td>-->
+        <!--<td class="tc">{:int_str($v['status'],'0:false,1:true')}</td>-->
+        <td>
+                <a class=" btn btn-green mrt10" data-name="{$vo.name}" data-id="{$v.id}" onclick='setthis({$v.id},"{$v.name}")' href="javascript:;">选择此部门</a>
+        </td>
+    </tr>
+    </foreach>
+    
+    <script>
+    function setthis(bid,bname){
+    	var index = parent.layer.getFrameIndex(window.name); //获取窗口索引
+  	 	 parent.$('input[name="bid"]').val(bid);
+    	 parent.$('#bname').html(bname);
+   	 	 parent.layer.close(index);
+    }
+    </script>
+       
+</block>

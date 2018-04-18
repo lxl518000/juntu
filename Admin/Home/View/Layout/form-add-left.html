@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>添加</title>
+    <meta name="keywords" content="添加">
+    <meta name="description" content="添加">
+
+    <link rel="shortcut icon" href="favicon.ico"> <link href="/Public/static/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+	<link href="/Public/static/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="/Public/static/css/font-awesome.css?v=4.4.0" rel="stylesheet">
+    <link href="/Public/static/css/animate.css" rel="stylesheet">
+    <link href="/Public/static/css/style.css?v=4.1.0" rel="stylesheet">
+	<link href="/Public/static/css/plugins/iCheck/custom.css" rel="stylesheet">
+	
+	<style>
+	.wrapper-content{padding:0}
+	</style>
+	
+</head>
+
+<script src="/Public/static/js/jquery.min.js?v=2.1.4"></script>
+    <script src="/Public/static/js/bootstrap.min.js?v=3.3.6"></script>
+        <!-- iCheck -->
+    <script src="/Public/static/js/plugins/iCheck/icheck.min.js"></script>
+
+    <!-- 自定义js -->
+    <script src="/Public/static/js/content.js?v=1.0.0"></script>
+	
+	<block name="js"></block>
+    <!-- jQuery Validation plugin javascript-->
+    <script src="/Public/static/js/plugins/validate/jquery.validate.min.js"></script>
+    <script src="/Public/static/js/plugins/validate/messages_zh.min.js"></script>
+ <script src="/Public/static/js/plugins/layer/layer.min.js"></script>
+    <script src="/Public/static/js/demo/form-validate-demo.js"></script>
+	
+   
+ 
+   
+
+ <form class="form-horizontal " id="signupForm" <block name='form-par'>data-par='close'</block> action="{:U()}">
+                        
+<body class="gray-bg">
+    <div class="wrapper wrapper-content">
+        <div class="row animated fadeInRight">
+            <div class="col-sm-4" style='padding-right:5px;'>
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>基本信息</h5>
+                    </div>
+                         <div class="ibox float-e-margins">
+                    <div class="ibox-content form-horizontal">
+                    	<block name='left-field'>
+                        	{:formbuilder('input',array('title'=>'菜单名','name'=>'name','value'=>'','placeholder'=>'请输入菜单名','validate'=>'required','tip'=>''))}
+                            {:formbuilder('input',array('title'=>'菜单名','name'=>'name','value'=>'','placeholder'=>'请输入菜单名','validate'=>'required','tip'=>''))}
+                           {:formbuilder('input',array('title'=>'菜单名','name'=>'name','value'=>'','placeholder'=>'请输入菜单名','validate'=>'required','tip'=>''))}
+                           {:formbuilder('input',array('title'=>'菜单名','name'=>'name','value'=>'','placeholder'=>'请输入菜单名','validate'=>'required','tip'=>''))}
+                              
+							{:formbuilder('choose',array(type=>'radio','title'=>'菜单类型','name'=>'type','options'=>array('1'=>'菜单',2=>'节点',3=>'式'),'checked'=>$list['type']))}
+							
+							 {:formbuilder('select',array('title'=>'上级分类','name'=>'pid','options'=>$parent,'select'=>2))}
+	
+							{:formbuilder('textarea',array('title'=>'关键词','name'=>'keyword','validate'=>'required','title'=>'关键词'))}
+                  
+                          
+                          <include file="Common/Upload" />
+             
+	                          
+	                          
+                          <block>
+                        
+                          
+                          
+                    </div>
+                </div>
+                   
+                     
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>详细信息</h5>
+                        
+                    </div>
+                       <div class="ibox float-e-margins">
+                    <div class="ibox-content">
+                       
+                        	
+                        	<block name='right-field'>
+                  
+								<include file="Common/ueditor"/>
+							</block>
+							
+							<eq name='isupdate' value='1'>
+								<input type='hidden' name='{$pk}' value="{$pkvalue}"/>
+							</eq>
+							
+                            <div class="form-group">
+                                <div class="col-sm-8 col-sm-offset-3">
+                                    <button class="btn btn-primary" type="submit">提交</button>
+                                </div>
+                            </div>
+                     
+                    </div>
+                </div>
+           
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </form>
+
+
+
+</body>
+
+</html>

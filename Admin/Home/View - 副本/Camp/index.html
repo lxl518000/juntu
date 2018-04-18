@@ -1,0 +1,54 @@
+<extend name="Common/list-base" />
+ <block name="action">
+<link rel="stylesheet" href="/Public/random/css/index.css">
+<link rel="stylesheet" href="/Public/random/css/base.css">
+ <style>
+
+ li{float:left;margin-left:10px;line-height:22px;}
+ 
+</style>
+             	<if condition="allow(CONTROLLER_NAME.'/add')">
+               	 <a class="J_open btn btn-green btn-big mrt10" data-area="80%,70%"  data-url="{:U('add')}" href="javascript:;">添加课程分类</a>
+              </if>
+        </block>
+<block name="search">
+    <div class="input-group">
+      <select name="pid">
+	        		<option value="">--场所类型--</option>
+            
+	        		<volist name='types' id="vo">
+								<option value="{$key}" <eq name="_REQUEST['pid']" value="$key">selected</eq>>{$vo}</option>
+							</volist>
+      </select>
+    </div>
+    
+</block>
+
+<block name="list">
+<tr>
+       <th class="tc" width="100px">序号</th>
+        <th class="tc" width="">分类名称</th>
+        <th class="tc" width="">分类描述</th>
+        <th class="tc" width="130px">操作</th>
+</tr>
+ <notempty name='list'>
+          	<volist name='list' id="vo">
+            <tr>
+              <td class="tc">{$vo.id}</td>
+             <td class="tc">{$vo.name}</td>
+             <td class="tc">{$vo.remark}</td>
+              <td class="tc">
+             <a class='J_open btn btn-green mrt10' data-url="{:U('edit',array('id'=>$vo['id']))}" href="javascript:;">修改</a>
+             <a data-url="{:U('delete',array('id'=>$vo['id']))}" class='J_confirm btn btn-red mrt10' data-title='确定删除吗?'>删除</a>
+             </td>
+            </tr>
+            </volist>
+            <else/>
+            <tr>
+            	<td colspan='4'>暂无记录</td>
+            </tr>
+            </notempty>
+             
+</foreach>
+
+</block>

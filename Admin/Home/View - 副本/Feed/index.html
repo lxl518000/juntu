@@ -1,0 +1,41 @@
+<extend name="Common/list-base" />
+ <style>
+
+</style>
+      <block name="search">
+    <div class="input-group">
+      <span class="text-icon">搜索</span><input type="text" placeholder="真实姓名查询" value="{$_REQUEST['realname']}" name="realname" >
+    </div>
+  
+</block>
+
+<block name="list">
+<tr>
+       <th class="tc" width="100px">用户id</th>
+        <th class="tc" width="">真实姓名</th>
+        <th class="tc" width="">联系电话</th>
+        <th class="tc" width="">联系qq</th>
+         <th class="tc" width="">留言时间</th>
+        <th class="tl" width="">留言内容</th>
+</tr>
+ <notempty name='list'>
+          	<volist name='list' id="vo">
+            <tr>
+              <td class="tc">{$vo.id}</td>
+             <td class="tc">{$vo.realname}</td>
+             <td class="tc">{$vo.phone}</td>
+             <td class="tc">{$vo.qq}</td>
+              <td class="tc">{$vo.addtime}</td>
+             <td class="tl">{$vo.msg}</td>
+      
+            </tr>
+            </volist>
+            <else/>
+            <tr>
+            	<td colspan='6'>暂无记录</td>
+            </tr>
+            </notempty>
+             
+</foreach>
+
+</block>

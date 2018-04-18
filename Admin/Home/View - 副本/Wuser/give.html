@@ -1,0 +1,25 @@
+
+<extend name="Common/form-ajax" />
+
+<block name="form">
+      <script type="text/javascript" src="__PUBLIC__/Vendor/My97DatePicker/WdatePicker.js"></script>
+ <tr>
+         <tr>
+        <th>日期:</th>
+        <td>
+        <input name="sdate" type="text" class="dfinput" readonly onclick="WdatePicker({dateFmt:'yyyy-MM-dd',isShowClear:false})" style="width:150px;" value="{$start}"/>
+        </td>
+    </tr>
+               <tr>
+                <td class="fr_marg">赠送次数：</td>
+                <td > <input type="text" class=" input-xlarge" name="givenum" value="1" datatype="n" errormsg="请输入赠送次数！" >
+             <span class="Validform_checktip"></span></td>
+            </tr>
+            <tr>
+                <td>
+                <input type='hidden' name='uid' value="{$_REQUEST['id']}"/>
+                    <td><input type="submit" id="btn_sub" class="btn-big btn-blue" value="赠送"></td>
+                </td>
+            </tr>
+</block>
+	            

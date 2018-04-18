@@ -1,0 +1,98 @@
+<extend name="Common/form-ajax" />
+<block name="form">
+	
+	
+	
+	<tr>
+		<th>名称:</th>
+		<td>
+			<input type="text" name="title" datatype="*2-20" value="{$list.title}" errormsg="请填写配置名称">
+			  <span class="Validform_checktip"></span>
+		</td>
+	</tr>
+	<tr>
+		<th>配置key:</th>
+		<td>
+			<input type="text" name="name" datatype="*2-20" value="{$list.name}" errormsg="请填写配置key">
+			  <span class="Validform_checktip"></span>
+		</td>
+	</tr>
+	<tr>
+     <th>配置类型:</th>
+        <td>
+           <select id="InputType" name="type" tip="请选择配置值的类型">
+				<option value="1" <eq name='list.type' value="1">selected</eq>>字符串</option>
+				<option value="2" <eq name='list.type' value="2">selected</eq>>长文本</option>
+				<option value="3" <eq name='list.type' value="3">selected</eq> >数值</option>
+				<option value="10" <eq name='list.type' value="10">selected</eq>>选择</option>
+				<option value="9" <eq name='list.type' value="9">selected</eq> >开启关闭</option>
+				<option value="11" <eq name='list.type' value="11">selected</eq>>数组参数</option>
+			</select>
+      </td>
+    </tr>
+    <tr id="InputExtra" style="display:none;">
+		<th>选择参数:</th>
+		<td>
+			<textarea name="extra" rows="3" tip="选择参数以k:v,k:v为例">{$list.extra}</textarea>
+		</td>
+	</tr>
+	<tr>
+		<th>配置value:</th>
+		<td>
+			<textarea name="value" rows="3" datatype="*" tip="类型若为数组以k:v k:v为例 一行一个">{$list.value}</textarea>
+			  <span class="Validform_checktip"></span>
+		</td>
+	</tr>
+	<tr>
+		<th>备注:</th>
+		<td>
+			<input type="text" name="remark" value="{$list.remark}" >
+		</td>
+	</tr>
+	<tr>
+		<th>分组:</th>
+		<td>
+			<select name="groups" tip="分组查询/修改配置">
+				<option value="">不用分组</option>
+				<foreach name="Think.config.CONFIG_GROUPS" key="k" item="v">
+				<option value="{$k}" <eq name='list.groups' value="$k">selected</eq> >{$v}</option>
+				</foreach>
+			</select>
+		</td>
+	</tr>
+	
+    <tr>
+        <th>状态:</th>
+        <td>
+ <label for="status_0"><input id="status_0" <if condition="!empty($list) && $list['status']==0 ">checked </if> type="radio" name="status" value="0">禁用</label>
+            <label for="status_1"><input id="status_1"  <if condition="$list['status']==1 || empty($list)">checked </if> type="radio" name="status" value="1" >启用</label>
+       
+        </td>
+    </tr>
+   
+    <tr>
+       	<th></th>
+       	<notempty name='list'>
+       			<input type='hidden' name='id' value="{$list.id}">
+       	 	<td><input type="submit" id="btn_sub" class="btn-big btn-blue" value="修改"></td>
+       	 <else/>
+       	  <td><input type="submit" class="btn-big btn-blue" value="添加"></td>
+       	</notempty>
+        </tr>
+        
+        
+        
+</block>
+
+<block name="extra">
+	<script type="text/javascript">
+		$('#InputType').change(function(e) {
+			if($(this).val()==10){
+				$('#InputExtra').show();
+			}else{
+				$('#InputExtra').hide();
+				$('#InputExtra > td > textarea').val('');
+			}
+		});
+	</script>
+</block>

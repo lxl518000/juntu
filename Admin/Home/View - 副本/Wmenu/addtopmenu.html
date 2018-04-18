@@ -1,0 +1,48 @@
+<extend name="Common/form-ajax" />
+<block name="form">
+	  <tr>
+        <td  class="tr" >菜单名称:</td>
+        <td  class="tl" > 
+          <input type="text" name="name" class="dfinput" value="{$list.name}"/>
+        </td>
+      </tr>
+       <tr>
+        <td  class="tr" >状态:</td>
+        <td  class="tl" > 
+          <input type="radio" name="status" <eq name="list.status" value='1'>checked</eq> <empty name="list">checked</empty> value="1"/> 正常
+          <input type="radio" name="status" <eq name="list.status" value='0'>checked</eq> value="0"/> 禁用
+        </td>
+      </tr>
+          <tr>
+        <td  class="tr" >排序:</td>
+        <td  class="tl" > <input type="text" name="sort" class="dfinput" value="{$list.sort|default=1}"/></td>
+      </tr>
+       <tr>
+        <td  class="tr" >菜单类型:</td>
+        <td  class="tl" > 
+          <input type="radio" name="type"  <eq name="list.type" value='1'>checked</eq> <empty name="list">checked</empty>  value="1"/> click
+          <input type="radio" name="type"  value="2" <eq name="list.type" value='2'>checked</eq> /> view
+        </td>
+      </tr>
+      <tr>
+        <td  class="tr" >菜单操作:</td>
+        <td  class="tl" > <input type="text" name='con' class="dfinput" value="{$list.con}"/>(*如果选择的是click,请填写触发关键字,链接请填写链接)</td>
+      </tr>
+      
+
+    <tr>
+       	<th></th>
+      	
+       	<notempty name='list.id'>
+					<input type='hidden' name='id' value="{$list.id}"/>
+				<td><input type="submit" id="btn_sub" class="btn-big btn-blue" value="修改"></td>
+				
+				<else/>
+						<td><input type="submit" class="btn-big btn-blue" value="添加"></td>
+		</notempty>
+       
+        </tr>
+        
+        
+       
+</block>

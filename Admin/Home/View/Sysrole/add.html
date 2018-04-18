@@ -1,0 +1,9 @@
+<extend name="Layout/form-add" />
+<block name="form-field">
+	{:formbuilder('select',array('title'=>'上级角色','name'=>'pid','options'=>$parent,'select'=>$list['pid']))}
+	{:formbuilder('input',array('title'=>'角色名称','name'=>'title','value'=>$list['title'],'placeholder'=>'请输入角色名','validate'=>'required','tip'=>''))}
+	{:formbuilder('input',array('title'=>'角色说明','name'=>'remark','value'=>$list['remark'],'placeholder'=>'角色说明','validate'=>'','tip'=>''))}
+	{:formbuilder('choose',array(type=>'radio','title'=>'角色状态','name'=>'status','options'=>array('2'=>'禁用',1=>'启用'),'checked'=>[$list['status']]))}
+	{:formbuilder('choose',array(type=>'radio','title'=>'是否为管理员','name'=>'isadmin','options'=>array('1'=>'是',2=>'否'),'checked'=>[$list['isadmin']]))}
+
+</block>

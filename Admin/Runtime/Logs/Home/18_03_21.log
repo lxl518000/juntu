@@ -1,0 +1,2977 @@
+[ 2018-03-21T11:42:14+08:00 ] 127.0.0.1 /Home/Syslog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:42:14+08:00 ] 127.0.0.1 /Home/Syslog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:42:15+08:00 ] 127.0.0.1 /Home/Syslog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:42:15+08:00 ] 127.0.0.1 /Home/Syslog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:42:15+08:00 ] 127.0.0.1 /Home/Syslog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:42:15+08:00 ] 127.0.0.1 /Home/Syslog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:42:15+08:00 ] 127.0.0.1 /Home/Syslog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:42:16+08:00 ] 127.0.0.1 /Home/Syslog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-21T11:42:16+08:00 ] 127.0.0.1 /Home/Syslog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:42:16+08:00 ] 127.0.0.1 /Home/Syslog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:42:16+08:00 ] 127.0.0.1 /Home/Syslog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:42:34+08:00 ] 127.0.0.1 /Home/Syslog/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-21T11:42:37+08:00 ] 127.0.0.1 /Home/Syslog/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:42:41+08:00 ] 127.0.0.1 /Home/Syslog/index/index/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:42:47+08:00 ] 127.0.0.1 /Syslog/index/index/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-21T11:44:01+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-03-21T11:44:10+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant NOT_EXIT - assumed 'NOT_EXIT' D:\wamp\www\netbar\superdun\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 43 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\netbar\superdun\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 57 行.
+SQL: SHOW COLUMNS FROM `tb_sys_config` [ RunTime:0.002000s ]
+SQL: SELECT `name`,`value`,`type`,`extra` FROM `tb_sys_config` WHERE ( status=1  )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:44:10+08:00 ] 127.0.0.1 /Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:44:10+08:00 ] 127.0.0.1 /Public/static/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:44:13+08:00 ] 127.0.0.1 /My/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:44:16+08:00 ] 127.0.0.1 /My/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:45:02+08:00 ] 127.0.0.1 /My/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:45:04+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:45:04+08:00 ] 127.0.0.1 /Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:45:04+08:00 ] 127.0.0.1 /Public/static/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:45:08+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:45:08+08:00 ] 127.0.0.1 /Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:45:08+08:00 ] 127.0.0.1 /Public/static/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:45:11+08:00 ] 127.0.0.1 /Sys/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:45:13+08:00 ] 127.0.0.1 /Sys/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:45:48+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:45:48+08:00 ] 127.0.0.1 /index.php?m=&c=Index&a=main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:45:48+08:00 ] 127.0.0.1 /Public/static/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:45:48+08:00 ] 127.0.0.1 /Public/static/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:46:00+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:46:00+08:00 ] 127.0.0.1 /index.php?m=&c=Index&a=main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:46:01+08:00 ] 127.0.0.1 /Public/static/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:46:01+08:00 ] 127.0.0.1 /Public/static/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:46:03+08:00 ] 127.0.0.1 /index.php?m=&c=Sys&a=info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant WEB_PATH - assumed 'WEB_PATH' D:\wamp\www\netbar\superdun\Admin\Home\Controller\SysController.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:46:03+08:00 ] 127.0.0.1 /index.php?m=&c=Sys&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant NOT_EXIT - assumed 'NOT_EXIT' D:\wamp\www\netbar\superdun\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 43 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\netbar\superdun\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 57 行.
+SQL: SHOW COLUMNS FROM `tb_sys_config` [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:46:04+08:00 ] 127.0.0.1 /index.php?m=&c=Sys&a=index&limit=15&offset=0&order=desc&formfield=title%3D%26name%3D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant NOT_EXIT - assumed 'NOT_EXIT' D:\wamp\www\netbar\superdun\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 43 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\netbar\superdun\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 57 行.
+SQL: SHOW COLUMNS FROM `tb_sys_config` [ RunTime:0.002000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_sys_config` LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_sys_config` ORDER BY id desc LIMIT 0,15   [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-21T11:46:04+08:00 ] 127.0.0.1 /Public/static/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:46:05+08:00 ] 127.0.0.1 /index.php?m=&c=Sys&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Use of undefined constant NOT_EXIT - assumed 'NOT_EXIT' D:\wamp\www\netbar\superdun\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 43 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\netbar\superdun\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 57 行.
+SQL: SHOW COLUMNS FROM `tb_sys_config` [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-21T11:46:06+08:00 ] 127.0.0.1 /index.php?m=&c=Sys&a=index&limit=15&offset=0&order=desc&formfield=title%3D%26name%3D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant NOT_EXIT - assumed 'NOT_EXIT' D:\wamp\www\netbar\superdun\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 43 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\netbar\superdun\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 57 行.
+SQL: SHOW COLUMNS FROM `tb_sys_config` [ RunTime:0.002000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_sys_config` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_sys_config` ORDER BY id desc LIMIT 0,15   [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:46:14+08:00 ] 127.0.0.1 /index.php?m=&c=Sys&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: title D:\wamp\www\netbar\superdun\Admin\Runtime\Cache\Home\8234a9136bbc2f39af6c1be15a6c65f6.php 第 36 行.
+NOTIC: [8] Undefined index: class D:\wamp\www\netbar\superdun\Admin\Extend\Tool\Form.php 第 95 行.
+NOTIC: [8] Undefined index: hr D:\wamp\www\netbar\superdun\Admin\Extend\Tool\Form.php 第 74 行.
+NOTIC: [8] Undefined index: hr D:\wamp\www\netbar\superdun\Admin\Extend\Tool\Form.php 第 74 行.
+NOTIC: [8] Undefined index: hr D:\wamp\www\netbar\superdun\Admin\Extend\Tool\Form.php 第 74 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\netbar\superdun\Admin\Runtime\Cache\Home\8234a9136bbc2f39af6c1be15a6c65f6.php 第 39 行.
+NOTIC: [8] Undefined index: class D:\wamp\www\netbar\superdun\Admin\Extend\Tool\Form.php 第 95 行.
+NOTIC: [8] Undefined index: hr D:\wamp\www\netbar\superdun\Admin\Extend\Tool\Form.php 第 74 行.
+NOTIC: [8] Undefined index: value D:\wamp\www\netbar\superdun\Admin\Runtime\Cache\Home\8234a9136bbc2f39af6c1be15a6c65f6.php 第 40 行.
+NOTIC: [8] Undefined index: hr D:\wamp\www\netbar\superdun\Admin\Extend\Tool\Form.php 第 74 行.
+NOTIC: [8] Undefined index: remark D:\wamp\www\netbar\superdun\Admin\Runtime\Cache\Home\8234a9136bbc2f39af6c1be15a6c65f6.php 第 41 行.
+NOTIC: [8] Undefined index: class D:\wamp\www\netbar\superdun\Admin\Extend\Tool\Form.php 第 95 行.
+NOTIC: [8] Undefined index: hr D:\wamp\www\netbar\superdun\Admin\Extend\Tool\Form.php 第 74 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\netbar\superdun\Admin\Runtime\Cache\Home\8234a9136bbc2f39af6c1be15a6c65f6.php 第 42 行.
+NOTIC: [8] Undefined index: disabled D:\wamp\www\netbar\superdun\Admin\Extend\Tool\Form.php 第 60 行.
+NOTIC: [8] Undefined index: disabled D:\wamp\www\netbar\superdun\Admin\Extend\Tool\Form.php 第 60 行.
+NOTIC: [8] Undefined index: hr D:\wamp\www\netbar\superdun\Admin\Extend\Tool\Form.php 第 74 行.
+NOTIC: [8] Undefined variable: isupdate D:\wamp\www\netbar\superdun\Admin\Runtime\Cache\Home\8234a9136bbc2f39af6c1be15a6c65f6.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:56:28+08:00 ] 127.0.0.1 /index.php?m=Home&c=Sysmenu&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: title D:\wamp\www\netbar\superdun\Admin\Home\Controller\SysmenuController.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `tb_sys_menu` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tb_sys_menu`  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined index: title D:\wamp\www\netbar\superdun\Admin\Runtime\Cache\Home\f510f648234e107da45f5e8f371713c1.php 第 63 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:56:55+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:56:55+08:00 ] 127.0.0.1 /index.php?m=&c=Index&a=main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-21T11:56:57+08:00 ] 127.0.0.1 /index.php?m=&c=Sys&a=info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant WEB_PATH - assumed 'WEB_PATH' D:\wamp\www\netbar\superdun\Admin\Home\Controller\SysController.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:56:57+08:00 ] 127.0.0.1 /index.php?m=&c=Sys&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_sys_config` [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:56:57+08:00 ] 127.0.0.1 /index.php?m=&c=Sys&a=index&limit=15&offset=0&order=desc&formfield=title%3D%26name%3D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_sys_config` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_sys_config` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tb_sys_config` ORDER BY id desc LIMIT 0,15   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-21T11:57:00+08:00 ] 127.0.0.1 /index.php?m=&c=Syslog&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_sys_log` [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-21T11:57:00+08:00 ] 127.0.0.1 /index.php?m=&c=Syslog&a=index&limit=15&offset=0&order=desc&formfield=username%3D%26realname%3D%26mobile%3D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_sys_log` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: map D:\wamp\www\netbar\superdun\Admin\Home\Controller\SyslogController.class.php 第 31 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_sys_log` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tb_sys_log` ORDER BY id desc LIMIT 0,15   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: status D:\wamp\www\netbar\superdun\Admin\Home\Controller\BackendController.class.php 第 197 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\netbar\superdun\Admin\Home\Controller\BackendController.class.php 第 197 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\netbar\superdun\Admin\Home\Controller\BackendController.class.php 第 197 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\netbar\superdun\Admin\Home\Controller\BackendController.class.php 第 197 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\netbar\superdun\Admin\Home\Controller\BackendController.class.php 第 197 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\netbar\superdun\Admin\Home\Controller\BackendController.class.php 第 197 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\netbar\superdun\Admin\Home\Controller\BackendController.class.php 第 197 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\netbar\superdun\Admin\Home\Controller\BackendController.class.php 第 197 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\netbar\superdun\Admin\Home\Controller\BackendController.class.php 第 197 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\netbar\superdun\Admin\Home\Controller\BackendController.class.php 第 197 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\netbar\superdun\Admin\Home\Controller\BackendController.class.php 第 197 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\netbar\superdun\Admin\Home\Controller\BackendController.class.php 第 197 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\netbar\superdun\Admin\Home\Controller\BackendController.class.php 第 197 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\netbar\superdun\Admin\Home\Controller\BackendController.class.php 第 197 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\netbar\superdun\Admin\Home\Controller\BackendController.class.php 第 197 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-21T11:57:10+08:00 ] 127.0.0.1 /index.php?m=&c=Sysrole&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: title D:\wamp\www\netbar\superdun\Admin\Home\Controller\SysroleController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `tb_sys_role` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tb_sys_role`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined index: title D:\wamp\www\netbar\superdun\Admin\Runtime\Cache\Home\12db30b7368353f17d36fbc70da8c106.php 第 63 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:57:11+08:00 ] 127.0.0.1 /index.php?m=&c=Sysmenu&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: title D:\wamp\www\netbar\superdun\Admin\Home\Controller\SysmenuController.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `tb_sys_menu` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tb_sys_menu`  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined index: title D:\wamp\www\netbar\superdun\Admin\Runtime\Cache\Home\f510f648234e107da45f5e8f371713c1.php 第 63 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:57:13+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-03-21T11:57:13+08:00 ] 127.0.0.1 /index.php?m=&c=Index&a=main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-21T11:57:47+08:00 ] 127.0.0.1 /index.php?m=&c=Public&a=logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-21T11:57:47+08:00 ] 127.0.0.1 /index.php?m=&c=Public&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:57:47+08:00 ] 127.0.0.1 /index.php?m=&c=Public&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: key D:\wamp\www\netbar\superdun\Admin\Home\Controller\PublicController.class.php 第 509 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:57:58+08:00 ] 127.0.0.1 /index.php?m=&c=Public&a=dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_admin_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tb_admin_user` WHERE `mobile` = '15527374110' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `tb_admin_user` SET `loginip`='127.0.0.1',`logintime`='2018-03-21 11:57:57',`logins`='149' WHERE `id` = 336 [ RunTime:0.0450s ]
+SQL: SHOW COLUMNS FROM `tb_sys_role` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tb_sys_role` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_sys_menu` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`name`,`title`,`icon`,`type` FROM `tb_sys_menu` WHERE `status` = 1 ORDER BY sort desc,id desc  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: len D:\wamp\www\netbar\superdun\Admin\Home\Model\AdminuserModel.class.php 第 105 行.
+SQL: SHOW COLUMNS FROM `tb_sys_log` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\netbar\superdun\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\netbar\superdun\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `tb_sys_log` (`username`,`content`,`sqlstr`,`ip`,`addtime`) VALUES ('liufei(用户ID:336)','登录成功','','127.0.0.1','2018-03-21 11:57:58') [ RunTime:0.0310s ]
+
+[ 2018-03-21T11:57:58+08:00 ] 127.0.0.1 /index.php?m=&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:57:58+08:00 ] 127.0.0.1 /index.php?m=&c=Index&a=main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-21T11:58:01+08:00 ] 127.0.0.1 /index.php?m=&c=Room&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T11:58:03+08:00 ] 127.0.0.1 /index.php?m=&c=Server&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_sock5_server` [ RunTime:0.0020s ]
+ERR: 模板不存在:D:\wamp\www\netbar\superdun\webroot/../Admin/Home/View/Server/index.html
+
+[ 2018-03-21T11:58:10+08:00 ] 127.0.0.1 /index.php?m=&c=My&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_admin_user` [ RunTime:0.0020s ]
+ERR: 1146:Table 'superd.tb_department' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_department`
+ERR: 1146:Table 'superd.tb_department' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_department`
+
+[ 2018-03-21T11:58:54+08:00 ] 127.0.0.1 /index.php?m=&c=My&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_admin_user` [ RunTime:0.0020s ]
+ERR: 模板不存在:D:\wamp\www\netbar\superdun\webroot/../Admin/Home/View/My/index.html
+
+[ 2018-03-21T11:59:27+08:00 ] 127.0.0.1 /index.php?m=&c=user&a=datam
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-21T14:08:02+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tb_sys_config` [ RunTime:0.0020s ]
+SQL: SELECT `name`,`value`,`type`,`extra` FROM `tb_sys_config` WHERE ( status=1  )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T14:08:02+08:00 ] 127.0.0.1 /index.php?m=&c=Index&a=main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T14:08:02+08:00 ] 127.0.0.1 /Public/static/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T14:08:02+08:00 ] 127.0.0.1 /Public/static/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T14:08:04+08:00 ] 127.0.0.1 /index.php?m=&c=Sys&a=info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant WEB_PATH - assumed 'WEB_PATH' D:\wamp\www\netbar\superdun\Admin\Home\Controller\SysController.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T14:08:05+08:00 ] 127.0.0.1 /index.php?m=&c=Sys&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_sys_config` [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T14:08:05+08:00 ] 127.0.0.1 /Public/static/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T14:08:05+08:00 ] 127.0.0.1 /index.php?m=&c=Sys&a=index&limit=15&offset=0&order=desc&formfield=title%3D%26name%3D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_sys_config` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_sys_config` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tb_sys_config` ORDER BY id desc LIMIT 0,15   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-21T14:08:07+08:00 ] 127.0.0.1 /index.php?m=&c=Sysrole&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: title D:\wamp\www\netbar\superdun\Admin\Home\Controller\SysroleController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `tb_sys_role` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tb_sys_role`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined index: title D:\wamp\www\netbar\superdun\Admin\Runtime\Cache\Home\12db30b7368353f17d36fbc70da8c106.php 第 63 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T14:08:07+08:00 ] 127.0.0.1 /Public/static/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T14:08:08+08:00 ] 127.0.0.1 /index.php?m=&c=Room&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T14:11:01+08:00 ] 127.0.0.1 /index.php?m=&c=Room&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 1146:Table 'superd.tb_room' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_room`
+ERR: 1146:Table 'superd.tb_room' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_room`
+
+[ 2018-03-21T14:15:45+08:00 ] 127.0.0.1 /index.php?m=&c=Room&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_vpn_roomset` [ RunTime:0.0020s ]
+ERR: 模板不存在:D:\wamp\www\netbar\superdun\webroot/../Admin/Home/View/Room/index.html
+
+[ 2018-03-21T14:16:01+08:00 ] 127.0.0.1 /index.php?m=&c=Sys&a=info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant WEB_PATH - assumed 'WEB_PATH' D:\wamp\www\netbar\superdun\Admin\Home\Controller\SysController.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T14:16:02+08:00 ] 127.0.0.1 /index.php?m=&c=Sys&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_sys_config` [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T14:16:02+08:00 ] 127.0.0.1 /index.php?m=&c=Sys&a=index&limit=15&offset=0&order=desc&formfield=title%3D%26name%3D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_sys_config` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_sys_config` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tb_sys_config` ORDER BY id desc LIMIT 0,15   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-21T14:16:06+08:00 ] 127.0.0.1 /index.php?m=&c=Sysrole&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: title D:\wamp\www\netbar\superdun\Admin\Home\Controller\SysroleController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `tb_sys_role` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tb_sys_role`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined index: title D:\wamp\www\netbar\superdun\Admin\Runtime\Cache\Home\12db30b7368353f17d36fbc70da8c106.php 第 63 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T14:16:08+08:00 ] 127.0.0.1 /index.php?m=&c=Sysmenu&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: title D:\wamp\www\netbar\superdun\Admin\Home\Controller\SysmenuController.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `tb_sys_menu` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tb_sys_menu`  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined index: title D:\wamp\www\netbar\superdun\Admin\Runtime\Cache\Home\f510f648234e107da45f5e8f371713c1.php 第 63 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-21T14:16:17+08:00 ] 127.0.0.1 /index.php?m=&c=Sysmenu&a=edit&id=184
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_sys_menu` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tb_sys_menu` WHERE `id` = 184 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`pid`,`title` FROM `tb_sys_menu` WHERE `status` = 1 AND `type` IN ('2','3')  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: class D:\wamp\www\netbar\superdun\Admin\Extend\Tool\Form.php 第 95 行.
+NOTIC: [8] Undefined index: hr D:\wamp\www\netbar\superdun\Admin\Extend\Tool\Form.php 第 74 行.
+NOTIC: [8] Undefined index: hr D:\wamp\www\netbar\superdun\Admin\Extend\Tool\Form.php 第 74 行.
+NOTIC: [8] Undefined index: class D:\wamp\www\netbar\superdun\Admin\Extend\Tool\Form.php 第 95 行.
+NOTIC: [8] Undefined index: hr D:\wamp\www\netbar\superdun\Admin\Extend\Tool\Form.php 第 74 行.
+NOTIC: [8] Undefined index: class D:\wamp\www\netbar\superdun\Admin\Extend\Tool\Form.php 第 95 行.
+NOTIC: [8] Undefined index: hr D:\wamp\www\netbar\superdun\Admin\Extend\Tool\Form.php 第 74 行.
+NOTIC: [8] Undefined index: class D:\wamp\www\netbar\superdun\Admin\Extend\Tool\Form.php 第 95 行.
+NOTIC: [8] Undefined index: hr D:\wamp\www\netbar\superdun\Admin\Extend\Tool\Form.php 第 74 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\netbar\superdun\Admin\Runtime\Cache\Home\2a31e61aab107c45252c7af32635ebef.php 第 41 行.
+NOTIC: [8] Undefined index: disabled D:\wamp\www\netbar\superdun\Admin\Extend\Tool\Form.php 第 60 行.
+NOTIC: [8] Undefined index: disabled D:\wamp\www\netbar\superdun\Admin\Extend\Tool\Form.php 第 60 行.
+NOTIC: [8] Undefined index: hr D:\wamp\www\netbar\superdun\Admin\Extend\Tool\Form.php 第 74 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\netbar\superdun\Admin\Runtime\Cache\Home\2a31e61aab107c45252c7af32635ebef.php 第 42 行.
+NOTIC: [8] Undefined index: disabled D:\wamp\www\netbar\superdun\Admin\Extend\Tool\Form.php 第 60 行.
+NOTIC: [8] Undefined index: disabled D:\wamp\www\netbar\superdun\Admin\Extend\Tool\Form.php 第 60 行.
+NOTIC: [8] Undefined index: disabled D:\wamp\www\netbar\superdun\Admin\Extend\Tool\Form.php 第 60 行.
+NOTIC: [8] Undefined index: hr D:\wamp\www\netbar\superdun\Admin\Extend\Tool\Form.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T14:16:30+08:00 ] 127.0.0.1 /index.php?m=&c=Sysmenu&a=edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_sys_menu` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\netbar\superdun\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\netbar\superdun\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `tb_sys_menu` SET `title`='机房设置',`pid`='183',`name`='VpnRoom/index',`icon`='fa-align-justify',`sort`='1',`status`='1',`type`='3' WHERE `id` = 184 [ RunTime:0.0260s ]
+SQL: SHOW COLUMNS FROM `tb_sys_log` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\netbar\superdun\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\netbar\superdun\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `tb_sys_log` (`username`,`content`,`sqlstr`,`ip`,`addtime`) VALUES ('liufei(用户ID:336)','编辑菜单成功','UPDATE `tb_sys_menu` SET `title`=\'机房设置\',`pid`=\'183\',`name`=\'VpnRoom/index\',`icon`=\'fa-align-justify\',`sort`=\'1\',`status`=\'1\',`type`=\'3\' WHERE `id` = 184','127.0.0.1','2018-03-21 14:16:30') [ RunTime:0.0300s ]
+
+[ 2018-03-21T14:16:31+08:00 ] 127.0.0.1 /index.php?m=&c=Sysmenu&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: title D:\wamp\www\netbar\superdun\Admin\Home\Controller\SysmenuController.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `tb_sys_menu` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tb_sys_menu`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined index: title D:\wamp\www\netbar\superdun\Admin\Runtime\Cache\Home\f510f648234e107da45f5e8f371713c1.php 第 63 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T14:16:37+08:00 ] 127.0.0.1 /index.php?m=&c=Sysmenu&a=edit&id=184
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tb_sys_menu` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tb_sys_menu` WHERE `id` = 184 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title` FROM `tb_sys_menu` WHERE `status` = 1 AND `type` IN ('2','3')  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: class D:\wamp\www\netbar\superdun\Admin\Extend\Tool\Form.php 第 95 行.
+NOTIC: [8] Undefined index: hr D:\wamp\www\netbar\superdun\Admin\Extend\Tool\Form.php 第 74 行.
+NOTIC: [8] Undefined index: hr D:\wamp\www\netbar\superdun\Admin\Extend\Tool\Form.php 第 74 行.
+NOTIC: [8] Undefined index: class D:\wamp\www\netbar\superdun\Admin\Extend\Tool\Form.php 第 95 行.
+NOTIC: [8] Undefined index: hr D:\wamp\www\netbar\superdun\Admin\Extend\Tool\Form.php 第 74 行.
+NOTIC: [8] Undefined index: class D:\wamp\www\netbar\superdun\Admin\Extend\Tool\Form.php 第 95 行.
+NOTIC: [8] Undefined index: hr D:\wamp\www\netbar\superdun\Admin\Extend\Tool\Form.php 第 74 行.
+NOTIC: [8] Undefined index: class D:\wamp\www\netbar\superdun\Admin\Extend\Tool\Form.php 第 95 行.
+NOTIC: [8] Undefined index: hr D:\wamp\www\netbar\superdun\Admin\Extend\Tool\Form.php 第 74 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\netbar\superdun\Admin\Runtime\Cache\Home\2a31e61aab107c45252c7af32635ebef.php 第 41 行.
+NOTIC: [8] Undefined index: disabled D:\wamp\www\netbar\superdun\Admin\Extend\Tool\Form.php 第 60 行.
+NOTIC: [8] Undefined index: disabled D:\wamp\www\netbar\superdun\Admin\Extend\Tool\Form.php 第 60 行.
+NOTIC: [8] Undefined index: hr D:\wamp\www\netbar\superdun\Admin\Extend\Tool\Form.php 第 74 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\netbar\superdun\Admin\Runtime\Cache\Home\2a31e61aab107c45252c7af32635ebef.php 第 42 行.
+NOTIC: [8] Undefined index: disabled D:\wamp\www\netbar\superdun\Admin\Extend\Tool\Form.php 第 60 行.
+NOTIC: [8] Undefined index: disabled D:\wamp\www\netbar\superdun\Admin\Extend\Tool\Form.php 第 60 行.
+NOTIC: [8] Undefined index: disabled D:\wamp\www\netbar\superdun\Admin\Extend\Tool\Form.php 第 60 行.
+NOTIC: [8] Undefined index: hr D:\wamp\www\netbar\superdun\Admin\Extend\Tool\Form.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T14:16:40+08:00 ] 127.0.0.1 /index.php?m=&c=Sysmenu&a=edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_sys_menu` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\netbar\superdun\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\netbar\superdun\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `tb_sys_menu` SET `title`='机房设置',`pid`='183',`name`='Vpnroom/index',`icon`='fa-align-justify',`sort`='1',`status`='1',`type`='3' WHERE `id` = 184 [ RunTime:0.0650s ]
+SQL: SHOW COLUMNS FROM `tb_sys_log` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\netbar\superdun\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\netbar\superdun\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `tb_sys_log` (`username`,`content`,`sqlstr`,`ip`,`addtime`) VALUES ('liufei(用户ID:336)','编辑菜单成功','UPDATE `tb_sys_menu` SET `title`=\'机房设置\',`pid`=\'183\',`name`=\'Vpnroom/index\',`icon`=\'fa-align-justify\',`sort`=\'1\',`status`=\'1\',`type`=\'3\' WHERE `id` = 184','127.0.0.1','2018-03-21 14:16:40') [ RunTime:0.0300s ]
+
+[ 2018-03-21T14:16:41+08:00 ] 127.0.0.1 /index.php?m=&c=Sysmenu&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: title D:\wamp\www\netbar\superdun\Admin\Home\Controller\SysmenuController.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `tb_sys_menu` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tb_sys_menu`  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined index: title D:\wamp\www\netbar\superdun\Admin\Runtime\Cache\Home\f510f648234e107da45f5e8f371713c1.php 第 63 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T14:17:24+08:00 ] 127.0.0.1 /index.php?m=&c=Public&a=logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T14:17:24+08:00 ] 127.0.0.1 /index.php?m=&c=Public&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T14:17:24+08:00 ] 127.0.0.1 /index.php?m=&c=Public&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: key D:\wamp\www\netbar\superdun\Admin\Home\Controller\PublicController.class.php 第 509 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T14:17:34+08:00 ] 127.0.0.1 /index.php?m=&c=Public&a=dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_admin_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tb_admin_user` WHERE `mobile` = '15527374110' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `tb_admin_user` SET `loginip`='127.0.0.1',`logintime`='2018-03-21 14:17:34',`logins`='150' WHERE `id` = 336 [ RunTime:0.0350s ]
+SQL: SHOW COLUMNS FROM `tb_sys_role` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tb_sys_role` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_sys_menu` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`pid`,`name`,`title`,`icon`,`type` FROM `tb_sys_menu` WHERE `status` = 1 ORDER BY sort desc,id desc  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: len D:\wamp\www\netbar\superdun\Admin\Home\Model\AdminuserModel.class.php 第 105 行.
+SQL: SHOW COLUMNS FROM `tb_sys_log` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\netbar\superdun\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\netbar\superdun\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `tb_sys_log` (`username`,`content`,`sqlstr`,`ip`,`addtime`) VALUES ('liufei(用户ID:336)','登录成功','','127.0.0.1','2018-03-21 14:17:34') [ RunTime:0.0310s ]
+
+[ 2018-03-21T14:17:35+08:00 ] 127.0.0.1 /index.php?m=&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T14:17:35+08:00 ] 127.0.0.1 /index.php?m=&c=Index&a=main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T14:17:39+08:00 ] 127.0.0.1 /index.php?m=&c=Sysrole&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: title D:\wamp\www\netbar\superdun\Admin\Home\Controller\SysroleController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `tb_sys_role` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tb_sys_role`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined index: title D:\wamp\www\netbar\superdun\Admin\Runtime\Cache\Home\12db30b7368353f17d36fbc70da8c106.php 第 63 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T14:17:40+08:00 ] 127.0.0.1 /index.php?m=&c=Sysmenu&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: title D:\wamp\www\netbar\superdun\Admin\Home\Controller\SysmenuController.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `tb_sys_menu` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tb_sys_menu`  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined index: title D:\wamp\www\netbar\superdun\Admin\Runtime\Cache\Home\f510f648234e107da45f5e8f371713c1.php 第 63 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-21T14:17:41+08:00 ] 127.0.0.1 /index.php?m=&c=Sysuser&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_admin_user` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tb_sys_role` [ RunTime:0.0030s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\wamp\www\netbar\superdun\Admin\Home\Controller\SysuserController.class.php on line 27 and defined D:\wamp\www\netbar\superdun\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\wamp\www\netbar\superdun\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\wamp\www\netbar\superdun\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\wamp\www\netbar\superdun\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `tb_sys_role` WHERE `status` = 1 AND `path` LIKE '0,%'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T14:17:41+08:00 ] 127.0.0.1 /index.php?m=&c=Sysuser&a=index&limit=15&offset=0&order=desc&formfield=username%3D%26mobile%3D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_admin_user` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_admin_user` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tb_admin_user` ORDER BY id desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_sys_role` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`title` FROM `tb_sys_role`  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2018-03-21T14:17:44+08:00 ] 127.0.0.1 /index.php?m=&c=Vpnroom&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-21T14:17:45+08:00 ] 127.0.0.1 /index.php?m=&c=Server&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_sock5_server` [ RunTime:0.0020s ]
+ERR: 模板不存在:D:\wamp\www\netbar\superdun\webroot/../Admin/Home/View/Server/index.html
+
+[ 2018-03-21T14:18:24+08:00 ] 127.0.0.1 /index.php?m=&c=Vpnroom&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T14:18:25+08:00 ] 127.0.0.1 /index.php?m=&c=Vpnroom&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T14:18:42+08:00 ] 127.0.0.1 /index.php?m=&c=Vpnroom&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T14:18:42+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-21T14:18:48+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vpnroom&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T14:18:59+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vpnroom&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T14:19:08+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vpnroom&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_vpn_roomset` [ RunTime:0.0020s ]
+ERR: 模板不存在:D:\wamp\www\netbar\superdun\webroot/../Admin/Home/View/Vpnroom/index.html
+
+[ 2018-03-21T14:19:24+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vpnroom&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T14:19:28+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vpnroom&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-21T14:20:26+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T14:20:26+08:00 ] 127.0.0.1 /index.php?m=&c=Index&a=main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T14:20:28+08:00 ] 127.0.0.1 /index.php?m=&c=Sys&a=info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Use of undefined constant WEB_PATH - assumed 'WEB_PATH' D:\wamp\www\netbar\superdun\Admin\Home\Controller\SysController.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T14:20:29+08:00 ] 127.0.0.1 /index.php?m=&c=Sys&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tb_sys_config` [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-21T14:20:29+08:00 ] 127.0.0.1 /index.php?m=&c=Sys&a=index&limit=15&offset=0&order=desc&formfield=title%3D%26name%3D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_sys_config` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_sys_config` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tb_sys_config` ORDER BY id desc LIMIT 0,15   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T14:20:31+08:00 ] 127.0.0.1 /index.php?m=&c=Syslog&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_sys_log` [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T14:20:31+08:00 ] 127.0.0.1 /index.php?m=&c=Syslog&a=index&limit=15&offset=0&order=desc&formfield=username%3D%26realname%3D%26mobile%3D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_sys_log` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: map D:\wamp\www\netbar\superdun\Admin\Home\Controller\SyslogController.class.php 第 31 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_sys_log` LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tb_sys_log` ORDER BY id desc LIMIT 0,15   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: status D:\wamp\www\netbar\superdun\Admin\Home\Controller\BackendController.class.php 第 197 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\netbar\superdun\Admin\Home\Controller\BackendController.class.php 第 197 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\netbar\superdun\Admin\Home\Controller\BackendController.class.php 第 197 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\netbar\superdun\Admin\Home\Controller\BackendController.class.php 第 197 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\netbar\superdun\Admin\Home\Controller\BackendController.class.php 第 197 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\netbar\superdun\Admin\Home\Controller\BackendController.class.php 第 197 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\netbar\superdun\Admin\Home\Controller\BackendController.class.php 第 197 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\netbar\superdun\Admin\Home\Controller\BackendController.class.php 第 197 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\netbar\superdun\Admin\Home\Controller\BackendController.class.php 第 197 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\netbar\superdun\Admin\Home\Controller\BackendController.class.php 第 197 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\netbar\superdun\Admin\Home\Controller\BackendController.class.php 第 197 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\netbar\superdun\Admin\Home\Controller\BackendController.class.php 第 197 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\netbar\superdun\Admin\Home\Controller\BackendController.class.php 第 197 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\netbar\superdun\Admin\Home\Controller\BackendController.class.php 第 197 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\netbar\superdun\Admin\Home\Controller\BackendController.class.php 第 197 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T14:20:31+08:00 ] 127.0.0.1 /index.php?m=&c=Sysrole&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: title D:\wamp\www\netbar\superdun\Admin\Home\Controller\SysroleController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `tb_sys_role` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tb_sys_role`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined index: title D:\wamp\www\netbar\superdun\Admin\Runtime\Cache\Home\12db30b7368353f17d36fbc70da8c106.php 第 63 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T14:20:34+08:00 ] 127.0.0.1 /index.php?m=&c=Vpnroom&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_vpn_roomset` [ RunTime:0.0010s ]
+ERR: 模板不存在:D:\wamp\www\netbar\superdun\webroot/../Admin/Home/View/Vpnroom/index.html
+
+[ 2018-03-21T14:20:38+08:00 ] 127.0.0.1 /index.php?m=&c=Vpnroom&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tb_vpn_roomset` [ RunTime:0.0020s ]
+ERR: 模板不存在:D:\wamp\www\netbar\superdun\webroot/../Admin/Home/View/Vpnroom/index.html
+
+[ 2018-03-21T14:20:41+08:00 ] 127.0.0.1 /index.php?m=&c=Vpnroom&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_vpn_roomset` [ RunTime:0.0020s ]
+ERR: 模板不存在:D:\wamp\www\netbar\superdun\webroot/../Admin/Home/View/Vpnroom/index.html
+
+[ 2018-03-21T14:20:46+08:00 ] 127.0.0.1 /index.php?m=&c=VpnRoom&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-21T14:20:48+08:00 ] 127.0.0.1 /index.php?m=&c=VpnRoom&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T14:21:12+08:00 ] 127.0.0.1 /index.php?m=&c=VpnRoom&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-21T14:21:15+08:00 ] 127.0.0.1 /index.php?m=&c=Vpnroom&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_vpn_roomset` [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T14:21:17+08:00 ] 127.0.0.1 /index.php?m=&c=VpnRoom&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-21T14:21:26+08:00 ] 127.0.0.1 /index.php?m=&c=VpnRoom&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T14:21:30+08:00 ] 127.0.0.1 /index.php?m=&c=VpnRoom&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T14:21:38+08:00 ] 127.0.0.1 /index.php?m=&c=Vpnroom&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tb_vpn_roomset` [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T14:21:44+08:00 ] 127.0.0.1 /index.php?m=&c=VpnRoom&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-21T14:21:49+08:00 ] 127.0.0.1 /index.php?m=&c=Vpnroom&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tb_vpn_roomset` [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T14:22:37+08:00 ] 127.0.0.1 /index.php?m=&c=Vpnroom&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_vpn_roomset` [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-21T14:22:38+08:00 ] 127.0.0.1 /index.php?m=&c=Vpnroom&a=index&limit=15&offset=0&order=desc&formfield=username%3D%26mobile%3D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_vpn_roomset` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_vpn_roomset` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tb_vpn_roomset` ORDER BY id desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_sys_role` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`title` FROM `tb_sys_role`  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T14:22:39+08:00 ] 127.0.0.1 /index.php?m=&c=Vpnroom&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tb_vpn_roomset` [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\netbar\superdun\Admin\Common\Common\function.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-21T14:22:39+08:00 ] 127.0.0.1 /index.php?m=&c=Vpnroom&a=index&limit=15&offset=0&order=desc&formfield=username%3D%26mobile%3D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_vpn_roomset` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_vpn_roomset` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tb_vpn_roomset` ORDER BY id desc LIMIT 0,15   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tb_sys_role` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`title` FROM `tb_sys_role`  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

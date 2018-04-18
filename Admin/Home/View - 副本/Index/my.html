@@ -1,0 +1,115 @@
+<extend name="Common/form-ajax-close" />
+<block name="form">
+	
+	<!-- 	{~W('Region/RegionReadSelect',array($list['region'],0))} -->
+	
+    
+		<th>上次登录时间:</th>
+		<td>
+		<input type="text" name="logintime"  readonly  value="{$list.logintime}">
+			
+		</td>
+	</tr>
+	<tr>
+		<th>上次登录IP:</th>
+		<td>
+				<input type="text" name="loginip"  readonly  value="{$list.loginip}">
+		</td>
+	</tr>
+	<tr>
+		<th>登录次数:</th>
+		<td>
+				<input type="text" name="logins"  readonly  value="{$list.logins}">
+		</td>
+	</tr>
+	<tr>
+		<th>姓名:</th>
+		<td>
+			<input type="text" name="realname"   value="{$list.realname}">
+		</td>
+	</tr>
+	<tr>
+		<th>联系电话:</th>
+		<td>
+			<input type="text" name="mobile"    value="{$list.mobile}">
+		</td>
+	</tr>
+	<tr>
+		<th>联系邮箱:</th>
+		<td>
+			<input type="text" name="email"    value="{$list.email}">
+		</td>
+	</tr>
+	<tr>
+		<th>密码:</th>
+		<td>
+			<input type="text" name='password'   id="fe_text"    value="">
+			 <input type='button' value='随机密码' onclick="randPassword();"/> 
+	     		<input type='button'  id='copy' value='复制密码' data-clipboard-target="fe_text"> 
+		</td>
+	</tr>
+	
+	
+	<!-- <tr>
+          <th ></th>
+          <td>
+          <input type='hidden' class='text' name='placeid' value='{$list.placeid}'/>
+          	<ul id="place">
+          		<notempty name='places'>
+          			<volist name='places' id="vo">
+          			<li><span>{$vo.Name}</span><span> <a href='javascript:void(0)' data-id="{$vo.Barcode}" onclick='dremove(this);' style='color:red'>x</a></span></li>
+          			</volist>
+          		</notempty>
+          	</ul>
+      	 </td>
+   </tr> -->
+   
+    <tr>
+       	<th></th>
+       	<notempty name='list'>
+       			<input type='hidden' name='id' value="{$list.id}">
+       	 	<td><input type="submit" id="btn_sub" class="btn-big btn-blue" value="修改"></td>
+       	 <else/>
+       	  <td><input type="submit" class="btn-big btn-blue" value="添加"></td>
+       	</notempty>
+        </tr>
+     <script type="text/javascript" src="/Public/Vendor/zeroclipboard/ZeroClipboard.js"></script>
+<script type="text/javascript">
+	
+	function randPassword() { 
+		var text=['abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ','1234567890']; 
+		var rand = function(min, max){return Math.floor(Math.max(min, Math.random() * (max+1)));} 
+		var len = 10; // 长度为8-16 
+		var pw = ''; 
+		for(i=0; i<len; ++i) 
+		{ 
+		var strpos = rand(0, 2); 
+		pw += text[strpos].charAt(rand(0, text[strpos].length)); 
+		} 
+		$('input[name="password"]').val(pw);
+	} 
+	
+
+	
+
+	var clip = new ZeroClipboard( document.getElementById("copy"), {
+		  moviePath: "/Public/Vendor/zeroclipboard/ZeroClipboard.swf"
+		} );
+	
+	// 复制内容到剪贴板成功后的操作
+	clip.on( 'complete', function(client, args) {
+		layer.tips('复制成功:'+args.text, $('#copy'), {
+		    tips: [1, '#3595CC'],
+		    time: 4000
+		})
+	} );
+	
+</script>   
+        
+        
+        
+</block>
+
+
+
+

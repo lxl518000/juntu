@@ -1,0 +1,10 @@
+<extend name="Layout/form-add" />
+<block name="form-field">
+	{:formbuilder('select',array('title'=>'角色','name'=>'role_id','options'=>$parent,'select'=>$list['role_id']))}
+	{:formbuilder('input',array('title'=>'用户名称','name'=>'username','value'=>$list['username'],'placeholder'=>'请输入用户名','validate'=>'required','tip'=>''))}
+	{:formbuilder('input',array('title'=>'密码','name'=>'password','value'=>'','placeholder'=>'请输入密码','validate'=>'','tip'=>''))}
+	{:formbuilder('input',array('title'=>'真实姓名','name'=>'realname','value'=>$list['realname'],'placeholder'=>'请输入真实姓名','validate'=>'','tip'=>''))}
+	{:formbuilder('input',array('title'=>'手机号码','name'=>'mobile','value'=>$list['mobile'],'placeholder'=>'请输入手机号码说明','validate'=>'required','tip'=>''))}
+	{:formbuilder('choose',array(type=>'radio','title'=>'用户状态','name'=>'status','options'=>array('2'=>'禁用',1=>'启用'),'checked'=>[$list['status']]))}
+
+</block>

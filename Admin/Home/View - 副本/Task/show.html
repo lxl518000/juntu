@@ -1,0 +1,94 @@
+
+<html >
+<head>
+<link rel="stylesheet" href="/Public/random/css/base.css">
+<link rel="stylesheet" href="/Public/random/css/index.css">
+
+<script type="text/javascript" src="__PUBLIC__/jquery.js"></script>
+<script type="text/javascript" src="/Public/Vendor/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="/Public/js/common.js"></script>
+<script type="text/javascript" src="/Public/Vendor/layer/layer.js"></script>
+<style>
+body,html{min-width:950px;}
+.xz_wb{padding:25px;font-size:14px;}
+tr,label{font-size:14px;}
+tr{margin:10px;}
+</style>
+</head>
+<script>
+
+</script>
+<body >
+ <div class="xz_wb">
+<form method="post" id="form1" name="form1"  action="{:U('feed')}">
+  <table class="filetable1">
+    <tbody>
+ 		<tr>
+ 			<td class="tr" >抽查信息：</td>
+ 			<td class="tl"><span style='color:green;font-size:14px;font-weight:bold'>{$placeinfo.name}</span>   起始时间：<span style='color:green;font-size:14px;font-weight:bold'>{$info['start']}</span> 终止时间：<span style='color:green;font-size:14px;font-weight:bold'>{$info['end']}</span></td>
+ 		</tr>
+ 		 <tr>
+ 			<td class="tr" >提交信息：</td>
+ 			<td class="tl">提交人：<span style='color:green;font-size:14px;font-weight:bold'>{$createUser}</span>&nbsp;&nbsp;提交时间：<span style='color:green;font-size:14px;font-weight:bold'>{$createTime}</span>
+ 		</tr>
+        <tr>
+        <td class="tr">实际完成时间： </td>
+        <td colspan='' class="tl"> <input type="text" name="realTime"  class="text " value="{$info.realTime}" readonly/></td>
+        </tr>
+        
+         <tr>
+        <td  class="tr" >检查结果:</td>
+        <td  class="tl" style='text-align:left;text-indent:0;'> 
+       		<volist name='con' id= "vo" key='i'>
+       			<input type='checkbox'  name="optionId[]" value="{$vo['id']}" disabled <if condition="in_array($vo['id'],$option)">checked</if> />
+       			<label for="options{$i}">{$vo['name']}</label><br/>
+       		</volist>
+        </td>
+      </tr>
+      <tr>
+ 		<td class="tr" >现场检查笔录：</td>
+ 			<td class="tl">
+ 				<notempty name="info.feedpic">
+        		<volist name="info.feedpic" id="vo">
+        		 <img src="{$vo}" width='100' onclick="picshow(this);"/>
+        		 </volist>
+        		 <else/>
+        		 暂未上传
+        	</notempty>
+ 			</td>
+ 		</tr>
+    <tr>
+        <td class="tr">现场视频： </td>
+        <td  class="tl">
+        	<notempty name="info.feedvedio">
+        		<link href="//vjs.zencdn.net/4.10/video-js.css" rel="stylesheet">
+				<script src="//vjs.zencdn.net/4.10/video.js"></script>
+				<video id="example_video_1" class="video-js vjs-default-skin" controls  width="640" height="264" 
+				data-setup='{ techOrder: ["flash","html5"],Player}'>
+ 					<source src="{$info.feedvedio}" type='video/mp4' />
+				</video> 
+        		
+        		 <else/>
+        		 暂未上传
+        	</notempty>
+        </td>
+        </tr>
+        
+       <tr>
+        <td  class="tr" >备注:</td>
+        <td  class="tl" >
+        <textarea name="mark" cols="" rows="5" class="textarea" readonly>{$mark}</textarea>
+       </td>
+      </tr>
+    </tbody>
+  </table>
+ </form>
+ </div>
+ 
+</body>
+</html>
+<script>
+
+
+</script>
+ 

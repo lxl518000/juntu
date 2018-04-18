@@ -1,0 +1,97 @@
+
+<html >
+<head>
+<link rel="stylesheet" href="/Public/random/css/base.css">
+<link rel="stylesheet" href="/Public/random/css/index.css">
+
+<script src="/Public/js/jquery.js"></script> 
+<script type="text/javascript" src="/Public/Vendor/My97DatePicker/WdatePicker.js"></script>
+	<script type="text/javascript" src="/Public/js/common.js?t=123"></script>
+	<script type="text/javascript" src="/Public/Vendor/layer/layer.js"></script>
+<style>
+body,html{min-width:950px;}
+.xz_wb{padding:25px;font-size:14px;}
+tr,label{font-size:14px;}
+</style>
+</head>
+<script>
+
+</script>
+<body >
+ <div class="xz_wb">
+<form method="post" id="form1" name="form1"  action="{:U('feed')}">
+  <table class="filetable1">
+    <tbody>
+ 		<tr>
+ 			<td class="tr" >抽查信息：</td>
+ 			<td class="tl"><span style='color:green;font-size:14px;font-weight:bold'>{$placeinfo.name}</span>   起始时间：<span style='color:green;font-size:14px;font-weight:bold'>{$info['start']}</span> 终止时间：<span style='color:green;font-size:14px;font-weight:bold'>{$info['end']}</span></td>
+ 		</tr>
+        <tr>
+        <td class="tr">完成时间： </td>
+        <td colspan='' class="tl"> <input type="text" name="realTime" readonly onClick="WdatePicker({dateFmt:'yyyy-MM-dd'})" class="text " value=""/></td>
+        </tr>
+        
+         <tr>
+        <td  class="tr" >检查结果:</td>
+        <td  class="tl"> 
+       		<volist name='con' id= "vo" key='i'>
+       			<input type='checkbox' id="options{$i}" name="optionId[]" value="{$vo['id']}" />
+       			<label for="options{$i}">{$vo['name']}</label><br/>
+       		</volist>
+        </td>
+      </tr>
+      <tr>
+ 		<td class="tr" >现场检查笔录：</td>
+ 			<td class="tl">
+ 				{:W('Swf/swfile',array('url'=>U('Public/feedupload')))}
+ 			</td>
+ 		</tr>
+     <tr>
+          <td  class="tr">现场视频:</td>
+          <td class="tl" ><input type="text" name="feedvedio" readonly  value="{$list.ver_url}" id="fileIdShow2" class='text'  autocomplete="off"  style="float:left;">
+              <button type="button" id="fileBtn2" class="show_status1" style="float:left;margin-right:10px;height:36px;">选择文件(50MB以内)</button>
+             	   <div id="container" style='height:36px;float:left;margin-left:10px;width:100px;line-height:36px;'></div>
+          </td>
+       </tr>
+       <taglib name="Home\TagLib\Admin"/>
+         <Admin:plone button="fileBtn2" url="{:U('Public/upchkvedio')}&type=2" field="fileId2" callback="callFun" exts='avi,mp4,rm,rmvb,wmv,asf'  maxsize='50mb' progress='1' ></Admin:plone>
+       
+      
+       <tr>
+        <td  class="tr" >备注:</td>
+        <td  class="tl" >
+       <textarea name="mark" class='textarea'></textarea>
+       </td>
+      </tr>
+      <input type='hidden' name='id' value="{$info.id}"/>
+       <tr>
+        <td  class="tr" >&nbsp;
+        </td>
+        <td  class="tl" > 
+             <div class="xz_title" style="margin-left:110px;">
+        	 <a href="javascript:void(0)"  onclick="formcheck('form1','{:U('feed')}','subFun')" >提交</a>
+        	 </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+ </form>
+ </div>
+ 
+</body>
+</html>
+<script>
+
+
+function subFun(status,data,info){
+	  if(status == 1){
+		  UsubFun(true,info,function(){ window.parent.location.reload();})
+	  }
+}	 
+
+function callFun(res){
+	$('#fileIdShow'+res.type).val(res.result);
+	return;
+}
+</script>
+ 

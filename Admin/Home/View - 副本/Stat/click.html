@@ -1,0 +1,75 @@
+
+<extend name="Common/blank-base" />
+<block name='action'>
+
+</block>
+<block name="search">
+    <div class="input-group">
+        <script type="text/javascript" src="__PUBLIC__/Vendor/My97DatePicker/WdatePicker.js"></script>
+         <span class="text-icon">开始日期</span> <input name="start" type="text" class="dfinput" readonly onclick="WdatePicker({dateFmt:'yyyy-MM-dd',isShowClear:false})" style="width:150px;" value="{$start}"/>
+        <span class="text-icon">结束日期</span> <input name="end" type="text" class="dfinput" readonly onclick="WdatePicker({dateFmt:'yyyy-MM-dd',isShowClear:false,maxDate:'%y-%M-{%d}'})" style="width:150px;" value="{$end}"/>
+    </div>
+</block>
+
+<block name='emptys'>
+<script src="/Public/js/echarts.common.min.js"></script>
+
+
+
+
+  <div id="mychart" style="width:70%;height:500px;float:left;"></div>
+  <div id="showall" style="width:30%;height:500px;float:right;"></div>
+
+ 
+ 
+  <script type="text/javascript">
+  var myChart = echarts.init(document.getElementById('mychart'));
+  option = {
+		    title: {
+		        text: '应用点击概览'
+		    },
+		    tooltip: {
+		        trigger: 'axis'
+		    },
+		    legend: {
+		        data:{$nameArr}
+		    },
+		    grid: {
+		        left: '3%',
+		        right: '4%',
+		        bottom: '3%',
+		        containLabel: true
+		    },
+		    toolbox: {
+		        feature: {
+		            saveAsImage: {}
+		        }
+		    },
+		    xAxis: {
+		        type: 'category',
+		        boundaryGap: false,
+		        data:{$dateArr}
+		    },
+		    yAxis: {
+		        type: 'value'
+		    },
+		    series:{$dataJson}
+		};
+  myChart.setOption(option);
+    </script>
+ 
+ 
+ <script>
+ 
+ $(function(){
+	 setTimeout(function(){
+		 var url = "{:U('Stat/all')}";
+			$('#showall').load(url);
+	 },1000)
+	 
+ })
+ 
+	
+	
+</script>
+</block>

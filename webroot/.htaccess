@@ -1,0 +1,26 @@
+<IfModule mod_rewrite.c>
+
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^(.*)$ index.php/$1 [QSA,PT,L]
+
+</IfModule>
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresDefault "access plus 1 months"
+ExpiresByType text/html "access plus 1 months"
+ExpiresByType image/gif "access plus 1 months"
+ExpiresByType image/jpeg "access plus 2 months"
+ExpiresByType application/x-shockwave-flash "access plus 2 months"
+ExpiresByType application/x-javascript "access plus 2 months"
+</IfModule>
+
+<IfModule mod_deflate>
+SetOutputFilter DEFLATE
+SetEnvIfNoCase Request_URI .(?:gif|jpe?g|png|exe|t?gz|zip|bz2|sit|rar|pdf|mov|avi|mp3|mp4|rm)$ no-gzip dont-vary
+AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/x-httpd-php application/x-javascript
+</IfModule>

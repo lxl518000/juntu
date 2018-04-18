@@ -1,0 +1,11 @@
+<extend name="Layout/form-add" />
+<block name="form-field">
+	{:formbuilder('input',array('title'=>'配置名称','name'=>'title','value'=>$list['title'],'placeholder'=>'请输入配置名','validate'=>'required','tip'=>''))}
+	{:formbuilder('select',array('title'=>'配置类型','name'=>'type','options'=>$type,'select'=>$list['type']))}
+	{:formbuilder('select',array('title'=>'配置分组','name'=>'groups','options'=>$groups,'select'=>$list['groups']))}
+	{:formbuilder('input',array('title'=>'配置KEY','name'=>'name','value'=>$list['name'],'placeholder'=>'请填写配置KEY','validate'=>'required','tip'=>''))}
+    {:formbuilder('textarea',array('title'=>'配置值','name'=>'value','value'=>$list['value'],'placeholder'=>'','validate'=>'required','tip'=>''))}
+	{:formbuilder('input',array('title'=>'备注','name'=>'remark','value'=>$list['remark'],'placeholder'=>'','validate'=>'','tip'=>''))}
+	{:formbuilder('choose',array(type=>'radio','title'=>'配置状态','name'=>'status','options'=>array('2'=>'禁用',1=>'启用'),'checked'=>[$list['status']]))}
+
+</block>

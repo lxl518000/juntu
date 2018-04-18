@@ -1,0 +1,61 @@
+<script type="text/javascript" src="/Public/Vendor/swfupload/swfupload.js"></script>
+<script type="text/javascript" src="/Public/Vendor/swfupload/js/handlers.js"></script>
+
+<div style="width: 180px; height: 30px; border: solid 1px #7FAAFF; background-color: #C5D9FF; padding: 2px;">
+	<span id="spanButtonPlaceholder"></span>
+</div>
+<div id="divFileProgressContainer"></div>
+<div id="thumbnails"></div>
+	
+<script type="text/javascript">
+	var swfu;
+	var fildname = "{$fildname}";
+	window.onload = function () {
+		swfu = new SWFUpload({
+			// Backend Settings
+			upload_url: "{$url}",
+			post_params: {"PHPSESSID": "<php>echo session_id(); </php>"},
+
+			// File Upload Settings
+			file_size_limit : "2 MB",	// 2MB
+			file_types : "{$ext}",
+			file_types_description : "JPG Images",
+			file_upload_limit : 0,
+
+			// Event Handler Settings - these functions as defined in Handlers.js
+			// The handlers are not part of SWFUpload but are part of my website and control how
+			// my website reacts to the SWFUpload events.
+			swfupload_preload_handler : preLoad,
+			swfupload_load_failed_handler : loadFailed,
+			file_queue_error_handler : fileQueueError,
+			file_dialog_complete_handler : fileDialogComplete,
+			upload_progress_handler : uploadProgress,
+			upload_error_handler : uploadError,
+			upload_success_handler : myuploadSuccess,
+			upload_complete_handler : myuploadComplete,
+
+			// Button Settings
+			button_image_url : "/Public/Vendor/swfupload/images/SmallSpyGlassWithTransperancy_17x18.png",
+			button_placeholder_id : "spanButtonPlaceholder",
+			button_width: 180,
+			button_height: 18,
+			button_text : '<span class="button">选择上传文件 <span class="buttonSmall"></span>',
+			button_text_style : '.button {   font-size: 14pt;} .buttonSmall { font-size: 10pt; }',
+			button_text_top_padding: 0,
+			button_text_left_padding: 18,
+			button_window_mode: SWFUpload.WINDOW_MODE.TRANSPARENT,
+			button_cursor: SWFUpload.CURSOR.HAND,
+			
+			// Flash Settings
+			flash_url : "/Public/Vendor/swfupload/swfupload.swf",
+			flash9_url : "/Public/Vendor/swfupload/swfupload_FP9.swf",
+
+			custom_settings : {
+				upload_target : "divFileProgressContainer"
+			},
+			
+			// Debug Settings
+			debug: false
+		});
+	};
+</script>

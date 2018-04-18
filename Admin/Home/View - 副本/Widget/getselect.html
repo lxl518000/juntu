@@ -1,0 +1,114 @@
+
+
+	<link rel="stylesheet" href="/Public/Vendor/jtree/css/zTreeStyle/zTreeStyle.css" type="text/css">
+	<script type="text/javascript" src="/Public/Vendor/jtree/js/jquery.ztree.core.js"></script>
+	<script type="text/javascript" src="/Public/Vendor/jtree/js/jquery.ztree.excheck.js"></script>
+<!--	<script type="text/javascript" src="../../../js/jquery.ztree.exedit.js"></script>-->
+	<SCRIPT type="text/javascript">
+		<!--
+		var setting = {
+			check: {
+				enable: true,
+				chkboxType: {$checktype},
+				<eq name="type" value='radio'>
+				chkStyle: "radio",
+				radioType: "all",
+				<else/>
+				chkStyle: "checkbox",
+				</eq>
+			
+			},
+			view: {
+				dblClickExpand: false
+			},
+			data: {
+				simpleData: {
+					enable: true
+				}
+			},
+			callback: {
+				beforeClick: beforeClick,
+				onCheck: onCheck
+			}
+		};
+
+		var zNodes ={$node};
+
+		function beforeClick(treeId, treeNode) {
+			var zTree = $.fn.zTree.getZTreeObj("treeDemo");
+			zTree.checkNode(treeNode, !treeNode.checked, null, true);
+			return false;
+		}
+		
+		function onCheck(e, treeId, treeNode) {
+			var zTree = $.fn.zTree.getZTreeObj("treeDemo"),
+			nodes = zTree.getCheckedNodes(true),
+			v = "";
+			id='';
+			for (var i=0, l=nodes.length; i<l; i++) {
+				v += nodes[i].name + ",";
+				id += nodes[i].id + ","; 
+			}
+			if (v.length > 0 ) v = v.substring(0, v.length-1);
+			if (id.length > 0 ) id = id.substring(0, id.length-1);
+			var cityObj = $("#citySel");
+			cityObj.attr("value", v);
+			$('#{$hidename}').attr('value',id);
+			hideMenu();
+		}
+
+		function showMenu() {
+			var cityObj = $("#citySel");
+			var cityOffset = $("#citySel").offset();
+			$("#menuContent").css({left:cityOffset.left + "px", top:cityOffset.top + cityObj.outerHeight() + "px"}).slideDown("fast");
+
+			$("body").bind("mousedown", onBodyDown);
+		}
+		function hideMenu() {
+			$("#menuContent").fadeOut("fast");
+			$("body").unbind("mousedown", onBodyDown);
+		}
+		function onBodyDown(event) {
+		
+			if (!(event.target.id == "menuBtn" || event.target.id == "citySel" || event.target.id == "menuContent" || $(event.target).parents("#menuContent").length>0)) {
+				hideMenu();
+			}
+			/* hideMenu(); */
+		}
+
+		$(document).ready(function(){
+			$.fn.zTree.init($("#treeDemo"), setting, zNodes);
+		});
+		//-->
+	</SCRIPT>
+
+
+<div class="content_wrap" style='width:200px;height:30px;display:inline-block'>
+	<div class="zTreeDemoBackground left">
+		<ul class="list">
+		<input id="citySel" type="text" readonly value="{$checknames}" style="width:150px;" onclick="showMenu();" />
+		<input type='hidden' value='{$checked}' name='{$hidename}' id="{$hidename}">
+		&nbsp;<a id="menuBtn" href="#" onclick="showMenu(); return false;">选择</a></li>
+		</ul>
+	</div>
+</div>
+
+<script>
+$(function(){
+/* 	$("#menuBtn").toggle(
+			  function () {
+			   showMenu();
+			  },
+			  function () {
+			   hideMenu();
+			  }
+		);
+	 */
+})
+
+</script>
+
+<div id="menuContent" class="menuContent" style="display:none; position: absolute;background:#f1f1f1">
+	<ul id="treeDemo" class="ztree" style="margin-top:0; width:550px; height:300px ;z-index:999;overflow-y: scroll;
+    overflow-x: auto; border: 1px solid #617775;background: #f0f6e4;"></ul>
+</div>

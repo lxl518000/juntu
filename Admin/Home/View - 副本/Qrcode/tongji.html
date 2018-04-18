@@ -1,0 +1,89 @@
+<extend name="Common/blank-base" />
+<block name='title'></block>
+<block name="search">
+    <div class="input-group">
+        <script type="text/javascript" src="__PUBLIC__/Vendor/My97DatePicker/WdatePicker.js"></script>
+         <span class="text-icon">开始日期</span> <input name="start" type="text" class="dfinput" readonly onclick="WdatePicker({dateFmt:'yyyy-MM-dd',isShowClear:false})" style="width:150px;" value="{$start}"/>
+        <span class="text-icon">结束日期</span> <input name="end" type="text" class="dfinput" readonly onclick="WdatePicker({dateFmt:'yyyy-MM-dd',isShowClear:false,maxDate:'%y-%M-{%d+1}'})" style="width:150px;" value="{$end}"/>
+    </div>
+</block>
+
+<block name='emptys'>
+<script src="/Public/js/echarts.common.min.js"></script>
+<div>
+
+	 <div id="schart" style='width:600px;height:380px;float:left;'></div>
+	 
+	  <div style="width: 600px;height:380px;float:left;">
+	   		<table class="line border color bordered">
+				 <tr>
+					<th class="tc">场景名称</th>
+				    <th class="tc">关注次数</th>
+				</tr>
+				<php>
+				$sumall = 0;
+				</php>
+				<foreach name="list" item="v">
+				<tr>
+				    <td class="tc">{$types[$v['qid']]['title']}</td>
+				    <td class="tc">{$v.num|default='0'}</td>
+					</tr>
+					<php>
+						$sumall+= $v['num'];
+					</php>
+			  </foreach>
+			  	<tr>
+			 		<td class="tc">汇总</td>
+			 		<td class="tc">{$sumall}</td>
+			 	</tr>
+			  </table>
+	  </div>
+</div> 
+ 
+  <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var sChart = echarts.init(document.getElementById('schart'));
+
+        option = {
+        	    title : {
+        	        text: '{$sname}-场景累计扫描次数统计',
+        	        subtext: '',
+        	        x:'center'
+        	    },
+        	    tooltip : {
+        	        trigger: 'item',
+        	        formatter: "{a} <br/>{b} : {c} ({d}%)"
+        	    },
+        	    legend: {
+        	        orient: 'vertical',
+        	        left: 'left',
+        	        data: {$names},
+	        	    tooltip: {
+	        	        show: true
+	        	    }
+        	    },
+        	    series : [
+        	        {
+        	            name: '场景',
+        	            type: 'pie',
+        	            radius : '55%',
+        	            center: ['50%', '60%'],
+        	            data:{$datas},
+        	            itemStyle: {
+        	                emphasis: {
+        	                    shadowBlur: 10,
+        	                    shadowOffsetX: 0,
+        	                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+        	                }
+        	            }
+        	        }
+        	    ]
+        	};
+
+
+        // 使用刚指定的配置项和数据显示图表。
+        sChart.setOption(option);
+       
+    </script>
+ 
+</block>

@@ -1,0 +1,58 @@
+<extend name="Layout/form-add" />
+<block name="form-field">
+
+{:formbuilder('input',array('title'=>'Server名称','name'=>'name','value'=>$list['name'],'placeholder'=>'请输入机器名称域名或者ip','validate'=>'required','tip'=>''))}
+{:formbuilder('input',array('title'=>'ServerIP','name'=>'serverip','value'=>$list['serverip'],'placeholder'=>'请输入机器ip或者域名','validate'=>'required','tip'=>''))}
+{:formbuilder('select',array('title'=>'来源机房','name'=>'roomset','options'=>$roomset,'select'=>$list['roomset']))}
+
+{:formbuilder('input',array('title'=>'最大连接数','name'=>'conn','value'=>$list['conn'],'placeholder'=>'请输入最大连接数','validate'=>'required','tip'=>''))}
+{:formbuilder('input',array('title'=>'服务器密码','name'=>'password','value'=>$list['password'],'placeholder'=>'请输入密码','validate'=>'required','tip'=>''))}
+
+{:formbuilder('choose',array(type=>'radio','title'=>'用户级别','name'=>'userlevel','options'=>$userlevel,'checked'=>[$list['userlevel']]))}
+
+{:formbuilder('choose',array(type=>'checkbox','title'=>'连接模式','name'=>'connmode[]','options'=>$mode,'checked'=>$list['connmode']))}
+
+<div class="form-group">
+                <label class="col-sm-3 control-label">可用区域：</label>
+                 <div class="col-sm-8">
+                		 <input type='checkbox'  id='pall' name='checkall' value='1' {$list['region']==0?'checked':''}><label for='pall'>全选</label>
+				       	<volist name="province" id="vos">
+				       			<label for="J_{$vos.RegionCode}" style="margin-right:5px;">
+				       			<input type="checkbox" <if condition="in_array($vos['RegionCode'],explode(',',$list['region'])) || $list['region']==0">checked</if> name="region[]" id="J_{$vos.RegionCode}" value="{$vos.RegionCode}" />
+				       			{$vos.RegionName}
+				       			</label>
+				       	</volist>
+                 </div>
+                </div>
+                 
+                 
+{:formbuilder('choose',array(type=>'radio','title'=>'状态','name'=>'status','options'=>[1=>'启用',2=>'禁用'],'checked'=>[$list['status']]))}
+
+
+{:formbuilder('input',array('title'=>'端口号','name'=>'vpnport','value'=>$list['vpnport'],'placeholder'=>'请输入端口号','validate'=>'required','tip'=>''))}
+
+{:formbuilder('input',array('title'=>'IPSEC','name'=>'ipsec','value'=>$list['ipsec'],'placeholder'=>'','validate'=>'','tip'=>''))}
+
+
+	
+{:formbuilder('input',array('title'=>'备注','name'=>'mark','value'=>$list['mark'],'placeholder'=>'','validate'=>'','tip'=>''))}
+</block>
+
+<block name="extend">
+<script>
+
+$(function(){
+	
+	$('#pall').on('click',function(){
+			$('input[name="region[]"]').prop('checked',this.checked);
+		}
+	)
+	
+	$('input[name="region[]"]').on('click',function(){
+		if(!this.checked){
+			$('#pall').attr('checked',false);
+		}
+	})
+})
+</script>
+</block>

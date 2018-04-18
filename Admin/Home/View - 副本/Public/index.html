@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	ul {
+		width:300px;
+		height:300px;
+	}
+	ul li {
+		width: 98px;
+		height: 98px;
+		border:1px solid #999;
+		list-style: none;
+		display: inline-block;
+		float: left;
+		text-align: center;
+		line-height: 98px;
+	}
+	ul li.active {
+		border:1px solid red;
+		background-color: red;
+	}
+	</style>
+</head>
+<body>
+<div class="main">
+	<ul>
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>56</li>
+		<li>7</li>
+		<li>8</li>
+		<li>9</li>
+		<li>10</li>
+	</ul>
+	<button type="button" onclick="start()">start</button>
+</div>
+<script type="text/javascript" src="/Public/js/jquery.js" ></script>
+<script type="text/javascript" src="/Public/js/common.js"></script>
+<script type="text/javascript" src="/Public/js/CheckForm.js"></script>
+<script type="text/javascript" src="/Public/Vendor/layer/layer.js"></script>
+<script>
+	var li = $('ul li');
+	var button = $('button');
+	var timer = null;
+	var hasget = [];
+	var n = null;
+	var getActive = function(){
+		n = null;
+		li.removeClass('active');
+		while(!n || hasget.indexOf(n) != -1){
+			n = Math.floor(Math.random()*li.length);
+		}
+		li.eq(n).addClass('active');
+	};
+	var start = function(){
+		if(button.text() == 'start'){
+			timer = setInterval(getActive,100);
+			button.text('stop');
+		} else if(button.text() == 'stop'){
+			clearInterval(timer);
+			layer.open({
+				type: 1,
+				skin: 'layui-layer-rim', //加上边框
+				area: ['420px', '240px'], //宽高
+				content: $('ul li').eq(n).html()
+			});
+			hasget.push(n);
+			if(hasget.length == li.length-1){
+				button.attr('disabled',true);
+			}
+			button.text('start');
+		}
+	};
+</script>
+</body>
+</html>

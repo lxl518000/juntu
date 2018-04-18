@@ -1,0 +1,69 @@
+<extend name="layout/jquery-table" />
+
+<block name="title">菜单管理</block>
+
+
+<block name='tooltip'>
+        <button type="button" class="btn btn-outline btn-default">
+            <i class="glyphicon glyphicon-plus J_open" aria-hidden="true" data-U="{:U('add')}" >添加菜单</i>
+        </button>
+       <button type="button" class="btn btn-outline btn-default">
+            <i class="glyphicon glyphicon-heart" aria-hidden="true">变更状态</i>
+        </button> 
+        <button type="button" class="btn btn-outline btn-default">
+            <i class="glyphicon glyphicon-trash" aria-hidden="true">批量删除</i>
+        </button>
+</block>
+
+
+ <block name='thead'>
+		 <th data-field="state" data-checkbox="true" ></th>
+         <th data-field="id"  data-sortable="true">id</th>
+         <th data-field="username"  data-sortable="true" >用户名</th>
+         <th data-field="realname"  data-sortable="true" >真实姓名</th>
+         <th data-field="mobile"  data-sortable="true" >联系电话</th>
+         <th data-field="role_id"  data-sortable="true">角色</th>
+         <th data-field="status"  data-sortable="true">状态</th>
+         <th data-field="logintime"  data-sortable="true">最后登录时间</th>
+         <th data-field="U" data-formatter="operateFormatter" data-events="operateEvents">操作</th>
+ </block>
+ 
+ 
+ <block name='extend'>
+ 
+ <script>
+ 
+ function operateFormatter(value, row, index) {
+		var str = '';
+		var U = "{:U('add')}&pid="+row.id;
+		
+		str = '<button  type="button" class="btn btn-primary btn-xs J_open" onclick="J_open(this)" data-U="'+U+'">修改</button>';
+		
+		var U = "{:U('delete')}?pid="+row.id;
+		str += "&nbsp;"+'<button  type="button" class="btn btn-danger btn-xs" onclick="J_confirm(this)" data-mode=2 data-U="'+U+'">删除</button>';
+     return [str].join('');
+}
+	</script>
+	
+	
+<script src="/Public/Vendor/TableTree/jquery.treeTable.js"></script>
+<link rel="stylesheet" href="/Public/Vendor/TableTree/vsStyle/jquery.treeTable.css" type="text/css" />
+
+<script type="text/javascript">
+
+
+$(function(){
+	
+	  var option = {
+              theme:'vsStyle',
+              expandLevel :3,
+              column : 1,
+
+          };
+    $('.TreeTable').treeTable(option);
+	
+})
+</script>
+	
+	
+ </block>

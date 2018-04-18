@@ -1,0 +1,153 @@
+ <!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>{$titlename}</title>
+  
+    <link rel="shortcut icon" href="favicon.ico"> <link href="/Public/static/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="/Public/static/css/font-awesome.css?v=4.4.0" rel="stylesheet">
+    <link href="/Public/static/css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="/Public/static/css/animate.css" rel="stylesheet">
+    <link href="/Public/static/css/style.css?v=4.1.0" rel="stylesheet">
+
+
+</head>
+
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+       
+      
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>产品分类管理</h5>
+                        <div class="ibox-tools">
+                          <a class="dropdown-toggle" onclick="window.location.reload();">
+			                                <i class="fa fa-refresh"></i>
+			                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="row">
+                            
+                            <div class="col-sm-8 m-b-xs">
+                              {:getToolIcon('add','J_open btn-sm',U('add'))}
+                                {:getToolIcon('delete','J_confirm btn-sm',U('delete'))}
+                                 {:getToolIcon('on','J_multiple btn-sm',U('enable'))}
+                                 {:getToolIcon('off','J_multiple btn-sm',U('disable'))}
+                            </div>
+                            <div class="col-sm-3">
+                               <form class="AjaxBatch" data-action="__URL__" method="post">
+                                <div class="input-group">
+                                    <block name="batch">
+                                    <input type="text" name='title' value="{$_REQUEST['title']}" placeholder="请输入关键词" class="input-sm form-control"> <span class="input-group-btn">
+                                    </block>
+                                        <button type="submit" class="btn btn-sm btn-primary"> 搜索</button> </span>
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table  TreeTable">
+                                <thead>
+                                    <tr>
+
+                                        <th><input type='checkbox' name='' class="check-all" ></th>
+                                        <th>分类名称</th>
+                                        <th>分类状态</th>
+                                        <th>添加时间</th>
+                                        <th>缩略图</th>
+                                        <th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                	<volist name='list' id='vo'>
+                                    <tr id="{$vo.id}" pId="{$vo.pid}" >
+                                        <td>
+                                            <input type="checkbox"  class="i-checks" value="{$vo.id}" name="chkid">
+                                        </td>
+                                        <td>{$vo.title}</td>
+                                     
+                                      
+                                         <td>{$vo['status'] == 1?'<span style="color:green">启用</span>':'<span style="coolor:#ccc">禁用</span>'}
+                                         <td>{$vo.addtime}</td>
+                                         <td>
+                                         	{:getThumbImg($vo['pic'])}
+                                         </td>
+                                        <td> 
+                                          	<neq name='vo.type' value='1'>
+                                          		{:getToolIcon('add','J_open btn-xs',U('add',array('pid'=>$vo['id'])),'添加子菜单')}
+                                          	</neq>
+                                      	   
+                                    	   {:getToolIcon('edit','J_open btn-xs',U('edit',array('id'=>$vo['id'])))}
+                                       
+                                            {:getToolIcon('delete','J_confirm btn-xs',U('delete',array('id'=>$vo['id'])))}
+                                            
+                                            <eq name='vo.status' value='1'>
+                                               	 {:getToolIcon('off','J_confirm btn-xs',U('disable',['id'=>$vo['id']]))}
+                                            <else/>
+                                         		{:getToolIcon('on','J_confirm btn-xs ',U('enable',['id'=>$vo['id']]))}
+                                            </eq>
+                                  		
+                                        </td>
+                                    </tr>
+                                    </volist>
+       
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 全局js -->
+    <script src="/Public/static/js/jquery.min.js?v=2.1.4"></script>
+    <script src="/Public/static/js/bootstrap.min.js?v=3.3.6"></script>
+    
+    <script src="/Public/static/js/plugins/layer/layer.min.js"></script>
+    <script src="/Public/static/js/content.js?v=1.0.0"></script>
+    
+    <!-- iCheck -->
+    <script src="/Public/static/js/plugins/iCheck/icheck.min.js"></script>
+    <script src="/Public/static/js/jquery.lazyload.min.js"></script>
+
+ 
+<script src="/Public/static/Vendor/TableTree/jquery.treeTable.js"></script>
+<link rel="stylesheet" href="/Public/static/Vendor/TableTree/vsStyle/jquery.treeTable.css" type="text/css" />
+
+
+    <script>
+        $(document).ready(function () {
+          	  var option = {
+                        theme:'vsStyle',
+                        expandLevel :3,
+                        column : 1,
+                    };
+              $('.TreeTable').treeTable(option);
+              
+              
+              $("img.lazy").lazyload({effect: "fadeIn"});
+        });
+        
+
+          
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

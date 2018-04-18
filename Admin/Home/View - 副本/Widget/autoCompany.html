@@ -1,0 +1,62 @@
+<style>
+<!--
+
+.autocomplete-suggestions { border: 1px solid #999; background: #FFF; overflow: auto; }
+.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
+.autocomplete-selected { background: #F0F0F0; }
+.autocomplete-suggestions strong { font-weight: normal; color: #3399FF; }
+.autocomplete-group { padding: 2px 5px; }
+.autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
+
+-->
+</style>
+    <script type="text/javascript" src="/Public/Vendor/jQuery-Autocomplete-master/src/jquery.autocomplete.js"></script>
+
+	<script>
+	
+	 function delHtmlTag(str){  
+	        return str.replace(/<[^>]+>/g,"");//去掉所有的html标记  
+	    }  
+// Initialize ajax autocomplete:
+	$(function(){
+		var _URL = "{$url}";
+	$('#cname').autocomplete({
+		serviceUrl: _URL,
+		autoSelectFirst:true,
+	    onSelect: function(suggestion) {
+	    	var code = suggestion.id;
+		   	$('#cid').val(code);
+		   	<notempty name="callback">
+		   	{$callback}(suggestion);
+		   	</notempty>
+	    },
+	    onHint: function (hint) {
+	      // alert('选择中');
+	    },
+	    mustMatch:true,
+	    onInvalidateSelection: function() {
+	    	 //alert('无效的选择！');
+	    }, 
+	    onSearchError: function(){
+	    	//alert('无效选择');
+	    },
+	    onChange:function(){
+	    	alert(1);
+	    },
+	    onSearchComplete :function(){
+		//    alert(1);
+	    },
+	    showNoSuggestionNotice : true,
+	    noSuggestionNotice: '<span >没有找到对应的场所！</span>',
+	    formatResult: function(row) {
+	    	 return '<span style="width:300px;display:inline-block;">场所：'+row.value +'('+row.type+')</span>'; 
+	    }
+	  
+	    
+	});
+
+	})
+	</script>
+	<input name="cname" type="text" id='cname' class="{$class}" value="{$list.cname}" placeholder="请输入场所名称关键字" style="width:{$width};"/> 
+    <input name="{$hideName}" type='hidden' id="cid" class="dfinput" value="{$list.cid}"/> 
+    

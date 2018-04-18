@@ -1,0 +1,71 @@
+<extend name="Common/list-base" />
+ <block name="action">
+ <style>
+
+ 
+</style>
+             	<if condition="allow(CONTROLLER_NAME.'/add')">
+               	 <a class="J_open btn btn-green btn-big mrt10" data-area="80%,70%"  data-url="{:U('add')}" href="javascript:;">添加版本</a>
+              </if>
+        </block>
+<block name="search">
+     <div class="input-group">
+        <span class="text-icon">版本号</span><input type="text" placeholder="版本号" value="{$_REQUEST['ver']}" name="ver" >
+    </div>
+    
+</block>
+
+<block name="list">
+<tr>
+       <th class="tc" width="100px">id</th>
+        <th class="tc" width="">版本号</th>
+        <th class="tc" width="">下载文件</th>
+        <th class="tc" width="">md5</th>
+        <th class="tc" width="">添加时间</th>
+        <th class="tc" width="">添加人</th>
+        <th class="tc" width="">备注</th>
+         <th  class="tc">操作</th>
+</tr>
+ <notempty name='list'>
+          	<volist name='list' id="vo">
+            <tr>
+              <td class="tc">{$vo.id}</td>
+             <td class="tc">{$vo.ver}</td>
+             <td class="tc">{:C('CDN_ADDRESS')}{$vo.file}</td>
+             <td class="tc">{$vo.md5}</td>
+             <td class="tc">{$vo.addtime}</td>
+             <td class="tc">{$vo.adduser}</td>
+             <td class="tc">{$vo.mark}</td>
+              <td class="tc">
+             <a class='J_open btn btn-green mrt10'  data-area="80%,70%"   data-url="{:U('edit',array('id'=>$vo['id']))}" href="javascript:;">修改</a>
+       		 <a data-url="{:U('delete',array('id'=>$vo['id']))}" class='J_confirm btn btn-red mrt10' data-title='确定删除吗?'>删除</a> 
+   		   <a href="javascript:;" data-id="{$vo.id}" class="J_cdnquery  btn btn-blue mrt10">预热查询</a>
+       		 <a href="javascript:;" data-id="{$vo.id}" class="J_refresh  btn btn-primary mrt10">手动预热</a>
+             </td>
+            </tr>
+            </volist>
+            <else/>
+            <tr>
+            	<td colspan='4'>暂无记录</td>
+            </tr>
+            </notempty>
+             
+<script>
+$('.J_refresh').on('click',function(){
+	var _id = $(this).data('id');
+	$.post('{:U("freshcdn")}',{id:_id,type:1},function(data){
+		layer.alert(data.info,{title:'系统提示',icon:0});
+	},'json');
+});
+
+$('.J_cdnquery').on('click',function(){
+	var _id = $(this).data('id');
+	$.post('{:U("querycdn")}',{id:_id,type:1},function(data){
+		layer.alert(data.info,{title:'系统提示',icon:0});
+	},'json');
+})
+
+</script>
+
+
+</block>

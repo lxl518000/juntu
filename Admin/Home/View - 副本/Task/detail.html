@@ -1,0 +1,97 @@
+<extend name="Common/list-base" />
+<block name='action'></block>
+<block name="list">
+<style>
+ li{float:left;margin-left:10px;line-height:22px;}
+</style>
+<tr>
+	 				<th>序号</th>
+	        <th>发布时间</th>
+	        <th>抽查时间</th>
+	        <th>场所名称</th>
+	        <th>法人</th>
+	        <th>联系电话</th>
+	        <th>执法人</th>
+	        <th>实际完成时间</th>
+	        <th>完成状态</th>
+	        <th>操作</th>
+</tr>
+<foreach name="list" item="vo">
+ <tr id="tablelist_{$vo.id}">
+        <td>{$vo.id}</td>
+        <td>{$vo.addTime}</td>
+        <td>{$vo.start}-{$vo.end}</td>
+        <td title="{$places[$vo['placeid']]['address']}">{$places[$vo['placeid']]['name']}</td>
+        <td>{$places[$vo['placeid']]['faren']}</td>
+        <td>{$places[$vo['placeid']]['cellphone']}</td>
+        <td><span style='color:green'>{$vo.username}</span></td>
+          <td>{$vo.realTime|default='-'}</td>
+          
+           <td><eq name="vo.status" value='1'><span style='color:green'>已完成</span><else/><span style='color:red'>未完成</span></eq></td>
+        <td>
+        	
+        	<in name='vo.joinstatus' value='0,3'>
+	        	<eq name="vo.status" value='0'>
+	        		<eq name="vo.isMine" value='1'>
+	        		 <eq name="vo.joinstatus" value='3'>
+		          	 	<span style='color:red'>联合执法已拒绝</span>
+		         	 </eq>
+	        			<a href="javascript:void(0)" onclick="feed({$vo['id']})" class='c_0' style='color:green'>点击提交</a>
+	        		<else/>
+	        			未提交
+	        		</eq>
+	        	<else/>	
+	        		<a href="javascript:void(0)" class='c_0' onclick='show({$vo['id']})'  style='color:green'>查看</a>
+	        			<!-- <a href="{:U('export',array('id'=>$vo['id']))}" class='c_0' '>导出</a> -->
+	        	</eq>
+	        <else/>
+		          <eq name='vo.joinstatus' value='1'>
+		        	<span style='color:red'>联合执法审核中</span>
+		          </eq>
+		         
+		          <eq name="vo.joinstatus" value='2'>
+		          	 	<span style='color:green'>联合执法已通过，本条任务忽略</span>
+		          </eq>
+		            <eq name="vo.joinstatus" value='3'>
+		          	 	<span style='color:green'>联合执法已拒绝</span>
+		          </eq>
+        	</in>
+        </td>
+      </tr>     
+</foreach>
+
+<script type="text/javascript">
+	
+	function feed(id){
+		var url = "{:U('feed')}&id="+id;
+		layer.open({
+		    type: 2,
+		   // shadeClose: true,
+		    //shade: false,
+		    title : '提交调查反馈',
+		    maxmin: true, //开启最大化最小化按钮
+		    shade: [0.5, '#393D49'],
+		   area : ['1000px','80%'],
+		 //  skin: 'layui-layer-rim', //加上边框
+		    content:url
+		});
+	}
+	
+	function show(id){
+		var url = "{:U('show')}&id="+id;
+		layer.open({
+		    type: 2,
+		    //shadeClose: true,
+		    shade: [0.5, '#393D49'],
+		    title : '查看调查反馈',
+		    maxmin: true, //开启最大化最小化按钮
+		   area : ['1000px','80%'],
+		    content:url
+		});
+	}
+	
+	
+	
+</script>
+
+</block>

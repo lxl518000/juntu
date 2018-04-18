@@ -1,0 +1,49 @@
+<extend name="Common/form-ajax" />
+<block name="form">
+		<tr>
+     <th>选择类型:</th>
+        <td>
+		         <select name="pid" tip="请选择父菜单">
+		                <foreach name="parent" item="v">
+		                <option value="{$v.id}" <eq name="v.id" value="$Think.get.pid">selected</eq> >{$v.mark}{$v.title}</option>
+		                </foreach>
+		            </select>
+      </td>
+    </tr>
+    
+    
+
+
+	<tr>
+		<th>名称:</th>
+		<td>
+			<input type="text" name="title" datatype="*2-20" value="{$list.title}" errormsg="请输入二维码名称">
+			  <span class="Validform_checktip"></span>
+		</td>
+	</tr>
+		<tr>
+		<th>备注:</th>
+		<td>
+			<input type="text" name="remark" value="{$list.remark}" >
+			  <span class="Validform_checktip"></span>
+		</td>
+	</tr>
+	
+	
+
+    <tr>
+       	<th></th>
+      	
+       	<notempty name='list.id'>
+					<input type='hidden' name='id' value="{$list.id}"/>
+				<td><input type="submit" id="btn_sub" class="btn-big btn-blue" value="修改"></td>
+				
+				<else/>
+						<td><input type="submit" class="btn-big btn-blue" value="添加"></td>
+		</notempty>
+       
+        </tr>
+        
+        
+       
+</block>

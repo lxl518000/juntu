@@ -1,0 +1,73 @@
+<extend name="Common/list-base" />
+ <block name="action">
+ <style>
+
+ 
+</style>
+             	<if condition="allow(CONTROLLER_NAME.'/add')">
+               	 <a class="J_open btn btn-green btn-big mrt10" data-area="80%,70%"  data-url="{:U('add')}" href="javascript:;">添加游戏</a>
+              </if>
+        </block>
+<block name="search">
+    <div class="input-group">
+        <span class="text-icon">游戏名称</span><input type="text" placeholder="游戏名称" value="{$_REQUEST['name']}" name="name" >
+        <span class="text-icon">进程名称</span><input type="text" placeholder="进程名称" value="{$_REQUEST['process']}" name="process" >
+        <span class="text-icon">进程md5</span><input type="text" placeholder="进程md5" value="{$_REQUEST['pmd5']}" name="pmd5" >
+        <eq name='isroot' value='1'>
+        <span class="text-icon">公司</span>
+		    <select name='cid'>
+		          	<option value='0'>--选择公司--</option>
+		  	   <foreach name="company" item="v">
+		            <option value="{$v.id}" <eq name="v.id" value="$_REQUEST['cid']">selected</eq> >{$v.name}</option>
+		      </foreach>
+		     
+		    </select>
+		 </eq>
+    </div>
+    
+</block>
+
+<block name="list">
+<tr>
+       <th class="tc" width="100px">游戏ID</th>
+       <th class="tc" >所属公司</th>
+        <th class="tc" width="">游戏名称</th>
+        <th class="tc" width="">进程名称</th>
+        <th class="tc" width="">进程md5</th>
+        <th class="tc" width="">添加时间</th>
+        <th class="tc" width="">添加人</th>
+        <th class="tc" width="">备注</th>
+         <th  class="tc">操作</th>
+</tr>
+ <notempty name='list'>
+          	<volist name='list' id="vo">
+            <tr>
+              <td class="tc">{$vo.id}</td>
+             <eq name='isroot' value='1'>
+                <td class="tc">{$company[$vo['cid']]['name']}</td>
+             <else/>
+                <td class="tc">{$cname}</td>
+             </eq>
+           
+             <td class="tc">{$vo.name}</td>
+             <td class="tc">{$vo.process}</td>
+             <td class="tc">{$vo.pmd5}</td>
+             <td class="tc">{$vo.addtime}</td>
+             <td class="tc">{$vo.adduser}</td>
+             <td class="tc">{$vo.mark}</td>
+              <td class="tc">
+               <a href="{:U('down',array('id'=>$vo['id']))}" class=' btn btn-blue mrt10' >下载授权码</a> 
+             <a class='J_open btn btn-green mrt10'  data-area="80%,70%"   data-url="{:U('edit',array('id'=>$vo['id']))}" href="javascript:;">修改</a>
+       		 <a data-url="{:U('delete',array('id'=>$vo['id']))}" class='J_confirm btn btn-red mrt10' data-title='确定删除吗?'>删除</a> 
+             </td>
+            </tr>
+            </volist>
+            <else/>
+            <tr>
+            	<td colspan='4'>暂无记录</td>
+            </tr>
+            </notempty>
+             
+</foreach>
+
+</block>

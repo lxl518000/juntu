@@ -45,6 +45,7 @@ class PublicController extends BackendController {
 			echo json_encode($return);
 			exit;
 		}
+		
 		// 上传文件配置
 		$config=array(
 				//'maxSize'   =>  '',               // 上传文件最大为500M
@@ -76,7 +77,7 @@ class PublicController extends BackendController {
 			$return['code'] = 1;
 			$return['data'] = $find;
 			echo json_encode($return);
-			unlink(".".$find['savepath'].$find['savename']);
+			unlink($info['savepath'].$info['savename']);
 			exit;
 		}
 		

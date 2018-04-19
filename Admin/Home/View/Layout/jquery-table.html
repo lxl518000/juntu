@@ -191,7 +191,9 @@
 	        export: 'glyphicon-export icon-share'
 	      },
 	      queryParams:queryParams,
-	      
+	      onLoadSuccess:function(){
+	    	  callback();
+	      }
 	    })
 	    
 	  
@@ -242,7 +244,12 @@
 	 
  }
 
-	
+	<block name="callback">
+		function callback(){
+			console.log(111);
+			return;
+		}
+	</block>
 	
   
 	</script>

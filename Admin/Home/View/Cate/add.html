@@ -7,7 +7,7 @@
 
 
 <block name="form-field">
-	{:formbuilder('input',array('title'=>'分类名称','name'=>'title','value'=>$list['title'],'placeholder'=>'请输入分类名称','validate'=>'required','tip'=>''))}
+	{:formbuilder('input',array('title'=>'分类名称','name'=>'name','value'=>$list['title'],'placeholder'=>'请输入分类名称','validate'=>'required','tip'=>''))}
 	{:formbuilder('select',array('title'=>'上级分类','name'=>'pid','options'=>$parent,'select'=>$list['pid']))}
 	 {:formbuilder('input',array('title'=>'关键字','name'=>'keyword','value'=>$list['keyword'],'placeholder'=>'','validate'=>'','tip'=>''))}
 	{:formbuilder('textarea',array('title'=>'分类描述','name'=>'desc','value'=>$list['name'],'placeholder'=>'如果有则请填写路由地址','validate'=>'','tip'=>''))}

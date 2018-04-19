@@ -3,16 +3,16 @@ namespace Home\Controller;
 
 class ProductController extends BackendController {
 	
-	protected $name = "产品分类菜单";
+	protected $name = "产品管理";
 	
 	protected function loadModel(){
-		$this->model = D('Cate');
+		$this->model = D('Product');
 		return $this->model;
 	}
 	
 	protected function _before_add(){
 		$this->loadModel();
-		$parent = $this->model->getParent();
+		$parent = D('Cate')->getParent();
 		$this->assign('parent',$parent);
 		
 		$list['pid'] = I('pid',0);
@@ -20,28 +20,43 @@ class ProductController extends BackendController {
 		$list['sort'] = 1;
 		$list['status'] = 1;
 		$list['type'] = 2;
+		$list['iscommon'] = 1;
 		$this->assign('list',$list);
 		
 	}
 	
-	public function index(){
-		$where = array();
-	
-		$list = $this->loadModel()->where($where)->select();
-		$list = $this->_format($list);
-		$this->assign('list',$list);
-		$this->display();
-	}
-	
-	
 	protected function _format($list){
-		return listLevel($list);
+			
+		$cats = D('Cate')->getField('id,title',true);
+		foreach($list as $k=>$vo){
+			$op = '';
+	
+			$op .=  getToolIcon('edit','J_open btn-xs ',U('edit',['id'=>$vo['id']]),'','','','J_open')."&nbsp;";
+	
+			$op .= getToolIcon('delete','J_confirm btn-xs ',U('delete',['id'=>$vo['id']]),'','','','J_confirm')."&nbsp;";
+	
+			if($vo['status']==1){
+				$op .= getToolIcon('off','J_confirm btn-xs ',U('disable',['id'=>$vo['id']]),'','','','J_confirm')."&nbsp;";
+				$vo['status'] = "<span style='color:green'>启用</span>";
+			}else{
+				$op .= getToolIcon('on','J_confirm btn-xs ',U('enable',['id'=>$vo['id']]),'','','','J_confirm')."&nbsp;";
+				$vo['status'] = "<span style='color:#ccc'>禁用</span>";
+			}
+			$vo['thumb'] = 	getThumbImg($vo['pic']);					
+			$vo['cname'] = $cats[$vo['cid']];
+	
+			$vo['operate'] = $op;
+			$list[$k] = $vo;
+		}
+		return $list;
 	}
-    
+	
+	
+	
     protected function _after_edit($list){
     	$_GET['pid'] = $list['pid'];
     	$this->loadModel();
-    	$parent = $this->model->getParent();
+   		 $parent = D('Cate')->getParent();
     	$this->assign('parent',$parent);
     }
     

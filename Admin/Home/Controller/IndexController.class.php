@@ -253,19 +253,6 @@ class IndexController extends BackendController {
 	}
 	
 	/**
-	 * 公司自动完成
-	 */
-	public function autocompany(){
-		$params['method'] = 'Company/autoCompany';
-		$params['query'] = I('query');
-		$rs = getApi($params);
-		$return = array();
-		$return['suggestions'] = $rs['data'];
-		echo json_encode($return,JSON_UNESCAPED_UNICODE);
-	}
-	
-	
-	/**
 	 * 客服自动完成
 	 */
 	public function automen(){
@@ -332,8 +319,6 @@ class IndexController extends BackendController {
 			case 'uploadvideo':
 				/* 上传文件 */
 			case 'uploadfile':
-	
-				$upload = new \Think\Upload();// 实例化上传类
 	
 				if($file=$this->uploadOne($param)){
 					$file_data=array(
@@ -448,50 +433,76 @@ class IndexController extends BackendController {
 	);
 	
 	public function uploadOne($config=array()){
-		$path = './Uploads/';
-		if(!is_dir($path)){
-			mkdir($path, 0755, true);
-		}elseif(!is_writeable($path)){
-			$this->error='备份目录不存在或不可写，请检查后重试！';
-			return false;
-		}
-		
+
 		$file_data=reset($_FILES);
-	
+		$ext_arr= array(
+				'image' => array('gif', 'jpg', 'jpeg', 'png', 'bmp'),
+				'photo' => array('jpg', 'jpeg', 'png'),
+				'flash' => array('swf', 'flv'),
+				'media' => array('swf', 'flv', 'mp3', 'wav', 'wma', 'wmv', 'mid', 'avi', 'mpg', 'asf', 'rm', 'rmvb'),
+				'file' => array('doc', 'docx', 'xls', 'xlsx', 'ppt', 'htm', 'html', 'txt', 'zip', 'rar', 'gz', 'bz2','pdf')
+		);
+		
 		//增加自定义条件
 		$config['maxSize']=$this->allow_size;
 		$config['exts']=$this->allow_ext;
 	
 		//上传服务器
-		$Upload = new \Think\Upload();// 实例化上传类   
-		$file = $Upload->uploadOne($file_data);
-		if(!$file){
-			$this->error = $Upload->getError();
-			return false;
-		}
+			// 上传文件配置
+		$config=array(
+				//'maxSize'   =>  '',               // 上传文件最大为500M
+				'rootPath'  =>  './',                   // 文件上传保存的根路径
+				'savePath'  =>  './Uploads/',         // 文件上传的保存路径（相对于根路径）
+				'saveName'  =>  array('uniqid',''),     // 上传文件的保存规则，支持数组和字符串方式定义
+				'autoSub'   =>  true,                   // 自动使用子目录保存上传文件 默认为true
+				'exts'      =>    isset($ext_arr[$format])?$ext_arr[$format]:'',
+		);
 	
-		//使用第三方上传空间时不做管理直接返回
-		if($this->upload_type != 'Local'){
-			$data['title']=str_replace('.'.$file['ext'],'',$file['name']);
-			if(isset($file['url'])){
-				$data['url']=$file['url'];
-			}else{
-				$domain=C('UPLOAD_TYPE_CONFIG.domain');
-				$data['url']=$domain.'/Uploads/'.$file['savepath'].$file['savename'];
-			}
-			$data['ext']=$file['ext'];
-			$data['size']=$file['size'];
+		// 实例化上传
+		$upload=new \Think\Upload($config);
+	
+		// 调用上传方法
+		$file = $upload->upload();
+			
+		$info = $file['upfile'];
+	
+		$find = D('sys_file')->where(array('md5'=>$info['md5']))->find();
+		if($find){
+			$data['url']= $find["savepath"].$file['savename'];
+			unlink($find['savepath'].$find['savename']);
+			
 			return $data;
 		}
-	
-		//图片处理(缩放|水印)
-		if(in_array( $file['ext'], $this->image_ext )){
-			$file['type']=1;//图片类型
-			if($config['thumb'] || ( C('UPLOAD_WATER') && $config['water']) ){
-				$file=$this->doImage($file,$config);
-			}
+		
+		
+		// 按照原图的比例生成一个最大为150*150的缩略图并保存为thumb.jpg
+		$thumbname = '';
+		if(in_array($info['ext'],$ext_arr['image'])){
+			$image = new \Think\Image();
+			$image->open($info['savepath'].$info['savename']);
+			$thumbname = 'thumb240_'.$info['savename'];
+			$image->thumb(240,240)->save($info['savepath'].$thumbname);
+			$info['thumbname'] = $thumbname;
 		}
-		$data['url']='/Uploads/'.$data['path'].'/'.$data['name'].'.'.$data['ext'];
+		$info['savepath'] = ltrim($info['savepath'],'.');
+		//添加文件
+		$file = [];
+		$file['name'] = $info['name'];
+		$file['md5'] = $info['md5'];
+		$file['savename'] = $info['savename'];
+		$file['savepath'] = $info['savepath'];
+		$file['size'] = $info['size'];
+		$file['ext'] = $info['ext'];
+		$file['thumbname'] = $thumbname;
+		$file['minitype'] = $info['type'];
+		$file['addtime'] = date('Y-m-d H:i:s');
+		$file['adduser'] = getUser();
+		try{
+			D('sys_file')->add($file);
+		}catch (\Exception $e){
+				
+		}
+		$data['url']= $info['savepath'].$info['savename'];
 		//缓存新增附件信息
 	
 		return $data;

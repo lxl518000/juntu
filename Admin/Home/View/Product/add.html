@@ -1,1 +1,12 @@
 <extend name="Layout/form-add-left" />
+
+
+<block name='left-field'>
+       {:formbuilder('input',array('title'=>'产品名称','name'=>'name','value'=>$list['name'],'placeholder'=>'请输入产品名','validate'=>'required','tip'=>''))}
+      {:formbuilder('select',array('title'=>'所属分类','name'=>'cid','options'=>$parent,'select'=>$list['cid']))}
+	 {:formbuilder('input',array('title'=>'关键字','name'=>'keyword','value'=>$list['keyword'],'placeholder'=>'','validate'=>'','tip'=>''))}
+	{:formbuilder('textarea',array('title'=>'分类描述','name'=>'description','value'=>$list['description'],'placeholder'=>'','validate'=>'','tip'=>''))}
+	{:formbuilder('choose',array(type=>'radio','title'=>'状态','name'=>'status','options'=>array('2'=>'禁用',1=>'启用'),'checked'=>[$list['status']]))}
+	{:formbuilder('choose',array(type=>'radio','title'=>'推荐','name'=>'iscommond','options'=>array('2'=>'推荐',1=>'普通'),'checked'=>[$list['status']]))}
+         <include file="Common/Upload" />
+ </block>

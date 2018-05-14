@@ -22,6 +22,7 @@ class ProductController extends BackendController {
 		$list['type'] = 2;
 		$list['iscommon'] = 1;
 		$this->assign('list',$list);
+		$this->assign('callback','subfun');
 		
 	}
 	

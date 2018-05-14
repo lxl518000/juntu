@@ -44,7 +44,7 @@
  
    
 
- <form class="form-horizontal " id="signupForm" <block name='form-par'>data-par='close'</block> action="{:U()}">
+ <form class="form-horizontal " id="signupForm" <block name='form-par'>data-par='close'</block> action="{:U()}"  data-callback='<block name='callback'>{$callback|default=''}</block>'>
                         
 <body class="gray-bg">
     <div class="wrapper wrapper-content">
@@ -119,7 +119,29 @@
     </form>
 
 
-
+ <script>
+ 
+ function subfun(data){
+	 	if(data.status!=1){
+	 		layer.msg(data.info);
+	 		return false;
+	 	}
+	 	layer.confirm()
+	 	var sg = layer.confirm(data.info+'是否保留此页并继续添加', {
+		  btn: ['继续添加','不了'] //按钮
+		}, function(){
+			   var button = $('#signupForm').find('button[type="submit"]');
+				unlockButton(button);
+				layer.close(sg);
+				
+		}, function(){
+           	  setTimeout(function () {
+           		  parent.location.reload();
+               }, 1000);
+		});
+	
+ }
+ </script>
 </body>
 
 </html>

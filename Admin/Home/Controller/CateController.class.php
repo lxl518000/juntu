@@ -21,6 +21,7 @@ class CateController extends BackendController {
 		$list['status'] = 1;
 		$list['type'] = 2;
 		$this->assign('list',$list);
+		$this->assign('callback','subfun');
 		
 	}
 	
@@ -33,6 +34,7 @@ class CateController extends BackendController {
 		$this->display();
 	}
 	
+
 	
 	protected function _format($list){
 		return listLevel($list);

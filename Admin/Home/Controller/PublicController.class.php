@@ -49,7 +49,7 @@ class PublicController extends BackendController {
 		// 上传文件配置
 		$config=array(
 				//'maxSize'   =>  '',               // 上传文件最大为500M
-				'rootPath'  =>  './',                   // 文件上传保存的根路径
+				'rootPath'  =>  ROOTPATH,                   // 文件上传保存的根路径
 				'savePath'  =>  './Uploads/',         // 文件上传的保存路径（相对于根路径）
 				'saveName'  =>  array('uniqid',''),     // 上传文件的保存规则，支持数组和字符串方式定义
 				'autoSub'   =>  true,                   // 自动使用子目录保存上传文件 默认为true
@@ -81,6 +81,7 @@ class PublicController extends BackendController {
 			exit;
 		}
 		
+		//print_r($info);exit;
 		
 		// 按照原图的比例生成一个最大为150*150的缩略图并保存为thumb.jpg
 		$thumbname = '';
@@ -111,7 +112,7 @@ class PublicController extends BackendController {
 		$file['addtime'] = date('Y-m-d H:i:s');
 		$file['adduser'] = getUser();
 		try{
-			D('sys_file')->add($file);
+		//	D('sys_file')->add($file);
 		}catch (\Exception $e){
 			
 		}

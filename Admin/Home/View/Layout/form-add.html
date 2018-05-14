@@ -58,7 +58,7 @@
                 <div class="ibox float-e-margins">
                    
                     <div class="ibox-content">
-                        <form class="form-horizontal m-t" id="signupForm" <block name='form-par'>data-par='close'</block> action="{:U()}">
+                        <form class="form-horizontal m-t" id="signupForm" <block name='form-par'>data-par='close'</block> action="{:U()}" data-callback='<block name='callback'>{$callback|default=''}</block>'>
                         
 							<block name="form-field">
 							
@@ -99,6 +99,29 @@
 
     </div>
 
+ <script>
+ 
+ function subfun(data){
+	 	if(data.status!=1){
+	 		layer.msg(data.info);
+	 		return false;
+	 	}
+	 	layer.confirm()
+	 	var sg = layer.confirm(data.info+'是否保留此页并继续添加', {
+		  btn: ['继续添加','不了'] //按钮
+		}, function(){
+			   var button = $('#signupForm').find('button[type="submit"]');
+				unlockButton(button);
+				layer.close(sg);
+				
+		}, function(){
+           	  setTimeout(function () {
+           		  parent.location.reload();
+               }, 1000);
+		});
+	
+ }
+ </script>
 
   
  </block>	

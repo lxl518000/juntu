@@ -276,6 +276,7 @@ class BackendController extends Controller {
 				}
 				$sql = $this->model->_sql();
 				$this->syslog('添加'.$this->name.'成功',$sql);
+				$i = $this->getJumpUrl();
 				$this->success("添加成功", $this->getJumpUrl());
 			} else {
 				//失败提示
@@ -500,10 +501,7 @@ class BackendController extends Controller {
 		//加载model
         $this->loadModel();  
 		//删除指定记录
-		if (empty ( $this->model )) {
-			$this->error('请至少选择一条可操作的数据');
-			return false;
-		}
+	
 		$pk = $this->model->getPk ();
 		$id = $_REQUEST [$pk];
 		if($_REQUEST['ids']){

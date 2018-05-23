@@ -14,6 +14,7 @@ namespace Think;
  */
 class App {
 
+
     /**
      * 应用程序初始化
      * @access public
@@ -30,7 +31,7 @@ class App {
         define('NOW_TIME',      $_SERVER['REQUEST_TIME']);
         define('REQUEST_METHOD',$_SERVER['REQUEST_METHOD']);
         define('IS_GET',        REQUEST_METHOD =='GET' ? true : false);
-        define('IS_POST',       REQUEST_METHOD =='POST' ? true : false);
+        define('IS_POST',       REQUEST_METHOD =='POST' ? true : FALSE);
         define('IS_PUT',        REQUEST_METHOD =='PUT' ? true : false);
         define('IS_DELETE',     REQUEST_METHOD =='DELETE' ? true : false);
 

@@ -2,7 +2,8 @@
 SQLyog 企业版 - MySQL GUI v7.14 
 MySQL - 5.6.21 : Database - superd
 *********************************************************************
-*/
+*/
+
 
 /*!40101 SET NAMES utf8 */;
 
@@ -11,9 +12,9 @@ MySQL - 5.6.21 : Database - superd
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
-CREATE DATABASE /*!32312 IF NOT EXISTS*/`superd` /*!40100 DEFAULT CHARACTER SET utf8 */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/`6fei` /*!40100 DEFAULT CHARACTER SET utf8 */;
 
-USE `superd`;
+USE `6fei`;
 
 /*Table structure for table `tb_admin_user` */
 

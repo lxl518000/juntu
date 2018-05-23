@@ -666,7 +666,7 @@ class BackendController extends Controller {
 			}
 		}
 	}
-	
+
 	protected function _save($M, $map, $log,$successfuntion='') {
 		if (! empty ( $M )) {
 			if (! $M->create ( $map )) {
@@ -680,6 +680,6 @@ class BackendController extends Controller {
 				}
 			}
 		}
-	}
+}
 	
 }

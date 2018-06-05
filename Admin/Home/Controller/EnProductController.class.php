@@ -12,7 +12,7 @@ class EnProductController extends BackendController {
 	
 	protected function _before_add(){
 		$this->loadModel();
-		$parent = D('Cate')->getParent();
+		$parent = D('EnCate')->getParent();
 		$this->assign('parent',$parent);
 		
 		$list['pid'] = I('pid',0);
@@ -27,7 +27,7 @@ class EnProductController extends BackendController {
 	
 	protected function _format($list){
 			
-		$cats = D('Cate')->getField('id,title',true);
+		$cats = D('EnCate')->getField('id,title',true);
 		foreach($list as $k=>$vo){
 			$op = '';
 	
@@ -56,7 +56,7 @@ class EnProductController extends BackendController {
     protected function _after_edit($list){
     	$_GET['pid'] = $list['pid'];
     	$this->loadModel();
-   		 $parent = D('Cate')->getParent();
+   		 $parent = D('EnCate')->getParent();
     	$this->assign('parent',$parent);
     }
     

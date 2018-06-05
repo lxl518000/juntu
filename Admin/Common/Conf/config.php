@@ -15,7 +15,7 @@ return array(
 	
 
 	// 允许访问的模块列表
-	'MODULE_ALLOW_LIST'     =>  array('Home','Admin','Home1'),
+	'MODULE_ALLOW_LIST'     =>  array('Home','Admin','Porto'),
 
 	 'DEFAULT_MODULE'     => 'Porto', 	//默认模块   
 	

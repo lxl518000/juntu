@@ -6,6 +6,79 @@ class IndexController extends BackendController {
 	public function __construct(){
 		parent::__construct();
 	}
+
+	public function test1(){
+	    $list = D('products')->select();
+        $en = [];
+        $cn = [];
+        foreach($list as $v){
+            $tmp = [];
+            $entmp = [];
+            $tmp['name'] = $v['p_name'];
+            $tmp['cid'] = $v['p_cid'];
+            $tmp['pic'] = "/Uploads/2018-06-20/".$v['p_img'];
+
+            $sear = ['http://juntu.pw/web/Tpl/Public/kindeditor-4.1.10/attached/image/','/web/Tpl/Public/kindeditor-4.1.10/attached/image/'];
+
+            $tmp['content'] = str_replace($sear,'/Uploads/',$v['p_content']);
+            $tmp['keyword'] = $v['p_name'];
+            $tmp['description'] = $v['p_name'];
+            $tmp['addtime'] = date('Y-m-d H:i:s',$v['p_time']);
+
+
+
+            $entmp['name'] = $v['p_en_name'];
+            $entmp['cid'] = $v['p_cid'];
+            $entmp['pic'] = "/Uploads/2018-06-20/".$v['p_img'];
+            $entmp['content'] = str_replace($sear,'/Uploads/',$v['p_en_content']);
+            $entmp['keyword'] = $v['p_en_name'];
+            $entmp['description'] = $v['p_en_name'];
+            $entmp['addtime'] = date('Y-m-d H:i:s',$v['p_time']);
+
+            $cn[] = $tmp;
+            $en[] = $entmp;
+
+        }
+        $rs = D('product')->addAll($cn);
+        dump($rs);
+        $rs =  D('en_product')->addAll($en);
+        dump($rs);
+    }
+
+
+	public function test(){
+
+	    $list = D('cats')->where(['c_type'=>1])->select();
+
+	    $en = [];
+	    $cn = [];
+	    foreach($list as $v){
+            $tmp = [];
+            $entmp = [];
+            $tmp['pid'] = $v['c_pid'];
+            $tmp['title'] = $v['c_name'];
+            $tmp['addtime'] = date('Y-m-d H:i:s',$v['c_time']);
+            $tmp['desc'] = $v['c_intro'];
+            $tmp['keyword'] = $v['c_name'];
+
+
+            $entmp['pid'] = $v['c_pid'];
+            $entmp['title'] = $v['c_en_name'];
+            $entmp['addtime'] = $tmp['addtime'];
+            $entmp['desc'] = $v['c_en_intro'];
+            $entmp['keyword'] = $v['c_en_name'];
+
+            $cn[] = $tmp;
+            $en[] = $entmp;
+
+        }
+       $rs = D('cate')->addAll($cn);
+	    dump($rs);
+	   $rs =  D('en_cate')->addAll($en);
+
+	   dump($rs);
+	    echo 1;
+    }
 	
 	/**
 	* 上传微信图片
@@ -15,27 +88,7 @@ class IndexController extends BackendController {
 		$upService->normal();
 	}
 	
-	public function newinfo()
-	{
-		$userid = session('adminuser.id');
-		$where['to'] = $userid;
-		$where['status'] = 1;
-		$this->order='status asc,addtime desc';
-		$this->model = D('infomation');
-		$totalCount = $this->model->where($where)->count();
-		$this->assign('count',$totalCount);
-		$this->display();
-	}
-	public function isinfo()
-	{
-		$userid = session('adminuser.id');
-		$where['to'] = $userid;
-		$where['status'] = 1;
-		$this->order='status asc,addtime desc';
-		$this->model = D('infomation');
-		$totalCount = $this->model->where($where)->count();
-		$this->ajaxReturn($totalCount);
-	}
+
 	
 	
 	
@@ -47,95 +100,7 @@ class IndexController extends BackendController {
 		empty ( $_RegionCodeList ) && $_RegionCodeList = array ();
 		$this->ajaxReturn ( $_RegionCodeList );
 	}
-	public function infomation(){
-			$userid = session('adminuser.id');
-			if($_REQUEST['status']){
-				$where['status'] = $_REQUEST['status'];
-			}
-			$where['to'] = $userid;
-			$this->order='status asc,addtime desc';
-			$this->model = D('infomation');
-			$totalCount = $this->model->where($where)->count();
-			
-			$pagesize = C('PAGE_LISTROWS') ? C('PAGE_LISTROWS') : 20;
-			$page = new \Think\Page($totalCount,$pagesize);
-			
-			$pages = $page->show();
-			$list = $this->model->where($where)->limit($page->firstRow.','.$page->listRows)->order($this->order)->select();
-			//  print_r(D()->_sql());
-			
-			// $list = $this->_format($list);
-			$this->assign('list',$list);
-			
-			$this->assign('pages', $pages);
-			$this->display();
-	}
-	public function infoconfirm(){
-			$where['id'] = I('id');
-			$find = M('infomation')->where($where)->find();
-			$my = session('adminuser');
-			$placename = D('Place')->where(array('id'=>$find['placeid']))->getField('name');
 
-			$data['fromuser'] = queryFullRegionInfo($my['region'])."[{$my['role_name']}]".$my['realname'];
-			$data['from'] = $find['to'];
-			$data['to'] = $find['from'];
-			$data['sourceid'] = $find['sourceid'];
-			$data['taskid'] = $find['taskid'];
-			$data['placeid'] = $find['placeid'];
-			$data['content'] ='已同意你关于'.$placename.'联合执法请求';
-			$data['status'] =2;
-			$data['addtime'] = date('Y-m-d H:i:s');
-			$map['status'] =2;
-			
-			$joinstatus['joinstatus'] =2;
-			$joinstatus['status'] = 1;
-					
-			$add = M('infomation')->add($data);
-			$save = M('infomation')->where($where)->save($map);
-			
-			$sourceuser= D('Task')->where(array('id'=>$find['sourceid']))->getfield('userID');
-			$taskuser =D('Task')->where(array('id'=>$find['taskid']))->getfield('userID');
-			
-			$sourceuser.=ltrim($taskuser,',');
-			$sourceuser = explode(',',$sourceuser);
-			
-			$sourceuser = array_unique(array_filter($sourceuser));
-			$sourceuser =','.implode(',',$sourceuser).',';
-			
-			$source = D('Task')->where(array('id'=>$find['sourceid']))->setField(array('userId'=>$sourceuser));
-			$source = D('Task')->where(array('id'=>$find['taskid']))->save($joinstatus);
-			
-			$this->success('操作成功');
-			// $res =D('Task')
-	}
-	public function refuse(){
-			$where['id'] = I('id');
-			$find = M('infomation')->where($where)->find();
-			$fromuser = D('Adminuser')->where(array('id'=>$find['to']))->getfield('realname');
-			$my = session('adminuser');
-			$placename = D('Place')->where(array('id'=>$find['placeid']))->getField('name');
-				
-			$data['fromuser'] = queryFullRegionInfo($my['region'])."[{$my['role_name']}]".$my['realname'];
-			$data['from'] = $find['to'];
-			$data['to'] = $find['from'];
-			$data['fromuser'] = $fromuser;
-			$data['content'] =$find['content'];
-			$data['sourceid'] = $find['sourceid'];
-			$data['taskid'] = $find['taskid'];
-			$data['content'] ='已同意你关于'.$placename.'联合执法请求';
-			$data['addtime'] = date('Y-m-d H:i:s');
-			$data['status'] =2;
-			$map['status'] =2;
-			$joinstatus['joinstatus'] =3;
-			$add = M('infomation')->add($data);
-			$save = M('infomation')->where($where)->save($map);
-			$source = D('Task')->where(array('id'=>$find['taskid']))->save($joinstatus);
-
-			$this->success('操作成功');
-		
-			// $res =D('Task')
-	}
-	
 	/**
 	 * 个人中心
 	 */
@@ -173,49 +138,7 @@ class IndexController extends BackendController {
 	
 	
 	
-	/**
-	 * 查询我的工单状态
-	 * 显示最新5条工单和统计
-	 */
-	 public function mysheet(){
-	 	$my = session('adminuser.id');
-	 	$map = array();
-	 	$map['passto'] = $my;
-	 	$map['sure'] = 0;
-	 	$rmodel = D('work_sheet_record');
-	 	$unsure = $rmodel->where($map)->count();
-	 	
-		$map = array();
-	 	$table = "tb_work_sheet w";
-	 	$order = "w.status asc,w.plevel desc,w.id desc";
-		$field = "sum(if(status=1,1,0)) as undos,sum(if(status=3,1,0)) as undate";
-		$join = '(select wid,CONCAT(",",GROUP_CONCAT(fromuser,",",passto),",") as users from tb_work_sheet_record group by wid) r on r.wid=w.id';
-	 	//$map['_string'] = "w.create_user={$my} or r.fromuser={$my} or r.passto={$my}";
-	 	$map['r.users'] = array('like',"%,{$my},%");
-	 	$count = D()->table($table)->join($join)->where($map)->field($field)->group()->select();
-		
-	 	$list['unsure'] = $unsure;
-	 	$list['undate'] = $count[0]['undate'];
-	 	$list['undos'] = $count[0]['undos'];
-	 	
-	 	
-	 	//最新转交给我的工单
-	 	$map = array();
-	 	$map['sure'] = array('neq',2);
-	 	$map['passto'] = $my;
-	 	$group = "wid";
-	 	$new = $rmodel->where($map)->limit(5)->group($group)->select();
-		// echo D()->_sql();
-		// dump($new);
-		if($_REQUEST['debug']==1){
-			dump($new);
-			dump($list);
-			echo D()->_sql();	
-		}
-	 	$this->assign('list',$list);
-	 	$this->assign('new',$new);
-		$this->display();
-	}
+
 	
 	
 	public function index(){
@@ -252,44 +175,6 @@ class IndexController extends BackendController {
 		echo json_encode($return,JSON_UNESCAPED_UNICODE);
 	}
 	
-	/**
-	 * 客服自动完成
-	 */
-	public function automen(){
-		$name = I('query');
-		$where = array();
-		$where = ' 1=1 ';
-	
-		if(!empty($name)){
-			$name = str_replace(' ', '', trim($name));
-			$name = strtolower($name);
-			$where .= " and (realname like '%{$name}%' or username like '%{$name}%' )";
-		}
-	
-		//$where['Name'] = array('like',"%{$name}%");
-		//print_r($where);
-		$join = "left join tb_sys_role r on u.role_id=r.id";
-		$field = "u.realname,u.id,r.title as rolename";
-		$list =D()->table('tb_admin_user u')->join($join)->field($field)->where($where)->limit(20)->select();
-		//print_r(D()->_sql());
-		$res = '';
-		if($list){
-			$res = array();
-			foreach($list as $v){
-				$data['value'] =  $v['realname'];
-				$data['rolename'] = $v['rolename'];
-				$data['id'] = $v['id'];
-	
-				$res[] = $data;
-			}
-		}
-		//print_r($res);
-		$return = array();
-		$return['suggestions'] = $res;
-		echo json_encode($return);
-	
-	
-	}
 
 	
 	
@@ -539,15 +424,7 @@ class IndexController extends BackendController {
 		return $file;
 	}
 	
-	
- 	public function infocount(){
-		 $id = session('adminuser.id');
-		 $count = M('infomation')->where(array('to'=>$id))->count();
-		 $count = '<i class="iconfont icon-youxiangzhaohui" ></i>我的消息('.$count.')';
-		 $this->ajaxReturn($count);
-	 }
-    
-    
+
     
     
     

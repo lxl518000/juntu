@@ -6,16 +6,7 @@ return array(
 	'DEFAULT_PATE_SIZE'=>15,
 		
 
-	
-		
-	//短信配置	
-	'MOBILE_CONFIG' => array(
-		'API_URL'  => 'http://m.5c.com.cn/api/send/?',
-		'USER_NAME' => '18007139710',
-		'USER_PASS' => 'LK5s0aZtWcJX',
-		'USER_KEY'  => 'a0357c1c4144c7513ad967b373439772'	
-	),	
-		
+
 	
 	//动态配置中Select所需参数
 	'CONFIG_GROUPS'=>array(

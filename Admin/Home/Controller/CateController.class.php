@@ -27,6 +27,9 @@ class CateController extends BackendController {
 	
 	public function index(){
 		$where = array();
+        if($_REQUEST['title']){
+		    $where['title'] = array('like',"%{$_REQUEST['title']}%");
+        }
 	
 		$list = $this->loadModel()->where($where)->select();
 		$list = $this->_format($list);

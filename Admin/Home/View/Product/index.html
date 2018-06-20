@@ -9,13 +9,20 @@
 </block>
 
 <block name="searchForm">
-                           	 <div class="form-group">
-                                <label for="exampleInputEmail2" class="sr-only">用户名</label>
-                                <input type="text" name="username"  placeholder="用户名"  class="form-control">
-                      </div>
-                   <div class="form-group">
-                      <label for="exampleInputEmail2" class="sr-only">联系电话</label>
-                         <input type="text" name='mobile'  placeholder="联系电话"  class="form-control">
+    <div class="form-group">
+        <label for="exampleInputEmail2" class="sr-only">产品名称</label>
+        <input type="text" name="name"  placeholder="产品名称"  class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail2" class="sr-only">产品分类</label>
+        <select class="form-control " name="cid">
+            <option value=''>--产品分类--</option>
+            <volist name='parent' id='vo'>
+                <option value="{$vo.id}">{$vo.mark}{$vo.title}</option>
+            </volist>
+        </select>
+
+    </div>
                           
                            		 
     </block>

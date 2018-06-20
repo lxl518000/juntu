@@ -1,8 +1,0 @@
-<extend name="Layout/form-add" />
-<block name="form-field">
-<div class="alert alert-danger">当前路由表共 <b>{$count}</b> 条记录</div>
-	{:formbuilder('input',array('title'=>'版本号','name'=>'ver','value'=>$list['ver'],'placeholder'=>'请输入版本号','validate'=>'required','tip'=>''))}
-	{:formbuilder('input',array('title'=>'备注','name'=>'mark','value'=>$list['mark'],'placeholder'=>'','validate'=>'','tip'=>''))}
-
-
-</block>

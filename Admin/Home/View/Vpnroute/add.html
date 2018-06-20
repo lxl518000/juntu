@@ -1,7 +1,0 @@
-<extend name="Layout/form-add" />
-<block name="form-field">
-	{:formbuilder('input',array('title'=>'ip','name'=>'ip','value'=>$list['ip'],'placeholder'=>'请输入ip','validate'=>'required','tip'=>''))}
-	{:formbuilder('input',array('title'=>'备注','name'=>'mark','value'=>$list['mark'],'placeholder'=>'','validate'=>'','tip'=>''))}
-{:formbuilder('choose',array(type=>'radio','title'=>'状态','name'=>'status','options'=>array('2'=>'禁用',1=>'启用'),'checked'=>[$list['status']]))}
-
-</block>

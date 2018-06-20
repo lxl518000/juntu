@@ -1,0 +1,20 @@
+<extend name="Layout/form-add" />
+<block name='css'>
+ <link rel="stylesheet" type="text/css" href="/Public/static/css/plugins/webuploader/webuploader.css">
+<link rel="stylesheet" type="text/css" href="/Public/static/css/demo/webuploader-demo.css">
+<link rel="stylesheet" href="/Public/static/css/style.css?v=4.1.0" >
+</block>
+
+
+<block name="form-field">
+	{:formbuilder('input',array('title'=>'分类名称','name'=>'title','value'=>$list['title'],'placeholder'=>'请输入分类名称','validate'=>'required','tip'=>''))}
+
+	
+	
+	   <include file="Common/Upload" />
+	
+</block>
+
+<block name='extend'>
+
+</block>

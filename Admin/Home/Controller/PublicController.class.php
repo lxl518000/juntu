@@ -112,7 +112,7 @@ class PublicController extends BackendController {
 		$file['addtime'] = date('Y-m-d H:i:s');
 		$file['adduser'] = getUser();
 		try{
-		//	D('sys_file')->add($file);
+			D('sys_file')->add($file);
 		}catch (\Exception $e){
 			
 		}

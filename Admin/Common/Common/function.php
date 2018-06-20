@@ -85,171 +85,7 @@ function getAddress($lat,$lon){
 }
 
 
-function getSignPackage() {
-	$jsapiTicket = getTicket();
-	// 注意 URL 一定要动态获取，不能 hardcode.
-	$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
-	$url = "{$protocol}{$_SERVER[HTTP_HOST]}{$_SERVER[REQUEST_URI]}";
-	//$url = 'http://mp.weixin.qq.com?params=value';
-	//$url = "http://m.110route.com/weixinapp.php?c=Weixin&a=scan";
-	$url = str_replace('cdn.', '', $url);
-	$timestamp = time();
-	$nonceStr = createNonceStr();
 
-	// 这里参数的顺序要按照 key 值 ASCII 码升序排序
-	$string = "jsapi_ticket={$jsapiTicket}&noncestr={$nonceStr}&timestamp={$timestamp}&url={$url}";
-
-	$signature = sha1($string);
-
-	$signPackage = array(
-			"appId"     => C('WX_OPEN_ID'),
-			"nonceStr"  => $nonceStr,
-			"timestamp" => $timestamp,
-			"url"       => $url,
-			"signature" => $signature,
-			"rawString" => $string,
-			'ticket' => $jsapiTicket
-	);
-	$log = "appid:".C('WX_OPEN_ID')."\r\n";
-	$log .= "nonceStr:".$nonceStr."\r\n";
-	$log .= "timestamp:".$timestamp."\r\n";
-	$log .= "url:".$url."\r\n";
-	$log .= "signature:".$signature."\r\n";
-	$log .= "ticket:".$jsapiTicket."\r\n";
-	$log .= "rawString".$signature;
-	//file_put_contents('./1.log', $log);
-	return $signPackage;
-}
-
-function createNonceStr($length = 16) {
-	$chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-	$str = "";
-	for ($i = 0; $i < $length; $i++) {
-		$str .= substr($chars, mt_rand(0, strlen($chars) - 1), 1);
-	}
-	return $str;
-}
-
-
-function getTicket(){
-	//$redis = service('Redis');
-	//$ticket = $redis->get('WX_JS_API_TICKET');
-	$ticket = S('WX_JS_API_TICKET');
-	if($ticket){
-		return $ticket;
-	}
-
-	$token = getToken();
-
-	// 如果是企业号用以下 URL 获取 ticket
-	$url = "https://api.weixin.qq.com/cgi-bin/ticket/getticket?type=jsapi&access_token=$token";
-	$rs = file_get_contents($url);
-	if($rs){
-		$rs = json_decode($rs,true);
-		if($rs['errcode'] == 0){
-			S('WX_JS_API_TICKET',$rs['ticket'],7200);
-			//$redis->set('WX_JS_API_TICKET',$rs['ticket'],7200);
-			return $rs['ticket'];
-		}
-
-	}
-	return false;
-}
-
-
-/**
- * 获取token
- */
-function getToken(){
-	//$redis = service('Redis');
-	//$token = $redis->get('WX_TOKEN');
-	$token = S('WX_TOKEN');
-	if($token){
-		return $token;
-	}else{
-		$appID = C('WX_OPEN_ID');
-		$appSecret = C('WX_SECRET');
-		$toUrl = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid={$appID}&secret={$appSecret}";
-
-		$rs = file_get_contents($toUrl);
-		if($rs){
-			$tokens = json_decode($rs,true);
-			S('WX_TOKEN',$tokens['access_token'],7200);
-			//$redis->set('WX_TOKEN',$tokens['access_token'],7200);
-			return $tokens['access_token'];
-		}
-	}
-
-	return false;
-}
-
-/**
- *  回复文本消息
- */
-function replyText($openid,$content){
-
-
-
-	$token = getToken();
-	$url = "https://api.weixin.qq.com/cgi-bin/message/custom/send?access_token=".$token;
-	$data = array();
-	$data['touser'] = $openid;
-	$data['msgtype'] = 'text';
-	$data['text'] = array('content'=>$content);
-	$jsonData = json_encode($data,JSON_UNESCAPED_UNICODE);
-	$rs = curlInfo($url,$jsonData);
-	//$rs = curl_https($url,$jsonData);
-	return $rs;
-}
-
-
-/**
- *  回复文本消息
- */
-function replyText1($openid,$content){
-
-	$redis = service('Redis');
-	$find = $redis->hGet('WX_USER_SETTING_TIME',$openid);
-
-	$flag = 0;
-	//用户设置不接收
-	if(!$find){
-		$flag = 0; //全天接收
-	}elseif($find==9){
-		$flag = 1; //全天不接收
-	}elseif($find == 1){
-		$h = (int)date('H');
-		if($h>=8 && $h<=22){
-			$flag = 0; //8点到22点接收
-		}else{
-			$flag = 1; //8点到22点外不接收
-		}
-	}elseif($find == 2){
-		$h =(int) date('H');
-		if($h>8 && $h<22){
-			$flag = 1; //8点到22点不接收
-		}else{
-			$flag = 0; //8点到22点接收
-		}
-	}
-
-
-	if($flag == 1){
-		return true;
-	}
-
-
-	$token = getToken();
-	$url = "https://api.weixin.qq.com/cgi-bin/message/custom/send?access_token=".$token;
-	$data = array();
-	$data['touser'] = $openid;
-	$data['msgtype'] = 'text';
-	$data['text'] = array('content'=>$content);
-	$jsonData = json_encode($data,JSON_UNESCAPED_UNICODE);
-	//$rs = curlInfo($url,$jsonData);
-	$rs = curl_https($url,$jsonData);
-	return $rs;
-}
 
 function curl_https($url, $data=array(), $header=array(), $timeout=30){
 
@@ -288,20 +124,9 @@ function curl_https($url, $data=array(), $header=array(), $timeout=30){
 
 
 
-
-
-//处理超市说明 把span标签换成em
-function getDesc($str){
-	$str = str_replace('span', 'em', $str);
-	
-	return htmlspecialchars_decode($str);
-}
-
 function isChinaName($name){
 	$pattern = '/^([\xe4-\xe9][\x80-\xbf]{2}){2,4}$/';
 	return preg_match($pattern, $name);
-	
-	 
 }
 
 function isCardNo($card){
@@ -311,159 +136,6 @@ function isCardNo($card){
 
 
 
-/**
- * 获取所有用户
- */
-function getAllUser(){
-	$ulist = S('USER_LIST');
-	if(!$ulist){
-		$ulist = D('Adminuser')->getField('id,realname',true);
-		S('USER_LIST',$ulist,3600);
-	}
-	
-	return $ulist;
-}
-
-
-function getLast($users){
-	$users = trim($users,',');
-	
-	$users = explode(',', $users);
-		
-	$pop = array_pop($users);
-	
-	
- 	$all = getAllUser();
- 	return $all[$pop];
-}
-
-
-function addtowns(){
-	$where['tid'] = array('like','3204%');
-	$res = M('town')->where($where)->select();
-	$dataall = array();
-	foreach($res as $k=>$v){
-		$data['RegionCode']  = $v['tid'];
-		$data['RegionName'] = $v['tname'];
-		$data['ParentCode']= substr($v['tid'],0,6);
-		$data['HasChild'] = '0';
-		$dataall[] = $data;
-	} 
-
-	$res = D('Region')->addAll($dataall);
-
-	if($res){
-		return 'ok!';
-	}else{
-		return 'nook!';
-	}
-}
-
-
-
-
-
-/**
- * 设置计划任务用永久保存 配置文件
- */
-function setCronCfg($key,$value){
-	$sql = "insert into tb_sys_croncfg values ( '{$key}','{$value}' ) on duplicate key update `value` = '{$value}'";
-	$rs = D()->query($sql);
-	return $rs;
-}
-
-/**
- * 获取计划任务用永久保存配置文件
- */
-function getCronCfg($key){
-	if(!$key){
-		return false;
-	}
-	return D('sys_croncfg')->where(array('key'=>$key))->getField('value');
-}
-
-
-/**
- * 获取故障类型
- */
-function getProblemType($stype,$ptype){
-	$t = C('WORK_PROBLEM_TYPE');
-	
-	$type = $t[$stype][$ptype];
-	return $type ? $type : '其他' ;
-}
-
-/**
- * 获取拨打电话按钮
- */
-function callPhone($phone,$str,$style){
-	if(empty($phone)){
-		return '-';
-	}
-	$str = empty($str) ? $phone : $str;
-	$fnum = session('adminuser.fnum');
-	if($style){
-		$icon = "<i class='iconfont icon-dianhua'></i>";
-	}
-	if(!$fnum){
-		return "<a href='javascript:void(0)' onclick='layer.msg(\"抱歉,您没有拨打电话权限\")' class='btn'>{$icon}{$str}</a>";
-	}
-	return "<a href='javascript:void(0)' onclick='kcall({$phone})' class='btn'>{$icon}{$str}</a>";
-	
-	
-}
-
-
-
-
-/**
- * 实例跨主机关联模型
- * @param unknown $config
- * @param string $prefix
- * @return Ambigous <Model, \Think\Model, unknown>
- */
-function DD($config,$prefix="tb_"){
-	$config = $config ? $config : C('CENTER_CONFIG');
-	return D('',$prefix,C($config));
-}
-
-/**
- * 获取接口信息
- * @param unknown $userid
- * @param unknown $content
- * @param number $agentid
- */
-function getApi($params){
-	$params['t'] = time();
-	$params['sign'] = getSignature($params);
-	if($_SERVER['HTTP_HOST'] == 'wsheet.com'){
-		$toUrl = "https://web.110route.com/sapi.php";
-	}else{
-		$toUrl = "https://web.110route.com/sapi.php";
-	}
-	// dump($params);
-	// dump($toUrl);
-	// dump(http_build_query($params));
-	$rs = curlInfo($toUrl, $params);
-	return json_decode($rs,true);
-	
-}
-
-
-
-
-function qyreply($userid,$content,$agentid=6){
-	$token = getToken();
-	$url = "https://qyapi.weixin.qq.com/cgi-bin/message/send?access_token=".$token;
-	$data = array();
-	$data['touser'] = $userid;
-	$data['agentid'] = $agentid ;
-	$data['msgtype'] = 'text';
-	$data['text'] = array('content'=>$content);
-	$jsonData = json_encode($data,JSON_UNESCAPED_UNICODE);
-	$res = curlInfo($url,$jsonData);
-	return $res;
-}
 
 
 
@@ -471,15 +143,6 @@ function qyreply($userid,$content,$agentid=6){
 
 
 
-
-
-function getAvatar($avt){
-	if(!$avt){
-		return "/Public/images/avatar.png";
-	}
-	
-	return rtrim($avt,'0').'64';
-}
 
 function getUploadDir(){
 	$date = date('Ymd');
@@ -491,20 +154,6 @@ function getUploadDir(){
 	return $dir;
 }
 
-//根据网吧编号获取网吧信息
-function getBarinfo($barcode,$flag){
-	$api = "http://sn.110route.com/getbarinfobybarcode.php";
-	
-	$param = array();
-	
-	$param['sign'] = md5($barcode.C('ROUTER_CHECK_SECRET').date('Ymd'));
-	$param['barcode'] = $barcode;
-	$param['flag'] = $flag;
-
-	$barinfo = curlInfo($api, $param);
-	
-	return json_decode($barinfo,true);
-}
 
 function allow($act){
 	if(IS_ROOT){
@@ -518,20 +167,6 @@ function allow($act){
 	return false;
 }
 
-
-function query_user($id){
-	$uinfo = D('AdminUser')->where(array('id'=>$id))->find();
-	if(!$uinfo){
-		return false;
-	}
-	$role = D('Role')->where(array('id'=>$uinfo['role_id']))->find();
-	
-	$uinfo['role_name'] = $role['title'];
-	
-	
-	return $uinfo;
-	
-}
 
 
 function str2arr($string=''){
@@ -644,14 +279,6 @@ function getMoney($money){
 	return round($money/100,2).'元';
 }
 
-function  log_result($file,$word)
-{
-	$fp = fopen($file,"a");
-	flock($fp, LOCK_EX) ;
-	fwrite($fp,"执行日期：".strftime("%Y-%m-%d-%H：%M：%S",time())."\n".$word."\n\n");
-	flock($fp, LOCK_UN);
-	fclose($fp);
-}
 
 
 
@@ -698,29 +325,7 @@ function parseLocation($jing,$wei){
 
 
 
-/**
- * 获取token
- */
-function getWeixinToken(){
-	$redis = service('Redis');
-	$token = $redis->get('WX_TOKEN');
-	if($token){
-		return $token;
-	}else{
-		$appID = C('WX_APP_ID');
-		$appSecret = C('WX_APP_SECRET');
-		$toUrl = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid={$appID}&secret={$appSecret}";
 
-		$rs = curlInfo($toUrl);
-		if($rs){
-			$tokens = json_decode($rs,true);
-			$redis->set('WX_TOKEN',$tokens['access_token'],$tokens['expires_in']);
-			return $tokens['access_token'];
-		}
-	}
-
-	return false;
-}
 
 
 /**
@@ -743,39 +348,6 @@ function getTimeLast($time){
 	return $return;
 }
 
-
-
-/**
- * 获取二维码图片
- */
-function getQrImg($id,$type='ticket'){
-	$id = strval($id);
-	$token = getToken();
-	$url = "https://api.weixin.qq.com/cgi-bin/qrcode/create?access_token=".$token;
-	$data = array();
-	
-	$data['expire_seconds'] = 2592000;
-	$data['action_name'] = 'QR_LIMIT_SCENE';
-	$data['action_info'] = array('scene'=>array('scene_id'=>$id));
-	$data = json_encode($data,JSON_UNESCAPED_UNICODE);
-	//dump($data);exit;
-	$res = curlInfo($url, $data);
-	$res = json_decode($res,true);
-	if($res['errcode'] == '40001'){
-		//getQrImg($id);
-	}
-	
-	$t = urlencode($res[$type]);
-	if(!$t){
-		return false;
-	}
-	if($type == 'ticket'){
-		$str = "https://mp.weixin.qq.com/cgi-bin/showqrcode?ticket=".$t;
-	}else{
-		$str = urldecode($res[$type]);
-	}
-	return $str;
-}
 
 
 
@@ -990,30 +562,6 @@ function mapArrayMerge($map,$key='e.regplatform'){
 }
 
 
-	/*
-	* author 根据权限获取渠道列表
-	*
-	*/
-function getRegplatList($plat = ""){
-	$authuser = session("authuser");
-	$str = '';
-	
-	$plat = $_REQUEST['regplatsearch'];
-	if(in_array($authuser['name'],C('ADMIN_USER_LIST'))|| in_array($authuser['roleid'],array(1)) ){
-		$list = gM("regplat_conf")->field("rpid,rp_name")->order("id")->select();
-		if(!empty($list)){
-			$str .= '渠道:<SELECT class=" bLeft" name="regplatsearch"><option value="">请选择</option>';
-			foreach($list as  $val){
-				if($plat == $val["rpid"])
-					$str .= '<option value="'.$val["rpid"].'" selected="selected">'.$val["rp_name"].'</option>';
-				else
-					$str .= '<option value="'.$val["rpid"].'">'.$val["rp_name"].'</option>';
-			}
-			$str .= '</SELECT>';
-		}
-	}
-	echo $str;
-}
 
 function utf8_strlen($string = null) {
 	// 将字符串分解为单元
@@ -1102,27 +650,6 @@ function toLifeTime1($date){
 		$str = $time."秒";
 	}
 	return $str;
-}
-
-function areaListLink($type){
-	$AreaCode = session('AreaCode');
-	$authuser = session('authuser');
-	if($AreaCode == $authuser['auth']) return '';
-	if($AreaCode){
-		$Region = gM("Region")->query(" (select * from ".C('DB_PREFIX')."region where RegionCode='".$AreaCode."')");
-		if($Region){
-			$url = U(ACTION_NAME,array('areacode'=>($Region[0]['ParentCode']==""?"0":$Region[0]['ParentCode'])));
-			if ($type){
-				if (is_array($type)) {
-					$url .= '&'.http_build_query($type);
-				}
-				
-			}
-			return "当前地区:<strong style='color:rgb(0,0,255)'>".$Region[0]['RegionName']."</strong> 
-					<a href='".$url."'>返回</a>";
-		}
-	}
-	return "";
 }
 
 
@@ -1291,17 +818,6 @@ function isValidIdCard($idcard){
 		return preg_match("/^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}(\d|x|X)$/", $idcard);
 	}
 	return false;
-}
-
-/**
- * 地区权限基础过滤
- */
-function listAreaFilter(){
-	$auth = session('authuser.auth');
-	if(empty($auth)){
-		return array('neq','0');
-	}
-	return array('like',"{$auth}%");
 }
 
 
@@ -1495,34 +1011,6 @@ function uploadByFtp($localfile,$targetPapth){
 	return C('FTP_CONFIG.FILE_HOST').$targetPapth.'/'.basename($localfile);
 }
 
-/**
- * 图片服务器ftp文件上传
- * @param  $localfile
- * @return string
- */
-function uploadByFtpToPic($localfile,$targetPapth){
-	$fp = fopen ($localfile, "r");
-	$arr_ip = C('FTP_PIC_CONFIG.FTP_HOST');
-	$ftp = "ftp://".$arr_ip.$targetPapth."/".basename($localfile);
-	$user = C('FTP_PIC_CONFIG.FTP_USER');
-	$pwd = C('FTP_PIC_CONFIG.FTP_PWD');
-	$ch = curl_init();
-	curl_setopt($ch, CURLOPT_FTP_USE_EPSV);
-	curl_setopt($ch, CURLOPT_VERBOSE, 1);
-	curl_setopt($ch, CURLOPT_USERPWD, $user.':'.$pwd);
-	curl_setopt($ch, CURLOPT_URL, $ftp);
-	curl_setopt($ch, CURLOPT_PUT, 1);
-	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-	curl_setopt($ch, CURLOPT_INFILE, $fp);
-	curl_setopt($ch, CURLOPT_INFILESIZE, filesize($localfile));
-	$http_result = curl_exec($ch);
-	$error = curl_error($ch);
-	$http_code = curl_getinfo($ch ,CURLINFO_HTTP_CODE);
-	curl_close($ch);
-	fclose($fp);
-	return C('FTP_PIC_CONFIG.FILE_HOST').$targetPapth.'/'.basename($localfile);
-}
-
 
 
 
@@ -1605,41 +1093,7 @@ function parseIP($ip){
 	return false;
 }
 
-/**
- * 发送短信
- * @param string $mobile 发送的手机号码
- * @param string $content 发送的内容
- * @see $mobile	 = '13811299934,18610310066,15210954922';	//号手机码
- * @see $content = '您的短信验证码是：ABCD，注意，必须加签名【签名】';		//内容
- * @see $provicne 省份 短信未开启网关下做递减处理
- */
-function sendSMS($mobile,$content,$province)
-{	
-	$last =  (int) S('HAS_SEND_MSG');
-	if($last>=500){
-		return true;	
-	}
-	
-	$content = $content.'【钞速钱包】';
-	
-	$url = C('MOBILE_CONFIG.API_URL'); //接口地址
-	$content = iconv("utf-8","gb2312//IGNORE",$content);
-	$data = array
-	(
-			'username'=>C('MOBILE_CONFIG.USER_NAME'),//用户账号
-			'password'=>C('MOBILE_CONFIG.USER_PASS'),//密码
-			'mobile'=>$mobile,					//号码
-			'content'=>$content,				//内容
-			'apikey'=>C('MOBILE_CONFIG.USER_KEY'), //apikey
-	);
-	$result= curlSMS($url,$data);			//POST方式提交
-	
-	$last++;
-	
-	S('HAS_SEND_MSG',$last);
-	
-	return $result;
-}
+
 
 function curlSMS($url,$post_fields=array()){
 	$ch = curl_init();
@@ -1861,21 +1315,15 @@ function trimContent($content){
 	return $content;
 }
 
-/**
- * 用户名登录错误次数累计
- */
-function setErrorLogin($errorName){
-	$redis = service('Redis');
-	
-	$key = 'ERR_LOGIN_'.$errorName;
-	$res = $redis->get($key);
-	if($res){
-		$redis->incr($key);
-	}else{
-		$end = strtotime(date('Y-m-d 23:59:59'));
-		$exp = $end - time();
-		$res = $redis->set($key,1,$exp);
-	}
+function tosize($size)
+{
+    $type = array('Byte','KB','MB','GB','TB','EB');
+    $i = 0;
+    while($size>=1024)
+    {
+        $size/=1024;
+        $i++;
+    }
+    return round($size,2).$type[$i];
 }
-
 

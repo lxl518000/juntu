@@ -24,6 +24,12 @@ class EnProductController extends BackendController {
 		$this->assign('list',$list);
 		$this->assign('callback','subfun');
 	}
+
+	protected function _after_index(){
+        $parent = D('EnCate')->getParent();
+
+        $this->assign('parent',$parent);
+    }
 	
 	protected function _format($list){
 			

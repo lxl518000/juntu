@@ -1,0 +1,22 @@
+<extend name="Layout/form-add" />
+<block name='css'>
+    <link rel="stylesheet" type="text/css" href="/Public/static/css/plugins/webuploader/webuploader.css">
+    <link rel="stylesheet" type="text/css" href="/Public/static/css/demo/webuploader-demo.css">
+    <link rel="stylesheet" href="/Public/static/css/style.css?v=4.1.0" >
+</block>
+
+
+<block name="form-field">
+
+    {:formbuilder('select',array('title'=>'所属站点','name'=>'sid','options'=>$host,'select'=>$list['sid']))}
+
+    {:formbuilder('input',array('title'=>'配置名称','name'=>'title','value'=>$list['title'],'placeholder'=>'请输入配置名称','validate'=>'required','tip'=>''))}
+    {:formbuilder('input',array('title'=>'配置KEY','name'=>'title','value'=>$list['title'],'placeholder'=>'请输入配置KEY','validate'=>'required','tip'=>''))}
+    {:formbuilder('choose',array(type=>'radio','title'=>'配置类型','name'=>'type','options'=>array('1'=>'普通文本',2=>'富文本'),'checked'=>[$list['type']]))}
+    {:formbuilder('input',array('title'=>'配置Value','name'=>'title','value'=>$list['title'],'placeholder'=>'请输入配置Value','validate'=>'required','tip'=>''))}
+
+</block>
+
+<block name='extend'>
+
+</block>

@@ -1,0 +1,19 @@
+<extend name="Layout/form-add" />
+<block name='css'>
+ <link rel="stylesheet" type="text/css" href="/Public/static/css/plugins/webuploader/webuploader.css">
+<link rel="stylesheet" type="text/css" href="/Public/static/css/demo/webuploader-demo.css">
+<link rel="stylesheet" href="/Public/static/css/style.css?v=4.1.0" >
+</block>
+
+
+<block name="form-field">
+	{:formbuilder('input',array('title'=>'站点名称','name'=>'name','value'=>$list['name'],'placeholder'=>'请输入站点名称','validate'=>'required','tip'=>''))}
+	{:formbuilder('input',array('title'=>'站点域名','name'=>'host','value'=>$list['host'],'placeholder'=>'请输入站点域名','validate'=>'required','tip'=>''))}
+	{:formbuilder('input',array('title'=>'备注','name'=>'remark','value'=>$list['remark'],'placeholder'=>'请输入备注','validate'=>'','tip'=>''))}
+
+
+</block>
+
+<block name='extend'>
+
+</block>

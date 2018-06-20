@@ -1,0 +1,38 @@
+<extend name="Layout/jquery-table" />
+
+
+<block name='toolBar'>
+    {:getToolIcon('add','J_open btn-sm',U('add'))}
+    {:getToolIcon('delete','J_multiple btn-sm',U('delete'))}
+
+</block>
+
+<block name="searchForm">
+    <div class="form-group">
+        <label for="exampleInputEmail2" class="sr-only">站点名称</label>
+        <input type="text" name="name"  placeholder="站点名称"  class="form-control">
+    </div>
+
+
+
+</block>
+
+<block name='thead'>
+
+    <th data-field="stat" data-formatter="setCheckbox" data-sortable='false'>
+        <span data-ck='0' onclick="getall(this)">全选</span>
+    </th>
+    <th data-field="id"  data-sortable="true">id</th>
+    <th data-field="name"  data-sortable="true" >站点名称</th>
+    <th data-field="host"  data-sortable="true" >站点域名</th>
+    <th data-field="adduser"  data-sortable="true">添加人</th>
+    <th data-field="addtime"  data-sortable="true">添加时间</th>
+    <th data-field="remark"  data-sortable="true">备注</th>
+    <th data-field="operate"  data-sortable="true">操作</th>
+</block>
+
+
+
+
+
+

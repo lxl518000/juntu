@@ -114,7 +114,7 @@ class FormBuilder{
 	 *
 	 */
 	public static function select($config){
-		
+
 		$str = "<select class='form-control' name='{$config['name']}'>";
 		foreach($config['options'] as $k=>$v){
 			if(is_array($v)){

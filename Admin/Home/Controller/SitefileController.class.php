@@ -42,6 +42,13 @@ class SitefileController extends BackendController {
         }
     }
 
+    public function delete(){
+	    $name = I('name');
+	    unlink($name);
+	    $this->success('删除成功');
+
+    }
+
     protected function _getFileInfo($fileInfo){
 	    $return['filename'] = $fileInfo;
 	    $return['filetype'] = filetype($fileInfo);
@@ -54,27 +61,7 @@ class SitefileController extends BackendController {
 	    return $return;
     }
 	
-	public function edit(){
-        $agent = session('adminuser');
-        if(IS_POST){
-		
-			if(!empty($_REQUEST['password'])){
-				$data['password'] = md5(I('password'));
-			}
-			 
-			$res = $this->model->where(array('id'=>$agent['id']))->save($data);
-			if($res){
-				$this->success('修改成功');
-			}else{
-				$this->error('修改失败');
-			}
-		}
-        // dump($agent);
-		$this->assign('list',$agent);
-		$this->display('add');
-	}
-	
-	
+
 	
 	
 	

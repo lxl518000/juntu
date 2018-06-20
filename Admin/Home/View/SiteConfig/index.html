@@ -36,26 +36,17 @@
 		  <th data-field="stat" data-formatter="setCheckbox" data-sortable='false'>
 		  	<span data-ck='0' onclick="getall(this)">全选</span>
 		  </th>
-         <th data-field="id"  data-sortable="true">id</th>
-         <th data-field="name"  data-sortable="true" >产品名称</th>
-               <th data-field="cname"  data-sortable="true" >产品分类</th>
-          <th data-field="thumb"  data-sortable="true" >缩略图</th>
-   
-         <th data-field="iscommond"  data-sortable="true">推荐</th>
-          <th data-field="vnum"  data-sortable="true">浏览次数</th>
-         <th data-field="status"  data-sortable="true">状态</th>
-         <th data-field="addtime"  data-sortable="true">添加时间</th>
+         <th data-field="host"  data-sortable="true">配置域名</th>
+         <th data-field="type"  data-sortable="true">配置类型</th>
+         <th data-field="name"  data-sortable="true" >配置名称</th>
+         <th data-field="key"  data-sortable="true" >配置KEY</th>
+         <th data-field="value"  data-sortable="true" >配置Value</th>
+         <th data-field="remark"  data-sortable="true">备注</th>
+
          <th data-field="operate"  data-sortable="true">操作</th>
  </block>
  
-  <block name="callback">
- function callback(){
-	 $("img.lazy").lazyload({effect: "fadeIn"});
- }
- </block>
+
  
- <block name='extend'>
-     <script src="/Public/static/js/jquery.lazyload.min.js"></script>
- </block>
 
  

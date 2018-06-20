@@ -95,7 +95,7 @@ class FormBuilder{
 		$class = $config['class'] ? $config['class'] : 'form-control';
 	
 		$type = $config['type'] ? $config['type'] : 'text';
-		$str = "<input id='{$name}' name='{$name}' value='{$config['value']}' {$config['validate']} class='{$class}' type='{$type}' title='{$placeholder}'/>";
+		$str = "<input id='{$name}' name='{$name}' value='{$config['value']}' {$config['validate']} class='{$class}' type='{$type}' title='{$placeholder}' placeholder='{$placeholder}'/>";
 		if($config['tip']){
 			$str .= " <span class='help-block m-b-none'><i class='fa fa-info-circle'></i>{$config['tip']}</span>";
 		}

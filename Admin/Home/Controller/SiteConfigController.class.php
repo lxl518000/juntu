@@ -13,8 +13,11 @@ class SiteConfigController extends BackendController {
 	protected function _initialize(){
 
 	    $host = D('Site')->getField('id,host',true);
-	    $this->assign('host',$host);
 
+	    $this->host = $host;
+	    $this->types = [1=>'普通文本','富文本'];
+	    $this->assign('types',$this->types);
+        $this->assign('host',$host);
 
     }
 
@@ -29,7 +32,8 @@ class SiteConfigController extends BackendController {
 	
 	protected function _format($list){
 			
-		$cats = D('Cate')->getField('id,title',true);
+		$host = $this->host;
+		$types = $this->types;
 		foreach($list as $k=>$vo){
 			$op = '';
 	
@@ -44,9 +48,10 @@ class SiteConfigController extends BackendController {
 				$op .= getToolIcon('on','J_confirm btn-xs ',U('enable',['id'=>$vo['id']]),'','','','J_confirm')."&nbsp;";
 				$vo['status'] = "<span style='color:#ccc'>禁用</span>";
 			}
-			$vo['thumb'] = 	getThumbImg($vo['pic']);					
-			$vo['cname'] = $cats[$vo['cid']];
-	
+
+			$vo['type'] = $types[$vo['type']];
+			$vo['host'] = $host[$vo['sid']];
+
 			$vo['operate'] = $op;
 			$list[$k] = $vo;
 		}

@@ -15,7 +15,7 @@ class SiteConfigController extends BackendController {
 	    $host = D('Site')->getField('id,host',true);
 
 	    $this->host = $host;
-	    $this->types = [1=>'普通文本','富文本'];
+	    $this->types = [1=>'普通文本',2=>'富文本',3=>'图片'];
 	    $this->assign('types',$this->types);
         $this->assign('host',$host);
 
@@ -26,9 +26,32 @@ class SiteConfigController extends BackendController {
 		$parent = D('Cate')->getParent();
 		$this->assign('parent',$parent);
 		$list['type'] = 1;
+		$list['sid'] = $_REQUEST['sid'] ? $_REQUEST['sid'] : '';
 		$this->assign('list',$list);
 		$this->assign('callback','subfun');
 	}
+
+	protected function _before_insert($data){
+        return $this->_MakeData($data);
+
+    }
+
+    protected function _before_update($data){
+        return $this->_MakeData($data);
+    }
+
+    protected function _MakeData($data){
+	    $type = I('type');
+	    if($type ==1){
+	        $data['value'] = I('value');
+        }elseif($type == 2){
+	        $data['value'] = I('content');
+        }else{
+	        $data['value'] = I('pic');
+        }
+
+	    return $data;
+    }
 	
 	protected function _format($list){
 			
@@ -41,13 +64,7 @@ class SiteConfigController extends BackendController {
 	
 			$op .= getToolIcon('delete','J_confirm btn-xs ',U('delete',['id'=>$vo['id']]),'','','','J_confirm')."&nbsp;";
 	
-			if($vo['status']==1){
-				$op .= getToolIcon('off','J_confirm btn-xs ',U('disable',['id'=>$vo['id']]),'','','','J_confirm')."&nbsp;";
-				$vo['status'] = "<span style='color:green'>启用</span>";
-			}else{
-				$op .= getToolIcon('on','J_confirm btn-xs ',U('enable',['id'=>$vo['id']]),'','','','J_confirm')."&nbsp;";
-				$vo['status'] = "<span style='color:#ccc'>禁用</span>";
-			}
+
 
 			$vo['type'] = $types[$vo['type']];
 			$vo['host'] = $host[$vo['sid']];

@@ -39,8 +39,44 @@
       <file leaf-file-name="SiteConfigController.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Admin/Home/Controller/SiteConfigController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+            <state relative-caret-position="315">
+              <caret line="42" column="40" lean-forward="true" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SiteController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Admin/Home/Controller/SiteController.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="569">
+              <caret line="43" column="149" selection-start-line="43" selection-start-column="149" selection-end-line="43" selection-end-column="149" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Admin/Home/View/SiteConfig/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Admin/Home/View/Site/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="651">
+              <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BackendController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Admin/Home/Controller/BackendController.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="546">
+              <caret line="322" column="53" selection-start-line="322" selection-start-column="48" selection-end-line="322" selection-end-column="53" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
@@ -49,56 +85,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SiteController.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Admin/Home/Controller/SiteController.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="function.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Admin/Common/Common/function.php">
+      <file leaf-file-name="add.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Admin/Home/View/SiteConfig/add.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="42">
-              <caret line="2" column="16" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BackendController.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Admin/Home/Controller/BackendController.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
-              <caret line="274" column="40" selection-start-line="274" selection-start-column="27" selection-end-line="274" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SiteConfigModel.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Admin/Home/Model/SiteConfigModel.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Admin/Home/View/SiteConfig/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="653">
-              <caret line="43" column="31" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
+              <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="add.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Admin/Home/View/SiteConfig/add.html">
+        <entry file="file://$PROJECT_DIR$/Admin/Home/View/Product/add.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="98" selection-start-line="12" selection-start-column="87" selection-end-line="12" selection-end-column="98" />
+            <state relative-caret-position="336">
+              <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="form-add.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Admin/Home/View/Layout/form-add.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="714">
+              <caret line="63" column="28" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="content.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webroot/Public/static/js/content.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="227">
+              <caret line="136" column="11" selection-start-line="133" selection-start-column="5" selection-end-line="136" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -106,17 +124,8 @@
       <file leaf-file-name="Form.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Admin/Extend/Tool/Form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="97" column="181" selection-start-line="97" selection-start-column="181" selection-end-line="97" selection-end-column="181" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Admin/Home/View/Sitefile/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="777">
-              <caret line="36" column="50" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
+            <state relative-caret-position="758">
+              <caret line="144" column="167" selection-start-line="144" selection-start-column="167" selection-end-line="144" selection-end-column="167" />
             </state>
           </provider>
         </entry>
@@ -129,6 +138,7 @@
       <find>_before_add</find>
       <find>index</find>
       <find>txtModel</find>
+      <find>icheck</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -141,7 +151,6 @@
         <option value="$PROJECT_DIR$/ThinkPHP/Library/Think/App.class.php" />
         <option value="$PROJECT_DIR$/Admin/Common/Conf/config.php" />
         <option value="$PROJECT_DIR$/webroot/index.php" />
-        <option value="$PROJECT_DIR$/Admin/Home/Controller/BackendController.class.php" />
         <option value="$PROJECT_DIR$/Admin/Home/Controller/ApiWxController.class.php" />
         <option value="$PROJECT_DIR$/Admin/Home/Model/TestModel.class.php" />
         <option value="$PROJECT_DIR$/Admin/Home/View/Cate/index.html" />
@@ -166,12 +175,13 @@
         <option value="$PROJECT_DIR$/Admin/Home/Model/SiteModel.class.php" />
         <option value="$PROJECT_DIR$/Admin/Home/Model/SiteConfigModel.class.php" />
         <option value="$PROJECT_DIR$/Admin/Home/View/Cate/add.html" />
-        <option value="$PROJECT_DIR$/Admin/Home/Controller/SiteController.class.php" />
-        <option value="$PROJECT_DIR$/Admin/Home/View/SiteConfig/index.html" />
-        <option value="$PROJECT_DIR$/Admin/Home/Controller/SiteConfigController.class.php" />
-        <option value="$PROJECT_DIR$/Admin/Home/View/SiteConfig/add.html" />
-        <option value="$PROJECT_DIR$/Admin/Extend/Tool/Form.php" />
         <option value="$PROJECT_DIR$/Admin/Home/View/Sitefile/index.html" />
+        <option value="$PROJECT_DIR$/Admin/Home/Controller/SiteController.class.php" />
+        <option value="$PROJECT_DIR$/Admin/Home/Controller/BackendController.class.php" />
+        <option value="$PROJECT_DIR$/Admin/Extend/Tool/Form.php" />
+        <option value="$PROJECT_DIR$/Admin/Home/View/SiteConfig/add.html" />
+        <option value="$PROJECT_DIR$/Admin/Home/Controller/SiteConfigController.class.php" />
+        <option value="$PROJECT_DIR$/Admin/Home/View/SiteConfig/index.html" />
       </list>
     </option>
   </component>
@@ -239,6 +249,19 @@
               <item name="6fei" type="b2602c69:ProjectViewProjectNode" />
               <item name="6fei" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Extend" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="6fei" type="b2602c69:ProjectViewProjectNode" />
+              <item name="6fei" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Extend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Tool" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="6fei" type="b2602c69:ProjectViewProjectNode" />
+              <item name="6fei" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Home" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -247,6 +270,13 @@
               <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Home" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Conf" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="6fei" type="b2602c69:ProjectViewProjectNode" />
+              <item name="6fei" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Home" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="6fei" type="b2602c69:ProjectViewProjectNode" />
@@ -276,7 +306,23 @@
               <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Home" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="View" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Layout" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="6fei" type="b2602c69:ProjectViewProjectNode" />
+              <item name="6fei" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Home" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="View" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Product" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="6fei" type="b2602c69:ProjectViewProjectNode" />
+              <item name="6fei" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Home" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="View" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Site" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="6fei" type="b2602c69:ProjectViewProjectNode" />
@@ -301,6 +347,32 @@
               <item name="Home" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="View" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Sysmenu" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="6fei" type="b2602c69:ProjectViewProjectNode" />
+              <item name="6fei" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="webroot" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="6fei" type="b2602c69:ProjectViewProjectNode" />
+              <item name="6fei" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="webroot" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Public" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="6fei" type="b2602c69:ProjectViewProjectNode" />
+              <item name="6fei" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="webroot" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="static" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="6fei" type="b2602c69:ProjectViewProjectNode" />
+              <item name="6fei" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="webroot" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="static" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -359,12 +431,12 @@
       <workItem from="1527233152711" duration="1218000" />
       <workItem from="1528193124740" duration="793000" />
       <workItem from="1529459058759" duration="16482000" />
-      <workItem from="1529493798127" duration="3865000" />
+      <workItem from="1529493798127" duration="11514000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33391000" />
+    <option name="totallyTimeSpent" value="41040000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -414,17 +486,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Admin/Home/Controller/SiteConfigController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Admin/Home/Model/SiteConfigModel.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -508,13 +569,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/Home/View/Layout/form-add-left.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="97" column="61" selection-start-line="97" selection-start-column="54" selection-end-line="97" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Admin/Home/View/Common/ueditor.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -586,13 +640,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/Home/View/Product/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Admin/Home/View/Index/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2016">
@@ -645,13 +692,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/Home/View/Site/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="29" column="57" lean-forward="true" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Admin/Home/Model/SiteModel.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -673,10 +713,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/Common/Common/function.php">
+    <entry file="file://$PROJECT_DIR$/Admin/Home/View/Sitefile/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="16" />
+        <state relative-caret-position="777">
+          <caret line="81" column="44" selection-start-line="81" selection-start-column="44" selection-end-line="81" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -687,31 +727,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/Common/Common/function.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="777">
+          <caret line="61" column="88" selection-start-line="61" selection-start-column="88" selection-end-line="61" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/Extend/Tool/Form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="758">
+          <caret line="144" column="167" selection-start-line="144" selection-start-column="167" selection-end-line="144" selection-end-column="167" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/Home/View/Layout/form-add-left.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="97" column="28" lean-forward="true" selection-start-line="97" selection-start-column="28" selection-end-line="97" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webroot/Public/static/js/content.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="136" column="11" selection-start-line="133" selection-start-column="5" selection-end-line="136" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/Home/View/Layout/form-add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="63" column="28" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Admin/Home/Controller/BackendController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="274" column="40" selection-start-line="274" selection-start-column="27" selection-end-line="274" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/Home/Controller/SiteController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/Home/View/SiteConfig/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="653">
-          <caret line="43" column="31" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/Home/Controller/SiteConfigController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+        <state relative-caret-position="546">
+          <caret line="322" column="53" selection-start-line="322" selection-start-column="48" selection-end-line="322" selection-end-column="53" />
           <folding>
             <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
@@ -719,24 +773,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/Home/View/Product/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Admin/Home/View/SiteConfig/add.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="98" selection-start-line="12" selection-start-column="87" selection-end-line="12" selection-end-column="98" />
+        <state relative-caret-position="42">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/Extend/Tool/Form.php">
+    <entry file="file://$PROJECT_DIR$/Admin/Home/Controller/SiteController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="97" column="181" selection-start-line="97" selection-start-column="181" selection-end-line="97" selection-end-column="181" />
+        <state relative-caret-position="569">
+          <caret line="43" column="149" selection-start-line="43" selection-start-column="149" selection-end-line="43" selection-end-column="149" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/Home/View/Sitefile/index.html">
+    <entry file="file://$PROJECT_DIR$/Admin/Home/Controller/SiteConfigController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="777">
-          <caret line="36" column="50" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
+        <state relative-caret-position="315">
+          <caret line="42" column="40" lean-forward="true" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/Home/View/Site/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/Home/View/SiteConfig/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
         </state>
       </provider>
     </entry>

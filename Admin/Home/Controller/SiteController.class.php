@@ -21,6 +21,8 @@ class SiteController extends BackendController {
 			$op .=  getToolIcon('edit','J_open btn-xs ',U('edit',['id'=>$vo['id']]),'','','','J_open')."&nbsp;";
 	
 			$op .= getToolIcon('delete','J_confirm btn-xs ',U('delete',['id'=>$vo['id']]),'','','','J_confirm')."&nbsp;";
+
+			$op .= getToolIcon('','J_open btn-xs btn btn-success',U('SiteConfig/index',['sid'=>$vo['id']]),'站点配置','wrench','','J_open');
 	
 
 			$vo['thumb'] = 	getThumbImg($vo['pic']);					

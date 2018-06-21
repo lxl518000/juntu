@@ -240,6 +240,7 @@ class BackendController extends Controller {
 				}
 			}
 		}
+
 		return $map;
 	}
 	

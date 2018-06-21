@@ -12,9 +12,52 @@
     {:formbuilder('choose',array(type=>'radio','title'=>'配置类型','name'=>'type','options'=>$types,'checked'=>[$list['type']]))}
     {:formbuilder('input',array('title'=>'配置名称','name'=>'name','value'=>$list['name'],'placeholder'=>'请输入配置名称','validate'=>'required','tip'=>''))}
     {:formbuilder('input',array('title'=>'配置KEY','name'=>'key','value'=>$list['key'],'placeholder'=>'请输入配置KEY','validate'=>'required','tip'=>''))}
-    {:formbuilder('input',array('title'=>'配置Value','name'=>'value','value'=>$list['value'],'placeholder'=>'请输入配置Value','validate'=>'required','tip'=>''))}
+
+    <div class="s1 showtype">
+        {:formbuilder('textarea',array('title'=>'配置Value','name'=>'value','value'=>$list['value'],'placeholder'=>'请输入配置Value','validate'=>'','tip'=>'','row'=>5))}
+
+    </div>
+
+    <div class="s2 showtype">
+        <div class="form-group i-checks">
+            <label class="col-sm-3 control-label">配置Value：</label>
+            <div class="col-sm-8">
+
+                <include file="Common/ueditor"/>
+            </div>
+         </div>
+        <br/>
+    </div>
+
+    <div class="s3 showtype">
+        <include file="Common/Upload" />
+        <br/>
+    </div>
+
+
     {:formbuilder('input',array('title'=>'备注','name'=>'remark','value'=>$list['remark'],'placeholder'=>'','validate'=>'','tip'=>''))}
 
+
+
+    <script>
+
+        $(function () {
+            showtype();
+            $('input[name="type"]').on('ifChecked', function(event){
+                showtype();
+            });
+        })
+
+        function showtype(){
+            $('.showtype').hide();
+            var val = $('input[name="type"]:checked').val();
+            console.log(val);
+            $('.s'+val).show();
+        }
+        
+    </script>
+    
+    
 </block>
 
 <block name='extend'>

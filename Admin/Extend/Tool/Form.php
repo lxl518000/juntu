@@ -142,7 +142,7 @@ class FormBuilder{
 	 * {:formbuilder('textarea',array('title'=>'关键词','name'=>'keyword','validate'=>'required','title'=>'请输入关键词'))}
 	 */
 	public static function textarea($config){
-		$str = " <textarea id='{$config['name']}' name='{$config['name']}' {$config['validate']} title='{$config['title']}' class='form-control'>{$config['value']}</textarea>";
+		$str = " <textarea id='{$config['name']}' name='{$config['name']}' {$config['validate']} title='{$config['title']}' class='form-control' rows='{$config['row']}'>{$config['value']}</textarea>";
 		return self::output($str, $config);
 	}
 	

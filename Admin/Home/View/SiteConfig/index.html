@@ -2,7 +2,7 @@
 
 
 <block name='toolBar'>
-                              {:getToolIcon('add','J_open btn-sm',U('add'))}
+                              {:getToolIcon('add','J_open btn-sm',U('add',['sid'=>$_REQUEST['sid']]))}
                                 {:getToolIcon('delete','J_multiple btn-sm',U('delete'))}
                                  {:getToolIcon('on','J_multiple btn-sm',U('enable'))}
                                  {:getToolIcon('off','J_multiple btn-sm',U('disable'))}
@@ -18,11 +18,11 @@
         <input type="text" name="name"  placeholder="产品名称"  class="form-control">
     </div>
     <div class="form-group">
-        <label for="exampleInputEmail2" class="sr-only">站点</label>
-        <select class="form-control " name="cid">
+        <label for="exampleInputEmail2" class="sr-only">全部站点</label>
+        <select class="form-control " name="sid">
             <option value=''>--全部--</option>
             <volist name='host' id='vo'>
-                <option value="{$key}">{$vo}</option>
+                <option value="{$key}" {$_REQUEST['sid']==$key?'selected':''}>{$vo}</option>
             </volist>
         </select>
 

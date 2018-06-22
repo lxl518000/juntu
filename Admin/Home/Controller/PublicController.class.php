@@ -30,7 +30,8 @@ class PublicController extends BackendController {
 	
 		// 上传文件类型控制
 		$ext_arr= array(
-				'image' => array('gif', 'jpg', 'jpeg', 'png', 'bmp'),
+				//'image' => array('gif', 'jpg', 'jpeg', 'png', 'bmp'),
+				'image' => array('jpg', 'jpeg'),
 				'photo' => array('jpg', 'jpeg', 'png'),
 				'flash' => array('swf', 'flv'),
 				'media' => array('swf', 'flv', 'mp3', 'wav', 'wma', 'wmv', 'mid', 'avi', 'mpg', 'asf', 'rm', 'rmvb'),
@@ -84,14 +85,14 @@ class PublicController extends BackendController {
 		//print_r($info);exit;
 		
 		// 按照原图的比例生成一个最大为150*150的缩略图并保存为thumb.jpg
-		$thumbname = '';
-		if(in_array($info['ext'],$ext_arr['image'])){
-			$image = new \Think\Image();
-			$image->open($info['savepath'].$info['savename']);
-			$thumbname = 'thumb240_'.$info['savename'];
-			$image->thumb(240,240)->save($info['savepath'].$thumbname);
-			$info['thumbname'] = $thumbname;
-		}
+//		$thumbname = '';
+//		if(in_array($info['ext'],$ext_arr['image'])){
+//			$image = new \Think\Image();
+//			$image->open($info['savepath'].$info['savename']);
+//			$thumbname = 'thumb240_'.$info['savename'];
+//			$image->thumb(240,240)->save($info['savepath'].$thumbname);
+//			$info['thumbname'] = $thumbname;
+//		}
 		$info['savepath'] = ltrim($info['savepath'],'.');		
 		$return['message'] = '上传成功';
 		$return['code'] = 1;
@@ -107,7 +108,7 @@ class PublicController extends BackendController {
 		$file['savepath'] = $info['savepath'];
 		$file['size'] = $info['size'];
 		$file['ext'] = $info['ext'];
-		$file['thumbname'] = $thumbname;
+		$file['thumbname'] = '';
 		$file['minitype'] = $info['type'];
 		$file['addtime'] = date('Y-m-d H:i:s');
 		$file['adduser'] = getUser();

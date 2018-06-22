@@ -9,10 +9,9 @@ class SiteController extends BackendController {
 		$this->model = D('Site');
 		return $this->model;
 	}
-	
 
 
-	protected function _format($list){
+    protected function _format($list){
 			
 		$cats = D('Cate')->getField('id,title',true);
 		foreach($list as $k=>$vo){
@@ -20,10 +19,16 @@ class SiteController extends BackendController {
 	
 			$op .=  getToolIcon('edit','J_open btn-xs ',U('edit',['id'=>$vo['id']]),'','','','J_open')."&nbsp;";
 	
-			$op .= getToolIcon('delete','J_confirm btn-xs ',U('delete',['id'=>$vo['id']]),'','','','J_confirm')."&nbsp;";
+			//$op .= getToolIcon('delete','J_confirm btn-xs ',U('delete',['id'=>$vo['id']]),'','','','J_confirm')."&nbsp;";
 
-			$op .= getToolIcon('','J_open btn-xs btn btn-success',U('SiteConfig/index',['sid'=>$vo['id']]),'站点配置','wrench','','J_open');
-	
+			$op .= getToolIcon('','J_open btn-xs btn btn-success',U('SiteConfig/index',['sid'=>$vo['id']]),'基础配置','wrench','','J_open')."&nbsp;";
+
+
+            $op .= getToolIcon('','J_open btn-xs btn btn-danger',U('SiteMenu/index',['sid'=>$vo['id']]),'导航配置','duplicate','','J_open')."&nbsp;";;
+
+
+
+            $op .= getToolIcon('','J_confirm btn-xs btn-primary ',U('cache',['sid'=>$vo['id'],'host'=>$vo['host']]),'更新站点缓存','thumbs-up','','J_confirm');
 
 			$vo['thumb'] = 	getThumbImg($vo['pic']);					
 			$vo['cname'] = $cats[$vo['cid']];
@@ -33,6 +38,33 @@ class SiteController extends BackendController {
 		}
 		return $list;
 	}
+
+	public  function cache(){
+        $sid = I('sid');
+        $host = I('host');
+        if(!$sid || !$host){
+            $this->error('请选择更新的站点');
+        }
+
+        //查找配置文件
+        $config = D('SiteConfig')->where(['sid'=>$sid])->getField('key,value',true);
+
+        $menu = D('SiteMenu')->where(['sid'=>$sid,'status'=>1])->order('sort asc')->getField('name,route',true);
+
+        $rs['config'] = $config;
+        $rs['menu'] = $menu;
+
+        $host = ltrim($host,'www.');
+
+        $res = S("cfg_".$host,$rs);
+        if(!$res){
+            $this->error('缓存失败');
+        }
+
+        $this->success('缓存成功');
+
+    }
+
 	
 
 	//添加站点成功后 初始化添加站点默认配置

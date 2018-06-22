@@ -34,20 +34,20 @@
                             <span><img alt="image" class="img-circle" style='width:64px;height:64px' src="/Public/static/img/a8.jpg" /></span>
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                                 <span class="clear">
-                               <span class="block m-t-xs"><strong class="font-bold">Beaut-zihan</strong></span>
-                                <span class="text-muted text-xs block">超级管理员<b class="caret"></b></span>
+                               <span class="block m-t-xs"><strong class="font-bold">欢迎你:{$admin.realname}</strong></span>
+                                <span class="text-muted text-xs block">{$admin.role_name}<b class="caret"></b></span>
                                 </span>
                             </a>
                             <ul class="dropdown-menu animated fadeInRight m-t-xs">
-                                <li><a class="J_menuItem" href="{:U('user/face')}">修改头像</a>
-                                </li>
-                                <li><a class="J_menuItem" href="{:U('user/datam')}">个人资料</a>
-                                </li>
-                                <li><a class="J_menuItem" href="contacts.html">联系我们</a>
-                                </li>
-                                <li><a class="J_menuItem" href="mailbox.html">信箱</a>
-                                </li>
-                                <li class="divider"></li>
+                                <!--<li><a class="J_menuItem" href="{:U('user/face')}">修改头像</a>-->
+                                <!--</li>-->
+                                <!--<li><a class="J_menuItem" href="{:U('user/datam')}">个人资料</a>-->
+                                <!--</li>-->
+                                <!--<li><a class="J_menuItem" href="contacts.html">联系我们</a>-->
+                                <!--</li>-->
+                                <!--<li><a class="J_menuItem" href="mailbox.html">信箱</a>-->
+                                <!--</li>
+                                <li class="divider"></li>-->
                                 <li><a href="{:U('Public/logout')}">安全退出</a>
                                 </li>
                             </ul>
@@ -186,9 +186,13 @@
                     <!--</ul>-->
                 <!--</nav>-->
             </div>
+
             <div class="row content-tabs">
+
+
                 <button class="roll-nav roll-left J_tabLeft"><i class="fa fa-backward"></i>
                 </button>
+
                 <nav class="page-tabs J_menuTabs">
                     <div class="page-tabs-content">
                         <a href="javascript:;" class="active J_menuTab" data-id="{:U('Index/main')}">首页</a>

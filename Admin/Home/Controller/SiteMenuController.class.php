@@ -1,12 +1,12 @@
 <?php
 namespace Home\Controller;
 
-class SiteConfigController extends BackendController {
+class SiteMenuController extends BackendController {
 	
-	protected $name = "站点配置";
+	protected $name = "站点导航配置";
 	
 	protected function loadModel(){
-		$this->model = D('SiteConfig');
+		$this->model = D('SiteMenu');
 		return $this->model;
 	}
 
@@ -15,7 +15,7 @@ class SiteConfigController extends BackendController {
 	    $host = D('Site')->getField('id,host',true);
 
 	    $this->host = $host;
-	    $this->types = [1=>'普通文本',2=>'富文本',3=>'图片'];
+
 	    $this->assign('types',$this->types);
         $this->assign('host',$host);
 
@@ -25,7 +25,8 @@ class SiteConfigController extends BackendController {
 		$this->loadModel();
 		$parent = D('Cate')->getParent();
 		$this->assign('parent',$parent);
-		$list['type'] = 1;
+		$list['status'] = 1;
+		$list['sort'] = 1;
 		$list['sid'] = $_REQUEST['sid'] ? $_REQUEST['sid'] : '';
 		$this->assign('list',$list);
 		$this->assign('callback','subfun');

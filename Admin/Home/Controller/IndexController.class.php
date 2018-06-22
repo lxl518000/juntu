@@ -145,6 +145,7 @@ class IndexController extends BackendController {
 		$this->_checkLogin();// 检查登录
 		$admin_menu = session('adminuser.admin_menu');
 		$this->assign('admin_menu',$admin_menu);
+		$this->assign('admin',session('adminuser'));
 		$this->display();
 	}
 	

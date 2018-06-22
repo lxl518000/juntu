@@ -1,0 +1,42 @@
+﻿
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>新闻中心-{$config['web_title']}</title>
+<include file='head'/>
+
+<div class="inbanner">
+	<div class="inbanner-pic" style="background-image:url(/Public/proto/Images/pic_banner_prodata.jpg);"></div>
+	<div class="inbanner-text">
+		<h3 class="title">产品知识</h3>
+		<p class="exp">为您提供丰富的产品知识！</p>
+	</div>
+</div>
+
+<div class="incontenter">
+	<div class="wrapper">
+	<include file="left-contact"/>
+	
+		<ul class="prodata-simple-list">
+		   <volist name='nlist' id='vo' key='key'>
+			<li>
+				<div class="prodata-simple-one clearfix" style='padding-left:10px;'>
+					<div class="text">
+						<h3 class="title"><a href="{:U('index/ninfo',array('nid'=>$vo['id']))}">{$vo['n_title']}</a></h3>
+						<p class="time">时间：{$vo['n_time']|date='Y-m-d',###}</p>
+						<p class="exp">{$vo['n_content']|htmlspecialchars_decode|killHtml|msubstr=###,0,150}</p>
+					</div>
+					<a href="{:U('index/ninfo',array('nid'=>$vo['id']))}" class="see-more"></a>
+				</div>
+			</li>
+			</volist>
+			
+		</ul>
+		 <div class="pages">
+                    {$show}
+                    
+                </div>
+	</div>
+</div>
+<include file="foot"/>

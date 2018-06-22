@@ -1,0 +1,3 @@
+<?php
+//000000003600a:2:{s:6:"config";a:11:{s:9:"WEB_TITLE";s:0:"";s:11:"WEB_KEYWORD";s:0:"";s:15:"WEB_DESCRIPTION";s:0:"";s:11:"WEB_ADDRESS";s:0:"";s:9:"WEB_EMAIL";s:0:"";s:13:"WEB_COPYRIGHT";s:0:"";s:12:"WEB_POSTCODE";s:0:"";s:17:"WEB_PHONE_CONTACT";s:0:"";s:14:"WEB_PHONE_KEFU";s:0:"";s:11:"WEB_QQ_KEFU";s:0:"";s:14:"WEB_SKYPE_KEFU";s:0:"";}s:4:"menu";a:6:{s:6:"首页";s:11:"Index/index";s:12:"关于我们";s:11:"Index/about";s:12:"产品中心";s:13:"Index/product";s:12:"经营范围";s:14:"Index/business";s:12:"公司资质";s:19:"Index/qualification";s:12:"联系我们";s:13:"Index/contact";}}
+?>

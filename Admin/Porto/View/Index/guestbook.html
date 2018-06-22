@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta name='renderer' content='webkit'>
+	<meta charset='utf-8' />
+	<title>{$Think.lang.guestbook}--<eq name='lan' value='1'>{$config['web_title']}<else/>{$config['web_en_title']}</eq></title>
+	<meta name="description" content="{$config['web_description']}" />
+	<meta name="keywords" content="{$config['web_keyword']}" />
+	<link href="../favicon.ico" rel="shortcut icon" />
+	<link rel="stylesheet" type="text/css" href="../Public/css/metinfo.css" />
+	<script src="../Public/js/metinfo-min.js" type="text/javascript"></script>
+	<script src="../Public/js/ch.js" type="text/javascript"></script>
+	<script src="../Public/js/public.js" type="text/javascript" language="javascript"></script>
+	<include file='headonline'/>
+</head>
+	<link href="../Public/css/reset.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript">
+  $(document).ready(function(){
+    $("#nav_6").addClass("downnav");
+	    $("#nav li").hover(
+  function () {
+    $(this).addClass("hover");
+  },
+  function () {
+    $(this).removeClass("hover");
+  }
+);
+  });
+</script>
+	<script src="../Public/js/fun.inc.js" type="text/javascript"></script>
+	<style type="text/css">#top{ background:url() no-repeat;}</style>
+<body>
+	<div id="metinfo">
+			<include file='head'/>
+
+				<div id="flash inner">
+			<div class="flash">
+				<img src='../Public/images/1395284985.jpg' width='1000' alt='' height='184'></div>
+		</div>
+
+			<div id="web">
+				<div id="bigfloatl" class="floatl">
+					
+					<div id="leftdiv1" class="leftdiv">
+						<h3>
+							<eq name='lan' value='1'>
+							<span class="shou">客</span>
+							<span class="other">户留言</span>
+							<else/>
+							<span class="shou">Guest</span>
+							<span class="other">book</span>
+							</eq>
+						</h3>
+						<div id="sidebar" class="leftcontent">												
+							<dl class="list-none navnow">
+									<dt id='part2_22'>
+										<a href="{:U('index/guestbook')}" style='color:#fc6a28'>{$Think.lang.showmessage}</a>									
+									</dt>
+								</dl>
+								<dl class="list-none navnow">
+									<dt id='part2_22'>
+										<a href="{:U('index/addmessage')}">{$Think.lang.addmessage}</a>								
+									</dt>
+								</dl>
+								
+						</div>
+						<div class="bottom"></div>
+					</div>
+				<include file='left-contact'/>
+				</div>
+
+				<div class="web-right floatr ">
+					<h3 class="title">
+						<div>
+							{$Think.lang.pos}&nbsp;&nbsp;:&nbsp;&nbsp;
+							<a href="{:U('index/index')}">{$Think.lang.homepage}</a>
+							&gt;
+							<a href="{:U('index/guestbook')}">{$Think.lang.guestbook}</a>
+						</div>
+					</h3>
+
+					<div class="showtext editor webbox">
+						<div>
+								<div class='showmessage'>			
+									<volist name='mlist' id='vo'>
+
+										<dl>
+											<dt><span>{$vo['floor']}{$Think.lang.floor}</span><span class='msggreen'>{$Think.lang.name}:</span><span>{$vo['m_uname']}</span><span class='msggreen'>{$Think.lang.messagetime}:</span><span>{$vo['m_time']|getFriendlyTime}</span></dt>
+											<dd><span class='msgwarning'>{$Think.lang.question}:</span>{$vo['m_uquestion']|killHtml|msubstr=###,0,300}</dd>
+											<notempty name="vo['reply']">
+											<dd class='msgblue'><span>{$vo['reply']['r_time']|getFriendlyTime}</span><span>{$Think.lang.adminreply}:</span>{$vo['reply']['r_content']}</dd>
+											</notempty>
+										</dl>
+									</volist>
+								</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div id="flip">
+							
+							<div class='digg4 metpager_8'>
+								{$show}
+							</div>
+						</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+
+			<include file='foot'/>
+
+</body>
+	</html>

@@ -1,0 +1,23 @@
+<script language="javascript">
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide"
+  });
+});
+</script>
+<div class="banner">
+	<div class="slider">
+        <div class="flexslider">
+          <ul class="slides">
+          	<volist name='ppt' id='vo'>
+            <li><a target='_blank' href="{$vo['p_link']}"><img style='width:100%;height:300px;' src="{$vo['p_name']}" <eq name="lan" value='1'>
+							 title="{$vo['p_title']}" alt="{$vo['p_title']}" 
+							 <else/>
+							  title="{$vo['p_en_title']}" alt="{$vo['p_en_title']}" 
+							</eq>/></a></li>
+            </volist>
+           
+          </ul>
+        </div>
+    </div>
+</div>

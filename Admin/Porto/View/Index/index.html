@@ -1,0 +1,155 @@
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+<title>首页-{$config['config']['WEB_TITLE']}</title>
+
+
+<include file="head"/>
+
+    <div class="banner">
+        <div class="banner-pics">
+            <ul class="banner-pics-list">
+             <volist name='ppt' id='vo'>
+            	 <li style="background-image: url({$vo})"></li>
+            </volist>
+            </ul>
+        </div>
+        <div class="banner-apply">
+          {$config['config']['WEB_PPT_MARK']|htmlspecialchars_decode}
+        
+            <ul class="banner-apply-list clearfix">
+                <li><a href="#">
+                    <img src="/Public/proto/Images/pic_banner_pro_1.png"></a></li>
+                <li><a href="#">
+                    <img src="/Public/proto/Images/pic_banner_pro_2.png"></a></li>
+                <li><a href="#">
+                    <img src="/Public/proto/Images/pic_banner_pro_3.png"></a></li>
+            </ul>
+        </div>
+        <div class="banner-turn">
+            <a href="javascript:void(0);" class="banner-prev"></a><a href="javascript:void(0);"
+                class="banner-next"></a>
+        </div>
+    </div>
+    <script type="text/javascript">
+        jQuery(".banner").slide({ mainCell: ".banner-pics-list", prevCell: ".banner-prev", nextCell: ".banner-next", effect: "fold", autoPlay: true, interTime: 4000, delayTime: 1000 })
+</script>
+    <div class="contenter">
+        <div class="index-product">
+            <div class="wrapper clearfix">
+                <div class="index-product-sidebar">
+                    <div class="product-nav">
+                        <h2 class="product-nav-tit">
+                            产品中心</h2>
+                        <ul class="product-nav-list">
+                           <volist name='topcate' id='vo'>
+                         		<li><a href="{:U('products',array('cid'=>$vo['id']))}">{$vo['title']}</a></li>
+                           </volist>
+                          
+                        </ul>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    $(function () {
+                        jQuery(".index-product-main").slide({ mainCell: ".index-product-main-cont", prevCell: ".turn-prev", nextCell: ".turn-next", effect: "left", autoPlay: true, interTime: 3000, delayTime: 1000 })
+                    });
+                </script>
+                <div class="index-product-main">
+                    <div class="index-product-main-tit">
+                        <a href="javascript:void(0);" class="turn-btn turn-prev"></a>
+                        <h3 class="title">
+                            产品展示</h3>
+                        <a href="javascript:void(0);" class="turn-btn turn-next"></a>
+                    </div>
+                    <div class="index-product-main-cont">
+                    	
+                    	<volist name='products' id='vo'>
+	                        <div class="index-pros-list-one">
+	                            <ul class="pros-show-list row-list-4 clearfix">
+	                            	<volist name='vo' id='vo1'>
+	                            	  <li><a href="{:U('pinfo',['pid'=>$vo1['id']])}" class="pros-show-one">
+	                                    <div class="pic"><img src="{$vo1['pic']}"></div>
+	                                    <h4 class="title">{$vo1['name']}
+	                                    </h4>
+	                                    <div class="tip">查看详情&gt;&gt;</div>
+	                             		</a>
+	                                </li>
+	                            	</volist>
+	                            </ul>
+	                        </div>
+                        </volist>
+                        
+                 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="index-column">
+            <div class="wrapper clearfix">
+                <div class="index-about">
+                    <div class="index-common-tit">
+                        <h3 class="title">
+                            公司简介</h3>
+                    </div>
+                    <div class="index-about-cont clearfix ">
+                        <div class="pic">
+                            <img src="{$config['config']['WEB_ABOUT_IMG']|default='/Public/proto/Images/pic_about_index.jpg'}"></div>
+                        <div class="text">
+                            <p>
+                            {$config['config']['WEB_ABOUT_US']|htmlspecialchars_decode}
+                            </p>
+                          
+                        </div>
+                       
+                    </div>
+                </div>
+               <!--  <div class="index-prodata">
+                    <div class="index-common-tit">
+                        <h3 class="title">
+                            产品知识</h3>
+                        <a href="{:U('news',['cid'=>43])}" class="see-more">+More</a>
+                    </div>
+                    <div class="index-prodata-first clearfix">
+                        <span class="date"><em>{$news1['n_time']|date='d',###}</em><br>
+                            {$news1['n_time']|date='Y-m',###}</span> <a href="{:U('ninfo',['nid'=>$news1['id']])}" class="text">
+                                <h4 class="title">
+                                  {$news1['n_title']}</h4>
+                                <p class="exp">
+                                   {$news1['n_content']|killHtml|msubstr=###,0,30}</p>
+                            </a>
+                    </div>
+                    <ul class="prodata-list ellipsis-list">
+                    	<volist name='news' id='vo'>
+	                    	<li><a href="{:U('ninfo',['nid'=>$vo['id']])}">{$vo['n_title']}</a><span class="time">{$vo['n_time']|date='m-d',###}</span></li>
+                    	</volist>
+                        
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+        <div class="index-jinkou">
+            <div class="wrapper">
+                <div class="index-common-tit">
+                    <h3 class="title">热门分类</h3>
+                </div>
+                <div class="index-jinkou-loop b_ml">
+                  
+                        <ul class="">
+                            
+                            <volist name='allcate' id='vo'>
+                         		<li><p><a href="{:U('products',['cid'=>$vo['id']])}">{$vo['title']}</a></p> </li>
+                           
+                            </volist>
+                           
+                        </ul>
+              
+                  
+                </div>
+            </div>
+        </div>
+       
+    </div>
+
+<include file='foot'/>

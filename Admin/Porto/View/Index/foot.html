@@ -1,0 +1,63 @@
+<div id="online_qq_layer" onclick="javascript:changeOnline();">
+    <div id="online_qq_tab">
+        <div class="online_icon">
+            <a title="" id="floatShow" style="display:block" href="javascript:void(0);">&nbsp;</a>
+            <a title="" id="floatHide" style="display:none" href="javascript:void(0);">&nbsp;</a>
+        </div>
+    </div>
+    <div id="onlineService" style="display: none;">
+        <div class="online_windows overz">
+            <div class="online_w_top"></div>
+            <div class="online_w_c overz">
+                <div class="online_bar expand" id="onlineSort1">
+                    <h2>
+                        <a target="_blank" >在线QQ</a>
+                    </h2>
+                    <div class="online_content overz" id="onlineType1">
+                        <ul class="overz">
+                           
+                            <li>
+                                <a target="_blank"  href="skype:juntuengine?call" on-click="return skypeCheck();" class="skype_icon">Skype在线客服</a>
+                            </li>
+                             <li>
+                                <a target="_blank"  href="skype:hannibal.zhong?call" on-click="return skypeCheck();" class="skype_icon">Skype在线客服</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=450758228&amp;site=qq&amp;menu=yes" class="qq_icon">QQ在线客服</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1833237522&amp;site=qq&amp;menu=yes" class="qq_icon">QQ在线客服</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="online_w_bottom"></div>
+        </div>
+    </div>
+</div>
+<!-- 在线客服 end -->
+
+<div class="footer">
+        <div class="f1 ">
+            <div class="footer-nav">
+                <div class="footer-logo">
+                    <img src="/Public/proto/Images/logo80.png"></div>
+            </div>
+            <div class="footer-mess">
+                <p>
+               	电话 :{$config['config']['WEB_PHONE_CONTACT']} &nbsp;&nbsp; 邮箱: {$config['config']['WEB_EMAIL']}</p>
+               	<p>地址：{$config['config']['WEB_ADDRESS']}</p>
+                <p/>
+              
+                <p>{$config['config']['WEB_COPYRIGHT']}</p>
+            </div>
+        </div>
+    </div>
+   
+<!-- -第三方统计代码 -->    
+    {$config['config']['WEB_THIRD_CODE']|htmlspecialchars_decode}
+    
+</body>
+</html>
+

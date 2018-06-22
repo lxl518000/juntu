@@ -1,0 +1,52 @@
+<meta name="description" content="{$config['config']['WEB_DESCRIPTION']}" />
+<meta name="keywords" content="{$config['config']['WEB_KEYWORD']}" />
+<meta name="author" content="450724951@qq.com" />
+    <link rel="stylesheet" type="text/css" href="/Public/proto/Css/base.css">
+    <link rel="stylesheet" type="text/css" href="/Public/proto/Css/common.css">
+     <link rel="stylesheet" type="text/css" href="/Public/Home/css/online2.css">
+
+    <script src="/Public/proto/Scripts/jquery-1.7.2.min.js"></script>
+    <script src="/Public/proto/Scripts/jquery.superslide.2.1.js"></script>
+    <script src="/Public/proto/Scripts/source.func.js"></script>
+    <script src="/Public/proto/Scripts/common.js"></script>
+   
+    <link rel="icon" href="/favicon.ico" />
+    <script type="text/javascript" src="/Public/Home/js/online2.js"></script>
+    <!--[if IE 6]>
+<script src="/Public/proto/Scripts/dd_belatedpng.js"></script>
+<script>
+  DD_belatedPNG.fix('#');
+</script>
+<![endif]-->
+</head>
+<body data-curpageid="">
+<div class="header">
+	<div class="header-main wrapper clearfix">
+		<a href="index.html" class="header-logo"  style='width:450px;;height:60px;'><img src="/logo.png"></a>
+		<div class="header-right">
+			<div class="header-right-sup clearfix">
+				<div class="header-search clearfix">
+					<input type="text" name="keyword" id="">
+					<a href="javascript:void(0);" onclick="dosearch()" class="submit" id=""></a>
+				</div>
+				<script>
+				function dosearch(){
+					var k = $('input[name="keyword"]').val();
+					window.location="{:U('products',['act'=>'sear'])}?keyword="+k
+				}
+				</script>
+				
+			</div>
+			<p class="header-phone">{$config['web_phone']}</p>
+		</div>
+	</div>
+</div>
+<div class="main-nav">
+	<ul class="main-nav-list wrapper">
+		<volist name='config.menu' id='vo'>
+				<li <eq name='pmenu' value='$vo'>class='on'</eq> ><a href="{:U($vo)}">{$key}</a></li>
+		</volist>
+		
+		
+	</ul>
+</div>

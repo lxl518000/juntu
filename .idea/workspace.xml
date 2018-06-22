@@ -48,7 +48,7 @@
       <file leaf-file-name="function.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Admin/Common/Common/function.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
+            <state relative-caret-position="987">
               <caret line="47" column="78" selection-start-line="47" selection-start-column="69" selection-end-line="47" selection-end-column="78" />
             </state>
           </provider>
@@ -131,7 +131,7 @@
       <path value="$PROJECT_DIR$/webroot/Public/static/Vendor/jQuery-Autocomplete-master/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="230" />
     <option name="y" value="202" />
     <option name="width" value="1502" />
@@ -391,11 +391,12 @@
       <workItem from="1528193124740" duration="793000" />
       <workItem from="1529459058759" duration="16482000" />
       <workItem from="1529493798127" duration="18120000" />
+      <workItem from="1529648205432" duration="599000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47646000" />
+    <option name="totallyTimeSpent" value="48245000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -407,10 +408,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.74338883" visible="true" weight="0.20770878" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7424094" visible="true" weight="0.21038544" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32934132" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
@@ -418,19 +418,19 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info id="Structure" order="1" sideWeight="0.25661117" side_tool="true" visible="true" weight="0.20770878" />
+      <window_info id="Structure" order="1" sideWeight="0.2575906" side_tool="true" visible="true" weight="0.21038544" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32892057" />
       <window_info id="Favorites" order="2" sideWeight="0.500998" side_tool="true" weight="0.18020834" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="调试" order="12" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="运行" order="12" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="调试" order="12" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -671,13 +671,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="693">
           <caret line="96" column="42" selection-start-line="96" selection-start-column="34" selection-end-line="96" selection-end-column="42" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#p#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -757,7 +750,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Admin/Common/Common/function.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
+        <state relative-caret-position="987">
           <caret line="47" column="78" selection-start-line="47" selection-start-column="69" selection-end-line="47" selection-end-column="78" />
         </state>
       </provider>

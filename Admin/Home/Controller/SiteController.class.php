@@ -46,17 +46,8 @@ class SiteController extends BackendController {
             $this->error('请选择更新的站点');
         }
 
-        //查找配置文件
-        $config = D('SiteConfig')->where(['sid'=>$sid])->getField('key,value',true);
-
-        $menu = D('SiteMenu')->where(['sid'=>$sid,'status'=>1])->order('sort asc')->getField('name,route',true);
-
-        $rs['config'] = $config;
-        $rs['menu'] = $menu;
-
-        $host = ltrim($host,'www.');
-
-        $res = S("cfg_".$host,$rs);
+      
+        $res = cacheSiteConfig($sid, $host);
         if(!$res){
             $this->error('缓存失败');
         }

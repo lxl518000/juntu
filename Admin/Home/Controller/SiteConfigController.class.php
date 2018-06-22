@@ -57,6 +57,7 @@ class SiteConfigController extends BackendController {
 			
 		$host = $this->host;
 		$types = $this->types;
+		
 		foreach($list as $k=>$vo){
 			$op = '';
 	
@@ -68,8 +69,18 @@ class SiteConfigController extends BackendController {
 
 
 			if($vo['type']==3){
-			    $vo['value'] = "<img src='{$vo['value']}'>";
+				$pics = explode(';',$vo['value']);
+				$tmp = '';
+				foreach($pics as $d){
+					$tmp .= "<img style='max-height:60px;max-width:60px' src='{$d}'>";
+				}
+			    $vo['value'] = $tmp;
+            }elseif($vo['type'] == 2){
+            	$vo['value'] = msubstr(strip_tags(htmlspecialchars_decode($vo['value'])),0, 100);
+            }else{
+            	$vo['value'] = msubstr($vo['value'],0,100);
             }
+     
             $vo['type'] = $types[$vo['type']];
 			$vo['host'] = $host[$vo['sid']];
 

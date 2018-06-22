@@ -1,5 +1,23 @@
 <?php
 
+
+function cacheSiteConfig($sid,$host){
+	
+	//查找配置文件
+	$config = D('SiteConfig')->where(['sid'=>$sid])->getField('key,value',true);
+	
+	$menu = D('SiteMenu')->where(['sid'=>$sid,'status'=>1])->order('sort asc')->getField('name,route',true);
+	
+	$rs['config'] = $config;
+	$rs['menu'] = $menu;
+	
+	$host = ltrim($host,'www.');
+	
+	$res = S("cfg_".$host,$rs);
+	return $res;
+}
+
+
 function getUser(){
 	$user = session('adminuser');
 	return '['.$user['role_name'].']'.$user['realname'];

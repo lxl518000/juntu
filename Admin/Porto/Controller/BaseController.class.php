@@ -9,7 +9,7 @@ class BaseController extends Controller {
 	public function __construct(){
 		parent::__construct();
 		
-		$this->site = ltrim($_SERVER['HTTP_HOST'],'www');
+		$this->site = ltrim($_SERVER['HTTP_HOST'],'www.');
 		
 		
 		$config = S("cfg_{$this->site}");

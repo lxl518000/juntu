@@ -10,6 +10,39 @@ class SiteController extends BackendController {
 		return $this->model;
 	}
 
+	public function copy(){
+		
+		if(IS_POST){
+			$sid = I('sid');
+			if(!$sid){
+				$this->error('无效的源目标');
+			}
+			 if (false === $data = D('Site')->create ()) {
+                   $this->error($this->model->getError());
+            }
+             $newid=D('Site')->add ($data);
+			if(!$newid){
+				$this->error('添加失败');
+			}
+			$config = D('SiteConfig')->where(['sid'=>$sid])->select();
+			$menu = D('SiteMenu')->where(['sid'=>$sid])->select();
+			foreach($config as $k=>$v){
+				$config[$k]['sid'] = $newid;
+				unset($config[$k]['id']);
+			}
+			foreach($menu as $k=>$v){
+				$menu[$k]['sid'] = $newid;
+				unset($menu[$k]['id']);
+			}			
+			D('SiteConfig')->addAll($config);
+			D('SiteMenu')->addAll($menu);
+			
+			$this->success('复制成功');
+			
+		}
+		
+		$this->display();
+	}
 
     protected function _format($list){
 			
@@ -28,8 +61,11 @@ class SiteController extends BackendController {
 
 
 
-            $op .= getToolIcon('','J_confirm btn-xs btn-primary ',U('cache',['sid'=>$vo['id'],'host'=>$vo['host']]),'更新站点缓存','thumbs-up','','J_confirm');
+            $op .= getToolIcon('','J_confirm btn-xs btn-primary ',U('cache',['sid'=>$vo['id'],'host'=>$vo['host']]),'更新站点缓存','thumbs-up','','J_confirm')."&nbsp;";
 
+            
+            $op .= getToolIcon('','J_confirm btn-xs btn-warning ',U('copy',['sid'=>$vo['id'],'host'=>$vo['host']]),'复制站点配置','copyright-mark','','J_open');
+            
 			$vo['thumb'] = 	getThumbImg($vo['pic']);					
 			$vo['cname'] = $cats[$vo['cid']];
 	

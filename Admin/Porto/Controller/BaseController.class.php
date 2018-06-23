@@ -20,7 +20,7 @@ class BaseController extends Controller {
 				cacheSiteConfig($find['id'], $this->site);
 				$config = S("cfg_{$this->site}");
 			}else{
-				exit('站点域名不存在');
+				exit('站点域名不存在'.$this->site);
 			}
 		}
 		

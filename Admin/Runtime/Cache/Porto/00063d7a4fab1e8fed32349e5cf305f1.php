@@ -3,24 +3,20 @@
 <html>
 <head>
     <meta charset="utf-8">
-<title>首页-<?php echo ($config['config']['WEB_TITLE']); ?></title>
-
-
-<meta name="description" content="<?php echo ($config['config']['WEB_DESCRIPTION']); ?>" />
-<meta name="keywords" content="<?php echo ($config['config']['WEB_KEYWORD']); ?>" />
+<title><?php echo ($title); ?>-<?php echo ($config['config']['WEB_TITLE']); ?></title>
+<meta name="keywords" content="<?php echo ((isset($keyword) && ($keyword !== ""))?($keyword):$config['config']['WEB_KEYWORD']); ?>" />
+<meta name="description" content="<?php echo ((isset($description) && ($description !== ""))?($description):$config['config']['WEB_DESCRIPTION']); ?>" />
 <meta name="author" content="450724951@qq.com" />
-    <link rel="stylesheet" type="text/css" href="/Public/proto/Css/base.css">
-    <link rel="stylesheet" type="text/css" href="/Public/proto/Css/common.css">
-     <link rel="stylesheet" type="text/css" href="/Public/Home/css/online2.css">
-
-    <script src="/Public/proto/Scripts/jquery-1.7.2.min.js"></script>
-    <script src="/Public/proto/Scripts/jquery.superslide.2.1.js"></script>
-    <script src="/Public/proto/Scripts/source.func.js"></script>
-    <script src="/Public/proto/Scripts/common.js"></script>
-   
-    <link rel="icon" href="/favicon.ico" />
-    <script type="text/javascript" src="/Public/Home/js/online2.js"></script>
-    <!--[if IE 6]>
+<link rel="stylesheet" type="text/css" href="/Public/proto/Css/base.css">
+<link rel="stylesheet" type="text/css" href="/Public/proto/Css/common.css">
+<link rel="stylesheet" type="text/css" href="/Public/Home/css/online2.css">
+<script src="/Public/proto/Scripts/jquery-1.7.2.min.js"></script>
+<script src="/Public/proto/Scripts/jquery.superslide.2.1.js"></script>
+<script src="/Public/proto/Scripts/source.func.js"></script>
+<script src="/Public/proto/Scripts/common.js"></script>
+<link rel="icon" href="/favicon.ico" />
+<script type="text/javascript" src="/Public/Home/js/online2.js"></script>
+ <!--[if IE 6]>
 <script src="/Public/proto/Scripts/dd_belatedpng.js"></script>
 <script>
   DD_belatedPNG.fix('#');
@@ -45,13 +41,13 @@
 				</script>
 				
 			</div>
-			<p class="header-phone"><?php echo ($config['web_phone']); ?></p>
+			<p class="header-phone"><?php echo ($config['config']['WEB_PHONE_CONTACT']); ?></p>
 		</div>
 	</div>
 </div>
 <div class="main-nav">
 	<ul class="main-nav-list wrapper">
-		<?php if(is_array($config["menu"])): $i = 0; $__LIST__ = $config["menu"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li <?php if(($pmenu) == $vo): ?>class='on'<?php endif; ?> ><a href="<?php echo U($vo);?>"><?php echo ($key); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
+		<?php if(is_array($config["menu"])): $i = 0; $__LIST__ = $config["menu"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li <?php if(($pmenu) == $vo["route"]): ?>class='on'<?php endif; ?> ><a href="<?php echo U($vo['route']);?>"><?php echo ($vo["name"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
 		
 		
 	</ul>
@@ -113,7 +109,7 @@
                     	<?php if(is_array($products)): $i = 0; $__LIST__ = $products;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="index-pros-list-one">
 	                            <ul class="pros-show-list row-list-4 clearfix">
 	                            	<?php if(is_array($vo)): $i = 0; $__LIST__ = $vo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo1): $mod = ($i % 2 );++$i;?><li><a href="<?php echo U('pinfo',['pid'=>$vo1['id']]);?>" class="pros-show-one">
-	                                    <div class="pic"><img src="<?php echo ($vo1['pic']); ?>"></div>
+	                                    <div class="pic"><img src="<?php echo ($vo1['pic']); ?>"  onload="imgCenter(this)"></div>
 	                                    <h4 class="title"><?php echo ($vo1['name']); ?>
 	                                    </h4>
 	                                    <div class="tip">查看详情&gt;&gt;</div>
@@ -244,9 +240,8 @@
             </div>
         </div>
     </div>
-   
-<!-- -第三方统计代码 -->    
-    <?php echo (htmlspecialchars_decode($config['config']['WEB_THIRD_CODE'])); ?>
-    
+
 </body>
 </html>
+<!-- -第三方统计代码 -->    
+<?php echo (htmlspecialchars_decode($config['config']['WEB_THIRD_CODE'])); ?>

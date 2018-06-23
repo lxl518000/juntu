@@ -1,11 +1,3 @@
-
-<!doctype html>
-<html>
-<head>
-    <meta charset="utf-8">
-<title>首页-{$config['config']['WEB_TITLE']}</title>
-
-
 <include file="head"/>
 
     <div class="banner">
@@ -70,7 +62,7 @@
 	                            <ul class="pros-show-list row-list-4 clearfix">
 	                            	<volist name='vo' id='vo1'>
 	                            	  <li><a href="{:U('pinfo',['pid'=>$vo1['id']])}" class="pros-show-one">
-	                                    <div class="pic"><img src="{$vo1['pic']}"></div>
+	                                    <div class="pic"><img src="{$vo1['pic']}"  onload="imgCenter(this)"></div>
 	                                    <h4 class="title">{$vo1['name']}
 	                                    </h4>
 	                                    <div class="tip">查看详情&gt;&gt;</div>

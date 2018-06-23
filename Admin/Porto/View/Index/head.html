@@ -1,18 +1,22 @@
-<meta name="description" content="{$config['config']['WEB_DESCRIPTION']}" />
-<meta name="keywords" content="{$config['config']['WEB_KEYWORD']}" />
-<meta name="author" content="450724951@qq.com" />
-    <link rel="stylesheet" type="text/css" href="/Public/proto/Css/base.css">
-    <link rel="stylesheet" type="text/css" href="/Public/proto/Css/common.css">
-     <link rel="stylesheet" type="text/css" href="/Public/Home/css/online2.css">
 
-    <script src="/Public/proto/Scripts/jquery-1.7.2.min.js"></script>
-    <script src="/Public/proto/Scripts/jquery.superslide.2.1.js"></script>
-    <script src="/Public/proto/Scripts/source.func.js"></script>
-    <script src="/Public/proto/Scripts/common.js"></script>
-   
-    <link rel="icon" href="/favicon.ico" />
-    <script type="text/javascript" src="/Public/Home/js/online2.js"></script>
-    <!--[if IE 6]>
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+<title>{$title}-{$config['config']['WEB_TITLE']}</title>
+<meta name="keywords" content="{$keyword|default=$config['config']['WEB_KEYWORD']}" />
+<meta name="description" content="{$description|default=$config['config']['WEB_DESCRIPTION']}" />
+<meta name="author" content="450724951@qq.com" />
+<link rel="stylesheet" type="text/css" href="/Public/proto/Css/base.css">
+<link rel="stylesheet" type="text/css" href="/Public/proto/Css/common.css">
+<link rel="stylesheet" type="text/css" href="/Public/Home/css/online2.css">
+<script src="/Public/proto/Scripts/jquery-1.7.2.min.js"></script>
+<script src="/Public/proto/Scripts/jquery.superslide.2.1.js"></script>
+<script src="/Public/proto/Scripts/source.func.js"></script>
+<script src="/Public/proto/Scripts/common.js"></script>
+<link rel="icon" href="/favicon.ico" />
+<script type="text/javascript" src="/Public/Home/js/online2.js"></script>
+ <!--[if IE 6]>
 <script src="/Public/proto/Scripts/dd_belatedpng.js"></script>
 <script>
   DD_belatedPNG.fix('#');
@@ -37,14 +41,14 @@
 				</script>
 				
 			</div>
-			<p class="header-phone">{$config['web_phone']}</p>
+			<p class="header-phone">{$config['config']['WEB_PHONE_CONTACT']}</p>
 		</div>
 	</div>
 </div>
 <div class="main-nav">
 	<ul class="main-nav-list wrapper">
 		<volist name='config.menu' id='vo'>
-				<li <eq name='pmenu' value='$vo'>class='on'</eq> ><a href="{:U($vo)}">{$key}</a></li>
+				<li <eq name='pmenu' value='$vo.route'>class='on'</eq> ><a href="{:U($vo['route'])}">{$vo.name}</a></li>
 		</volist>
 		
 		

@@ -1,17 +1,7 @@
-﻿
-<!doctype html>
-<html>
-<head>
-    <meta charset="utf-8">
-<title>产品中心-{$config['web_title']}</title>
-
-<style>
+﻿<style>
 .b_ml ul li.lion p a{color:#0f44ae}
 </style>
-
 <include file="head"/>
-
-
 <script>
 $(function(){
 	$('.par-li').on('mouseover',function(){
@@ -38,8 +28,6 @@ $(function(){
 		$('.son-li-'+pid).show();
 	}
 	
-
-	
 })
 </script>
 
@@ -49,7 +37,7 @@ $(function(){
 			<ul class="inside-nav-list clearfix">
 					<li class='par-li {$_REQUEST['cid']?'':'on'}' data-id='0'><a href="{:U('products',array('cid'=>0))}">全部分类</a></li>
 				<volist name='products' id='vo'>
-					<li class='par-li {$vo['on']} par-li-{$vo['id']}' data-id="{$vo['id']}"><a href="{:U('products',array('cid'=>$vo['id']))}" >{$vo['c_name']}</a></li>
+					<li class='par-li {$vo['on']} par-li-{$vo['id']}' data-id="{$vo['id']}"><a href="{:U('products',array('cid'=>$vo['id']))}" >{$vo['title']}</a></li>
 				</volist>
 			
 			</ul>
@@ -57,10 +45,10 @@ $(function(){
 		   <div class="index-jinkou">
             <div class="wrapper">
                 <div class="index-jinkou-loop b_ml" style='padding-bottom:0;'>
-                   <ul class="son-ul son-ul-{$vo['c_pid']}" style='height:auto;'>
+                   <ul class="son-ul son-ul-{$vo['pid']}" style='height:auto;'>
                             <volist name='products' id='vo'>
 	                            	<volist name="vo['_child']" id="vo1">
-	                         		<li class='son-li son-li-{$vo1['c_pid']} {$vo1['id']==$_REQUEST['cid']?'lion':''}' data-pid="{$vo1['c_pid']}"><p><a href="{:U('products',array('cid'=>$vo1['id']))}">{$vo1['c_name']}</a></p> </li>
+	                         		<li class='son-li son-li-{$vo1['pid']} {$vo1['id']==$_REQUEST['cid']?'lion':''}' data-pid="{$vo1['pid']}"><p><a href="{:U('products',array('cid'=>$vo1['id']))}">{$vo1['title']}</a></p> </li>
 	                         		</volist>
                             </volist>
                   </ul>
@@ -70,12 +58,12 @@ $(function(){
 		
 		<div class="pros-all-wrap">
 			<div class="article" style='background:#fff'>
-				<h2  style='text-align:center;font-size:16px;padding:10px;'>{$pinfo['p_name']}</h2>
-			     {$pinfo['p_content']|killhtml}
+				<h2  style='text-align:center;font-size:16px;padding:10px;'>{$pinfo['name']}</h2>
+			     {$pinfo['content']|htmlspecialchars_decode}
 			      <div class="page" style='padding:20px;text-align:center;'>
-                                         上一个<a href="{:U('index/pinfo',array('pid'=>$prev['id']))}" >{$prev['p_name']|default='没有了'}</a>
+                                         上一个<a href="{:U('index/pinfo',array('pid'=>$prev['id']))}" >{$prev['name']|default='没有了'}</a>
                  &nbsp;&nbsp;
-             	 下一个 <a href="{:U('index/pinfo',array('pid'=>$next['id']))}" >{$next['p_name']|default='没有了'}</a>
+             	 下一个 <a href="{:U('index/pinfo',array('pid'=>$next['id']))}" >{$next['name']|default='没有了'}</a>
              </div>
 		</div>
 		

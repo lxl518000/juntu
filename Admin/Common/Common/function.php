@@ -6,7 +6,7 @@ function cacheSiteConfig($sid,$host){
 	//查找配置文件
 	$config = D('SiteConfig')->where(['sid'=>$sid])->getField('key,value',true);
 	
-	$menu = D('SiteMenu')->where(['sid'=>$sid,'status'=>1])->order('sort asc')->getField('name,route',true);
+	$menu = D('SiteMenu')->where(['sid'=>$sid,'status'=>1])->order('sort asc')->getField('route,name,route,keyword,description',true);
 	
 	$rs['config'] = $config;
 	$rs['menu'] = $menu;

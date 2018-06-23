@@ -14,8 +14,14 @@ class BaseController extends Controller {
 		
 		$config = S("cfg_{$this->site}");
 		if(!$config){
-			echo '拉取系统配置失败，请联系管理员在后台生成缓存';
-			exit;
+			
+			$find = D('site')->where(['host'=>$this->site])->find();
+			if($find){
+				cacheSiteConfig($find['id'], $this->site);
+				$config = S("cfg_{$this->site}");
+			}else{
+				exit('站点域名不存在');
+			}
 		}
 		
 		$this->config = $config;
@@ -23,13 +29,17 @@ class BaseController extends Controller {
 	
 		
 		$pmenu = ACTION_NAME;
-		
 		//字典映射
-		//$map = ['about'];
+		$action = CONTROLLER_NAME.'/'.$pmenu;
+		$this->assign('pmenu',$action);
 		
-		
-		
-		$this->assign('pmenu',CONTROLLER_NAME.'/'.$pmenu);
+		//获取keyword和description
+		$keyword = $config['menu'][$action]['keyword'] ?  $config['menu'][$action]['keyword'] : $config['config']['WEB_KEYWORD'];
+		$description = $config['menu'][$action]['description'] ?  $config['menu'][$action]['description'] : $config['config']['description'];
+		$title = $config['menu'][$action]['name'];
+		$this->assign('keyword',$keyword);
+		$this->assign('description',$description);
+		$this->assign('title',$title);
 	}
 	
 	

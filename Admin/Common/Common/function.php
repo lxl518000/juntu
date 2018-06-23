@@ -41,19 +41,27 @@ function getToolIcon($type,$class='',$url='',$name='',$icon='',$color='',$js='')
 	
 	if(!IS_ROOT){
 		$resources = session('adminuser.allow');
-		parse_str($url,$params);
-		$module = $params['c'];
-		$action = $params['a'];
-		$access = $module.'/'.$action;
 		$group = $group ? $group : MODULE_NAME;
+		
+		if(C('URL_MODEL')==2){
+			if($group == 'Home'){
+				$access = str_replace(['/Home/','.html'], '', $url);
+				$access = explode('/',$access);
+				$access = $access[0].'/'.$access[1];
+			}
+		}else{
+			parse_str($url,$params);
+			$module = $params['c'];
+			$action = $params['a'];
+			$access = $module.'/'.$action;
+		}
 		if($group != 'Home'){
 			$access = $group.'/'.$access;
 		}
-		
-		
 		if(!in_array($access, $resources)){
 			return false;
 		}
+		
 	}
 	
 	$map = array(

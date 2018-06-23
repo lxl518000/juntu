@@ -68,7 +68,7 @@ class SiteController extends BackendController {
             
 			$vo['thumb'] = 	getThumbImg($vo['pic']);					
 			$vo['cname'] = $cats[$vo['cid']];
-	
+			$vo['jump'] = "<a href='//{$vo['host']}' target='_blank'>{$vo['host']}</a>";
 			$vo['operate'] = $op;
 			$list[$k] = $vo;
 		}

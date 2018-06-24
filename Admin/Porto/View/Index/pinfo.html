@@ -35,7 +35,7 @@ $(function(){
 	<div class="wrapper">
 		<div class="inside-nav">
 			<ul class="inside-nav-list clearfix">
-					<li class='par-li {$_REQUEST['cid']?'':'on'}' data-id='0'><a href="{:U('products',array('cid'=>0))}">全部分类</a></li>
+					<li class='par-li {$_REQUEST['cid']?'':'on'}' data-id='0'><a href="{:U('products',array('cid'=>0))}">{$language=='en'?'All':'全部分类'}</a></li>
 				<volist name='products' id='vo'>
 					<li class='par-li {$vo['on']} par-li-{$vo['id']}' data-id="{$vo['id']}"><a href="{:U('products',array('cid'=>$vo['id']))}" >{$vo['title']}</a></li>
 				</volist>

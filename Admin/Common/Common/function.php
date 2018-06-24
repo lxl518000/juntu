@@ -46,6 +46,7 @@ function getToolIcon($type,$class='',$url='',$name='',$icon='',$color='',$js='')
 		$resources = session('adminuser.allow');
 		$group = $group ? $group : MODULE_NAME;
 		
+		//dump($resources);
 		if(C('URL_MODEL')==2){
 			if($group == 'Home'){
 				$access = str_replace(['/Home/','.html'], '', $url);
@@ -58,6 +59,7 @@ function getToolIcon($type,$class='',$url='',$name='',$icon='',$color='',$js='')
 			$action = $params['a'];
 			$access = $module.'/'.$action;
 		}
+	
 		if($group != 'Home'){
 			$access = $group.'/'.$access;
 		}

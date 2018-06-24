@@ -1,0 +1,278 @@
+[ 2018-06-24T13:33:23+08:00 ] 127.0.0.1 /Home/Sys/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_sys_config` [ RunTime:0.0040s ]
+SQL: SELECT `name`,`value`,`type`,`extra` FROM `tb_sys_config` WHERE ( status=1  )  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant WEB_PATH - assumed 'WEB_PATH' D:\wamp\www\6fei\Admin\Home\Controller\SysController.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-06-24T13:33:23+08:00 ] 127.0.0.1 /Home/Sys/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tb_sys_config` [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\6fei\Admin\Common\Common\function.php 第 90 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\6fei\Admin\Common\Common\function.php 第 90 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\6fei\Admin\Common\Common\function.php 第 90 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\6fei\Admin\Common\Common\function.php 第 90 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-06-24T13:33:24+08:00 ] 127.0.0.1 /Home/Sys/index.html?limit=15&offset=0&order=desc&formfield=title%3D%26name%3D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_sys_config` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_sys_config` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tb_sys_config` ORDER BY id desc LIMIT 0,15   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-06-24T13:33:25+08:00 ] 127.0.0.1 /Home/Sysrole/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: title D:\wamp\www\6fei\Admin\Home\Controller\SysroleController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `tb_sys_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tb_sys_role`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\6fei\Admin\Common\Common\function.php 第 90 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\6fei\Admin\Common\Common\function.php 第 90 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\6fei\Admin\Common\Common\function.php 第 90 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\6fei\Admin\Common\Common\function.php 第 90 行.
+NOTIC: [8] Undefined index: title D:\wamp\www\6fei\Admin\Runtime\Cache\Home\b18590d5e4708f7f59cab8e873f25c70.php 第 51 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\6fei\Admin\Common\Common\function.php 第 90 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\6fei\Admin\Common\Common\function.php 第 90 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\6fei\Admin\Common\Common\function.php 第 90 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\6fei\Admin\Common\Common\function.php 第 90 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\6fei\Admin\Common\Common\function.php 第 90 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\6fei\Admin\Common\Common\function.php 第 90 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\6fei\Admin\Common\Common\function.php 第 90 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\6fei\Admin\Common\Common\function.php 第 90 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\6fei\Admin\Common\Common\function.php 第 90 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\6fei\Admin\Common\Common\function.php 第 90 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\6fei\Admin\Common\Common\function.php 第 90 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\6fei\Admin\Common\Common\function.php 第 90 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\6fei\Admin\Common\Common\function.php 第 90 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\6fei\Admin\Common\Common\function.php 第 90 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\6fei\Admin\Common\Common\function.php 第 90 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-06-24T13:33:27+08:00 ] 127.0.0.1 /Home/Sysuser/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_admin_user` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `tb_sys_role` [ RunTime:0.0030s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\wamp\www\6fei\Admin\Home\Controller\SysuserController.class.php on line 27 and defined D:\wamp\www\6fei\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\wamp\www\6fei\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\wamp\www\6fei\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\wamp\www\6fei\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `tb_sys_role` WHERE `status` = 1 AND `path` LIKE '0,%'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\6fei\Admin\Common\Common\function.php 第 90 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\6fei\Admin\Common\Common\function.php 第 90 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\6fei\Admin\Common\Common\function.php 第 90 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\6fei\Admin\Common\Common\function.php 第 90 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-06-24T13:33:27+08:00 ] 127.0.0.1 /Home/Sysuser/index.html?limit=15&offset=0&order=desc&formfield=username%3D%26mobile%3D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_admin_user` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_admin_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tb_admin_user` ORDER BY id desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_sys_role` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title` FROM `tb_sys_role`  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-06-24T13:33:27+08:00 ] 127.0.0.1 /Home/Sysuser/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_admin_user` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `tb_sys_role` [ RunTime:0.0040s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\wamp\www\6fei\Admin\Home\Controller\SysuserController.class.php on line 18 and defined D:\wamp\www\6fei\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\wamp\www\6fei\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\wamp\www\6fei\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\wamp\www\6fei\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `tb_sys_role` WHERE `status` = 1 AND `path` LIKE '0,%'  [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\wamp\www\6fei\Admin\Home\Controller\SysuserController.class.php on line 18 and defined D:\wamp\www\6fei\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\wamp\www\6fei\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\wamp\www\6fei\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\wamp\www\6fei\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `tb_sys_role` WHERE `status` = 1 AND `path` LIKE '0,%'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: role_id D:\wamp\www\6fei\Admin\Runtime\Cache\Home\9ea844424344b2e8fcbb1c3df8200d32.php 第 64 行.
+NOTIC: [8] Undefined index: hr D:\wamp\www\6fei\Admin\Extend\Tool\Form.php 第 74 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\6fei\Admin\Runtime\Cache\Home\9ea844424344b2e8fcbb1c3df8200d32.php 第 65 行.
+NOTIC: [8] Undefined index: class D:\wamp\www\6fei\Admin\Extend\Tool\Form.php 第 95 行.
+NOTIC: [8] Undefined index: type D:\wamp\www\6fei\Admin\Extend\Tool\Form.php 第 97 行.
+NOTIC: [8] Undefined index: hr D:\wamp\www\6fei\Admin\Extend\Tool\Form.php 第 74 行.
+NOTIC: [8] Undefined index: class D:\wamp\www\6fei\Admin\Extend\Tool\Form.php 第 95 行.
+NOTIC: [8] Undefined index: type D:\wamp\www\6fei\Admin\Extend\Tool\Form.php 第 97 行.
+NOTIC: [8] Undefined index: hr D:\wamp\www\6fei\Admin\Extend\Tool\Form.php 第 74 行.
+NOTIC: [8] Undefined index: realname D:\wamp\www\6fei\Admin\Runtime\Cache\Home\9ea844424344b2e8fcbb1c3df8200d32.php 第 67 行.
+NOTIC: [8] Undefined index: class D:\wamp\www\6fei\Admin\Extend\Tool\Form.php 第 95 行.
+NOTIC: [8] Undefined index: type D:\wamp\www\6fei\Admin\Extend\Tool\Form.php 第 97 行.
+NOTIC: [8] Undefined index: hr D:\wamp\www\6fei\Admin\Extend\Tool\Form.php 第 74 行.
+NOTIC: [8] Undefined index: mobile D:\wamp\www\6fei\Admin\Runtime\Cache\Home\9ea844424344b2e8fcbb1c3df8200d32.php 第 68 行.
+NOTIC: [8] Undefined index: class D:\wamp\www\6fei\Admin\Extend\Tool\Form.php 第 95 行.
+NOTIC: [8] Undefined index: type D:\wamp\www\6fei\Admin\Extend\Tool\Form.php 第 97 行.
+NOTIC: [8] Undefined index: hr D:\wamp\www\6fei\Admin\Extend\Tool\Form.php 第 74 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\6fei\Admin\Runtime\Cache\Home\9ea844424344b2e8fcbb1c3df8200d32.php 第 69 行.
+NOTIC: [8] Undefined index: disabled D:\wamp\www\6fei\Admin\Extend\Tool\Form.php 第 60 行.
+NOTIC: [8] Undefined index: disabled D:\wamp\www\6fei\Admin\Extend\Tool\Form.php 第 60 行.
+NOTIC: [8] Undefined index: hr D:\wamp\www\6fei\Admin\Extend\Tool\Form.php 第 74 行.
+NOTIC: [8] Undefined variable: isupdate D:\wamp\www\6fei\Admin\Runtime\Cache\Home\9ea844424344b2e8fcbb1c3df8200d32.php 第 73 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-06-24T13:34:02+08:00 ] 127.0.0.1 /Home/Sysuser/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `tb_admin_user` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `tb_sys_role` [ RunTime:0.0040s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\wamp\www\6fei\Admin\Home\Controller\SysuserController.class.php on line 18 and defined D:\wamp\www\6fei\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\wamp\www\6fei\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\wamp\www\6fei\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\wamp\www\6fei\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `tb_sys_role` WHERE `status` = 1 AND `path` LIKE '0,%'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\6fei\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `tb_admin_user` WHERE `mobile` = '18671932366' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tb_admin_user` WHERE `mobile` = '18671932366' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: email D:\wamp\www\6fei\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\6fei\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `tb_admin_user` (`role_id`,`username`,`password`,`realname`,`mobile`,`status`) VALUES ('3','钟先生','d0dcbf0d12a6b1e7fbfa2ce5848f3eff','钟先生','18671932366','1') [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `tb_sys_log` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\6fei\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\6fei\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `tb_sys_log` (`username`,`content`,`sqlstr`,`ip`,`addtime`) VALUES ('liufei(用户ID:336)','添加用户成功','INSERT INTO `tb_admin_user` (`role_id`,`username`,`password`,`realname`,`mobile`,`status`) VALUES (\'3\',\'钟先生\',\'d0dcbf0d12a6b1e7fbfa2ce5848f3eff\',\'钟先生\',\'18671932366\',\'1\')','127.0.0.1','2018-06-24 13:34:02') [ RunTime:0.0040s ]
+
+[ 2018-06-24T13:34:03+08:00 ] 127.0.0.1 /Home/Sysuser/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_admin_user` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `tb_sys_role` [ RunTime:0.0060s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\wamp\www\6fei\Admin\Home\Controller\SysuserController.class.php on line 27 and defined D:\wamp\www\6fei\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\wamp\www\6fei\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\wamp\www\6fei\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\wamp\www\6fei\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `tb_sys_role` WHERE `status` = 1 AND `path` LIKE '0,%'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\6fei\Admin\Common\Common\function.php 第 90 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\6fei\Admin\Common\Common\function.php 第 90 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\6fei\Admin\Common\Common\function.php 第 90 行.
+NOTIC: [8] Undefined variable: jsStr D:\wamp\www\6fei\Admin\Common\Common\function.php 第 90 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-06-24T13:34:03+08:00 ] 127.0.0.1 /Home/Sysuser/index.html?limit=15&offset=0&order=desc&formfield=username%3D%26mobile%3D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_admin_user` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_admin_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tb_admin_user` ORDER BY id desc LIMIT 0,15   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tb_sys_role` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title` FROM `tb_sys_role`  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

@@ -60,10 +60,14 @@ $(function(){
 			<div class="article" style='background:#fff'>
 				<h2  style='text-align:center;font-size:16px;padding:10px;'>{$pinfo['name']}</h2>
 			     {$pinfo['content']|htmlspecialchars_decode}
+			     <php>$def = $language=='en'?'none':'没有了';</php>
 			      <div class="page" style='padding:20px;text-align:center;'>
-                                         上一个<a href="{:U('index/pinfo',array('pid'=>$prev['id']))}" >{$prev['name']|default='没有了'}</a>
+                                       {$language=='en'?'Prev':'上一个'}<a href="{:U('index/pinfo',array('pid'=>$prev['id']))}" >
+                                       {$prev['name']|default=$def}</a>
                  &nbsp;&nbsp;
-             	 下一个 <a href="{:U('index/pinfo',array('pid'=>$next['id']))}" >{$next['name']|default='没有了'}</a>
+             	{$language=='en'?'Next':'下一个'}<a href="{:U('index/pinfo',array('pid'=>$next['id']))}" >
+             	{$next['name']|default=$def}
+             	</a>
              </div>
 		</div>
 		

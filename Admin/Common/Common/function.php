@@ -3,6 +3,9 @@
 
 function cacheSiteConfig($sid,$host){
 	
+	//查找语言
+	$language = D('Site')->where(['id'=>$sid])->getField('language');
+	
 	//查找配置文件
 	$config = D('SiteConfig')->where(['sid'=>$sid])->getField('key,value',true);
 	
@@ -10,7 +13,7 @@ function cacheSiteConfig($sid,$host){
 	
 	$rs['config'] = $config;
 	$rs['menu'] = $menu;
-	
+	$rs['language'] = $language;
 	$host = ltrim($host,'www.');
 	
 	$res = S("cfg_".$host,$rs);

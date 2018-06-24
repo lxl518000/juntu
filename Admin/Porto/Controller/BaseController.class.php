@@ -40,6 +40,9 @@ class BaseController extends Controller {
 		$this->assign('keyword',$keyword);
 		$this->assign('description',$description);
 		$this->assign('title',$title);
+	
+ 		$language = $config['language'] ? $config['language']:'cn';
+ 		$this->assign('language',$language);
 	}
 	
 	
@@ -52,8 +55,7 @@ class BaseController extends Controller {
 		if($list){
 			return $list;
 		}
-		
-		$list = D('cate')->where(['pid'=>0])->select();
+		$list = $this->getCateModel()->where(['pid'=>0])->select();
 
 		S("{$this->site}:TOP_CATE",$list,3600);
 		
@@ -61,6 +63,21 @@ class BaseController extends Controller {
 	}
 	
 	
+	protected function getCateModel(){
+		$language = $this->language;
+		if($language != 'en'){
+			return D('cate');
+		}
+		return D('en_cate');
+	}
+	
+	protected function getProductModel(){
+		$language = $this->language;
+		if($language != 'en'){
+			return D('product');
+		}
+		return D('en_product');
+	}
 	
 	
 	
@@ -70,10 +87,9 @@ class BaseController extends Controller {
 	protected  function getAllCate(){
 		$list = S("{$this->site}:ALL_CATE");
 		if($list){
-		
 			return $list;
 		}
-		$list = D('cate')->where(['status'=>1])->select();
+		$list = $this->getCateModel()->where(['status'=>1])->select();
 		$rs = S("{$this->site}:ALL_CATE",$list,3600);
 	
 		return $list;

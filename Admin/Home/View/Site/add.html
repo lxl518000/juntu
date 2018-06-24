@@ -9,6 +9,7 @@
 <block name="form-field">
 	{:formbuilder('input',array('title'=>'站点名称','name'=>'name','value'=>$list['name'],'placeholder'=>'请输入站点名称','validate'=>'required','tip'=>''))}
 	{:formbuilder('input',array('title'=>'站点域名','name'=>'host','value'=>$list['host'],'placeholder'=>'请输入站点域名','validate'=>'required','tip'=>''))}
+	{:formbuilder('choose',array(type=>'radio','title'=>'状态','name'=>'language','options'=>array('en'=>'英文','cn'=>'中文'),'checked'=>[$list['language']]))}
 	{:formbuilder('input',array('title'=>'备注','name'=>'remark','value'=>$list['remark'],'placeholder'=>'请输入备注','validate'=>'','tip'=>''))}
 
 

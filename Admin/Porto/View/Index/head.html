@@ -14,7 +14,7 @@
 <script src="/Public/proto/Scripts/jquery.superslide.2.1.js"></script>
 <script src="/Public/proto/Scripts/source.func.js"></script>
 <script src="/Public/proto/Scripts/common.js"></script>
-<link rel="icon" href="/favicon.ico" />
+<link rel="icon" href="/{$config['config']['WEB_FAVICON']|default=''}" />
 <script type="text/javascript" src="/Public/Home/js/online2.js"></script>
  <!--[if IE 6]>
 <script src="/Public/proto/Scripts/dd_belatedpng.js"></script>
@@ -26,8 +26,9 @@
 <body data-curpageid="">
 <div class="header">
 	<div class="header-main wrapper clearfix">
-		<a href="index.html" class="header-logo"  style='width:450px;;height:60px;'><img src="/logo.png"></a>
+		<a href="index.html" class="header-logo"  style='width:450px;;height:60px;'><img src="/{$config['config']['WEB_LOGO']|default='logo.png'}"></a>
 		<div class="header-right">
+			<div class="header-version-tab"><a href="http://www.syxionghong.cn">中文版</a>|<a href="http://www.juntu.biz">English</a></div>
 			<div class="header-right-sup clearfix">
 				<div class="header-search clearfix">
 					<input type="text" name="keyword" id="">

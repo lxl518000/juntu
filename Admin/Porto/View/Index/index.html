@@ -34,7 +34,8 @@
                 <div class="index-product-sidebar">
                     <div class="product-nav">
                         <h2 class="product-nav-tit">
-                            产品中心</h2>
+                        	 {$language=='en'?'Products':'产品中心'}
+                           </h2>
                         <ul class="product-nav-list">
                            <volist name='topcate' id='vo'>
                          		<li><a href="{:U('products',array('cid'=>$vo['id']))}">{$vo['title']}</a></li>
@@ -52,7 +53,8 @@
                     <div class="index-product-main-tit">
                         <a href="javascript:void(0);" class="turn-btn turn-prev"></a>
                         <h3 class="title">
-                            产品展示</h3>
+                       	 {$language=='en'?'Categoary':'产品展示'}
+                        </h3>
                         <a href="javascript:void(0);" class="turn-btn turn-next"></a>
                     </div>
                     <div class="index-product-main-cont">
@@ -65,7 +67,7 @@
 	                                    <div class="pic"><img src="{$vo1['pic']}"  onload="imgCenter(this)"></div>
 	                                    <h4 class="title">{$vo1['name']}
 	                                    </h4>
-	                                    <div class="tip">查看详情&gt;&gt;</div>
+	                                    <div class="tip">{$language=='en'?'Detail':'查看详情'}&gt;&gt;</div>
 	                             		</a>
 	                                </li>
 	                            	</volist>
@@ -83,7 +85,7 @@
                 <div class="index-about">
                     <div class="index-common-tit">
                         <h3 class="title">
-                            公司简介</h3>
+                            {$language=='en'?'About':'公司简介'}</h3>
                     </div>
                     <div class="index-about-cont clearfix ">
                         <div class="pic">
@@ -97,34 +99,12 @@
                        
                     </div>
                 </div>
-               <!--  <div class="index-prodata">
-                    <div class="index-common-tit">
-                        <h3 class="title">
-                            产品知识</h3>
-                        <a href="{:U('news',['cid'=>43])}" class="see-more">+More</a>
-                    </div>
-                    <div class="index-prodata-first clearfix">
-                        <span class="date"><em>{$news1['n_time']|date='d',###}</em><br>
-                            {$news1['n_time']|date='Y-m',###}</span> <a href="{:U('ninfo',['nid'=>$news1['id']])}" class="text">
-                                <h4 class="title">
-                                  {$news1['n_title']}</h4>
-                                <p class="exp">
-                                   {$news1['n_content']|killHtml|msubstr=###,0,30}</p>
-                            </a>
-                    </div>
-                    <ul class="prodata-list ellipsis-list">
-                    	<volist name='news' id='vo'>
-	                    	<li><a href="{:U('ninfo',['nid'=>$vo['id']])}">{$vo['n_title']}</a><span class="time">{$vo['n_time']|date='m-d',###}</span></li>
-                    	</volist>
-                        
-                    </ul>
-                </div> -->
             </div>
         </div>
         <div class="index-jinkou">
             <div class="wrapper">
                 <div class="index-common-tit">
-                    <h3 class="title">热门分类</h3>
+                    <h3 class="title">{$language=='en'?'Hot':'热门分类'}</h3>
                 </div>
                 <div class="index-jinkou-loop b_ml">
                   

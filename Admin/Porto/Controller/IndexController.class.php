@@ -9,7 +9,7 @@ class IndexController extends BaseController {
 		$where = array();
 		$where['status'] = array('eq',1);
 		$where['iscommend'] = array('eq',1);
-		$products = D('product')->where($where)->order('addtime desc')->limit(32)->select();
+		$products = $this->getProductModel()->where($where)->order('addtime desc')->limit(32)->select();
 		$products = array_chunk($products, 8);
 		
 		//获取全部分类
@@ -41,7 +41,7 @@ class IndexController extends BaseController {
     public function products(){
     	$cid = $_REQUEST['cid'];
     	//获取分类信息
-    	$catModel = D('cate');
+    	$catModel = $this->getCateModel();
     	if($cid){
     		$cinfo = $catModel->where("id={$cid}")->find();
     		$cpid = $cinfo['pid'];
@@ -79,14 +79,14 @@ class IndexController extends BaseController {
     	$order = 'addtime desc';
     	
     	//获取列表
-    	$totalCount = D('product')->where($where)->count();
+    	$totalCount = $this->getProductModel()->where($where)->count();
     	// 进行分页数据查询 注意limit方法的参数要使用Page类的属性
     	//import('ORG.Util.Page');// 导入分页类
     	//echo APP_PATH."Extend/Tool/Page.php";exit;
     	require_once APP_PATH."Extend/Tool/Page.php";
     	$Page  = new \Page($totalCount,12);// 实例化分页类 传入总记录数和每页显示的记录数
     	
-    	$plist =  D('product')->where($where)->order($order)->limit($Page->firstRow.','.$Page->listRows)->select();
+    	$plist =  $this->getProductModel()->where($where)->order($order)->limit($Page->firstRow.','.$Page->listRows)->select();
     	$show = $Page->show();// 分页显示输
     	
 
@@ -103,15 +103,12 @@ class IndexController extends BaseController {
     	if(empty($pid)){
     		redirect('products');
     	}
-    	$pinfo = D('product')->where("id={$pid}")->find();
+    	$pinfo = $this->getProductModel()->where("id={$pid}")->find();
     	$cid = $_REQUEST['cid'] = $pinfo['cid'];
     	//获取分类信息
     	if($cid){
     		$cinfo = D('cate')->where("id={$cid}")->find();
     		$cpid = $cinfo['c_pid'];
-    		$pos[] = $cinfo;
-    		
-    		$where['cid'] = array('in',$ids);
     		$this->assign('cinfno',$cinfo);
     	}
     	
@@ -132,8 +129,8 @@ class IndexController extends BaseController {
     	 
     	$this->assign('pinfo',$pinfo);
     	//获取上一个下一个
-    	$next = D('product')->where(['cid'=>$pinfo['cid'],'addtime'=>['lt',$pinfo['addtime']]])->order('addtime desc')->limit(1)->find();
-    	$prev = D('product')->where(['cid'=>$pinfo['cid'],'addtime'=>['gt',$pinfo['addtime']]])->order('addtime desc')->limit(1)->find();
+    	$next = $this->getProductModel()->where(['cid'=>$pinfo['cid'],'addtime'=>['lt',$pinfo['addtime']]])->order('addtime desc')->limit(1)->find();
+    	$prev = $this->getProductModel()->where(['cid'=>$pinfo['cid'],'addtime'=>['gt',$pinfo['addtime']]])->order('addtime desc')->limit(1)->find();
     	
    
     	$this->assign('keyword',$pinfo['keyword']);

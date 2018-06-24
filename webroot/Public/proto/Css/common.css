@@ -73,7 +73,7 @@ a:hover{color:#888;}
 .footer-logo img{display:block;height:100%;margin-right:10px;}
 .footer-nav-list a{margin-left:5px;margin-right:5px;line-height:30px;}
 
-.footer-mess{display:inline-block;width:550px;text-align:left;padding-top:5px;}
+.footer-mess{display:inline-block;width:650px;text-align:left;padding-top:5px;}
 .footer-mess p{margin:5px 0;}
 
 
@@ -248,7 +248,7 @@ a:hover{color:#888;}
 
 
 .b_ml ul{ width:100%; margin-top:5px; height:140px; overflow:hidden;}
-.b_ml ul li{ width:12%; height:35px; float:left;line-height:35px; position:relative; background:url(../Images/icon2.png) no-repeat left center; border-bottom:1px dashed #bbb;}
+.b_ml ul li{ width:16%; height:35px; float:left;line-height:35px; position:relative; background:url(../Images/icon2.png) no-repeat left center; border-bottom:1px dashed #bbb;}
 .b_ml ul li a{ font-size:12px; color:#555555;}
 .b_ml ul li a:hover{ color:#0073BB;}
 .b_ml ul li p{ width:70%; height:35px; line-height:35px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; margin-left:15px;}

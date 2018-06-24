@@ -91,7 +91,14 @@ class SiteController extends BackendController {
         $this->success('缓存成功');
 
     }
+    
+    protected function _before_add(){
 
+    	$list['language'] = 'cn';
+    	$this->assign('list',$list);
+  
+    }
+    
 	
 
 	//添加站点成功后 初始化添加站点默认配置
@@ -101,6 +108,8 @@ class SiteController extends BackendController {
 	    $arr = [
             ['sid'=>$data['id'],'name'=>"站点名称",'key'=>'WEB_TITLE','value'=>'','addtime'=>$now,'adduser'=>$user,'remark'=>'定义浏览器顶部标签显示的文字。对SEO友好。'],
             ['sid'=>$data['id'],'name'=>"站点关键字",'key'=>'WEB_KEYWORD','value'=>'','addtime'=>$now,'adduser'=>$user,'remark'=>'用空格或英文的逗号 , 分割。对SEO友好'],
+            ['sid'=>$data['id'],'name'=>"Logo图标名称",'key'=>'WEB_LOGO','value'=>'logo.png','addtime'=>$now,'adduser'=>$user,'remark'=>'在根目录上传的图片名称'],
+            ['sid'=>$data['id'],'name'=>"favicon",'key'=>'WEB_FAVICON','value'=>'favicon.ico','addtime'=>$now,'adduser'=>$user,'remark'=>'在根目录 上传的ico名称'],
             ['sid'=>$data['id'],'name'=>"站点描述",'key'=>'WEB_DESCRIPTION','value'=>'','addtime'=>$now,'adduser'=>$user,'remark'=>'网站简易描述，对SEO友好'],
             ['sid'=>$data['id'],'name'=>"公司地址",'key'=>'WEB_ADDRESS','value'=>'','addtime'=>$now,'adduser'=>$user,'remark'=>'联系地址'],
             ['sid'=>$data['id'],'name'=>"邮箱地址",'key'=>'WEB_EMAIL','value'=>'','addtime'=>$now,'adduser'=>$user,'remark'=>'邮箱地址'],
